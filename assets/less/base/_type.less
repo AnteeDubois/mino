@@ -73,7 +73,10 @@ ol {
 dl { margin-bottom: @line-height-computed; }
 dt,
 dd { line-height: @line-height-base; }
-dt { font-weight: bold; }
+dt { 
+    font-weight: bold;
+    margin-top: (@line-height-base/2) * 1em;
+}
 dd { margin-left: 0; } // Undo browser default
 
 
