@@ -12,7 +12,7 @@ th { text-align: left; }
 
 // Baseline styles
 
-.table {
+table {
     width: 100%;
     margin-bottom: @line-height-computed;
     // Cells
@@ -47,7 +47,7 @@ th { text-align: left; }
     > tbody + tbody { border-top: 2px solid @table-border-color; }
 
     // Nesting
-    .table { background-color: @body-bg; }
+    table { background-color: @body-bg; }
 }
 
 // Table cell sizing
@@ -75,9 +75,9 @@ table {
 // Exact selectors below required to override `.table-striped` and prevent
 // inheritance to nested tables.
 
-.table > thead > tr,
-.table > tbody > tr,
-.table > tfoot > tr {
+table > thead > tr,
+table > tbody > tr,
+table > tfoot > tr {
     > td.active,
     > th.active,
     &.active > td,
