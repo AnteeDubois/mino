@@ -8,32 +8,9 @@
 //
 // Placeholder text gets special styles because when browsers invalidate entire
 // lines if it doesn't understand a selector/
-.form-control { .placeholder(); }
+form { .placeholder(); }
 
-
-// Common form controls
-//
-// Shared size and type resets for form controls. Apply `.form-control` to any
-// of the following form controls:
-//
-// select
-// textarea
-// input[type="text"]
-// input[type="password"]
-// input[type="datetime"]
-// input[type="datetime-local"]
-// input[type="date"]
-// input[type="month"]
-// input[type="time"]
-// input[type="week"]
-// input[type="number"]
-// input[type="email"]
-// input[type="url"]
-// input[type="search"]
-// input[type="tel"]
-// input[type="color"]
-
-.form-control {
+form {
     display: block;
     width: 100%;
     height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
@@ -64,7 +41,7 @@
     }
 
     // Reset height for `textarea`s
-    textarea& { height: auto; }
+    textarea & { height: auto; }
 }
 
 // Form groups
@@ -83,7 +60,7 @@
 // Apply class to a `p` element to make any string of text align with labels in
 // a horizontal form layout.
 
-.form-control-static {
+.form-static {
     margin-bottom: 0; // Remove default margin from `p`
     padding-top: (@padding-base-vertical + 1);
 }
@@ -124,20 +101,17 @@
         }
 
         // In navbar-form, allow folks to *not* use `.form-group`
-        .form-control { display: inline-block; }
+        form { display: inline-block; }
 
         // Remove default margin on radios/checkboxes that were used for stacking, and
         // then undo the floating of radios and checkboxes to match (which also avoids
         // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
-        .radio,
-        .checkbox {
+        input[type="radio"],
+        input[type="checkbox"] {
             display: inline-block;
             margin-top: 0;
             margin-bottom: 0;
             padding-left: 0;
-        }
-        .radio input[type="radio"],
-        .checkbox input[type="checkbox"] {
             float: none;
             margin-left: 0;
         }
@@ -153,11 +127,10 @@
 .form-horizontal {
 
     // Consistent vertical alignment of labels, radios, and checkboxes
-    .control-label,
-    .radio,
-    .checkbox,
-    .radio-inline,
-    .checkbox-inline {
+    input[type="radio"],
+    input[type="checkbox"],
+    input[type="radio"].inline,
+        input[type="checkbox"].inline{
         margin-top: 0;
         margin-bottom: 0;
         padding-top: (@padding-base-vertical + 1); // Default padding plus a border
@@ -165,9 +138,4 @@
 
     // Make form groups behave like rows
     .form-group { .make-row(); }
-
-    // Only right align form labels here when the columns stop stacking
-    @media (min-width: @screen-sm-min) {
-        .control-label { text-align: right; }
-    }
 }

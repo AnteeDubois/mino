@@ -93,8 +93,8 @@ output {
 
 //-------------------------FIGURE THIS SHIT OUT!--------------------------------------------
 
-.radio,
-.checkbox {
+input[type="radio"],
+input[type="checkbox"] {
     display: block;
     min-height: @line-height-computed; // clear the floating input if there is no label text
     margin-top: 10px;
@@ -109,20 +109,20 @@ output {
     }
 }
 
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
+input[type="radio"],
+input[type="radio"].inline,
+input[type="checkbox"],
+input[type="checkbox"].inline {
     float: left;
     margin-left: -20px;
 }
 
-.radio + .radio,
-.checkbox + .checkbox { margin-top: -5px; } // Move up sibling radios or checkboxes for tighter spacing
+input[type="radio"] + input[type="radio"],
+input[type="checkbox"] + input[type="checkbox"] { margin-top: -5px; } // Move up sibling radios or checkboxes for tighter spacing
 
 // Radios and checkboxes on same line
-.radio-inline,
-.checkbox-inline {
+input[type="radio"].inline,
+input[type="checkbox"].inline {
     display: inline-block;
     padding-left: 20px;
     margin-bottom: 0;
@@ -131,8 +131,8 @@ output {
     cursor: pointer;
 }
 
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
+input[type="radio"].inline + input[type="radio"].inline,
+input[type="checkbox"].inline + input[type="checkbox"].inline {
     margin-top: 0;
     margin-left: 10px; // space out consecutive inline controls
 }
@@ -142,10 +142,8 @@ output {
 // Note: Neither radios nor checkboxes can be readonly.
 input[type="radio"],
 input[type="checkbox"],
-.radio,
-.radio-inline,
-.checkbox,
-.checkbox-inline {
+input[type="radio"].inline,
+input[type="checkbox"].inline {
     &[disabled],
     fieldset[disabled] & { cursor: not-allowed; }
 }
