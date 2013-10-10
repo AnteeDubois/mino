@@ -8,13 +8,59 @@
    ==========================================================================
 */
 
+@iconFont:                "midaym";
+
+.wrapper { padding: 0; }
 .odd { background-color: lighten(#428bca, 43%); }
 .even { background-color: lighten(#428bca, 41%); }
-section { 
+section,
+footer { 
 	padding: @padding-large-vertical 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
 	article > h3 { color: darken(@brand-primary, 20%); }
 	h4 { color: darken(@brand-danger, 20%); }
+}
+
+footer .text-left {	margin-top: 8px; }
+
+@font-face {
+	font-family: '@{iconFont}';
+	src:url('../../../midaym/templates/midaym/fonts/@{iconFont}.eot');
+	src:url('../../../midaym/templates/midaym/fonts/@{iconFont}.eot?#iefix') format('embedded-opentype'),
+		url('../../../midaym/templates/midaym/fonts/@{iconFont}.svg#icomoon') format('svg'),
+		url('../../../midaym/templates/midaym/fonts/@{iconFont}.woff') format('woff'),
+		url('../../../midaym/templates/midaym/fonts/@{iconFont}.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	display: inline-block;
+	*margin-right: .3em;
+	font-family: '@{iconFont}';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+    padding-right: 4px;
+}
+
+.icon-midaym:before { content: "\70"; }
+
+.branding {
+	color: @gray-lighter;
+	font-family: 'midaym';
+    font-size: 24px;
+    &:hover {
+    	color: @gray;
+    	text-decoration: none;
+    }
+    img { 
+            margin-bottom: -2px;
+            margin-right: 4px;
+        }
 }
