@@ -377,41 +377,6 @@
 // COMPONENT MIXINS
 // --------------------------------------------------
 
-// Horizontal dividers
-// -------------------------
-// Dividers (basically an hr) within dropdowns and nav lists
-.nav-divider(@color: #e5e5e5) {
-    height: 1px;
-    margin: ((@line-height-computed / 2) - 1) 0;
-    overflow: hidden;
-    background-color: @color;
-}
-
-// Panels
-// -------------------------
-.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border;) {
-    border-color: @border;
-    & > .panel-heading {
-        color: @heading-text-color;
-        background-color: @heading-bg-color;
-        border-color: @heading-border;
-        + .panel-collapse .panel-body { border-top-color: @border; }
-    }
-    & > .panel-footer {
-        + .panel-collapse .panel-body { border-bottom-color: @border; }
-    }
-}
-
-// Alerts
-// -------------------------
-.alert-variant(@background; @border; @text-color) {
-    background-color: @background;
-    border-color: @border;
-    color: @text-color;
-    hr { border-top-color: darken(@border, 5%); }
-    .alert-link { color: darken(@text-color, 10%); }
-}
-
 // Tables
 // -------------------------
 .table-row-variant(@state; @background; @border) {
@@ -484,52 +449,6 @@
     font-size: @font-size;
     line-height: @line-height;
     border-radius: @border-radius;
-}
-
-// Pagination
-// -------------------------
-.pagination-size(@padding-vertical; @padding-horizontal; @font-size; @border-radius) {
-    > li {
-        > a,
-        > span {
-            padding: @padding-vertical @padding-horizontal;
-            font-size: @font-size;
-        }
-        &:first-child {
-            > a,
-            > span { .border-left-radius(@border-radius); }
-        }
-        &:last-child {
-            > a,
-            > span { .border-right-radius(@border-radius); }
-        }
-    }
-}
-
-// Labels
-// -------------------------
-.label-variant(@color) {
-    background-color: @color;
-    &[href] {
-        &:hover,
-        &:focus { background-color: darken(@color, 10%); }
-    }
-}
-
-// Navbar vertical align
-// -------------------------
-// Vertically center elements in the navbar.
-// Example: an element has a height of 30px, so write out `.navbar-vertical-align(30px);` to calculate the appropriate top margin.
-.navbar-vertical-align(@element-height) {
-    margin-top: ((@navbar-height - @element-height) / 2);
-    margin-bottom: ((@navbar-height - @element-height) / 2);
-}
-
-// Progress bars
-// -------------------------
-.progress-bar-variant(@color) {
-    background-color: @color;
-    .progress-striped & { #gradient > .striped(); }
 }
 
 // Responsive utilities
@@ -685,34 +604,6 @@
     }
 }
 
-
-// Form validation states
-//
-// Used in forms.less to generate the form validation CSS for warnings, errors,
-// and successes.
-
-.form-control-validation(@text-color: #555; @border-color: #ccc; @background-color: #f5f5f5) {
-    // Color the label and help text
-    .help-block,
-    .control-label { color: @text-color; }
-    // Set the border and box shadow on specific inputs to match
-    .form-control {
-        border-color: @border-color;
-        .box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
-        &:focus {
-            border-color: darken(@border-color, 10%);
-            @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@border-color, 20%);
-            .box-shadow(@shadow);
-        }
-    }
-    // Set validation states also for addons
-    .input-group-addon {
-        color: @text-color;
-        border-color: @border-color;
-        background-color: @background-color;
-    }
-}
-
 // Form control focus state
 //
 // Generate a customized focus state and for any input with the specified color,
@@ -733,25 +624,4 @@
         outline: 0;
         .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px @{color-rgba}");
     }
-}
-
-// Form control sizing
-//
-// Relative text size, padding, and border-radii changes for form controls. For
-// horizontal sizing, wrap controls in the predefined grid classes. `<select>`
-// element gets special love because it's special, and that's a fact!
-
-.input-size(@input-height; @padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
-    height: @input-height;
-    padding: @padding-vertical @padding-horizontal;
-    font-size: @font-size;
-    line-height: @line-height;
-    border-radius: @border-radius;
-
-    select& {
-        height: @input-height;
-        line-height: @input-height;
-    }
-
-    textarea& { height: auto; }
 }
