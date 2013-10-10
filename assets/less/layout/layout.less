@@ -11,11 +11,32 @@
 
 // Framework files
 @import "_responsive.less";
-@import "_grid.less";
+//Global Grid classes
+.grid-paint {
+    div {
+        background-color: #fff;
+        color: @code-color;
+        border-radius: @border-radius-base;
+        border: 1px solid @white-darker; 
+    }
+}
+// Set the container width, and override it for fixed navbars in media queries
+.container { .container-fixed(); }
+
+// mobile first defaults
+.row { .make-row(); }
+
+//  To choose a grid simply comment out the one you do not want
+//---------------------------------------------------------------------------
+@import "_mgrid.less";
+//@import "_fgrid.less";
+
 @import "_utilities.less";
 
 /*	Default Layout Styles
 ---------------------------------------------------------------------------*/
+
+
 
 // Alignment
 .text-left           { text-align: left; }

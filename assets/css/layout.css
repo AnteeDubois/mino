@@ -48,7 +48,7 @@ th.hidden-l,td.hidden-l{display:table-cell !important}
 .row:after{clear:both}
 .row:before,.row:after{content:" ";display:table;}
 .row:after{clear:both}
-.xs1,.xs2,.xs3,.xs4,.xs5,.xs6,.xs7,.xs8,.xs9,.xs10,.xs11,.xs-12,.s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,.m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8,.m9,.m10,.m11,.m12,.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}
+.xs1,.xs2,.xs3,.xs4,.xs5,.xs6,.xs7,.xs8,.xs9,.xs10,.xs11,.xs12,.s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,.m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8,.m9,.m10,.m11,.m12,.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}
 .xs1,.xs2,.xs3,.xs4,.xs5,.xs6,.xs7,.xs8,.xs9,.xs10,.xs11{float:left}
 .xs1{width:8.333333333333332%}
 .xs2{width:16.666666666666664%}
