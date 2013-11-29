@@ -8,13 +8,9 @@
    ==========================================================================
 */
 
-@iconFont:                "midaym";
-
 .wrapper { padding: 0; }
-.odd { background-color: lighten(#428bca, 43%); }
-.even { background-color: lighten(#428bca, 41%); }
-section,
-footer { 
+
+section { 
 	padding: @padding-large-vertical 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -22,43 +18,37 @@ footer {
 	article > h3 { color: darken(@brand-primary, 20%); }
 	h4 { color: darken(@brand-danger, 20%); }
 }
-
-footer .text-left {	margin-top: 8px; }
+.section-head { background-color: @white-dark; }
+.section-odd { background-color: lighten(#428bca, 43%); }
+.section-even { background-color: lighten(#428bca, 41%); }
 
 .hero-unit {
 	padding: @padding-large-vertical*3 0;
 	h1 {
 		letter-spacing: -3px;
 		font-size: 48px;
-		small { letter-spacing: -1px }
+		small { 
+			letter-spacing: -1px;
+			font-size: 30px;
+		}
 	}
 }
 
+footer { 
+	padding: @padding-large-vertical 0;
+	.text-left { margin-top: 8px; }
+}
+
 @font-face {
-	font-family: '@{iconFont}';
-	src:url('../../../midaym/templates/midaym/fonts/@{iconFont}.eot');
-	src:url('../../../midaym/templates/midaym/fonts/@{iconFont}.eot?#iefix') format('embedded-opentype'),
-		url('../../../midaym/templates/midaym/fonts/@{iconFont}.svg#icomoon') format('svg'),
-		url('../../../midaym/templates/midaym/fonts/@{iconFont}.woff') format('woff'),
-		url('../../../midaym/templates/midaym/fonts/@{iconFont}.ttf') format('truetype');
+	font-family: 'midaym';
+	src:url('../assets/fonts/midaym.eot');
+	src:url('../assets/fonts/midaym.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/midaym.svg#icomoon') format('svg'),
+		url('../assets/fonts/midaym.woff') format('woff'),
+		url('../assets/fonts/midaym.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
-
-[class^="icon-"],
-[class*=" icon-"] {
-	display: inline-block;
-	*margin-right: .3em;
-	font-family: '@{iconFont}';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-    padding-right: 4px;
-}
-
-.icon-midaym:before { content: "\70"; }
 
 .branding {
 	color: @gray-lighter;

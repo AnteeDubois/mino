@@ -4,9 +4,9 @@
 	<title>Mino Css Framework</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="description" content="Mino is a ultra–lean CSS framework built with LESS designed to provide you with a solid simple organized yet powerful workfow for designing & developing for all projects from simple sites to robust and complex applications. Built with the PHPBB project and blogs in mind from the ground up. Leveraging best practices and commonly used assests such as Normalize to handle your reset, Bootstrap grid system, and SMACCS principles." />
+	<meta name="description" content="Mino is a ultra–lean CSS framework built with LESS designed to provide you with a solid simple organized yet powerful workfow for designing & developing for all projects from simple sites to robust and complex applications. Built with the PHPBB project and blogs in mind from the ground up. Leveraging best practices and commonly used assests such as Normalize to handle your reset, Bootstrap grid system & modules, and SMACCS principles." />
 	<meta name="copyright" content="Michael Miday midaym.com All Rights Reserved" /> <!-- Mino -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" /> <!-- STYLES -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all" /> <!-- STYLES -->
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="/assets/js/html5shiv.js"></script>
@@ -16,26 +16,31 @@
 <body>
 <div class="wrapper">
 	<header>
-		<hgroup class="container hero-unit">
-			<h1>
-				Mino
-				<br />
-				<small>
-					Minimal, structured, extensible, powerfully dynamic, true front-end framework for more effective and organized web development.
-				</small>
-			</h1>
-			<a class="btn btn-danger btn-lg" href="" title="">Download Mino</a> 
+		<hgroup class="container">
+			<div class="hero-unit">
+				<h1>
+					Mino
+					<br />
+					<small>
+						Minimal, structured, extensible, powerfully dynamic, true front-end framework for more effective and organized web development.
+					</small>
+				</h1>
+				<a class="btn btn-danger btn-lg" href="" title="">Download Mino</a>
+				<button type="button" class="btn btn-danger btn-lg">Download Mino</button>
+				<input type="submit" class="btn btn-danger btn-lg" value="Download Mino">
+			</div>
 		</hgroup>
 	</header>
 <!-- ===================================== 
 	BASE 
 ===================================== -->
-	<section>
-		<article class="container">
+	<section class="banner">
+		<article>
+			<a src="#base" id="base" ></a>
 			<h2>Base</h2>
 		</article>
 	</section>
-	<section class="odd">
+	<section class="section-odd">
 		<article class="container">
 			<h3>Type</h3>
 			<div class="row">
@@ -59,7 +64,7 @@
 			</div>
 		</article>
 	</section>
-	<section class="even">
+	<section class="section-even">
 		<article class="container">
 			<h3>Lists</h3>
 			<div class="row">
@@ -174,7 +179,7 @@
 			</div>
 		</article>
 	</section>
-	<section class="odd">
+	<section class="section-odd">
 		<article class="container">
 			<h3>Alignment</h3>
 			<div class="row">
@@ -193,7 +198,7 @@
 			</div>
 		</article>
 	</section>
-	<section class="even">
+	<section class="section-even">
 		<article class="container">
 			<h3>Code</h3>
 			<div class="row">
@@ -238,12 +243,13 @@ $(document).ready(function(){
 <!-- ===================================== 
 	MODULES 
 ===================================== -->
-	<section>
-		<article class="container">
+	<section class="banner">
+		<article>
+			<a src="#modules" id="modules" ></a>
 			<h2>Modules</h2>
 		</article>
 	</section>
-	<section class="odd">
+	<section class="section-odd">
 		<article class="container">
 			<h3>Tables</h3>
 			<div class="row">
@@ -435,7 +441,7 @@ $(document).ready(function(){
 			</div>
 		</article>
 	</section>
-	<section class="even">
+	<section class="section-even">
 		<article class="container">
 			<h3 id="forms">Forms</h3>
 			<div class="row">
@@ -611,12 +617,13 @@ $(document).ready(function(){
 <!-- ===================================== 
 	GRIDS/COLUMNS 
 ===================================== -->
-	<section>
-		<article class="container">
+	<section class="banner">
+		<article>
+			<a src="#layout" id="layout" ></a>
 			<h2>Layout</h2>
 		</article>
 	</section>
-	<section class="odd">
+	<section class="section-odd">
 		<article class="container">
 			<h3>Responsive & Flexible Grid</h3>
 			<div class="row">
@@ -774,7 +781,7 @@ $(document).ready(function(){
 				</div>
 				<div class="g6 m6 l6">
 					<p class="text-right">
-						<a class="branding" href="http://www.midaym.com"><img src="../midaym/templates/midaym/img/branding.png" alt="" width="24px" height="24px" /><!-- <i class="icon-midaym"></i> -->MIDAYM</a>
+						<a class="branding" href="http://www.midaym.com"><img src="assets/img/branding.png" alt="" width="24px" height="24px" /><!-- <i class="icon-midaym"></i> -->MIDAYM</a>
 					</p>
 				</div>
 			</div>
@@ -786,6 +793,7 @@ $(document).ready(function(){
 
 <!-- ===================================== START FOOTER ===================================== -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--
 <script src="//code.jquery.com/jquery.js"></script>
 
 <script type="text/javascript">
@@ -801,6 +809,6 @@ $(document).ready(function(){
 	})();
 
 </script>
-
+-->
 </body>
 </html>

@@ -67,7 +67,7 @@ th.hidden-l,td.hidden-l{display:table-cell !important}
 .center-block{display:block;margin-left:auto;margin-right:auto}
 .pull-right{float:right !important}
 .pull-left{float:left !important}
-blockquote.pull-right{padding-right:15px;padding-left:0;border-right:5px solid #e6e6e6;border-left:0}blockquote.pull-right p,blockquote.pull-right small{text-align:right}
+blockquote.pull-right{padding-right:15px;padding-left:0;border-right:5px solid #f2f2f2;border-left:0}blockquote.pull-right p,blockquote.pull-right small{text-align:right}
 blockquote.pull-right small:before{content:''}
 blockquote.pull-right small:after{content:'\00A0 \2014'}
 .hide{display:none !important}
