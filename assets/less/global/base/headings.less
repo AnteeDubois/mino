@@ -9,13 +9,6 @@
  * heading hierarchy.
  */
 
-// h1, .alpha          { .font-size(@h1-size); }
-// h2, .beta           { .font-size(@h2-size); }
-// h3, .gamma          { .font-size(@h3-size); }
-// h4, .delta          { .font-size(@h4-size); }
-// h5, .epsilon        { .font-size(@h5-size); }
-// h6, .zeta           { .font-size(@h6-size); }
-
 h1, .h1, .alpha    { .font-size(@h1-size); } // ~62px
 h2, .h2, .beta     { .font-size(@h2-size); } // ~52px
 h3, .h3, .gamma    { .font-size(@h3-size); } // ~40px
@@ -49,15 +42,16 @@ h3, .h3, .gamma,
 h4, .h4, .delta,
 h5, .h5, .epsilon,
 h6, .h6 .zeta {
-    font-family: @headings-font-family;
-    font-weight: @headings-font-weight;
-    .line-height(@headings-line-height);
+    font-family: @base-font-family;
+    font-weight: @base-heading-weight;
+    .line-height(@base-line-height);
 
-    color: @headings-color;
+    color: @base-heading-color;
 
     small {
         // ** Text ** \\
         font-weight: normal;
+        line-height: 1;
         // ** Decoration ** \\
         color: @base-ui-color;
         // ** Layout ** \\
@@ -68,16 +62,26 @@ h6, .h6 .zeta {
 h1, .h1, .alpha,
 h2, .h2, .beta,
 h3, .h3, .gamma {
+    .line-height(@base-line-height*2);
     .margin(@base-line-height, 0, @base-line-height / 2);
-    small { font-size: 65%; }
+    small { 
+        font-size: 65%; 
+
+        .margin-top(@half-spacing-unit);
+    }
 }
 
 h4, .h4, .delta,
 h5, .h5, .epsilon,
 h6, .h6, .zeta {
+    .line-height(@base-line-height);
     .margin(@base-line-height / 2, 0, @base-line-height / 2);
-    small { font-size: 75%; }
+    small { 
+        font-size: 75%;
+
+        .margin-top(@half-spacing-unit); 
+    }
 }
 
-h6 { font-weight: normal; }
+h6, .h6, .zeta { font-weight: normal; }
 
