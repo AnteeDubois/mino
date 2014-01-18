@@ -22,8 +22,8 @@
                 <?php include("includes/nav.php"); ?>
             </header>
             <?php include("includes/sidenav.php"); ?>
-            <div class="content">
-                <article>
+            <div class="inner-wrap">
+                <div class="content">
 
                     <h1>Treasure Island</h1>
         
@@ -199,9 +199,9 @@
                     <?php include("includes/toolbar.php"); ?>
                     <?php include("includes/forumlist.php"); ?>
                     <?php include("includes/info.php"); ?>
-                </article>
+                </div>
             </div>
-            <footer class="footer text-center">
+            <footer class="footbar text-center">
                 <?php include("includes/copyright.php"); ?>
             </footer>
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>

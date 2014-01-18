@@ -70,34 +70,34 @@
   margin: 0px 15px;
   margin: 0rem 0.9375rem;
 }
-.sidenav-menu > li > a span {
+.sidenav-menu > li > a:hover {
+  color: #384f66;
+}
+.sidenav-menu > li span {
   display: inline-block;
   margin-left: 12px;
   margin-left: 0.75rem;
   top: -4px;
   position: relative;
 }
-.sidenav-menu > li > a .icon,
-.sidenav-menu > li > a .octicons {
+.sidenav-menu > li .icon,
+.sidenav-menu > li .octicons {
   font-size: 24px;
   font-size: 1.5rem;
   top: 0;
 }
-.sidenav-menu > li > a .icon.icon-chevron-down {
+.sidenav-menu > li .icon.icon-chevron-down {
   font-size: 12px;
   font-size: 0.75rem;
   top: -4px;
 }
-.sidenav-menu > li > a .badge {
+.sidenav-menu > li .badge {
   top: -5px;
 }
-.sidenav-menu > li > a:hover {
-  color: #667880;
-}
-.sidenav-menu > li.is-active a {
+.sidenav-menu > li.is-active > a {
   border-bottom: 0;
   box-shadow: none;
-  color: #667880;
+  color: #384f66;
 }
 /**
  * sidenav menu sub
@@ -106,8 +106,8 @@
   border-bottom: 1px solid #c8cbcc;
   box-shadow: 0 2px 1px -1px #ffffff;
   display: none;
-  padding: 0px 12px 12px;
-  padding: 0rem 0.75rem 0.75rem;
+  padding: 0px 0px 12px;
+  padding: 0rem 0rem 0.75rem;
   margin: 0px 15px;
   margin: 0rem 0.9375rem;
 }
@@ -119,16 +119,23 @@
   font-size: 12px;
   font-size: 0.75rem;
   text-decoration: none;
-  color: #8d9ea6;
+  color: #384f66;
   display: block;
   margin-bottom: 6px;
   margin-bottom: 0.375rem;
 }
-.sidenav-menu-sub a:hover {
+.sidenav-menu-sub a:hover span {
   text-decoration: underline;
 }
 .sidenav-menu-sub a .is-active {
   font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .inner-wrap {
+    margin: 0;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
 }
 body.is-active {
   overflow-x: hidden;
@@ -141,7 +148,7 @@ body.is-active .sidenav {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-body.is-active .content {
+body.is-active .inner-wrap {
   margin-left: 270px;
   margin-left: 16.875rem;
   overflow: hidden;

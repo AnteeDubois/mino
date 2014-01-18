@@ -15,16 +15,16 @@
  * A section at the bottom of the page that replaces the footer similar to a navbar
  */
 .footbar {
-  background-color: #cfdadd;
-  color: #a9bac1;
+  background-color: #edf1f2;
+  color: #8d9ea6;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar a {
-  color: #8d9ea6;
+  color: #b8c6cc;
 }
 .footbar a:hover {
-  color: #21b5e4;
+  color: #384f66;
 }
 /**
  * Footbar Brand
@@ -37,10 +37,10 @@
   line-height: 1.6875rem;
 }
 .footbar-brand .brand {
-  color: #8d9ea6;
+  color: #b8c6cc;
 }
 .footbar-brand .brand:hover {
-  color: #21b5e4;
+  color: #384f66;
 }
 @media (max-width: 767px) {
   .footbar-brand {
