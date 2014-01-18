@@ -57,34 +57,33 @@
             .padding(0, 0, @half-spacing-unit);
             .margin(0, @half-spacing-unit+@eighth-spacing-unit);
 
-            
-            span { 
-                display: inline-block;
-                .margin-left(@half-spacing-unit); 
-                top: -4px;
-                position: relative;
-            }
-
-            .icon, .octicons { 
-                .font-size(24);
-
-                top: 0; 
-            }
-
-            .icon.icon-chevron-down { 
-                .font-size(@half-spacing-unit);
-                top: -4px;
-            }
-
-            .badge { top: -5px; }
-
-            &:hover { color: @bluegray-dark; }    
+            &:hover { color: @navy; }    
         }
 
-        &.is-active a {
+        span { 
+            display: inline-block;
+            .margin-left(@half-spacing-unit); 
+            top: -4px;
+            position: relative;
+        }
+
+        .icon, .octicons { 
+            .font-size(24);
+
+            top: 0; 
+        }
+
+        .icon.icon-chevron-down { 
+            .font-size(@half-spacing-unit);
+                
+            top: -4px;
+        }
+        .badge { top: -5px; }
+
+        &.is-active > a {
             border-bottom: 0;
             box-shadow: none;
-            color: @bluegray-dark;
+            color: @navy;
         }
     }
 }
@@ -97,7 +96,7 @@
     box-shadow: 0 2px 1px -1px @white;
 
     display: none;
-    .padding(0, @half-spacing-unit, @half-spacing-unit);
+    .padding(0, 0, @half-spacing-unit);
     .margin(0, @half-spacing-unit+@eighth-spacing-unit);
 
     .is-active { display: block; }
@@ -107,13 +106,21 @@
         .font-size(@half-spacing-unit);
         text-decoration: none;
 
-        color: @bluegray;
+        color: @navy;
         
         display: block;
         .margin-bottom(@quarter-spacing-unit);
 
-        &:hover { text-decoration: underline; }
+        &:hover span { text-decoration: underline; }
+
         .is-active { font-weight: bold; }
+    }
+}
+
+.inner-wrap { 
+    @media only screen and (max-width: @screen-s-max) {
+        margin: 0;
+        .transition(.3s all ease );
     }
 }
 
@@ -127,7 +134,7 @@ body.is-active {
         .transition(.3s all ease );
     }
 
-    .content { 
+    .inner-wrap { 
         .margin-left(@sidenav-width);
         overflow: hidden;
         .transition(.3s all ease );
