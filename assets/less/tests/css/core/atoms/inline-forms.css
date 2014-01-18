@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $ATOM-INLLINE-FORMS
+\*------------------------------------*/
+/**
+ * Form Inline Class
+ * 
+ * Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+ * forms begin stacked on extra small (mobile) devices and then go inline when
+ * viewports reach <768px.
+ * 
+ * Requires wrapping inputs and labels with `.form-group` for proper display of
+ * default HTML form controls.
+ */
+.form-group {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .form-inline fieldset {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .form-inline .form-group {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .form-inline .form-group:first-child {
+    margin-left: 0;
+  }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin: 0px 3px;
+    margin: 0rem 0.1875rem;
+    padding-left: 0;
+  }
+  .form-inline .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+    top: 0;
+  }
+}

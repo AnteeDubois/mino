@@ -1,0 +1,86 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENT-FOOTBAR
+\*------------------------------------*/
+/**
+ * Footbar
+ * A section at the bottom of the page that replaces the footer similar to a navbar
+ */
+.footbar {
+  background-color: #cfdadd;
+  color: #a9bac1;
+  padding: 36px;
+  padding: 2.25rem;
+}
+.footbar a {
+  color: #8d9ea6;
+}
+.footbar a:hover {
+  color: #21b5e4;
+}
+/**
+ * Footbar Brand
+ * Just like with the navbar we may want to include a brad in the footer
+ */
+.footbar-brand {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
+}
+.footbar-brand .brand {
+  color: #8d9ea6;
+}
+.footbar-brand .brand:hover {
+  color: #21b5e4;
+}
+@media (max-width: 767px) {
+  .footbar-brand {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+}
+/**
+ * Footbar Nav
+ * sometimes footers need additional textual navigation links
+ */
+/**
+ * Footbar Icons
+ * Common to see icons in footes IE Social icons, Logos, Compliance
+ */
+.footbar-icons li {
+  padding: 0;
+  margin-left: 12px;
+  margin-left: 0.75rem;
+}
+@media (max-width: 767px) {
+  .footbar-icons {
+    margin: 0px 0px 24px;
+    margin: 0rem 0rem 1.5rem;
+  }
+  .footbar-icons > li:first-child {
+    margin: 0;
+  }
+}
+.footbar-icons .icon {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+/**
+ * Footbar Copyright
+ * Common place to place copyright information is in the footer
+ */
+@media (max-width: 767px) {
+  .footbar-copyright {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    $COMPONENT-CONTENT
+\*------------------------------------*/
+
+.content {
+    background: @white;
+    border-left: 1px solid @silver;
+    border-bottom: 1px solid @silver;
+    box-shadow: -3px 3px 3px -2px @white-darker;
+    
+    border-radius: 0px 0px 0px 5px;
+    display: inline-block;
+    .margin(0);
+    .padding(@base-spacing-unit);
+    position: relative;
+
+    @media only screen and (max-width: @screen-s-max) {
+        margin: 0;
+        .transition(.3s all ease );
+    }
+}

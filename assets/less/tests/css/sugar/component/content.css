@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENT-CONTENT
+\*------------------------------------*/
+.content {
+  background: #ffffff;
+  border-left: 1px solid #c8cbcc;
+  border-bottom: 1px solid #c8cbcc;
+  box-shadow: -3px 3px 3px -2px #e6e6e6;
+  border-radius: 0px 0px 0px 5px;
+  display: inline-block;
+  margin: 0px;
+  margin: 0rem;
+  padding: 24px;
+  padding: 1.5rem;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .content {
+    margin: 0;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+}

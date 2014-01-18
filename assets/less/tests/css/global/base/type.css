@@ -1,0 +1,109 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $BASE--TYPE
+\*------------------------------------*/
+/**
+ * 1. Apply default link color
+ * 2. Set hover color instead of underline as default
+ * 3. Remove outline on focus
+ */
+a {
+  color: #21b5e4;
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1482a4;
+}
+a:focus {
+  outline: none;
+}
+/**
+ * Establish proper baseline grid
+ */
+p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
+  margin: 0px 0px 12px;
+  margin: 0rem 0rem 0.75rem;
+}
+/**
+ * Set default consistent size
+ */
+small,
+.small {
+  font-size: 83%;
+  line-height: 33.072px;
+  line-height: 2.067rem;
+}
+/**
+ * Undo browser default styling
+ */
+cite {
+  font-style: normal;
+}
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+u,
+ins {
+  text-decoration: none;
+}
+/**
+ * Apply faux underline via `border-bottom`.
+ */
+ins {
+  border-bottom: 1px solid;
+}
+/**
+ * 1. Give a help cursor to elements that give extra info on `:hover`.
+ * 2. Add dotted underline for more offset
+ */
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #e6e6e6;
+}
+/**
+ * Set up better spacing
+ */
+address {
+  font-style: normal;
+  line-height: 27px;
+  line-height: 1.6875rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/**
+ * Ensure no content before or after blockquotes
+ */
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+/**
+ * A better looking default horizontal rule
+ *
+ * https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+ */
+hr {
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+  display: block;
+  height: 1px;
+  margin: 24px 0px;
+  margin: 1.5rem 0rem;
+}

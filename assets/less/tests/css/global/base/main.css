@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $BASE--MAIN
+\*------------------------------------*/
+/**
+ *  simple defaults for root level
+ */
+html {
+  font: 16px 1.722 "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.722;
+}
+body {
+  color: #808080;
+}

@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENT-NAVBAR
+\*------------------------------------*/
+/**
+ * Basic Navbar
+ */
+.navbar {
+  font-size: 24px;
+  font-size: 1.5rem;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 12px;
+  padding: 0.75rem;
+}
+.navbar a {
+  color: #999999;
+}
+.navbar a:hover {
+  color: #ffffff;
+}
+/**
+ * Brand Logo in Navbar
+ */
+.navbar-brand .brand-logo {
+  height: 40px;
+  width: 120px;
+  margin-bottom: -10px;
+}
+.navbar .badge {
+  margin: -24px 0px 0px -15px;
+  margin: -1.5rem 0rem 0rem -0.9375rem;
+}

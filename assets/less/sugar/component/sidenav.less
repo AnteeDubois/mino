@@ -1,25 +1,7 @@
 /*------------------------------------*\
-    $MODULE-SIDENAV
+    $COMPONENT-SIDENAV
 \*------------------------------------*/
 @sidenav-width: 270;
-
-.content {
-    background: @white;
-    border-left: 1px solid @silver;
-    border-bottom: 1px solid @silver;
-    box-shadow: -5px 3px 3px -2px @white-darker;
-    
-    border-radius: 0px 0px 0px 5px;
-    display: inline-block;
-    .margin(0);
-    .padding(@base-spacing-unit);
-    position: relative;
-
-    @media only screen and (max-width: @screen-s-max) {
-        margin: 0;
-        .transition(.3s all ease );
-    }
-}
 
 /**
  * sidenav main class
@@ -51,6 +33,9 @@
     .cf();
 }
 
+/**
+ * sidenav menu
+ */
 .sidenav-menu {
     .padding(@half-spacing-unit+@eighth-spacing-unit);
     
@@ -102,30 +87,33 @@
             color: @bluegray-dark;
         }
     }
+}
 
-    .sidenav-menu-sub {
-        border-bottom: 1px solid @silver;
-        box-shadow: 0 2px 1px -1px @white;
+/**
+ * sidenav menu sub
+ */
+.sidenav-menu-sub {
+    border-bottom: 1px solid @silver;
+    box-shadow: 0 2px 1px -1px @white;
 
-        display: none;
-        .padding(0, @half-spacing-unit, @half-spacing-unit);
-        .margin(0, @half-spacing-unit+@eighth-spacing-unit);
+    display: none;
+    .padding(0, @half-spacing-unit, @half-spacing-unit);
+    .margin(0, @half-spacing-unit+@eighth-spacing-unit);
 
-        .is-active { display: block; }
+    .is-active { display: block; }
 
-        a {
-            font-weight: normal;
-            .font-size(@half-spacing-unit);
-            text-decoration: none;
+    a {
+        font-weight: normal;
+        .font-size(@half-spacing-unit);
+        text-decoration: none;
 
-            color: @bluegray;
-            
-            display: block;
-            .margin-bottom(@quarter-spacing-unit);
+        color: @bluegray;
+        
+        display: block;
+        .margin-bottom(@quarter-spacing-unit);
 
-            &:hover { text-decoration: underline; }
-            .is-active { font-weight: bold; }
-        }
+        &:hover { text-decoration: underline; }
+        .is-active { font-weight: bold; }
     }
 }
 
