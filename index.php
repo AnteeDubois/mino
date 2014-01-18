@@ -10,7 +10,7 @@
 
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+       <!--  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script> -->
        <!-- <script>window.jQuery || document.write('<script src="assets/js/vendor/modernizr-ck.js"><\/script>')</script> -->
     </head>
@@ -25,9 +25,9 @@
             <div class="inner-wrap">
                 <?php include("includes/breadcrumbs.php"); ?>
                 <div class="content">
-
+                    
                     <h1>Treasure Island</h1>
-        
+                    
                     <p><a name="id380362"><!--anchor--></a>SQUIRE TRELAWNEY, Dr. Livesey, and the rest of these gentlemen having
                     asked me to write down the whole particulars about Treasure Island, from
                     the beginning to the end, keeping nothing back but the bearings of the
