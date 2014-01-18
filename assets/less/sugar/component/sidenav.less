@@ -1,0 +1,148 @@
+/*------------------------------------*\
+    $MODULE-SIDENAV
+\*------------------------------------*/
+@sidenav-width: 270;
+
+.content {
+    background: @white;
+    border-left: 1px solid @silver;
+    border-bottom: 1px solid @silver;
+    box-shadow: -5px 3px 3px -2px @white-darker;
+    
+    border-radius: 0px 0px 0px 5px;
+    display: inline-block;
+    .margin(0);
+    .padding(@base-spacing-unit);
+    position: relative;
+
+    @media only screen and (max-width: @screen-s-max) {
+        margin: 0;
+        .transition(.3s all ease );
+    }
+}
+
+/**
+ * sidenav main class
+ */
+.sidenav { 
+    background-color: @silver-light;
+
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    width: unit(@sidenav-width, px);    
+
+    // enables momentum scrolling in iOS overflow elements
+    -webkit-overflow-scrolling: touch; 
+    // improves performance issues on mobile
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+
+    @media only screen and (max-width: @screen-s-max) {
+        border-right: 1px solid @bluegray-light;
+        box-shadow: 1px 1px 4px 1px @white-darker;
+    
+        left: unit(-@sidenav-width, px);
+        padding-top: 0;
+        position: fixed;
+        z-index: 9999;
+        .transition(.3s all ease );
+    }
+    .cf();
+}
+
+.sidenav-menu {
+    .padding(@half-spacing-unit+@eighth-spacing-unit);
+    
+    margin: 0;
+    > li {
+        display: block;
+        .margin(@base-spacing-unit - @quarter-spacing-unit, 0, 0);
+        position: relative;
+        
+        > a {
+            .line-height(@base-spacing-unit);
+            outline: 0;
+    
+            border-bottom: 1px solid @silver;
+            box-shadow: 0 2px 1px -1px @white;
+            color: @bluegray-light;
+    
+            display: block;
+            .padding(0, 0, @half-spacing-unit);
+            .margin(0, @half-spacing-unit+@eighth-spacing-unit);
+
+            
+            span { 
+                display: inline-block;
+                .margin-left(@half-spacing-unit); 
+                top: -4px;
+                position: relative;
+            }
+
+            .icon, .octicons { 
+                .font-size(24);
+
+                top: 0; 
+            }
+
+            .icon.icon-chevron-down { 
+                .font-size(@half-spacing-unit);
+                top: -4px;
+            }
+
+            .badge { top: -5px; }
+
+            &:hover { color: @bluegray-dark; }    
+        }
+
+        &.is-active a {
+            border-bottom: 0;
+            box-shadow: none;
+            color: @bluegray-dark;
+        }
+    }
+
+    .sidenav-menu-sub {
+        border-bottom: 1px solid @silver;
+        box-shadow: 0 2px 1px -1px @white;
+
+        display: none;
+        .padding(0, @half-spacing-unit, @half-spacing-unit);
+        .margin(0, @half-spacing-unit+@eighth-spacing-unit);
+
+        .is-active { display: block; }
+
+        a {
+            font-weight: normal;
+            .font-size(@half-spacing-unit);
+            text-decoration: none;
+
+            color: @bluegray;
+            
+            display: block;
+            .margin-bottom(@quarter-spacing-unit);
+
+            &:hover { text-decoration: underline; }
+            .is-active { font-weight: bold; }
+        }
+    }
+}
+
+body.is-active { 
+    overflow-x: hidden;
+    .sidenav {
+        border-right: 0;
+        box-shadow: none;
+        left: 0;
+        position: absolute;
+        .transition(.3s all ease );
+    }
+
+    .content { 
+        .margin-left(@sidenav-width);
+        overflow: hidden;
+        .transition(.3s all ease );
+    }
+}
+
