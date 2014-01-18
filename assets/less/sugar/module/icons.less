@@ -7,7 +7,7 @@
  * Icon Main Class
  * This sets all the common properties to avoid large css class strings for all icon classes
  */
-.icon {
+.icon:before {
     font-family: @icon-font;
     font-style: inherit;
     font-weight: inherit;
@@ -20,7 +20,7 @@
     
     display: inline-block;
     margin: 0 1px;
-    position: relative;
+    //position: relative; // causes issue when rendering order when is badge present
     top: 1px;
         
     speak: none;
@@ -30,7 +30,7 @@
  * Octicon Class
  * Same as Icon class just swaps out the font-family
  */
-.octicons:extend(.icon) { font-family: 'octicons'; }
+.octicons:before:extend(.icon) { font-family: 'octicons'; }
 
 /**
  * Github Octicon Classes
@@ -227,7 +227,7 @@
 
 /**
  * Font-Awsome Classes
- * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome)
+ * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome) Licensed under MIT.
  */
 .icon-IE:before                                 { content: "\e76c"; }
 .icon-adjust:before                             { content: "\e646"; }
