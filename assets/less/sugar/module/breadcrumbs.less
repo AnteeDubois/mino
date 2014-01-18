@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    $MODULE-BREADCRUMBS
+\*------------------------------------*/
+
+/**
+ * Basic badge
+ */
+.breadcrumbs {
+    background-color: @silver-light;
+    color: @bluegray;
+    
+    display: inline-block;
+    margin: 0;
+    .padding(0, @half-spacing-unit, @quarter-spacing-unit - 1);
+    position: relative;
+
+    > li {
+        display: inline-block;
+        &+li:before:extend(.icon) {
+            .font-size(18);
+
+            content: "\276e"; // Unicode space added since inline-block means non-collapsing white-space
+            .padding(0, @half-spacing-unit, 0, 0);
+        }
+        > span { color: @navy; }
+        > a { 
+            color: @bluegray-light; 
+            &:hover { color: @navy; }  
+        }
+    }
+
+    .icon { 
+        .font-size(24);
+        
+        position: relative;
+        top: 3px;
+    }
+}

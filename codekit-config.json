@@ -114,15 +114,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/assets\/less\/tests\/sugar\/component\/content.less" : {
       "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/assets\/less\/tests\/sugar\/component\/content.less",
@@ -139,6 +130,15 @@
       "outputStyle" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/assets\/js\/vendor\/rainbow\/themes\/all-hallows-eve.css" : {
       "ignoreWasSetByUser" : 0,
@@ -530,10 +530,10 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/assets\/less\/tests\/global\/reset\/reset.less" : {
+    "\/assets\/less\/tests\/global\/base\/tables.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/assets\/less\/tests\/global\/reset\/reset.less",
-      "outputAbbreviatedPath" : "\/assets\/less\/tests\/css\/global\/reset\/reset.css",
+      "inputAbbreviatedPath" : "\/assets\/less\/tests\/global\/base\/tables.less",
+      "outputAbbreviatedPath" : "\/assets\/less\/tests\/css\/global\/base\/tables.css",
       "outputPathIsSetByUser" : 1,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -547,10 +547,10 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/less\/tests\/global\/base\/tables.less" : {
+    "\/assets\/less\/tests\/global\/reset\/reset.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/assets\/less\/tests\/global\/base\/tables.less",
-      "outputAbbreviatedPath" : "\/assets\/less\/tests\/css\/global\/base\/tables.css",
+      "inputAbbreviatedPath" : "\/assets\/less\/tests\/global\/reset\/reset.less",
+      "outputAbbreviatedPath" : "\/assets\/less\/tests\/css\/global\/reset\/reset.css",
       "outputPathIsSetByUser" : 1,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -784,6 +784,15 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/assets\/less\/tests\/css\/core\/atoms\/color.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/less\/tests\/css\/core\/atoms\/color.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/assets\/js\/vendor\/rainbow\/themes\/solarized-dark.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -793,14 +802,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/assets\/less\/tests\/css\/core\/atoms\/color.css" : {
+    "\/includes\/breadcrumbs.php" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/less\/tests\/css\/core\/atoms\/color.css",
+      "inputAbbreviatedPath" : "\/includes\/breadcrumbs.php",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "fileType" : 2048
     },
     "\/assets\/js\/vendor\/main-ck.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1058,6 +1067,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/assets\/less\/tests\/sugar\/css\/breadcrumbs.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/less\/tests\/sugar\/css\/breadcrumbs.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/assets\/less\/tests\/css\/core\/common\/tables.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1241,15 +1259,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/less\/tests\/css\/core\/atoms\/inline-forms.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/less\/tests\/css\/core\/atoms\/inline-forms.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/assets\/js\/vendor\/rainbow\/themes\/paraiso-light.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1267,6 +1276,15 @@
       "inputAbbreviatedPath" : "\/icons.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/assets\/less\/tests\/css\/core\/atoms\/inline-forms.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/less\/tests\/css\/core\/atoms\/inline-forms.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/assets\/less\/tests\/global\/base\/lists.less" : {
       "ieCompatibility" : 1,
@@ -1867,6 +1885,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/swatches.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/swatches.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/assets\/less\/tests\/css\/sugar\/component\/navbar.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1875,6 +1902,23 @@
       "inputAbbreviatedPath" : "\/assets\/less\/tests\/css\/sugar\/component\/navbar.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/assets\/less\/sugar\/module\/breadcrumbs.less" : {
+      "ieCompatibility" : 1,
+      "inputAbbreviatedPath" : "\/assets\/less\/sugar\/module\/breadcrumbs.less",
+      "outputAbbreviatedPath" : "\/assets\/less\/sugar\/css\/breadcrumbs.css",
+      "outputPathIsSetByUser" : 0,
+      "strictUnits" : 0,
+      "relativeURLS" : 0,
+      "ignore" : 1,
+      "strictImports" : 0,
+      "ignoreWasSetByUser" : 0,
+      "shouldRunBless" : 1,
+      "hidden" : 0,
+      "strictMath" : 0,
+      "outputStyle" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/assets\/less\/tests\/css\/global\/base\/forms.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1963,6 +2007,23 @@
       "inputAbbreviatedPath" : "\/assets\/js\/vendor\/rainbow\/themes\/paraiso-dark.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/assets\/less\/tests\/sugar\/module\/breadcrumbs.less" : {
+      "ieCompatibility" : 1,
+      "inputAbbreviatedPath" : "\/assets\/less\/tests\/sugar\/module\/breadcrumbs.less",
+      "outputAbbreviatedPath" : "\/assets\/less\/tests\/sugar\/css\/breadcrumbs.css",
+      "outputPathIsSetByUser" : 0,
+      "strictUnits" : 0,
+      "relativeURLS" : 0,
+      "ignore" : 0,
+      "strictImports" : 0,
+      "ignoreWasSetByUser" : 0,
+      "shouldRunBless" : 1,
+      "hidden" : 0,
+      "strictMath" : 0,
+      "outputStyle" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/assets\/less\/global\/base\/base.less" : {
       "ieCompatibility" : 1,

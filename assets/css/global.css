@@ -650,16 +650,16 @@ h6,
     $BASE--IMAGES
 \*------------------------------------*/
 /**
- * So that `alt` text is visually offset if images don’t load.
+ * Images
+ *
+ * 1. So that `alt` text is visually offset if images don’t load.
+ * 2. Fluid images.
  */
 img {
   font-style: italic;
-}
-/**
- * Fluid images.
- */
-img {
+  /* [1] */
   max-width: 100%;
+  /* [2] */
 }
 /**
  * Non-fluid images if you specify `width` and/or `height` attributes.

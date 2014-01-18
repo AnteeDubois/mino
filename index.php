@@ -23,6 +23,7 @@
             </header>
             <?php include("includes/sidenav.php"); ?>
             <div class="inner-wrap">
+                <?php include("includes/breadcrumbs.php"); ?>
                 <div class="content">
 
                     <h1>Treasure Island</h1>

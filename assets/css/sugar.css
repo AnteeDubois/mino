@@ -11,8 +11,7 @@
  * Icon Main Class
  * This sets all the common properties to avoid large css class strings for all icon classes
  */
-.icon,
-.octicons {
+.icon:before {
   font-family: 'font-awsome';
   font-style: inherit;
   font-weight: inherit;
@@ -23,7 +22,6 @@
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   margin: 0 1px;
-  position: relative;
   top: 1px;
   speak: none;
 }
@@ -31,7 +29,7 @@
  * Octicon Class
  * Same as Icon class just swaps out the font-family
  */
-.octicons {
+.octicons:before {
   font-family: 'octicons';
 }
 /**
@@ -601,7 +599,7 @@
 }
 /**
  * Font-Awsome Classes
- * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome)
+ * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome) Licensed under MIT.
  */
 .icon-IE:before {
   content: "\e76c";
@@ -2222,11 +2220,51 @@
 .btn-delicious:hover {
   background-color: #337ac2 !important;
 }
+.btn-delicious.btn-clear {
+  background: none !important;
+  border: 2px solid #3399ff !important;
+  color: #3399ff !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-delicious.btn-clear:hover,
+.btn-delicious.btn-clear:focus {
+  background: #3399ff !important;
+  color: #ffffff !important;
+}
+.btn-delicious.btn-clear:active,
+.btn-delicious.btn-clear.active {
+  border-color: #2b82d9 !important;
+  background: #2b82d9 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-digg {
   background-color: #070707 !important;
 }
 .btn-digg:hover {
   background-color: #515151 !important;
+}
+.btn-digg.btn-clear {
+  background: none !important;
+  border: 2px solid #070707 !important;
+  color: #070707 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-digg.btn-clear:hover,
+.btn-digg.btn-clear:focus {
+  background: #070707 !important;
+  color: #ffffff !important;
+}
+.btn-digg.btn-clear:active,
+.btn-digg.btn-clear.active {
+  border-color: #060606 !important;
+  background: #060606 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-evernote {
   background-color: #7fce2c !important;
@@ -2234,11 +2272,51 @@
 .btn-evernote:hover {
   background-color: #68a02e !important;
 }
+.btn-evernote.btn-clear {
+  background: none !important;
+  border: 2px solid #7fce2c !important;
+  color: #7fce2c !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-evernote.btn-clear:hover,
+.btn-evernote.btn-clear:focus {
+  background: #7fce2c !important;
+  color: #ffffff !important;
+}
+.btn-evernote.btn-clear:active,
+.btn-evernote.btn-clear.active {
+  border-color: #6caf25 !important;
+  background: #6caf25 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-facebook {
   background-color: #2f5890 !important;
 }
 .btn-facebook:hover {
   background-color: #6d8ab1 !important;
+}
+.btn-facebook.btn-clear {
+  background: none !important;
+  border: 2px solid #2f5890 !important;
+  color: #2f5890 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-facebook.btn-clear:hover,
+.btn-facebook.btn-clear:focus {
+  background: #2f5890 !important;
+  color: #ffffff !important;
+}
+.btn-facebook.btn-clear:active,
+.btn-facebook.btn-clear.active {
+  border-color: #284b7a !important;
+  background: #284b7a !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-github {
   background-color: #333333 !important;
@@ -2246,11 +2324,51 @@
 .btn-github:hover {
   background-color: #7aa8d6 !important;
 }
+.btn-github.btn-clear {
+  background: none !important;
+  border: 2px solid #4183c4 !important;
+  color: #4183c4 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-github.btn-clear:hover,
+.btn-github.btn-clear:focus {
+  background: #4183c4 !important;
+  color: #ffffff !important;
+}
+.btn-github.btn-clear:active,
+.btn-github.btn-clear.active {
+  border-color: #376fa7 !important;
+  background: #376fa7 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-gmail {
   background-color: #c92527 !important;
 }
 .btn-gmail:hover {
   background-color: #d96668 !important;
+}
+.btn-gmail.btn-clear {
+  background: none !important;
+  border: 2px solid #c92527 !important;
+  color: #c92527 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-gmail.btn-clear:hover,
+.btn-gmail.btn-clear:focus {
+  background: #c92527 !important;
+  color: #ffffff !important;
+}
+.btn-gmail.btn-clear:active,
+.btn-gmail.btn-clear.active {
+  border-color: #ab1f21 !important;
+  background: #ab1f21 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-gplus {
   background-color: #cf4b33 !important;
@@ -2258,11 +2376,51 @@
 .btn-gplus:hover {
   background-color: #dd8170 !important;
 }
+.btn-gplus.btn-clear {
+  background: none !important;
+  border: 2px solid #cf4b33 !important;
+  color: #cf4b33 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-gplus.btn-clear:hover,
+.btn-gplus.btn-clear:focus {
+  background: #cf4b33 !important;
+  color: #ffffff !important;
+}
+.btn-gplus.btn-clear:active,
+.btn-gplus.btn-clear.active {
+  border-color: #b0402b !important;
+  background: #b0402b !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-linkedin {
   background-color: #4897c9 !important;
 }
 .btn-linkedin:hover {
   background-color: #42799c !important;
+}
+.btn-linkedin.btn-clear {
+  background: none !important;
+  border: 2px solid #4897c9 !important;
+  color: #4897c9 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-linkedin.btn-clear:hover,
+.btn-linkedin.btn-clear:focus {
+  background: #4897c9 !important;
+  color: #ffffff !important;
+}
+.btn-linkedin.btn-clear:active,
+.btn-linkedin.btn-clear.active {
+  border-color: #3d80ab !important;
+  background: #3d80ab !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-pinterest {
   background-color: #c92527 !important;
@@ -2270,11 +2428,51 @@
 .btn-pinterest:hover {
   background-color: #d96668 !important;
 }
+.btn-pinterest.btn-clear {
+  background: none !important;
+  border: 2px solid #c92527 !important;
+  color: #c92527 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-pinterest.btn-clear:hover,
+.btn-pinterest.btn-clear:focus {
+  background: #c92527 !important;
+  color: #ffffff !important;
+}
+.btn-pinterest.btn-clear:active,
+.btn-pinterest.btn-clear.active {
+  border-color: #ab1f21 !important;
+  background: #ab1f21 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-tumblr {
   background-color: #2f5070 !important;
 }
 .btn-tumblr:hover {
   background-color: #6d859b !important;
+}
+.btn-tumblr.btn-clear {
+  background: none !important;
+  border: 2px solid #2f5070 !important;
+  color: #2f5070 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-tumblr.btn-clear:hover,
+.btn-tumblr.btn-clear:focus {
+  background: #2f5070 !important;
+  color: #ffffff !important;
+}
+.btn-tumblr.btn-clear:active,
+.btn-tumblr.btn-clear.active {
+  border-color: #28445f !important;
+  background: #28445f !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-twitter {
   background-color: #00bdef !important;
@@ -2282,31 +2480,108 @@
 .btn-twitter:hover {
   background-color: #0f94b7 !important;
 }
+.btn-twitter.btn-clear {
+  background: none !important;
+  border: 2px solid #00bdef !important;
+  color: #00bdef !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-twitter.btn-clear:hover,
+.btn-twitter.btn-clear:focus {
+  background: #00bdef !important;
+  color: #ffffff !important;
+}
+.btn-twitter.btn-clear:active,
+.btn-twitter.btn-clear.active {
+  border-color: #00a1cb !important;
+  background: #00a1cb !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-reddit {
   color: #333333 !important;
-  background-color: #cee3f8 !important;
+  background-color: #ff4500 !important;
 }
 .btn-reddit:hover {
   color: #ffffff !important;
-  background-color: #a0aebd !important;
+  background-color: #c2400f !important;
 }
-.brand {
-  font-family: "Hobo Std";
-  color: #333333;
+/*------------------------------------*\
+    $MODULE-BADGES
+\*------------------------------------*/
+/**
+ * Basic badge
+ */
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #d94636;
+  border-radius: 10px;
 }
-.brand:hover {
-  color: #21b5e4;
+.badge:empty {
+  display: none;
 }
-.brand-logo {
-  display: block;
-  height: 50px;
-  /* Layout */
-  float: left;
-  margin: -15px 24px 0px 0px;
-  margin: -0.9375rem 1.5rem 0rem 0rem;
+a.badge:hover,
+a.badge:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
 }
-.brand-logo:before {
-  content: "\73";
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+/*------------------------------------*\
+    $MODULE-BREADCRUMBS
+\*------------------------------------*/
+/**
+ * Basic badge
+ */
+.breadcrumbs {
+  background-color: #edf1f2;
+  color: #8d9ea6;
+  display: inline-block;
+  margin: 0;
+  padding: 0px 12px 5px;
+  padding: 0rem 0.75rem 0.3125rem;
+  position: relative;
+}
+.breadcrumbs > li {
+  display: inline-block;
+}
+.breadcrumbs > li + li:before {
+  font-size: 18px;
+  font-size: 1.125rem;
+  content: "\276e";
+  padding: 0px 12px 0px 0px;
+  padding: 0rem 0.75rem 0rem 0rem;
+}
+.breadcrumbs > li > span {
+  color: #384f66;
+}
+.breadcrumbs > li > a {
+  color: #b8c6cc;
+}
+.breadcrumbs > li > a:hover {
+  color: #384f66;
+}
+.breadcrumbs .icon {
+  font-size: 24px;
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px;
 }
 /*------------------------------------*\
     $MODULE-MEDIA
@@ -2411,206 +2686,6 @@
   color: #8d9ea6;
   margin: 0;
 }
-.lead {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
-@media (min-width: 768px) {
-  .lead {
-    margin-bottom: 48px;
-    margin-bottom: 3rem;
-  }
-}
-.lead > p,
-.lead .alpha small,
-.lead .beta small,
-.lead .gamma small,
-.lead .delta small,
-.lead .epsilon small,
-.lead .zeta small {
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 40.5px;
-  line-height: 2.53125rem;
-  margin-top: 24px;
-  margin-top: 1.5rem;
-}
-@media (min-width: 768px) {
-  .lead > p,
-  .lead .alpha small,
-  .lead .beta small,
-  .lead .gamma small,
-  .lead .delta small,
-  .lead .epsilon small,
-  .lead .zeta small {
-    margin-top: 48px;
-    margin-top: 3rem;
-  }
-}
-/**
- * Slider Class
- * Wrapper for the slide container and indicators
- */
-.slider {
-  position: relative;
-}
-.slider-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.slider-inner > .item {
-  display: none;
-  position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
-}
-.slider-inner > .item > img,
-.slider-inner > .item > a > img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  line-height: 1;
-}
-.slider-inner > .active,
-.slider-inner > .next,
-.slider-inner > .prev {
-  display: block;
-}
-.slider-inner > .active {
-  left: 0;
-}
-.slider-inner > .next,
-.slider-inner > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.slider-inner > .next {
-  left: 100%;
-}
-.slider-inner > .prev {
-  left: -100%;
-}
-.slider-inner > .next.left,
-.slider-inner > .prev.right {
-  left: 0;
-}
-.slider-inner > .active.left {
-  left: -100%;
-}
-.slider-inner > .active.right {
-  left: 100%;
-}
-/**
- * Left/right controls for nav
- */
-.slider-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: %);
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-.slider-control.left {
-  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
-  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-}
-.slider-control.right {
-  left: auto;
-  right: 0;
-  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
-  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-}
-.slider-control:hover,
-.slider-control:focus {
-  outline: none;
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.slider-control .icon-prev,
-.slider-control .icon-next,
-.slider-control .icon-chevron-left,
-.slider-control .icon-chevron-right {
-  position: absolute;
-  top: 50%;
-  z-index: 5;
-  display: inline-block;
-}
-.slider-control .icon-prev,
-.slider-control .icon-chevron-left {
-  left: 50%;
-}
-.slider-control .icon-next,
-.slider-control .icon-chevron-right {
-  right: 50%;
-}
-.slider-control .icon-prev,
-.slider-control .icon-next {
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
-  font-family: serif;
-}
-.slider-control .icon-prev:before {
-  content: '\2039';
-}
-.slider-control .icon-next:before {
-  content: '\203a';
-}
-/**
- * Optional indicator pips
- *
- * Add an unordered list with the following class and add a list item for each
- * slide your slider holds.
- */
-.slider-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  margin-left: -30%;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-}
-.slider-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 1px;
-  text-indent: -999px;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
-}
-.slider-indicators .active {
-  margin: 0;
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff;
-}
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
@@ -2618,364 +2693,198 @@
     $COMPONENT-NAVBAR
 \*------------------------------------*/
 /**
- * Navbar Wrapper Class
- * Provide a static navbar from which we expand to create full-width, fixed, an
- * other navbar variations.
+ * Basic Navbar
  */
 .navbar {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  min-height: 50px;
-  position: relative;
-}
-.navbar:before,
-.navbar:after {
-  content: " ";
-  display: table;
-}
-.navbar:after {
-  clear: both;
-}
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 4px;
-  }
-}
-/**
- * Navbar Heading
- * Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
- * styling of responsive aspects.
- */
-.navbar-header:before,
-.navbar-header:after {
-  content: " ";
-  display: table;
-}
-.navbar-header:after {
-  clear: both;
-}
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left;
-  }
-}
-/**
- *  Navbar collapse (body)
- * 
- * Group your navbar content into this for easy collapsing and expanding across
- * various device sizes. By default, this content is collapsed when <768px, but
- * will expand past that for a horizontal display.
- * 
- * To start (on mobile devices) the navbar links, forms, and buttons are stacked
- * vertically and include a `max-height` to overflow in case you have too much
- * content for the user's viewport.
- */
-.navbar-collapse {
-  max-height: 340px;
-  overflow-x: visible;
-  -webkit-overflow-scrolling: touch;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.navbar-collapse:before,
-.navbar-collapse:after {
-  content: " ";
-  display: table;
-}
-.navbar-collapse:after {
-  clear: both;
-}
-@media (min-width: 768px) {
-  .navbar-collapse {
-    width: auto;
-  }
-  .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-  .navbar-collapse .navbar-nav.navbar-left:first-child {
-    margin-left: -24px;
-    margin-left: -1.5rem;
-  }
-  .navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: 24px;
-    margin-right: 1.5rem;
-  }
-  .navbar-collapse .navbar-text:last-child {
-    margin-right: 0;
-  }
-}
-/**
- *  Fix the top/bottom navbars when screen real estate supports it
- */
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  left: 0;
-  position: fixed;
-  right: 0;
-}
-@media (min-width: 768px) {
-  .navbar-fixed-top,
-  .navbar-fixed-bottom {
-    border-radius: 0;
-  }
-}
-.navbar-fixed-top {
-  top: 0;
-}
-.navbar-fixed-bottom {
-  bottom: 0;
-  margin-bottom: 0;
-}
-/**
- * Brand/project name
- */
-.navbar-brand {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 27px;
-  line-height: 1.6875rem;
-  color: #203040;
-  float: left;
-  padding: 24px 12px 0px;
-  padding: 1.5rem 0.75rem 0rem;
-}
-.navbar-brand:hover,
-.navbar-brand:focus {
-  text-decoration: none;
-  backgroun-color: transparent;
-}
-@media (min-width: 768px) {
-  .navbar > .container .navbar-brand {
-    margin-left: -12px;
-    margin-left: -0.75rem;
-  }
-}
-/**
- *  Navbar toggle
- * 
- *  Custom button for toggling the `.navbar-collapse`, powered by the collapse
- *  JavaScript plugin.
- */
-.navbar-toggle {
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  float: right;
-  margin-right: 12px;
-  margin-right: 0.75rem;
-  margin-top: 36px;
-  margin-bottom: 36px;
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-  padding: 9px 10px;
-  position: relative;
-}
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-}
-.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px;
-}
-@media (min-width: 768px) {
-  .navbar-toggle {
-    display: none;
-  }
-}
-/**
- *  Navbar nav links
- * 
- *  Builds on top of the `.nav` components with it's own modifier class to make
- *  the nav the full height of the horizontal nav (above 768px).
- */
-.navbar-nav {
-  margin: 24px 12px 12px;
-  margin: 1.5rem 0.75rem 0.75rem;
-}
-.navbar-nav > li > a {
-  color: #8d9ea6;
+  font-size: 24px;
+  font-size: 1.5rem;
+  background-color: #333333;
+  color: #ffffff;
   padding: 12px;
   padding: 0.75rem;
 }
-.navbar-nav > li > a:hover {
-  color: #21b5e4;
-  background-color: transparent;
+.navbar a {
+  color: #999999;
 }
-@media (min-width: 984px) {
-  .navbar-nav > li > a {
-    padding: 24px;
-    padding: 1.5rem;
-  }
-}
-@media (min-width: 480px) {
-  .navbar-nav .open .dropdown-menu {
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-    float: none;
-    margin-top: 0;
-    position: static;
-    width: auto;
-  }
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
-    padding: 6px 12px 6px 24px;
-    padding: 0.375rem 0.75rem 0.375rem 1.5rem;
-  }
-  .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 27px;
-    line-height: 1.6875rem;
-  }
-  .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-image: none;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-nav {
-    float: left;
-  }
-  .navbar-nav > li {
-    float: left;
-  }
-  .navbar-nav > li > a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
+.navbar a:hover {
+  color: #ffffff;
 }
 /**
- *  Component alignment
- * 
- *  Repurpose the pull utilities as their own navbar utilities to avoid specifity
- *  issues with parents and chaining. Only do this when the navbar is uncollapsed
- *  though so that navbar contents properly stack and align in mobile.
+ * Brand Logo in Navbar
  */
-@media (min-width: 768px) {
-  .navbar-left {
-    float: left !important;
-  }
-  .navbar-right {
-    float: right !important;
-  }
+.navbar-brand .brand-logo {
+  height: 40px;
+  width: 120px;
+  margin-bottom: -10px;
 }
+.navbar .badge {
+  margin: -24px 0px 0px -15px;
+  margin: -1.5rem 0rem 0rem -0.9375rem;
+}
+/*------------------------------------*\
+    $COMPONENT-CONTENT
+\*------------------------------------*/
+.content {
+  background: #ffffff;
+  border-left: 1px solid #c8cbcc;
+  border-bottom: 2px solid #c8cbcc;
+  border-top: 1px solid #c8cbcc;
+  box-shadow: -3px 3px 3px -2px #e6e6e6;
+  border-radius: 0px 0px 0px 5px;
+  display: inline-block;
+  margin: 0px;
+  margin: 0rem;
+  padding: 24px;
+  padding: 1.5rem;
+  position: relative;
+}
+/*------------------------------------*\
+    $COMPONENT-SIDENAV
+\*------------------------------------*/
 /**
- *  Navbar form
- * 
- *  Extension of the `.form-inline` with some extra flavor for optimum display in
- *  our navbars.
+ * sidenav main class
  */
-.navbar-form {
-  margin: 12px -12px;
-  margin: 0.75rem -0.75rem;
-  padding: 12px 12px;
-  padding: 0.75rem 0.75rem;
+.sidenav {
+  background-color: #edf1f2;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  width: 270px;
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
-@media (min-width: 768px) {
-  .navbar-form .form-group {
-    vertical-align: middle;
-    display: inline-block;
-    margin-bottom: 0;
-  }
-  .navbar-form .form-group:first-child {
-    margin-left: 0;
-  }
-  .navbar-form .radio,
-  .navbar-form .checkbox {
-    display: inline-block;
-    margin: 0px 3px;
-    margin: 0rem 0.1875rem;
-    padding-left: 0;
-  }
-  .navbar-form .radio input[type="radio"],
-  .navbar-form .checkbox input[type="checkbox"] {
-    float: none;
-    margin-left: 0;
-    top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .navbar-form .form-group {
-    margin-bottom: 6px;
-    margin-bottom: 0.375rem;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-form {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 0;
-    margin-left: 0;
-    margin-right: 0;
+@media only screen and (max-width: 767px) {
+  .sidenav {
+    border-right: 1px solid #b8c6cc;
+    box-shadow: 1px 1px 4px 1px #e6e6e6;
+    left: -270px;
     padding-top: 0;
-    padding-bottom: 0;
-    width: auto;
+    position: fixed;
+    z-index: 9999;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
   }
 }
-/**
- *  Dropdown menus
- *  Menu position and menu carets
-*/
-.navbar-nav > li > .dropdown-menu {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  margin-top: 0;
+.sidenav:before,
+.sidenav:after {
+  content: " ";
+  display: table;
+}
+.sidenav:after {
+  clear: both;
 }
 /**
- *  Menu position and menu caret support for dropups via extra dropup class
+ * sidenav menu
  */
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.sidenav-menu {
+  padding: 15px;
+  padding: 0.9375rem;
+  margin: 0;
+}
+.sidenav-menu > li {
+  display: block;
+  margin: 18px 0px 0px;
+  margin: 1.125rem 0rem 0rem;
+  position: relative;
+}
+.sidenav-menu > li > a {
+  line-height: 24px;
+  line-height: 1.5rem;
+  outline: 0;
+  border-bottom: 1px solid #c8cbcc;
+  box-shadow: 0 2px 1px -1px #ffffff;
+  color: #b8c6cc;
+  display: block;
+  padding: 0px 0px 12px;
+  padding: 0rem 0rem 0.75rem;
+  margin: 0px 15px;
+  margin: 0rem 0.9375rem;
+}
+.sidenav-menu > li > a:hover {
+  color: #384f66;
+}
+.sidenav-menu > li span {
+  display: inline-block;
+  margin-left: 12px;
+  margin-left: 0.75rem;
+  top: -4px;
+  position: relative;
+}
+.sidenav-menu > li .icon,
+.sidenav-menu > li .octicons {
+  font-size: 24px;
+  font-size: 1.5rem;
+  top: 0;
+}
+.sidenav-menu > li .icon.icon-chevron-down {
+  font-size: 12px;
+  font-size: 0.75rem;
+  top: -4px;
+}
+.sidenav-menu > li .badge {
+  top: -5px;
+}
+.sidenav-menu > li.is-active > a {
+  border-bottom: 0;
+  box-shadow: none;
+  color: #384f66;
 }
 /**
- *  Right aligned menus need alt position
+ * sidenav menu sub
  */
-.navbar-nav.pull-right > li > .dropdown-menu,
-.navbar-nav > li > .dropdown-menu.pull-right {
-  left: auto;
-  right: 0;
+.sidenav-menu-sub {
+  border-bottom: 1px solid #c8cbcc;
+  box-shadow: 0 2px 1px -1px #ffffff;
+  display: none;
+  padding: 0px 0px 12px;
+  padding: 0rem 0rem 0.75rem;
+  margin: 0px 15px;
+  margin: 0rem 0.9375rem;
 }
-/**
- *  Buttons in navbars
- * 
- *  Vertically center a button within a navbar (when *not* in a form).
- */
-@media (min-width: 768px) {
-  .navbar-btn {
-    margin-top: -11px;
-    margin-top: -0.6875rem;
+.sidenav-menu-sub .is-active {
+  display: block;
+}
+.sidenav-menu-sub a {
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #384f66;
+  display: block;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+.sidenav-menu-sub a:hover span {
+  text-decoration: underline;
+}
+.sidenav-menu-sub a .is-active {
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .inner-wrap {
+    margin: 0;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
   }
 }
-/**
- *  Text in navbars
- * 
- *  Add a class to make any element properly align itself vertically within the navbars.
- */
-.navbar-text {
-  float: left;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+body.is-active {
+  overflow-x: hidden;
 }
-@media (min-width: 768px) {
-  .navbar-text {
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
+body.is-active .sidenav {
+  border-right: 0;
+  box-shadow: none;
+  left: 0;
+  position: absolute;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+body.is-active .inner-wrap {
+  margin-left: 270px;
+  margin-left: 16.875rem;
+  overflow: hidden;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 /*------------------------------------*\
     $COMPONENT-FOOTBAR
@@ -2985,16 +2894,16 @@
  * A section at the bottom of the page that replaces the footer similar to a navbar
  */
 .footbar {
-  background-color: #cfdadd;
-  color: #a9bac1;
+  background-color: #edf1f2;
+  color: #8d9ea6;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar a {
-  color: #8d9ea6;
+  color: #b8c6cc;
 }
 .footbar a:hover {
-  color: #21b5e4;
+  color: #384f66;
 }
 /**
  * Footbar Brand
@@ -3007,10 +2916,10 @@
   line-height: 1.6875rem;
 }
 .footbar-brand .brand {
-  color: #8d9ea6;
+  color: #b8c6cc;
 }
 .footbar-brand .brand:hover {
-  color: #21b5e4;
+  color: #384f66;
 }
 @media (max-width: 767px) {
   .footbar-brand {
@@ -3052,64 +2961,5 @@
   .footbar-copyright {
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
-  }
-}
-/*------------------------------------*\
-    $COMPONENT-BANNER
-\*------------------------------------*/
-/**
- * Banner module.
- *
- */
-.banner {
-  /* Decoration */
-  background-color: #f2f2f2;
-  /* Layout */
-  padding: 6px 0px 24px;
-  padding: 0.375rem 0rem 1.5rem;
-}
-/*------------------------------------*\
-    $COMPONENT-HERO UNIT
-\*------------------------------------*/
-/**
- * Base hero unit module.
- *
- */
-.hero-unit {
-  background-color: #203040;
-  padding: 96px 0px;
-  padding: 6rem 0rem;
-}
-.hero-unit .lead .alpha,
-.hero-unit .lead .beta,
-.hero-unit .lead .gamma,
-.hero-unit .lead .delta,
-.hero-unit .lead .epsilon,
-.hero-unit .lead .zeta {
-  color: #ffffff;
-}
-.hero-unit .lead .alpha sup,
-.hero-unit .lead .beta sup,
-.hero-unit .lead .gamma sup,
-.hero-unit .lead .delta sup,
-.hero-unit .lead .epsilon sup,
-.hero-unit .lead .zeta sup {
-  left: 3px;
-}
-.hero-unit .lead .alpha small,
-.hero-unit .lead .beta small,
-.hero-unit .lead .gamma small,
-.hero-unit .lead .delta small,
-.hero-unit .lead .epsilon small,
-.hero-unit .lead .zeta small {
-  font-weight: 100;
-  color: #ffffff;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-@media (max-width: 768px) {
-  .hero-unit-featured {
-    margin-top: 48px;
-    margin-top: 3rem;
   }
 }

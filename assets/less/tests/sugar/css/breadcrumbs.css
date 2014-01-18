@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $MODULE-BREADCRUMBS
+\*------------------------------------*/
+/**
+ * Basic badge
+ */
+.breadcrumbs {
+  background-color: #edf1f2;
+  color: #8d9ea6;
+  display: inline-block;
+  margin: 0;
+  padding: 0px 12px 5px;
+  padding: 0rem 0.75rem 0.3125rem;
+  position: relative;
+}
+.breadcrumbs > li {
+  display: inline-block;
+}
+.breadcrumbs > li + li:before {
+  font-size: 18px;
+  font-size: 1.125rem;
+  content: "\276e";
+  padding: 0px 12px 0px 0px;
+  padding: 0rem 0.75rem 0rem 0rem;
+}
+.breadcrumbs > li > span {
+  color: #384f66;
+}
+.breadcrumbs > li > a {
+  color: #b8c6cc;
+}
+.breadcrumbs > li > a:hover {
+  color: #384f66;
+}
+.breadcrumbs .icon {
+  font-size: 24px;
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px;
+}
