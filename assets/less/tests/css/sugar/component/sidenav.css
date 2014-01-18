@@ -18,7 +18,7 @@
   display: inline-block;
   margin: 0;
   position: absolute;
-  width: 270px;
+  width: 260px;
   -webkit-overflow-scrolling: touch;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -27,7 +27,7 @@
   .sidenav {
     border-right: 1px solid #b8c6cc;
     box-shadow: 1px 1px 4px 1px #e6e6e6;
-    left: -270px;
+    left: -260px;
     padding-top: 0;
     position: fixed;
     z-index: 9999;
@@ -149,8 +149,8 @@ body.is-active .sidenav {
   transition: 0.3s all ease;
 }
 body.is-active .inner-wrap {
-  margin-left: 270px;
-  margin-left: 16.875rem;
+  margin-left: 260px;
+  margin-left: 16.25rem;
   overflow: hidden;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
