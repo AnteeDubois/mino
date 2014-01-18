@@ -1,5 +1,5 @@
             <div class="grid">
-                <nav class="push grid-row list-inline">
+                <nav class="grid-row list-inline">
                     <li class="active grid-s-3 text-center">
                         <a class="pull-left sidenav-btn" href="#" title="Menu"><span class="icon icon-reorder"></span>  <span class="badge">7</span></a>
                     </li>
