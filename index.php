@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="assets/css/style.css">
 
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/js/vendor/modernizr-ck.js"><\/script>')</script>
+       <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script> -->
+       <!-- <script>window.jQuery || document.write('<script src="assets/js/vendor/modernizr-ck.js"><\/script>')</script> -->
     </head>
     <body class="silver-light">
             <!--[if lt IE 7]>
@@ -205,9 +205,9 @@
                 <?php include("includes/copyright.php"); ?>
             </footer>
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+       <!--  // <script src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script> -->
         
-        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script><script src="assets/js/vendor/jquery.mobile-1.4.0.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="assets/js/vendor/main.js"></script>
 
         <script>
