@@ -10,9 +10,10 @@
     background-color: @silver-light;
 
     display: inline-block;
+    left: unit(-@sidenav-width, px);
     margin: 0;
     position: absolute;
-    width: unit(@sidenav-width, px);    
+    width: 0;    
 
     // enables momentum scrolling in iOS overflow elements
     -webkit-overflow-scrolling: touch; 
@@ -24,7 +25,7 @@
         border-right: 1px solid @bluegray-light;
         box-shadow: 1px 1px 4px 1px @white-darker;
     
-        left: unit(-@sidenav-width, px);
+        
         padding-top: 0;
         position: fixed;
         z-index: 9999;
@@ -37,7 +38,7 @@
  * sidenav menu
  */
 .sidenav-menu {
-    .padding(@half-spacing-unit+@eighth-spacing-unit);
+    .padding(@double-spacing-unit, @half-spacing-unit+@eighth-spacing-unit);
     
     margin: 0;
     > li {
@@ -125,7 +126,7 @@
 
 }
 
-.inner-wrap { 
+.outer-wrap { 
     @media only screen and (max-width: @screen-s-max) {
         margin: 0;
         .transition(.3s all ease );
@@ -137,12 +138,19 @@ body.is-active {
     .sidenav {
         border-right: 0;
         box-shadow: none;
+
         left: 0;
         position: absolute;
+        width: unit(@sidenav-width, px); 
         .transition(.3s all ease );
     }
 
-    .inner-wrap { 
+    .content { 
+        border-left: 1px solid @silver;
+        border-radius:0 0 0 unit(@base-radius-medium, px); 
+    }
+
+    .outer-wrap { 
         .margin-left(@sidenav-width);
         overflow: hidden;
         .transition(.3s all ease );
