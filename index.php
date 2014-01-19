@@ -26,16 +26,17 @@
                 <section class="breadcrumbs-wrap grid">
                     <?php include("includes/breadcrumbs.php"); ?>
                 </section>
-                <div class="inner-wrap content">
+                <div class="content inner-wrap">
 
                     <?php include("includes/forumlist.php"); ?>
                     
                 </div>
+                <footer class="footbar grid text-center">
+                    <?php include("includes/info.php"); ?>
+                    <?php include("includes/copyright.php"); ?>
+                </footer>
             </div>
-            <footer class="footbar grid text-center">
-                <?php include("includes/info.php"); ?>
-                <?php include("includes/copyright.php"); ?>
-            </footer>
+            
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
        <!--  // <script src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script> -->
         
