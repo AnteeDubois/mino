@@ -10,6 +10,6 @@
         <dd><span class="label bluegray">19245</span></dd>
 
         <dt>Newest Member</dt>
-        <dd><a href="#" title="USER: kalasweet" class="user"><span class="label navy-light">kalasweet</span></a></dd>
+        <dd><a href="#" title="USER: kalasweet" class="user"><span class="label navy-light">bojangles</span></a></dd>
     </dl>
 </section>
