@@ -4,7 +4,7 @@
 
 .info { 
     @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { 
-        .margin-left(-@eighth-spacing-unit); 
+        .margin-left(@base-spacing-unit+@quarter-spacing-unit); 
         
         .list-inline > dt { .font-size(@half-spacing-unit); }
         .list-inline > dd { 
