@@ -203,6 +203,7 @@
                 </div>
             </div>
             <footer class="footbar text-center">
+            <footer class="footbar grid text-center">
                 <?php include("includes/copyright.php"); ?>
             </footer>
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
