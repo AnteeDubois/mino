@@ -1,7 +1,7 @@
 <li class="forum-row grid-row">
-            <h2 class="forum-title h5"><a href="#">General Development Discussion</a></h2>
     <dl>
         <dt class="forum-header grid-m-7 grid-l-8">
+            <h2 class="forum-title h5"><a href="#">General Development Discussion</a> <span class="label red">LOCKED</span></h2>
             <dfn class="forum-description"><span>A link back to the support forum at www.phpbb.com.</span></dfn>
         </dt>
             <p class="froum-stats-topics"><dfn class="hidden-s">Topics: </dfn><b>575</b></p>
