@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    $COMPONENT-INFO
+\*------------------------------------*/
+
+.info { 
+    @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { 
+        .margin-left(-@eighth-spacing-unit); 
+        
+        .list-inline > dt { .font-size(@half-spacing-unit); }
+        .list-inline > dd { 
+            .font-size(@half-spacing-unit); 
+
+            .margin-left(-2);
+            .margin-left(@quarter-spacing-unit);
+        }
+    }
+    @media (min-width: @screen-l-min) { .margin-left(@double-spacing-unit - @quarter-spacing-unit); }
+    @media (min-width: @screen-w-min) { .margin-left(@sextuple-spacing-unit); }
+}
+
+.info-stats {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    .margin-left(-@quarter-spacing-unit);
+    > dt { color: @bluegray-dark; }
+}

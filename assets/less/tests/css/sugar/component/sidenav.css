@@ -86,6 +86,12 @@
   font-size: 1.5rem;
   top: 0;
 }
+.sidenav-menu > li .sidenav-menu-sub .icon,
+.sidenav-menu > li .sidenav-menu-sub .octicons {
+  font-size: 16px;
+  font-size: 1rem;
+  text-decoration: none;
+}
 .sidenav-menu > li .icon.icon-chevron-down {
   font-size: 12px;
   font-size: 0.75rem;
