@@ -78,3 +78,25 @@
   border-color: #3c5977;
   background: #3c5977;
 }
+.label.red {
+  background-color: #b33224;
+  color: #ffffff;
+}
+.label.red:hover {
+  background-color: #91291d;
+  color: #ffffff;
+}
+.label.red.label-clear {
+  border: 2px solid #b33224;
+  color: #b33224;
+}
+.label.red.label-clear:hover,
+.label.red.label-clear:focus {
+  background: #b33224;
+  color: #ffffff;
+}
+.label.red.label-clear:active,
+.label.red.label-clear.active {
+  border-color: #982b1f;
+  background: #982b1f;
+}
