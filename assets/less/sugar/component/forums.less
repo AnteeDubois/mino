@@ -1,0 +1,107 @@
+/*------------------------------------*\
+    $COMPONENT-FORUMS
+\*------------------------------------*/
+
+/**
+ * Forums master Class
+ *
+ * Since we use alot of list elemetns not as intended we need a micro reset for them to make styling things easier
+ */
+.forums {
+    margin: 0;
+
+    ol,
+    dl,
+    dt,
+    ul,
+    p { 
+        margin: 0; 
+        line-height: 1;
+    }
+}
+
+/**
+ * Forum-wrap used to apply grid
+ */
+.forums-wrap { @media (max-width: @screen-s-max) { &.grid {.padding(0); } } }
+
+/**
+ * Forum Name
+ *
+ * This is the header for each forum section
+ */
+.forum-name {
+    line-height: 1;
+
+    background-color: @bluegray;
+
+    margin: 0;
+
+    > a { 
+        .font-size(@base-font-size);
+
+        color: @white;
+
+        display: block;
+        .padding(@quarter-spacing-unit, @base-spacing-unit);
+
+        &:hover { text-decoration: underline; }
+    }
+}
+
+/**
+ * Forum Row
+ *
+ * Here we style the look of each forum row
+ */
+.forum-row { 
+    border-bottom: 1px solid @silver;
+    box-shadow: 0 2px 1px -1px @white;
+
+    .padding(@quarter-spacing-unit, @base-spacing-unit, @quarter-spacing-unit + @eighth-spacing-unit); 
+
+    &:hover { background-color: @white-dark; }
+}
+
+/**
+ * Forum Title
+ *
+ * This is the physical link to each forum
+ */
+.forum-title {
+    .font-size(@base-font-size);
+
+    margin: 0;
+
+    > a { 
+        color: @navy-light;
+        &:hover { color: @teal; }
+    }
+}
+
+/**
+ * Forum Desc.
+ *
+ * This allows for the styling of the text description of each forum
+ */
+.forum-description {
+    .font-size(@base-font-size);
+    font-weight: normal;
+    .line-height(@base-spacing-unit);
+    
+    display: block;
+    .margin-bottom(@quarter-spacing-unit);
+}
+
+/**
+ * Forum stats
+ *
+ * Master class for all the styles to the stats for each forum row. 
+ * IE: topics, posts, links, views, replies
+ *
+ * The individual classes themselves are used more as a located and for positioning.
+ */
+.forum-stats {
+    > p { display: inline-block; }
+} 
+

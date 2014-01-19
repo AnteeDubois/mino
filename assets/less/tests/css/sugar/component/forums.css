@@ -1,0 +1,114 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENT-FORUMS
+\*------------------------------------*/
+/**
+ * Forums master Class
+ *
+ * Since we use alot of list elemetns not as intended we need a micro reset for them to make styling things easier
+ */
+.forums {
+  margin: 0;
+}
+.forums ol,
+.forums dl,
+.forums dt,
+.forums ul,
+.forums p {
+  margin: 0;
+  line-height: 1;
+}
+/**
+ * Forum-wrap used to apply grid
+ */
+@media (max-width: 767px) {
+  .forums-wrap.grid {
+    padding: 0px;
+    padding: 0rem;
+  }
+}
+/**
+ * Forum Name
+ *
+ * This is the header for each forum section
+ */
+.forum-name {
+  line-height: 1;
+  background-color: #8d9ea6;
+  margin: 0;
+}
+.forum-name > a {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #ffffff;
+  display: block;
+  padding: 6px 24px;
+  padding: 0.375rem 1.5rem;
+}
+.forum-name > a:hover {
+  text-decoration: underline;
+}
+/**
+ * Forum Row
+ *
+ * Here we style the look of each forum row
+ */
+.forum-row {
+  border-bottom: 1px solid #c8cbcc;
+  box-shadow: 0 2px 1px -1px #ffffff;
+  padding: 6px 24px 9px;
+  padding: 0.375rem 1.5rem 0.5625rem;
+}
+.forum-row:hover {
+  background-color: #f2f2f2;
+}
+/**
+ * Forum Title
+ *
+ * This is the physical link to each forum
+ */
+.forum-title {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 0;
+}
+.forum-title > a {
+  color: #46698c;
+}
+.forum-title > a:hover {
+  color: #1dbf9f;
+}
+/**
+ * Forum Desc.
+ *
+ * This allows for the styling of the text description of each forum
+ */
+.forum-description {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 24px;
+  line-height: 1.5rem;
+  display: block;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+/**
+ * Forum stats
+ *
+ * Master class for all the styles to the stats for each forum row. 
+ * IE: topics, posts, links, views, replies
+ *
+ * The individual classes themselves are used more as a located and for positioning.
+ */
+.forum-stats > p {
+  display: inline-block;
+}

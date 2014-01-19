@@ -1911,17 +1911,17 @@
   background-color: #b33224;
   color: #ffffff;
 }
-.btn-red.'btn'-clear {
+.btn-red.btn-clear {
   border: 2px solid #d94636;
   color: #d94636;
 }
-.btn-red.'btn'-clear:hover,
-.btn-red.'btn'-clear:focus {
+.btn-red.btn-clear:hover,
+.btn-red.btn-clear:focus {
   background: #d94636;
   color: #ffffff;
 }
-.btn-red.'btn'-clear:active,
-.btn-red.'btn'-clear.active {
+.btn-red.btn-clear:active,
+.btn-red.btn-clear.active {
   border-color: #b83c2e;
   background: #b83c2e;
 }
@@ -1933,17 +1933,17 @@
   background-color: #b3365f;
   color: #ffffff;
 }
-.btn-pink.'btn'-clear {
+.btn-pink.btn-clear {
   border: 2px solid #d94c7b;
   color: #d94c7b;
 }
-.btn-pink.'btn'-clear:hover,
-.btn-pink.'btn'-clear:focus {
+.btn-pink.btn-clear:hover,
+.btn-pink.btn-clear:focus {
   background: #d94c7b;
   color: #ffffff;
 }
-.btn-pink.'btn'-clear:active,
-.btn-pink.'btn'-clear.active {
+.btn-pink.btn-clear:active,
+.btn-pink.btn-clear.active {
   border-color: #b84169;
   background: #b84169;
 }
@@ -1955,17 +1955,17 @@
   background-color: #2479b3;
   color: #ffffff;
 }
-.btn-blue.'btn'-clear {
+.btn-blue.btn-clear {
   border: 2px solid #3698d9;
   color: #3698d9;
 }
-.btn-blue.'btn'-clear:hover,
-.btn-blue.'btn'-clear:focus {
+.btn-blue.btn-clear:hover,
+.btn-blue.btn-clear:focus {
   background: #3698d9;
   color: #ffffff;
 }
-.btn-blue.'btn'-clear:active,
-.btn-blue.'btn'-clear.active {
+.btn-blue.btn-clear:active,
+.btn-blue.btn-clear.active {
   border-color: #2e81b8;
   background: #2e81b8;
 }
@@ -1977,17 +1977,17 @@
   background-color: #21a658;
   color: #ffffff;
 }
-.btn-green.'btn'-clear {
+.btn-green.btn-clear {
   border: 2px solid #33cc73;
   color: #33cc73;
 }
-.btn-green.'btn'-clear:hover,
-.btn-green.'btn'-clear:focus {
+.btn-green.btn-clear:hover,
+.btn-green.btn-clear:focus {
   background: #33cc73;
   color: #ffffff;
 }
-.btn-green.'btn'-clear:active,
-.btn-green.'btn'-clear.active {
+.btn-green.btn-clear:active,
+.btn-green.btn-clear.active {
   border-color: #2bad62;
   background: #2bad62;
 }
@@ -1999,17 +1999,17 @@
   background-color: #f39c12;
   color: #ffffff;
 }
-.btn-yellow.'btn'-clear {
+.btn-yellow.btn-clear {
   border: 2px solid #ffcd1a;
   color: #ffcd1a;
 }
-.btn-yellow.'btn'-clear:hover,
-.btn-yellow.'btn'-clear:focus {
+.btn-yellow.btn-clear:hover,
+.btn-yellow.btn-clear:focus {
   background: #ffcd1a;
   color: #ffffff;
 }
-.btn-yellow.'btn'-clear:active,
-.btn-yellow.'btn'-clear.active {
+.btn-yellow.btn-clear:active,
+.btn-yellow.btn-clear.active {
   border-color: #d9ae16;
   background: #d9ae16;
 }
@@ -2021,17 +2021,17 @@
   background-color: #d35400;
   color: #ffffff;
 }
-.btn-orange.'btn'-clear {
+.btn-orange.btn-clear {
   border: 2px solid #e67e22;
   color: #e67e22;
 }
-.btn-orange.'btn'-clear:hover,
-.btn-orange.'btn'-clear:focus {
+.btn-orange.btn-clear:hover,
+.btn-orange.btn-clear:focus {
   background: #e67e22;
   color: #ffffff;
 }
-.btn-orange.'btn'-clear:active,
-.btn-orange.'btn'-clear.active {
+.btn-orange.btn-clear:active,
+.btn-orange.btn-clear.active {
   border-color: #c46b1d;
   background: #c46b1d;
 }
@@ -2043,17 +2043,17 @@
   background-color: #753f8c;
   color: #ffffff;
 }
-.btn-purple.'btn'-clear {
+.btn-purple.btn-clear {
   border: 2px solid #9959b3;
   color: #9959b3;
 }
-.btn-purple.'btn'-clear:hover,
-.btn-purple.'btn'-clear:focus {
+.btn-purple.btn-clear:hover,
+.btn-purple.btn-clear:focus {
   background: #9959b3;
   color: #ffffff;
 }
-.btn-purple.'btn'-clear:active,
-.btn-purple.'btn'-clear.active {
+.btn-purple.btn-clear:active,
+.btn-purple.btn-clear.active {
   border-color: #824c98;
   background: #824c98;
 }
@@ -2065,17 +2065,17 @@
   background-color: #858585;
   color: #333333;
 }
-.btn-gray.'btn'-clear {
+.btn-gray.btn-clear {
   border: 2px solid #999999;
   color: #999999;
 }
-.btn-gray.'btn'-clear:hover,
-.btn-gray.'btn'-clear:focus {
+.btn-gray.btn-clear:hover,
+.btn-gray.btn-clear:focus {
   background: #999999;
   color: #333333;
 }
-.btn-gray.'btn'-clear:active,
-.btn-gray.'btn'-clear.active {
+.btn-gray.btn-clear:active,
+.btn-gray.btn-clear.active {
   border-color: #828282;
   background: #828282;
 }
@@ -2087,17 +2087,17 @@
   background-color: #1f1f1f;
   color: #ffffff;
 }
-.btn-black.'btn'-clear {
+.btn-black.btn-clear {
   border: 2px solid #333333;
   color: #333333;
 }
-.btn-black.'btn'-clear:hover,
-.btn-black.'btn'-clear:focus {
+.btn-black.btn-clear:hover,
+.btn-black.btn-clear:focus {
   background: #333333;
   color: #ffffff;
 }
-.btn-black.'btn'-clear:active,
-.btn-black.'btn'-clear.active {
+.btn-black.btn-clear:active,
+.btn-black.btn-clear.active {
   border-color: #2b2b2b;
   background: #2b2b2b;
 }
@@ -2109,17 +2109,17 @@
   background-color: #203040;
   color: #ffffff;
 }
-.btn-darkblue.'btn'-clear {
+.btn-darkblue.btn-clear {
   border: 2px solid #384f66;
   color: #384f66;
 }
-.btn-darkblue.'btn'-clear:hover,
-.btn-darkblue.'btn'-clear:focus {
+.btn-darkblue.btn-clear:hover,
+.btn-darkblue.btn-clear:focus {
   background: #384f66;
   color: #ffffff;
 }
-.btn-darkblue.'btn'-clear:active,
-.btn-darkblue.'btn'-clear.active {
+.btn-darkblue.btn-clear:active,
+.btn-darkblue.btn-clear.active {
   border-color: #304357;
   background: #304357;
 }
@@ -2131,17 +2131,17 @@
   background-color: #0f997d;
   color: #ffffff;
 }
-.btn-teal.'btn'-clear {
+.btn-teal.btn-clear {
   border: 2px solid #1dbf9f;
   color: #1dbf9f;
 }
-.btn-teal.'btn'-clear:hover,
-.btn-teal.'btn'-clear:focus {
+.btn-teal.btn-clear:hover,
+.btn-teal.btn-clear:focus {
   background: #1dbf9f;
   color: #ffffff;
 }
-.btn-teal.'btn'-clear:active,
-.btn-teal.'btn'-clear.active {
+.btn-teal.btn-clear:active,
+.btn-teal.btn-clear.active {
   border-color: #19a287;
   background: #19a287;
 }
@@ -2153,17 +2153,17 @@
   background-color: #9da3a6;
   color: #333333;
 }
-.btn-silver.'btn'-clear {
+.btn-silver.btn-clear {
   border: 2px solid #c8cbcc;
   color: #c8cbcc;
 }
-.btn-silver.'btn'-clear:hover,
-.btn-silver.'btn'-clear:focus {
+.btn-silver.btn-clear:hover,
+.btn-silver.btn-clear:focus {
   background: #c8cbcc;
   color: #333333;
 }
-.btn-silver.'btn'-clear:active,
-.btn-silver.'btn'-clear.active {
+.btn-silver.btn-clear:active,
+.btn-silver.btn-clear.active {
   border-color: #aaadad;
   background: #aaadad;
 }
@@ -2175,17 +2175,17 @@
   background-color: #667880;
   color: #ffffff;
 }
-.btn-bluegray.'btn'-clear {
+.btn-bluegray.btn-clear {
   border: 2px solid #8d9ea6;
   color: #8d9ea6;
 }
-.btn-bluegray.'btn'-clear:hover,
-.btn-bluegray.'btn'-clear:focus {
+.btn-bluegray.btn-clear:hover,
+.btn-bluegray.btn-clear:focus {
   background: #8d9ea6;
   color: #ffffff;
 }
-.btn-bluegray.'btn'-clear:active,
-.btn-bluegray.'btn'-clear.active {
+.btn-bluegray.btn-clear:active,
+.btn-bluegray.btn-clear.active {
   border-color: #78868d;
   background: #78868d;
 }
@@ -2534,6 +2534,7 @@ a.badge:focus {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
+  background-color: #8d9ea6;
   border-radius: 3px;
   color: #ffffff;
   display: inline;
@@ -2553,15 +2554,43 @@ a.badge:focus {
 .label:empty {
   display: none;
 }
-a > .label {
-  background-color: #b8c6cc;
-}
-a > .label:hover,
-a > .label:focus {
-  text-decoration: none;
-  background-color: #384f66;
+.label-group > p {
+  font-size: 75%;
+  background-color: #8d9ea6;
   color: #ffffff;
-  cursor: pointer;
+  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
+}
+.label-group > p:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.label-group > p:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-left: -1px;
+}
+.label.navy-light {
+  background-color: #46698c;
+  color: #ffffff;
+}
+.label.navy-light:hover {
+  background-color: #1dbf9f;
+  color: #ffffff;
+}
+.label.navy-light.label-clear {
+  border: 2px solid #46698c;
+  color: #46698c;
+}
+.label.navy-light.label-clear:hover,
+.label.navy-light.label-clear:focus {
+  background: #46698c;
+  color: #ffffff;
+}
+.label.navy-light.label-clear:active,
+.label.navy-light.label-clear.active {
+  border-color: #3c5977;
+  background: #3c5977;
 }
 /*------------------------------------*\
     $MODULE-BREADCRUMBS
@@ -2606,6 +2635,12 @@ a > .label:focus {
   }
   .breadcrumbs li {
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .breadcrumbs-wrap.grid {
+    padding: 0px;
+    padding: 0rem;
   }
 }
 .breadcrumbs-index {
@@ -2827,23 +2862,6 @@ a > .label:focus {
   margin: -1.5rem 0rem 0rem -0.9375rem;
 }
 /*------------------------------------*\
-    $COMPONENT-CONTENT
-\*------------------------------------*/
-.content {
-  background: #ffffff;
-  border-left: 1px solid #c8cbcc;
-  border-bottom: 2px solid #c8cbcc;
-  border-top: 1px solid #c8cbcc;
-  box-shadow: -3px 3px 3px -2px #e6e6e6;
-  border-radius: 0px 0px 0px 5px;
-  display: inline-block;
-  margin: 0px;
-  margin: 0rem;
-  padding: 24px;
-  padding: 1.5rem;
-  position: relative;
-}
-/*------------------------------------*\
     $COMPONENT-SIDENAV
 \*------------------------------------*/
 /**
@@ -2852,9 +2870,10 @@ a > .label:focus {
 .sidenav {
   background-color: #edf1f2;
   display: inline-block;
+  left: -260px;
   margin: 0;
   position: absolute;
-  width: 260px;
+  width: 0;
   -webkit-overflow-scrolling: touch;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -2863,7 +2882,6 @@ a > .label:focus {
   .sidenav {
     border-right: 1px solid #b8c6cc;
     box-shadow: 1px 1px 4px 1px #e6e6e6;
-    left: -260px;
     padding-top: 0;
     position: fixed;
     z-index: 9999;
@@ -2883,8 +2901,8 @@ a > .label:focus {
  * sidenav menu
  */
 .sidenav-menu {
-  padding: 15px;
-  padding: 0.9375rem;
+  padding: 48px 15px;
+  padding: 3rem 0.9375rem;
   margin: 0;
 }
 .sidenav-menu > li {
@@ -2973,7 +2991,7 @@ a > .label:focus {
   font-weight: bold;
 }
 @media only screen and (max-width: 767px) {
-  .inner-wrap {
+  .outer-wrap {
     margin: 0;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
@@ -2987,15 +3005,140 @@ body.is-active .sidenav {
   box-shadow: none;
   left: 0;
   position: absolute;
+  width: 260px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-body.is-active .inner-wrap {
+body.is-active .content {
+  border-left: 1px solid #c8cbcc;
+  border-radius: 0 0 0 5px;
+}
+body.is-active .outer-wrap {
   margin-left: 260px;
   margin-left: 16.25rem;
   overflow: hidden;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+}
+/*------------------------------------*\
+    $COMPONENT-CONTENT
+\*------------------------------------*/
+.content {
+  background: #ffffff;
+  border-bottom: 1px solid #c8cbcc;
+  border-top: 1px solid #c8cbcc;
+  border-radius: 0;
+  box-shadow: -3px 3px 3px -2px #e6e6e6;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+/*------------------------------------*\
+    $COMPONENT-FORUMS
+\*------------------------------------*/
+/**
+ * Forums master Class
+ *
+ * Since we use alot of list elemetns not as intended we need a micro reset for them to make styling things easier
+ */
+.forums {
+  margin: 0;
+}
+.forums ol,
+.forums dl,
+.forums dt,
+.forums ul,
+.forums p {
+  margin: 0;
+  line-height: 1;
+}
+/**
+ * Forum-wrap used to apply grid
+ */
+@media (max-width: 767px) {
+  .forums-wrap.grid {
+    padding: 0px;
+    padding: 0rem;
+  }
+}
+/**
+ * Forum Name
+ *
+ * This is the header for each forum section
+ */
+.forum-name {
+  line-height: 1;
+  background-color: #8d9ea6;
+  margin: 0;
+}
+.forum-name > a {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #ffffff;
+  display: block;
+  padding: 6px 24px;
+  padding: 0.375rem 1.5rem;
+}
+.forum-name > a:hover {
+  text-decoration: underline;
+}
+/**
+ * Forum Row
+ *
+ * Here we style the look of each forum row
+ */
+.forum-row {
+  border-bottom: 1px solid #c8cbcc;
+  box-shadow: 0 2px 1px -1px #ffffff;
+  padding: 6px 24px 9px;
+  padding: 0.375rem 1.5rem 0.5625rem;
+}
+.forum-row:hover {
+  background-color: #f2f2f2;
+}
+/**
+ * Forum Title
+ *
+ * This is the physical link to each forum
+ */
+.forum-title {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 0;
+}
+.forum-title > a {
+  color: #46698c;
+}
+.forum-title > a:hover {
+  color: #1dbf9f;
+}
+/**
+ * Forum Desc.
+ *
+ * This allows for the styling of the text description of each forum
+ */
+.forum-description {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 24px;
+  line-height: 1.5rem;
+  display: block;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+/**
+ * Forum stats
+ *
+ * Master class for all the styles to the stats for each forum row. 
+ * IE: topics, posts, links, views, replies
+ *
+ * The individual classes themselves are used more as a located and for positioning.
+ */
+.forum-stats > p {
+  display: inline-block;
 }
 /*------------------------------------*\
     $COMPONENT-INFO
@@ -3020,14 +3163,14 @@ body.is-active .inner-wrap {
 }
 @media (min-width: 984px) {
   .info {
-    margin-left: 42px;
-    margin-left: 2.625rem;
+    margin-left: 72px;
+    margin-left: 4.5rem;
   }
 }
 @media (min-width: 1200px) {
   .info {
-    margin-left: 144px;
-    margin-left: 9rem;
+    margin-left: 180px;
+    margin-left: 11.25rem;
   }
 }
 .info-stats {
@@ -3038,7 +3181,7 @@ body.is-active .inner-wrap {
   margin-left: -0.375rem;
 }
 .info-stats > dt {
-  color: #667880;
+  color: #8d9ea6;
 }
 /*------------------------------------*\
     $COMPONENT-FOOTBAR
@@ -3049,15 +3192,15 @@ body.is-active .inner-wrap {
  */
 .footbar {
   background-color: #edf1f2;
-  color: #667880;
+  color: #8d9ea6;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar a {
-  color: #b8c6cc;
+  color: #46698c;
 }
 .footbar a:hover {
-  color: #384f66;
+  color: #1dbf9f;
 }
 /**
  * Footbar Brand
@@ -3070,10 +3213,10 @@ body.is-active .inner-wrap {
   line-height: 1.6875rem;
 }
 .footbar-brand .brand {
-  color: #b8c6cc;
+  color: #46698c;
 }
 .footbar-brand .brand:hover {
-  color: #384f66;
+  color: #1dbf9f;
 }
 @media (max-width: 767px) {
   .footbar-brand {
