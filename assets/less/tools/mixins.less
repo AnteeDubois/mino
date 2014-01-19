@@ -479,8 +479,9 @@
   }
 }
 
-//Color Variantes
-.btn-color(@btn-color, @text-color: @white, @btn-hover-color: darken(@btn-color, 8%), @btn-active-color: mix(@btn-color, black, 85%)) {
+
+// Color Variantes
+.var-color(@type ,@btn-color, @text-color: @white, @btn-hover-color: darken(@btn-color, 8%), @btn-active-color: mix(@btn-color, black, 85%)) {
     background-color: @btn-color;
     color: @text-color;
 
@@ -489,7 +490,7 @@
         color: @text-color;
     }
 
-    &.btn-clear {
+    &.@{type}-clear {
         border: 2px solid @btn-color;
         color: @btn-color;
 
