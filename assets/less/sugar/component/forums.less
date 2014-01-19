@@ -106,7 +106,36 @@
  *
  * The individual classes themselves are used more as a located and for positioning.
  */
-.forum-stats {
-    > p { display: inline-block; }
-} 
+dd.forum-stats { 
+    .margin-top(8);
+    > p { display: inline-block; } 
+    @media (min-width: @screen-m-min) { 
+        > p {
+            background-color: transparent;
+            border-radius: 0;
+
+            display: inline-flex;        
+
+            > dfn { 
+                font-weight: 700;
+                font-style: normal;
+
+                color: @bluegray;
+
+                .padding-right(@half-spacing-unit); 
+            }
+
+            > b {
+                background-color: @bluegray;
+                border-radius: unit(3, px);
+
+                .margin-top(-@eighth-spacing-unit);
+                .padding(@eighth-spacing-unit, @quarter-spacing-unit);
+            }
+
+            .margin-bottom(@quarter-spacing-unit);
+        }  
+    }
+
+}
 
