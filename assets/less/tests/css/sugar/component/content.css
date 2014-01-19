@@ -11,11 +11,10 @@
     $COMPONENT-CONTENT
 \*------------------------------------*/
 .content {
-  background: #ffffff;
-  border-bottom: 1px solid #c8cbcc;
+  background: #edf1f2;
   border-top: 1px solid #c8cbcc;
   border-radius: 0;
-  box-shadow: -3px 3px 3px -2px #e6e6e6;
+  box-shadow: -3px 0px 3px -2px #9da3a6;
   display: inline-block;
   margin: 0;
   padding: 0;

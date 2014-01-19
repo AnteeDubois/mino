@@ -2592,6 +2592,28 @@ a.badge:focus {
   border-color: #3c5977;
   background: #3c5977;
 }
+.label.red {
+  background-color: #b33224;
+  color: #ffffff;
+}
+.label.red:hover {
+  background-color: #91291d;
+  color: #ffffff;
+}
+.label.red.label-clear {
+  border: 2px solid #b33224;
+  color: #b33224;
+}
+.label.red.label-clear:hover,
+.label.red.label-clear:focus {
+  background: #b33224;
+  color: #ffffff;
+}
+.label.red.label-clear:active,
+.label.red.label-clear.active {
+  border-color: #982b1f;
+  background: #982b1f;
+}
 /*------------------------------------*\
     $MODULE-BREADCRUMBS
 \*------------------------------------*/
@@ -3024,11 +3046,10 @@ body.is-active .outer-wrap {
     $COMPONENT-CONTENT
 \*------------------------------------*/
 .content {
-  background: #ffffff;
-  border-bottom: 1px solid #c8cbcc;
+  background: #edf1f2;
   border-top: 1px solid #c8cbcc;
   border-radius: 0;
-  box-shadow: -3px 3px 3px -2px #e6e6e6;
+  box-shadow: -3px 0px 3px -2px #9da3a6;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -3044,11 +3065,13 @@ body.is-active .outer-wrap {
  * Since we use alot of list elemetns not as intended we need a micro reset for them to make styling things easier
  */
 .forums {
+  background-color: #ffffff;
   margin: 0;
 }
 .forums ol,
 .forums dl,
 .forums dt,
+.forums dd,
 .forums ul,
 .forums p {
   margin: 0;
@@ -3092,8 +3115,18 @@ body.is-active .outer-wrap {
 .forum-row {
   border-bottom: 1px solid #c8cbcc;
   box-shadow: 0 2px 1px -1px #ffffff;
-  padding: 6px 24px 9px;
-  padding: 0.375rem 1.5rem 0.5625rem;
+  padding-top: 6px;
+  padding-top: 0.375rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.5625rem;
+}
+@media (max-width: 767px) {
+  .forum-row {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 .forum-row:hover {
   background-color: #f2f2f2;
@@ -3104,15 +3137,25 @@ body.is-active .outer-wrap {
  * This is the physical link to each forum
  */
 .forum-title {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .forum-title {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 .forum-title > a {
   color: #46698c;
 }
 .forum-title > a:hover {
   color: #1dbf9f;
+}
+.forum-title .label {
+  margin-left: 6px;
+  margin-left: 0.375rem;
 }
 /**
  * Forum Desc.
@@ -3137,16 +3180,81 @@ body.is-active .outer-wrap {
  *
  * The individual classes themselves are used more as a located and for positioning.
  */
-.forum-stats > p {
+dd.forum-stats {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+dd.forum-stats > p {
   display: inline-block;
+}
+@media (min-width: 768px) {
+  dd.forum-stats > p {
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
+  }
+  dd.forum-stats > p > dfn {
+    font-weight: 700;
+    font-style: normal;
+    color: #8d9ea6;
+    padding-right: 12px;
+    padding-right: 0.75rem;
+  }
+  dd.forum-stats > p > b {
+    background-color: #8d9ea6;
+    border-radius: 3px;
+    margin-top: -3px;
+    margin-top: -0.1875rem;
+    padding: 3px 6px;
+    padding: 0.1875rem 0.375rem;
+  }
+}
+/**
+ * Forum recent
+ *
+ * Position the recent post section
+ */
+dd.forum-recent {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+/**
+ * Forum avatar
+ *
+ * Style the size and position of the avatars
+ */
+.forum-avatar {
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  width: 50px;
+}
+/**
+ * Forum recent post user
+ *
+ * Style the user of the most recent post
+ */
+.forum-recent-user > a {
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+/**
+ * Forum recent post time
+ *
+ * Style the time of the most recent post
+ */
+.forum-recent-time {
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 /*------------------------------------*\
     $COMPONENT-INFO
 \*------------------------------------*/
 @media (min-width: 768px) and (max-width: 983px) {
   .info {
-    margin-left: -3px;
-    margin-left: -0.1875rem;
+    margin-left: 30px;
+    margin-left: 1.875rem;
   }
   .info .list-inline > dt {
     font-size: 12px;
