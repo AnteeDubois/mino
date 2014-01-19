@@ -8,13 +8,33 @@
         <li><a href="#" title="Advanced Search"><span class="icon icon-cog"></span> <span>Advanced Search</span></a></li>
         <li><a href="#" title="Notifications"><span class="icon icon-bell"></span> <span>Notifications</span> <span class="badge">5</span></a></li>
         <li><a href="#" title="Private Messages"><span class="icon icon-inbox"></span> <span>PMs</span> <span class="badge">2</span></a></li>
-        <li><a href="#" title="User Preferences"><span class="icon icon-cog"></span> <span>User Preferences</span></a></li>
-        <li><a href="#" title="Moderator Tools"><span class="icon icon-shield"></span> <span>Moderator Tools</span></a></li>
-        <li><a href="#" title="Admin Panel"><span class="icon icon-cogs"></span> <span>Admin Panel</span></a></li>
-        <li><a href="#" title="Faq"><span class="octicons octicons-question"></span> <span>Faq</span></a></li>
-        <li><a href="#" title="Members"><span class="icon icon-group"></span> <span>Members</span></a></li>
-        <li><a href="#" title="Mark Forums Read"><span class="icon icon-check"></span> <span>Mark Forums Read</span></a></li>
-         <!-- Posts -->
+        <!-- Settings & Tools -->
+        <li>
+            <a class="sidenav-dropdown-toggle" href="#" title="Settings & Tools"><span class="octicons octicons-settings"></span> <span>Settings & Tools</span> <span class="icon icon-chevron-down"></span></a>
+            <ul class="sidenav-menu-sub">
+                <li><a href="#" title="User Preferences"><span class="icon icon-cog"></span> <span>User Preferences</span></a></li>
+                <li><a href="#" title="Moderator Tools"><span class="icon icon-shield"></span> <span>Moderator Tools</span></a></li>
+                <li><a href="#" title="Admin Panel"><span class="icon icon-cogs"></span> <span>Admin Panel</span></a></li>
+            </ul>
+        </li>
+        <!-- Forum Info -->
+        <li>
+            <a class="sidenav-dropdown-toggle" href="#" title="Forum Info"><span class="octicons octicons-info"></span> <span>Forum Info</span> <span class="icon icon-chevron-down"></span></a>
+            <ul class="sidenav-menu-sub">
+                <li><a href="#" title="Faq"><span class="octicons octicons-question"></span> <span>Faq</span></a></li>
+                <li><a href="#" title="Members"><span class="icon icon-group"></span> <span>Members</span></a></li>
+                <li><a href="#" title="The Team"><span class="octicons octicons-organization"></span> <span>The Team</span></a></li>
+            </ul>
+        </li>
+        <!-- Forum Actions -->
+        <li>
+            <a class="sidenav-dropdown-toggle" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span>Forum Actions</span> <span class="icon icon-chevron-down"></span></a>
+            <ul class="sidenav-menu-sub">
+                <li><a href="#" title="Mark Forums Read"><span class="icon icon-check"></span> <span>Mark Forums Read</span></a></li>
+                <li><a href="#" title="Delete Cookies"><span class="icon icon-refresh"></span> <span>Delete Cookies</span></a></li>
+            </ul>
+        </li>
+        <!-- Posts -->
         <li>
             <a class="sidenav-dropdown-toggle" href="#" title="Posts"><span class="icon icon-comments"></span> <span>Posts</span> <span class="icon icon-chevron-down"></span></a>
             <ul class="sidenav-menu-sub">
