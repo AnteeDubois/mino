@@ -1,0 +1,51 @@
+/*------------------------------------*\
+        $MODULE-LABELS
+\*------------------------------------*/
+
+/**
+ * Basic Label
+ */
+.label {
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+
+    border-radius: unit(3, px);
+    color: @white; 
+
+    display: inline;
+    .padding(@eighth-spacing-unit, @quarter-spacing-unit);
+
+    // Add hover effects, but only for links
+    &[href] {
+        background-color: @base-link-color;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+
+            background-color: @base-link-hover-color;
+            color: @white;
+            
+            cursor: pointer;
+        }
+    }
+
+    // Empty labels collapse automatically (not available in IE8)
+    &:empty { display: none; }
+}
+
+a > .label {
+    background-color: @bluegray-light;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+
+        background-color: @navy;
+        color: @white;
+        
+        cursor: pointer;
+    }
+}
