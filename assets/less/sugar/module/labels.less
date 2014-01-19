@@ -38,11 +38,21 @@
     &:empty { display: none; }
 }
 
+.label-group {
+    > p {
+        font-size: 75%;
 
-        background-color: @navy;
-        color: @white;
-        
-        cursor: pointer;
+        background-color: @bluegray;
+        color: @white; 
+
+        .padding(@eighth-spacing-unit, @quarter-spacing-unit);
+    }
+
+    > p:first-child { .border-left-radius(unit(3, px)); }
+    > p:last-child {
+        .border-right-radius(unit(3, px));
+
+        margin-left: -1px;
     }
 }
 

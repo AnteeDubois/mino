@@ -1,0 +1,80 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+        $MODULE-LABELS
+\*------------------------------------*/
+/**
+ * Basic Label
+ */
+.label {
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #8d9ea6;
+  border-radius: 3px;
+  color: #ffffff;
+  display: inline;
+  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
+}
+.label[href] {
+  background-color: #21b5e4;
+}
+.label[href]:hover,
+.label[href]:focus {
+  text-decoration: none;
+  background-color: #1482a4;
+  color: #ffffff;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+.label-group > p {
+  font-size: 75%;
+  background-color: #8d9ea6;
+  color: #ffffff;
+  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
+}
+.label-group > p:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.label-group > p:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-left: -1px;
+}
+.label.navy-light {
+  background-color: #46698c;
+  color: #ffffff;
+}
+.label.navy-light:hover {
+  background-color: #1dbf9f;
+  color: #ffffff;
+}
+.label.navy-light.label-clear {
+  border: 2px solid #46698c;
+  color: #46698c;
+}
+.label.navy-light.label-clear:hover,
+.label.navy-light.label-clear:focus {
+  background: #46698c;
+  color: #ffffff;
+}
+.label.navy-light.label-clear:active,
+.label.navy-light.label-clear.active {
+  border-color: #3c5977;
+  background: #3c5977;
+}
