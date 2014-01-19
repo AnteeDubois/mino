@@ -16,15 +16,15 @@
  */
 .footbar {
   background-color: #edf1f2;
-  color: #667880;
+  color: #8d9ea6;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar a {
-  color: #b8c6cc;
+  color: #46698c;
 }
 .footbar a:hover {
-  color: #384f66;
+  color: #1dbf9f;
 }
 /**
  * Footbar Brand
@@ -37,10 +37,10 @@
   line-height: 1.6875rem;
 }
 .footbar-brand .brand {
-  color: #b8c6cc;
+  color: #46698c;
 }
 .footbar-brand .brand:hover {
-  color: #384f66;
+  color: #1dbf9f;
 }
 @media (max-width: 767px) {
   .footbar-brand {

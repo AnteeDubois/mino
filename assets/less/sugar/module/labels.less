@@ -13,6 +13,7 @@
     white-space: nowrap;
     vertical-align: baseline;
 
+    background-color: @bluegray;
     border-radius: unit(3, px);
     color: @white; 
 
@@ -37,11 +38,6 @@
     &:empty { display: none; }
 }
 
-a > .label {
-    background-color: @bluegray-light;
-    &:hover,
-    &:focus {
-        text-decoration: none;
 
         background-color: @navy;
         color: @white;
@@ -49,3 +45,6 @@ a > .label {
         cursor: pointer;
     }
 }
+
+.label.navy-light { .var-color(label, @navy-light, @white, @teal); }
+
