@@ -70,7 +70,8 @@
  * This is the physical link to each forum
  */
 .forum-title {
-    .font-size(@base-font-size);
+    .font-size(@base-font-size - 2);
+    @media (min-width: @screen-m-min) { .font-size(@base-font-size); }
 
     margin: 0;
 
