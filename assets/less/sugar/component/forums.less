@@ -57,8 +57,9 @@
 .forum-row { 
     border-bottom: 1px solid @silver;
     box-shadow: 0 2px 1px -1px @white;
+    .padding-vertical(@quarter-spacing-unit, @quarter-spacing-unit + @eighth-spacing-unit);
 
-    .padding(@quarter-spacing-unit, @base-spacing-unit, @quarter-spacing-unit + @eighth-spacing-unit); 
+    @media (max-width: @screen-s-max) { .padding-horizontal(@half-spacing-unit); }
 
     &:hover { background-color: @white-dark; }
 }
