@@ -1,7 +1,7 @@
 <li class="forum-row grid-row">
-    <dl class="list-inline">
         <dt class="forum-header">
             <h2 class="forum-title h5"><a href="#">General Development Discussion</a></h2>
+    <dl>
             <dfn class="forum-description"><span>A link back to the support forum at www.phpbb.com.</span></dfn>
         </dt>
         <dd class="forum-stats label-group">
