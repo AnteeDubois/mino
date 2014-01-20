@@ -44,6 +44,7 @@
   font-size: 75%;
   background-color: #8d9ea6;
   color: #ffffff;
+  margin-right: -1px;
   padding: 3px 6px;
   padding: 0.1875rem 0.375rem;
 }
@@ -54,7 +55,6 @@
 .label-group > p:last-child {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  margin-left: -1px;
 }
 .label.navy-light {
   background-color: #46698c;

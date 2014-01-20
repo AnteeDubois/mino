@@ -44,16 +44,13 @@
 
         background-color: @bluegray;
         color: @white; 
-
+        
+        margin-right: -1px;
         .padding(@eighth-spacing-unit, @quarter-spacing-unit);
     }
 
     > p:first-child { .border-left-radius(unit(3, px)); }
-    > p:last-child {
-        .border-right-radius(unit(3, px));
-
-        margin-left: -1px;
-    }
+    > p:last-child { .border-right-radius(unit(3, px)); }
 }
 
 .label.navy-light   { .var-color(label, @navy-light, @white, @teal); }
