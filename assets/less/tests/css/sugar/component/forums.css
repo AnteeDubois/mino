@@ -19,14 +19,12 @@
   background-color: #ffffff;
   margin: 0;
 }
-.forums ol,
-.forums dl,
-.forums dt,
-.forums dd,
-.forums ul,
-.forums p {
-  margin: 0;
+.forum-list,
+.forum-row-wrap,
+.forum-header,
+.forum-recent-info {
   line-height: 1;
+  margin: 0;
 }
 /**
  * Forum-wrap used to apply grid
@@ -70,13 +68,18 @@
   padding-top: 0.375rem;
   padding-bottom: 9px;
   padding-bottom: 0.5625rem;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .forum-row {
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    height: 72px;
   }
 }
 .forum-row:hover {
@@ -114,14 +117,51 @@
  * This allows for the styling of the text description of each forum
  */
 .forum-description {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 24px;
-  line-height: 1.5rem;
+  line-height: 18px;
+  line-height: 1.125rem;
   display: block;
   margin-bottom: 6px;
   margin-bottom: 0.375rem;
+}
+@media (min-width: 768px) {
+  .forum-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    margin-bottom: 0px;
+    margin-bottom: 0rem;
+  }
+}
+/**
+ * Forum info
+ *
+ * Grouping of none header info for forums, used for grid
+ */
+.forum-info {
+  margin-top: 5px;
+  margin-top: 0.3125rem;
+}
+@media (min-width: 768px) {
+  .forum-info {
+    padding-left: 32px;
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 984px) {
+  .forum-info {
+    padding-left: 60px;
+    padding-left: 3.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  .forum-info {
+    padding-left: 52px;
+    padding-left: 3.25rem;
+  }
 }
 /**
  * Forum stats
@@ -131,29 +171,30 @@
  *
  * The individual classes themselves are used more as a located and for positioning.
  */
-dd.forum-stats {
-  margin-top: 8px;
-  margin-top: 0.5rem;
+.forum-stats {
+  line-height: 0;
+  width: 96px;
 }
-dd.forum-stats > p {
+.forum-stats > p {
+  line-height: 1;
   display: inline-block;
+  margin-left: 1px;
 }
 @media (min-width: 768px) {
-  dd.forum-stats > p {
+  .forum-stats > p {
     background-color: transparent;
     border-radius: 0;
     display: inline-flex;
-    margin-bottom: 6px;
-    margin-bottom: 0.375rem;
+    float: right;
   }
-  dd.forum-stats > p > dfn {
+  .forum-stats > p > dfn {
     font-weight: 700;
     font-style: normal;
     color: #8d9ea6;
     padding-right: 12px;
     padding-right: 0.75rem;
   }
-  dd.forum-stats > p > b {
+  .forum-stats > p > b {
     background-color: #8d9ea6;
     border-radius: 3px;
     margin-top: -3px;
@@ -161,15 +202,22 @@ dd.forum-stats > p {
     padding: 3px 6px;
     padding: 0.1875rem 0.375rem;
   }
+  .forum-stats > p:first-child {
+    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
+  }
 }
 /**
  * Forum recent
  *
  * Position the recent post section
  */
-dd.forum-recent {
-  margin-top: 8px;
-  margin-top: 0.5rem;
+.forum-recent {
+  line-height: 1;
+  padding-left: 24px;
+  padding-left: 1.5rem;
+  padding-top: 4px;
+  padding-top: 0.25rem;
 }
 /**
  * Forum avatar
@@ -186,6 +234,10 @@ dd.forum-recent {
  *
  * Style the user of the most recent post
  */
+.forum-recent-user {
+  line-height: 1;
+  margin: 0;
+}
 .forum-recent-user > a {
   line-height: 24px;
   line-height: 1.5rem;
@@ -198,4 +250,5 @@ dd.forum-recent {
 .forum-recent-time {
   font-size: 12px;
   font-size: 0.75rem;
+  line-height: 1;
 }

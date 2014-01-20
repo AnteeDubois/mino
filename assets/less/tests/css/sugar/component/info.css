@@ -11,10 +11,6 @@
     $COMPONENT-INFO
 \*------------------------------------*/
 @media (min-width: 768px) and (max-width: 983px) {
-  .info {
-    margin-left: 30px;
-    margin-left: 1.875rem;
-  }
   .info .list-inline > dt {
     font-size: 12px;
     font-size: 0.75rem;
@@ -28,24 +24,21 @@
     margin-left: 0.375rem;
   }
 }
-@media (min-width: 984px) {
-  .info {
-    margin-left: 72px;
-    margin-left: 4.5rem;
-  }
-}
-@media (min-width: 1200px) {
-  .info {
-    margin-left: 180px;
-    margin-left: 11.25rem;
-  }
-}
 .info-stats {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  margin-left: -6px;
-  margin-left: -0.375rem;
+  width: 244px;
+}
+@media (min-width: 768px) {
+  .info-stats {
+    width: 627px;
+  }
+}
+@media (min-width: 984px) {
+  .info-stats {
+    width: 751px;
+  }
 }
 .info-stats > dt {
   color: #8d9ea6;

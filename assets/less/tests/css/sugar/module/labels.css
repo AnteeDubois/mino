@@ -100,3 +100,25 @@
   border-color: #982b1f;
   background: #982b1f;
 }
+.label.green {
+  background-color: #21a658;
+  color: #ffffff;
+}
+.label.green:hover {
+  background-color: #1a8446;
+  color: #ffffff;
+}
+.label.green.label-clear {
+  border: 2px solid #21a658;
+  color: #21a658;
+}
+.label.green.label-clear:hover,
+.label.green.label-clear:focus {
+  background: #21a658;
+  color: #ffffff;
+}
+.label.green.label-clear:active,
+.label.green.label-clear.active {
+  border-color: #1c8d4b;
+  background: #1c8d4b;
+}

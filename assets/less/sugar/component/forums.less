@@ -144,15 +144,25 @@
  *
  * The individual classes themselves are used more as a located and for positioning.
  */
-dd.forum-stats { 
-    .margin-top(8);
-    > p { display: inline-block; } 
+.forum-stats {
+    line-height: 0;
+
+    width: unit(@quadruple-spacing-unit, px);
+
+    > p { 
+        line-height: 1;
+
+        display: inline-block;
+        margin-left: 1px;
+    }
+
     @media (min-width: @screen-m-min) { 
         > p {
             background-color: transparent;
             border-radius: 0;
 
-            display: inline-flex;        
+            display: inline-flex;
+            float: right;       
 
             > dfn { 
                 font-weight: 700;
@@ -171,7 +181,7 @@ dd.forum-stats {
                 .padding(@eighth-spacing-unit, @quarter-spacing-unit);
             }
 
-            .margin-bottom(@quarter-spacing-unit);
+            &:first-child { .margin-bottom(@quarter-spacing-unit); }
         }  
     }
 
@@ -182,8 +192,11 @@ dd.forum-stats {
  *
  * Position the recent post section
  */
-dd.forum-recent {
-    .margin-top(8);
+.forum-recent { 
+    line-height: 1;
+    
+    .padding-left(@base-spacing-unit);
+    .padding-top(4);
 }
 
 /**
@@ -201,9 +214,11 @@ dd.forum-recent {
  *
  * Style the user of the most recent post
  */
-.forum-recent-user > a {
-    //.font-size(@half-spacing-unit);
-    .line-height(24);
+.forum-recent-user {
+    line-height: 1;
+
+    margin: 0;
+    > a { .line-height(24); }
 }  
 
 /**
@@ -211,5 +226,8 @@ dd.forum-recent {
  *
  * Style the time of the most recent post
  */
-.forum-recent-time { .font-size(@half-spacing-unit); }  
+.forum-recent-time { 
+    .font-size(@half-spacing-unit);
+    line-height: 1; 
+}  
 
