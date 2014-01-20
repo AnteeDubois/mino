@@ -11,7 +11,7 @@
                 <p class="forum-stats-posts"><dfn class="hidden-s">Replies: </dfn><b><?php echo $posts; ?></b></p>
             </div>
             <div class="forum-recent pull-left hidden-s">
-                <img class="forum-avatar pull-left" src="assets/img/user.jpg" alt="" />
+                <img class="forum-avatar img-circle pull-left" src="assets/img/user.png" alt="" />
                 <dl class="forum-recent-info pull-left">
                     <dt class="forum-recent-user"><a class="<?php echo $usertype; ?>" href="#"><?php echo $user; ?></a></dt>
                     <dd class="forum-recent-time"><time><?php echo $time; ?></time></dd>
