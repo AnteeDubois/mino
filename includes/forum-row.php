@@ -1,6 +1,6 @@
 <li class="forum-row grid-row">
-    <dl>
         <dt class="forum-header grid-m-7 grid-l-8">
+    <dl class="forum-row-wrap">
             <h2 class="forum-title h5"><a href="#"><?php echo $title; ?></a><?php echo $status; ?></h2>
             <dfn class="forum-description"><?php echo $desc; ?></dfn>
         </dt>
