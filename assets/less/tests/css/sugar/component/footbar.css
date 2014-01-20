@@ -20,10 +20,12 @@
   padding: 36px;
   padding: 2.25rem;
 }
-.footbar a {
+.footbar > a,
+.footbar > p > a {
   color: #46698c;
 }
-.footbar a:hover {
+.footbar > a:hover,
+.footbar > p > a:hover {
   color: #1dbf9f;
 }
 /**

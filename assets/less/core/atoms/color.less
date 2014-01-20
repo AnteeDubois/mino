@@ -1,91 +1,83 @@
 /*------------------------------------*\
     $ATOM-COLORS
 \*------------------------------------*/
-
 /**
  * Used for comon clour changes to text
  */
 
-.black-pure         { background-color: @black-pure; }
-.black-dark         { background-color: @black-dark; }
-.black              { background-color: @black; }
-.black-light        { background-color: @black-light; }
-.gray-darker        { background-color: @gray-darker; }
-.gray-dark          { background-color: @gray-dark; }
-.gray               { background-color: @gray; }
-.gray-light         { background-color: @gray-light; }
-.gray-lighter       { background-color: @gray-lighter; }
-.white-darkest      { background-color: @white-darkest; }
-.white-darker       { background-color: @white-darker; }
-.white-dark         { background-color: @white-dark; }
-.white              { background-color: @white; }
+.black-pure         { .color(@black-pure, @white, @bg-hover-color: mix(@black-pure, white, 70%), @black); }
+.black-dark         { .color(@black-dark, @white, @bg-hover-color: mix(@black-dark, white, 70%), @black-pure); }
+.black              { .color(@black, @white, @bg-hover-color: mix(@black, white, 70%), @black-dark); }
+.black-light        { .color(@black-light, @white, @bg-hover-color: mix(@black-light, white, 70%), @black); }
 
-.silver-light       { background-color: @silver-light; }
-.silver             { background-color: @silver; }
-.silver-dark        { background-color: @silver-dark; }
+.gray-darker        { .color(@gray-darker); }
+.gray-dark          { .color(@gray-dark); }
+.gray               { .color(@gray); }
+.gray-light         { .color(@gray-light); }
+.gray-lighter       { .color(@gray-lighter); }
 
-.bluegray-light     { background-color: @bluegray-light; }
-.bluegray           { background-color: @bluegray; }
-.bluegray-dark      { background-color: @bluegray-dark; }
 
-.pink-light         { background-color: @pink-light; }
-.pink               { background-color: @pink; }
-.pink-dark          { background-color: @pink-dark; }
+.white-darkest      { .color(@white-darkest, @black); }
+.white-darker       { .color(@white-darker, @black); }
+.white-dark         { .color(@white-dark, @black); }
+.white              { .color(@white, @black); }
 
-.purple-light       { background-color: @purple-light; }
-.purple             { background-color: @purple; }
-.purple-dark        { background-color: @purple-dark; }
+.silver-dark        { .color(@silver-dark, @black); }
+.silver             { .color(@silver, @black); }
+.silver-light       { .color(@silver-light, @black); }
 
-.blue-light         { background-color: @blue-light; }
-.blue               { background-color: @blue; }
-.blue-dark          { background-color: @blue-dark; }
+.bluegray-dark      { .color(@bluegray-dark); }
+.bluegray           { .color(@bluegray); }
+.bluegray-light     { .color(@bluegray-light); }
 
-.navy-light         { background-color: @navy-light; }
-.navy               { background-color: @navy; }
-.navy-dark          { background-color: @navy-dark; }
+.pink-dark          { .color(@pink-dark); }
+.pink               { .color(@pink); }
+.pink-light         { .color(@pink-light); }
 
-.blue-alt-light     { background-color: @blue-alt-light; }
-.blue-alt           { background-color: @blue-alt; }
-.blue-alt-dark      { background-color: @blue-alt-dark; }
+.purple-dark        { .color(@purple-dark); }
+.purple             { .color(@purple); }
+.purple-light       { .color(@purple-light); }
 
-.teal-light         { background-color: @teal-light; }
-.teal               { 
-    background-color: @teal;
-    p > a { 
-        color: @blue !important;
-        &:hover { color: @blue-dark !important;} 
-    }
- }
+.blue-dark          { .color(@blue-dark); }
+.blue               { .color(@blue); }
+.blue-light         { .color(@blue-light); }
 
-.teal-dark          { background-color: @teal-dark; }
+.blue-alt-dark      { .color(@blue-alt-dark); }
+.blue-alt           { .color(@blue-alt); }
+.blue-alt-light     { .color(@blue-alt-light); }
 
-.green-light        { background-color: @green-light; }
-.green              { background-color: @green; }
-.green-dark         { background-color: @green-dark; }
+.navy-dark          { .color(@navy-dark); }
+.navy               { .color(@navy); }
+.navy-light         { .color(@navy-light); }
 
-.yellow-light       { background-color: @yellow-light; }
-.yellow             { background-color: @yellow; }
-.yellow-dark        { background-color: @yellow-dark; }
+.teal-dark          { .color(@teal-dark); }
+.teal               { .color(@teal); }
+.teal-light         { .color(@teal-light); }
 
-.orange-light       { background-color: @orange-light; }
-.orange             { background-color: @orange; }
-.orange-dark        { background-color: @orange-dark; }
+.green-dark         { .color(@green-dark); }
+.green              { .color(@green); }
+.green-light        { .color(@green-light); }
 
-.peach-light        { background-color: @peach-light; }
-.peach              { background-color: @peach; }
-.peach-dark         { background-color: @peach-dark; }
+.yellow-dark        { .color(@yellow-dark); }
+.yellow             { .color(@yellow); }
+.yellow-light       { .color(@yellow-light); }
 
-.red-light          { background-color: @red-light; }
-.red                { background-color: @red; }
-.red-dark           { background-color: @red-dark; }
+.orange-dark        { .color(@orange-dark); }
+.orange             { .color(@orange); }
+.orange-light       { .color(@orange-light); }
 
-.text-black,
-.white,
-.white-dark,
-.white-darker,
-.white-darkest,
-.silver-light,
-.silver,
-.silver-dark { color: @black !important; }
+.peach-dark         { .color(@peach-dark); }
+.peach              { .color(@peach); }
+.peach-light        { .color(@peach-light); }
+
+.red-dark           { .color(@red-dark); }
+.red                { .color(@red); }
+.red-light          { .color(@red-light); }
+
+.text-black         { color: @black !important; }
+
+.user               { .color(@navy-light, @white, @teal); }
+.admin              { .color(mix(@red-light, white, 70%), @white, @red-dark); }
+.mod                { .color(mix(@green-light, white, 70%), @white, @green-dark); }
 
 
