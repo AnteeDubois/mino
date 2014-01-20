@@ -3,9 +3,7 @@
 \*------------------------------------*/
 
 .info { 
-    @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { 
-        .margin-left(@base-spacing-unit+@quarter-spacing-unit); 
-        
+    @media (min-width: @screen-m-min) and (max-width: @screen-m-max) {    
         .list-inline > dt { .font-size(@half-spacing-unit); }
         .list-inline > dd { 
             .font-size(@half-spacing-unit); 
@@ -14,16 +12,17 @@
             .margin-left(@quarter-spacing-unit);
         }
     }
-    @media (min-width: @screen-l-min) { .margin-left(@triple-spacing-unit); }
-    @media (min-width: @screen-w-min) { .margin-left(@octuple-spacing-unit + @half-spacing-unit); }
 }
 
 .info-stats {
-    margin-left: auto;
-    margin-right: auto;
-
     text-align: center;
 
-    .margin-left(-@quarter-spacing-unit);
+    margin-left: auto;
+    margin-right: auto;
+    width: 244px;
+
+    @media (min-width: @screen-m-min) { width: 627px; }
+    @media (min-width: @screen-l-min) { width: 751px; }
+
     > dt { color: @bluegray; }
 }
