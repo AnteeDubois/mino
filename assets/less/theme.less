@@ -15,57 +15,5 @@
 /*------------------------------------*\
     $USER STYLES
 \*------------------------------------*/
-.wrapper { .padding(@double-spacing-unit); }
-.btn {
-    /* Text */
-    .font-size(16);     
-    font-family: "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
-    font-weight: normal;                               
-    .line-height(@base-line-height);
-    //letter-spacing: 1px;
-    vertical-align: middle;
-    white-space: nowrap;
-    -webkit-font-smoothing: subpixel-antialiased;
-
-    /* Decoration */                                  
-    background-color: @white-darker;
-    #gradient.vertical(@white, @white-darker);
-    border: 1px solid @gray-light;
-    border-radius: 4px;
-    .box-shadow(0 0 0 1px #FFFFFF inset);
-    color: #BC2A4D;
-    cursor: pointer;
-    .transition(.25s linear);
-
-    /* Layout */                
-    display: inline-block;
-    margin: 0;                                                             
-    .padding(2, 8);
-            
-    &:hover {
-        text-decoration: none;
-        border-color: #0a8ed0;
-        #gradient.vertical(@white-darker, @white);
-        color: #BC2A4D;
-        text-shadow: 1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, -1px -1px 0 rgba(188, 42, 77, 0.2);
-        .octicons { color: #0a8ed0; }
-    }
-
-    &:active,
-    &:focus { outline: none; }
-
-    &:active { .box-shadow(inset 0 3px 5px rgba(0,0,0,.125)); }
-
-    span {
-        .font-size(13);
-        font-weight: 700;
-    }
-}
-
-.ui-page {
-    outline: none;
-}
-
-.ui-loader {
-    display: none;
-}
+.ui-page { outline: none; }
+.ui-loader { display: none; }
