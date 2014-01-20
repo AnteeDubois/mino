@@ -481,26 +481,79 @@
 
 
 // Color Variantes
-.var-color(@type ,@btn-color, @text-color: @white, @btn-hover-color: darken(@btn-color, 8%), @btn-active-color: mix(@btn-color, black, 85%)) {
-    background-color: @btn-color;
+.color(@bg-color, @text-color: @white, @bg-hover-color: darken(@bg-color, 8%), @bg-active-color: mix(@bg-color, black, 85%)) {
+    background-color: @bg-color;
     color: @text-color;
 
-    &:hover {
-        background-color: @btn-hover-color;
-        color: @text-color;
+    &[href] { 
+        background-color: transparent;
+        color: @bg-color; 
+
+        &:hover {
+            background-color: transparent;
+            color: @bg-hover-color;
+        }
     }
 
-    &.@{type}-clear {
-        border: 2px solid @btn-color;
-        color: @btn-color;
+    &.icon,
+    &.octicons { 
+        background-color: transparent;
+        color: @bg-color;
+    }
+
+    &.label { 
+        background-color: @bg-color;
+        color: @text-color;
+
+        &[href],
+        a & {
+           background-color: @bg-color;
+           color: @text-color;
+
+           &:hover { 
+                background-color: @bg-hover-color;
+                color: @text-color;
+            }
+        }
+    }
+
+    &.badge { 
+        background-color: @pink;
+        color: @text-color;
+    } 
+
+    &.btn {
+        background-color: @bg-color;
+        color: @text-color;
+
+        &.clear {
+            border: 2px solid @bg-color;
+            color: @bg-color;
+
+            &:hover, &:focus { 
+                background: @bg-color;  
+                color: @text-color;
+            }
+
+            &:active, &.active {
+                border-color: @bg-active-color;
+                background: @bg-active-color;
+            }
+        }
+    }
+
+    &.clear {
+        border: 2px solid @bg-color;
+        color: @bg-color;
 
         &:hover, &:focus { 
-            background: @btn-color;  
+            background: @bg-color;  
             color: @text-color;
         }
+
         &:active, &.active {
-            border-color: @btn-active-color;
-            background: @btn-active-color;
+            border-color: @bg-active-color;
+            background: @bg-active-color;
         }
     }
 }
