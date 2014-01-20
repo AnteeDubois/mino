@@ -69,8 +69,12 @@
     border-bottom: 1px solid @silver;
     box-shadow: 0 2px 1px -1px @white;
     .padding-vertical(@quarter-spacing-unit, @quarter-spacing-unit + @eighth-spacing-unit);
+    .padding-horizontal(@half-spacing-unit);
 
-    @media (max-width: @screen-s-max) { .padding-horizontal(@half-spacing-unit); }
+    @media (min-width: @screen-m-min) {
+        .padding-horizontal(0);
+        height: unit(@triple-spacing-unit, px);
+    }
 
     &:hover { background-color: @white-dark; }
 }
