@@ -131,9 +131,9 @@
  */
 .forum-info {
     .margin-top(@quarter-spacing-unit - 1);
-    @media (min-width: @screen-m-min) { .padding-left(32); }
-    @media (min-width: @screen-l-min) { .padding-left(@triple-spacing-unit - @half-spacing-unit); }
-    @media (min-width: @screen-w-min) { .padding-left(52); }
+    @media (min-width: @screen-m-min) { .padding-left(20); }
+    @media (min-width: @screen-l-min) { .padding-left(@double-spacing-unit); }
+    @media (min-width: @screen-w-min) { .padding-left(40); }
 }
 
 /**
@@ -145,8 +145,9 @@
  * The individual classes themselves are used more as a located and for positioning.
  */
 .forum-stats {
-    line-height: 0;
-
+    line-height: 1;
+    
+    .padding-top(@eighth-spacing-unit);
     width: unit(@quadruple-spacing-unit, px);
 
     > p { 
@@ -195,8 +196,8 @@
 .forum-recent { 
     line-height: 1;
     
-    .padding-left(@base-spacing-unit);
-    .padding-top(4);
+    .padding-left(@base-spacing-unit+@half-spacing-unit);
+    .padding-top(@eighth-spacing-unit);
 }
 
 /**
@@ -208,6 +209,17 @@
     .margin-right(@half-spacing-unit);
     width: 42px; 
 }
+
+/**
+ * Forum recent info
+ *
+ * Position the text block for the recent post section
+ */
+.forum-recent-info { 
+    line-height: 1;
+
+    margin: 0;
+    .padding-top(@eighth-spacing-unit);
 }
 
 /**
