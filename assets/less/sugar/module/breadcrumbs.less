@@ -8,8 +8,8 @@
 .breadcrumbs {
     line-height: 1;
 
-    background-color: @silver-light;
-    color: @bluegray;
+    background-color: @breadcrumb-default-bg;
+    color: @breadcrumb-default-color;
     
     float: left;
     display: inline-block;
@@ -21,12 +21,12 @@
 
     li {
         padding: 0;
-        > span { color: @navy; }
+        > span { color: @breadcrumb-default-color; }
         a { 
             
             .padding(@quarter-spacing-unit);
-            color: @bluegray-light; 
-            &:hover { color: @navy; }  
+            color: @breadcrumb-default-link-color; 
+            &:hover { color: @breadcrumb-default-link-hover-color; }  
         }
     }
 
@@ -39,7 +39,13 @@
     }
 }
 
-.breadcrumbs-wrap { @media (max-width: @screen-s-max) { &.grid {.padding(0); } } }
+.breadcrumbs-wrap { 
+    background-color: @breadcrumb-default-bg;
+
+    @media (max-width: @screen-s-max) { 
+        .grid {.padding(0); } 
+    } 
+}
 
 .breadcrumbs-index {
     float: left;
