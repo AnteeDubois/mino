@@ -1,7 +1,7 @@
             <div class="grid">
                 <nav class="grid-row list-inline">
                     <li class="active grid-s-3 text-center">
-                        <a class="pull-left sidenav-btn" href="#" title="Menu"><span class="icon icon-reorder"></span>  <span class="badge">7</span></a>
+                        <a class="pull-left sidenav-btn" href="#" title="Menu"><span class="icon icon-reorder"></span>  <span class="badge pomegranate">7</span></a>
                     </li>
                     <li class="active grid-s-6 text-center">
                         <a class="navbar-brand brand" href="/" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo.png" alt="PHPBB | Creating Communities"> <span class="sr-only">PHPBB</span></a>
