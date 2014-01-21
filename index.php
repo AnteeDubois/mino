@@ -31,9 +31,11 @@
                     <?php include("includes/forumlist.php"); ?>
                     
                 </div>
-                <footer class="footbar grid text-center">
-                    <?php include("includes/info.php"); ?>
-                    <?php include("includes/copyright.php"); ?>
+                <footer class="footbar">
+                    <section class="footbar-wrap grid">
+                        <?php include("includes/info.php"); ?>
+                        <?php include("includes/copyright.php"); ?>
+                    </section>                        
                 </footer>
             </div>
             
