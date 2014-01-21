@@ -1,22 +1,18 @@
 //------------------------------------//
 //  $VARS
 //------------------------------------//
+
 // Overide defaults.less
+
+@base-bg-color:                             @clouds;
+
+// Base colour for links & branding
+@base-link-color:                           @wet-asphalt;
+@base-link-hover-color:                     @turquuoise;
 
 //------------------------------------//
 //  $MODULES
 //------------------------------------//
-
-// Brand
-@brand-color:                               @black;
-@brand-font:                                "Hobo Std";
-@brand-logo-font:                           'sugar';
-@brand-logo-size:                           @gamma + 2;
-@brand-logo-color:                          @white;
-@brand-logo-bg:                             @gray;
-@brand-logo-radius:                         50%;
-@brand-logo-border-size:                    3;
-@brand-logo-border-color:                   @gray-dark;
 
 // Buttons
 @button-default-bg:                         @base-link-color;
@@ -31,12 +27,6 @@
 @icon-normal:                               16;
 @icon-medium:                               18;
 @icon-large:                                32;
-
-// Nav
-@nav-link-spacing:                          @base-spacing-unit;
-@nav-link-hover-bg:                         @white;
-@nav-disabled-link-color:                   @gray-light;
-@nav-disabled-link-hover-color:             @gray-light;
 
 // Badges
 // -------------------------
@@ -53,44 +43,44 @@
 //  $COMPONENTS
 //------------------------------------//
 
-// Media -- since media is a reserved word we substitute item in its place
-@item-heading-color:                        @red;
-@item-heading-size-small:                   @zeta;
-@item-heading-size-medium:                  @epsilon;
-@item-heading-size-large:                   @epsilon;
-@item-heading-spacing:                      @quarter-spacing-unit;
-
-@item-text-color:                           @bluegray;
-
-@item-object-size:                          50;
-
 // Navbar
-@navbar-height:                             50;
-@navbar-border-radius:                      @base-radius;
-
+@navbar-height:                             @base-spacing-unit - @quarter-spacing-unit;
 @navbar-default-color:                      @gray-darker;
-@navbar-default-bg:                         @white-dark;
-@navbar-default-border:                     darken(@navbar-default-bg, 6.5%);
+@navbar-default-bg:                         @wet-asphalt;
+@navbar-default-link-color:                 mix(@wet-asphalt, white, 80%);
 
-@navbar-default-link-color:                 @bluegray;
-@navbar-default-link-hover-color:           @base-link-color;
-@navbar-default-link-hover-bg:              transparent;
-@navbar-default-link-active-color:          @navbar-default-link-hover-color;
-@navbar-default-link-active-bg:             @navbar-default-link-hover-bg;
-@navbar-default-link-disabled-color:        @bluegray-dark;
-@navbar-default-link-disabled-bg:           transparent;
+// Breadcrumb
+@breadcrumb-default-color:                  @white;
+@breadcrumb-default-bg:                     @turquuoise;
+@breadcrumb-default-link-color:             mix(@turquuoise, black, 85%);
+@breadcrumb-default-link-hover-color:       @white;
 
-@navbar-default-brand-color:                @navy-dark; // mix(@base-link-color, @black, 20%);
-@navbar-default-brand-hover-color:          @base-link-color;
-@navbar-default-brand-hover-bg:             transparent;
+// Forums
+@forums-name-bg:                            @wet-asphalt;
+@forums-name-link-color:                    @white;
+@forums-name-link-hover-color:              @white;
 
-@navbar-default-toggle-hover-bg:            @white-darkest;
-@navbar-default-toggle-icon-bar-bg:         @gray-lighter;
-@navbar-default-toggle-border-color:        @white-darkest;
+// Forum
+@forum-row-height:                          @triple-spacing-unit;
+@forum-row-bg:                        @white;
+@forum-row-hover-bg:                        @clouds;
+@forum-row-border-color:                    mix(@clouds, black, 95%);
+
+@forum-default-color:                       @gray-darker;
+
+@forum-title-link-color:                    @wet-asphalt;
+@forum-title-link-hover-color:              @turquuoise;
+
+@forum-stats-dfn-color:                     @concrete;
+@forum-stats-label-bg:                      @forum-stats-dfn-color;
+@forum-stats-label-text-color:              @white;
 
 // Footbar
-@footbar-bg:                                @silver-light;
-@footbar-color:                             @bluegray;
-@footbar-link-color:                        @navy-light;
-@footbar-link-hover-color:                  @teal;
+@footbar-bg:                                @clouds;
+@footbar-color:                             @concrete;
+@footbar-link-color:                        @wet-asphalt;
+@footbar-link-hover-color:                  @turquuoise;
+
+// Info
+@info-default-color:                        @concrete;
 
