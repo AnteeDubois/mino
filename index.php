@@ -23,7 +23,7 @@
             </header>
             <?php include("includes/sidenav.php"); ?>
             <div class="outer-wrap">
-                <section class="breadcrumbs-wrap grid">
+                <section class="breadcrumbs-wrap">
                     <?php include("includes/breadcrumbs.php"); ?>
                 </section>
                 <div class="content inner-wrap">
