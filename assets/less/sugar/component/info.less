@@ -21,7 +21,12 @@
     margin-right: auto;
     width: 244px;
 
-    @media (min-width: @screen-m-min) { width: 627px; }
+    > dd { text-align: center; }
+
+    @media (min-width: @screen-m-min) { 
+        width: 627px; 
+        > dd { text-align: left; }
+    }
     @media (min-width: @screen-l-min) { width: 751px; }
 
     > dt { color: @info-default-color; }
