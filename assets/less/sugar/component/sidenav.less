@@ -87,7 +87,11 @@
                 
             top: -4px;
         }
-        .badge { top: -5px; }
+
+        .badge { 
+            .margin(-@base-spacing-unit, 0, 0, -@half-spacing-unit);
+            //position: absolute;
+        }
 
         &.is-active > a {
             //border-bottom: 0;
