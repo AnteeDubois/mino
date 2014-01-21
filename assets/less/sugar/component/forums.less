@@ -8,8 +8,6 @@
  * Since we use alot of list elemetns not as intended we need a micro reset for them to make styling things easier
  */
 .forums {
-    background-color: @white;
-
     margin: 0;
 
     //dl,
@@ -44,14 +42,14 @@
 .forum-name {
     line-height: 1;
 
-    background-color: @bluegray;
+    background-color: @forums-name-bg;
 
     margin: 0;
 
     > a { 
         .font-size(@base-font-size);
 
-        color: @white;
+        color: @forums-name-link-color;
 
         display: block;
         .padding(@quarter-spacing-unit, @base-spacing-unit);
@@ -65,18 +63,21 @@
  *
  * Here we style the look of each forum row
  */
-.forum-row { 
-    border-bottom: 1px solid @silver;
-    box-shadow: 0 2px 1px -1px @white;
+.forum-row {
+    background-color: @forum-row-bg;
+    border-right: 1px solid @forum-row-border-color;
+    border-bottom: 1px solid @forum-row-border-color;
+    border-left: 1px solid @forum-row-border-color;
+
     .padding-vertical(@quarter-spacing-unit, @quarter-spacing-unit + @eighth-spacing-unit);
     .padding-horizontal(@half-spacing-unit);
 
     @media (min-width: @screen-m-min) {
         .padding-horizontal(0);
-        height: unit(@triple-spacing-unit, px);
+        height: unit(@forum-row-height, px);
     }
 
-    &:hover { background-color: @white-dark; }
+    &:hover { background-color: @forum-row-hover-bg; }
 }
 
 /**
@@ -91,8 +92,8 @@
     margin: 0;
 
     > a { 
-        color: @navy-light;
-        &:hover { color: @teal; }
+        color: @forum-title-link-color;
+        &:hover { color: @forum-title-link-hover-color; }
     }
 
     .label { .margin-left(@quarter-spacing-unit); }
@@ -170,14 +171,15 @@
                 font-weight: 700;
                 font-style: normal;
 
-                color: @bluegray;
+                color: @forum-stats-dfn-color;
 
                 .padding-right(@half-spacing-unit); 
             }
 
             > b {
-                background-color: @bluegray;
+                background-color: @forum-stats-label-bg;
                 border-radius: unit(3, px);
+                color: @forum-stats-label-text-color;
 
                 .margin-top(-@eighth-spacing-unit);
                 .padding(@eighth-spacing-unit, @quarter-spacing-unit);
