@@ -518,7 +518,7 @@
     }
 
     &.badge { 
-        background-color: @pink;
+        background-color: @bg-color;
         color: @text-color;
     } 
 
@@ -543,18 +543,9 @@
     }
 
     &.clear {
+        background-color: transparent;
         border: 2px solid @bg-color;
         color: @bg-color;
-
-        &:hover, &:focus { 
-            background: @bg-color;  
-            color: @text-color;
-        }
-
-        &:active, &.active {
-            border-color: @bg-active-color;
-            background: @bg-active-color;
-        }
     }
 }
 
