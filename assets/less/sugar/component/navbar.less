@@ -8,15 +8,15 @@
 .navbar {
     .font-size(@base-spacing-unit);
 
-    background-color: @black;
-    color: @white;
+    background-color: @navbar-default-bg;
+    color: @navbar-default-color;
 
     //height: 50px;
     .padding(@half-spacing-unit);
 
     a { 
-        color: @gray; 
-        &:hover { color: @white; }
+        color: @navbar-default-link-color; 
+        &:hover { color: @navbar-default-link-hover-color; }
     }
 }
 
@@ -24,7 +24,7 @@
  * Brand Logo in Navbar
  */
 .navbar-brand .brand-logo {
-    height: 40px;
+    height: unit(@navbar-height, px);
     width: 120px;
     margin-bottom: -10px; // Weird spacing anomoly in chrome on OSX Maverick
 }
