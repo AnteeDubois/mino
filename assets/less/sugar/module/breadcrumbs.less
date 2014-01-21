@@ -49,8 +49,8 @@
     .pull-left { 
         //width: unit(@base-spacing-unit + @half-spacing-unit, px); 
         @media only screen and (max-width: @screen-s-max) {
-            border-right: 1px solid @silver;
-            box-shadow: 2px 0 1px -1px @white;
+            border-right: 1px solid @breadcrumb-default-color;
+            //box-shadow: 2px 0 1px -1px @white;
         }
     }
     .pull-right { width: 86%; }
@@ -99,8 +99,7 @@
             > li {
                 line-height: 1;
 
-                border-top: 1px solid @silver;
-                box-shadow: 0 2px 1px -1px @white inset;
+                border-top: 1px solid @breadcrumb-default-color;
 
                 .padding(@half-spacing-unit);
                 

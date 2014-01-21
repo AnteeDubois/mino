@@ -50,8 +50,8 @@
             .line-height(@base-spacing-unit);
             outline: 0;
     
-            border-bottom: 1px solid @silver;
-            box-shadow: 0 2px 1px -1px @white;
+            //border-bottom: 1px solid @silver;
+            //box-shadow: 0 2px 1px -1px @white;
             color: @bluegray-light;
     
             display: block;
@@ -89,8 +89,8 @@
         .badge { top: -5px; }
 
         &.is-active > a {
-            border-bottom: 0;
-            box-shadow: none;
+            //border-bottom: 0;
+            //box-shadow: none;
             color: @navy;
         }
     }
@@ -100,8 +100,8 @@
  * sidenav menu sub
  */
 .sidenav-menu-sub {
-    border-bottom: 1px solid @silver;
-    box-shadow: 0 2px 1px -1px @white;
+    //border-bottom: 1px solid @silver;
+    //box-shadow: 0 2px 1px -1px @white;
 
     display: none;
     .padding(0, 0, @half-spacing-unit);
@@ -143,11 +143,6 @@ body.is-active {
         position: absolute;
         width: unit(@sidenav-width, px); 
         .transition(.3s all ease );
-    }
-
-    .content { 
-        border-left: 1px solid @silver;
-        border-radius:0 0 0 unit(@base-radius-medium, px); 
     }
 
     .outer-wrap { 
