@@ -16,13 +16,13 @@
 .navbar {
   font-size: 24px;
   font-size: 1.5rem;
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #34495e;
+  color: #666666;
   padding: 12px;
   padding: 0.75rem;
 }
 .navbar a {
-  color: #999999;
+  color: #5d6d7e;
 }
 .navbar a:hover {
   color: #ffffff;
@@ -31,7 +31,7 @@
  * Brand Logo in Navbar
  */
 .navbar-brand .brand-logo {
-  height: 40px;
+  height: 18px;
   width: 120px;
   margin-bottom: -10px;
 }

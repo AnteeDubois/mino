@@ -30,9 +30,15 @@
   margin-right: auto;
   width: 244px;
 }
+.info-stats > dd {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .info-stats {
     width: 627px;
+  }
+  .info-stats > dd {
+    text-align: left;
   }
 }
 @media (min-width: 984px) {
@@ -41,5 +47,5 @@
   }
 }
 .info-stats > dt {
-  color: #8d9ea6;
+  color: #95a5a6;
 }

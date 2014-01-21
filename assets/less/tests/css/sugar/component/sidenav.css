@@ -16,6 +16,7 @@
 .sidenav {
   background-color: #edf1f2;
   display: inline-block;
+  height: 100%;
   left: -260px;
   margin: 0;
   position: absolute;
@@ -47,8 +48,8 @@
  * sidenav menu
  */
 .sidenav-menu {
-  padding: 48px 15px;
-  padding: 3rem 0.9375rem;
+  padding: 48px 0px;
+  padding: 3rem 0rem;
   margin: 0;
 }
 .sidenav-menu > li {
@@ -61,8 +62,6 @@
   line-height: 24px;
   line-height: 1.5rem;
   outline: 0;
-  border-bottom: 1px solid #c8cbcc;
-  box-shadow: 0 2px 1px -1px #ffffff;
   color: #b8c6cc;
   display: block;
   padding: 0px 0px 12px;
@@ -98,19 +97,16 @@
   top: -4px;
 }
 .sidenav-menu > li .badge {
-  top: -5px;
+  margin: -24px 0px 0px -12px;
+  margin: -1.5rem 0rem 0rem -0.75rem;
 }
 .sidenav-menu > li.is-active > a {
-  border-bottom: 0;
-  box-shadow: none;
   color: #384f66;
 }
 /**
  * sidenav menu sub
  */
 .sidenav-menu-sub {
-  border-bottom: 1px solid #c8cbcc;
-  box-shadow: 0 2px 1px -1px #ffffff;
   display: none;
   padding: 0px 0px 12px;
   padding: 0rem 0rem 0.75rem;
@@ -154,10 +150,6 @@ body.is-active .sidenav {
   width: 260px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
-}
-body.is-active .content {
-  border-left: 1px solid #c8cbcc;
-  border-radius: 0 0 0 5px;
 }
 body.is-active .outer-wrap {
   margin-left: 260px;

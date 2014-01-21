@@ -1795,7 +1795,7 @@
   -webkit-font-smoothing: subpixel-antialiased;
   /* [7] */
   /* Decoration */
-  background-color: #21b5e4;
+  background-color: #34495e;
   /* [4] */
   background-image: none;
   /* [5] */
@@ -1826,7 +1826,7 @@
 .btn:hover {
   text-decoration: none;
   /* [9] */
-  background-color: #189bc4;
+  background-color: #253544;
   color: #ffffff;
 }
 .btn:active,
@@ -1840,20 +1840,20 @@
 }
 .btn.clear {
   background: none;
-  border: 2px solid #21b5e4;
-  color: #21b5e4;
+  border: 2px solid #34495e;
+  color: #34495e;
   padding: 12px 18px;
   padding: 0.75rem 1.125rem;
 }
 .btn.clear:hover,
 .btn.clear:focus {
-  background: #21b5e4;
+  background: #34495e;
   color: #ffffff;
 }
 .btn.clear:active,
 .btn.clear.active {
-  border-color: #1c9ac2;
-  background: #1c9ac2;
+  border-color: #2c3e50;
+  background: #2c3e50;
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2253,12 +2253,12 @@ a.badge:focus {
   padding: 0.1875rem 0.375rem;
 }
 .label[href] {
-  background-color: #21b5e4;
+  background-color: #34495e;
 }
 .label[href]:hover,
 .label[href]:focus {
   text-decoration: none;
-  background-color: #1482a4;
+  background-color: #1abc9c;
   color: #ffffff;
   cursor: pointer;
 }
@@ -2289,8 +2289,8 @@ a.badge:focus {
  */
 .breadcrumbs {
   line-height: 1;
-  background-color: #edf1f2;
-  color: #8d9ea6;
+  background-color: #1abc9c;
+  color: #ffffff;
   float: left;
   display: inline-block;
   margin: 0;
@@ -2303,15 +2303,15 @@ a.badge:focus {
   padding: 0;
 }
 .breadcrumbs li > span {
-  color: #384f66;
+  color: #ffffff;
 }
 .breadcrumbs li a {
   padding: 6px;
   padding: 0.375rem;
-  color: #b8c6cc;
+  color: #16a085;
 }
 .breadcrumbs li a:hover {
-  color: #384f66;
+  color: #ffffff;
 }
 .breadcrumbs .icon {
   font-size: 24px;
@@ -2326,8 +2326,11 @@ a.badge:focus {
     width: 100%;
   }
 }
+.breadcrumbs-wrap {
+  background-color: #1abc9c;
+}
 @media (max-width: 767px) {
-  .breadcrumbs-wrap.grid {
+  .breadcrumbs-wrap .grid {
     padding: 0px;
     padding: 0rem;
   }
@@ -2339,8 +2342,7 @@ a.badge:focus {
 }
 @media only screen and (max-width: 767px) {
   .breadcrumbs-index .pull-left {
-    border-right: 1px solid #c8cbcc;
-    box-shadow: 2px 0 1px -1px #ffffff;
+    border-right: 1px solid #ffffff;
   }
 }
 .breadcrumbs-index .pull-right {
@@ -2386,8 +2388,7 @@ a.badge:focus {
   }
   .breadcrumbs-crumbs > ul > li {
     line-height: 1;
-    border-top: 1px solid #c8cbcc;
-    box-shadow: 0 2px 1px -1px #ffffff inset;
+    border-top: 1px solid #ffffff;
     padding: 12px;
     padding: 0.75rem;
   }
@@ -2413,109 +2414,6 @@ a.badge:focus {
   }
 }
 /*------------------------------------*\
-    $MODULE-MEDIA
-\*------------------------------------*/
-/**
- * Media list
- * make UL/OL act like we want it too
- */
-.media-list {
-  list-style: none;
-  margin: 0;
-}
-.media-list:before,
-.media-list:after {
-  content: " ";
-  display: table;
-}
-.media-list:after {
-  clear: both;
-}
-/**
- * Media Item
- * Float and align the individual elements based on the container width
- */
-.media {
-  vertical-align: top;
-  display: inline-block;
-  margin-bottom: 48px;
-  margin-bottom: 3rem;
-}
-@media only screen and (min-width: 768px) {
-  .media {
-    margin-bottom: 72px;
-    margin-bottom: 4.5rem;
-  }
-}
-/**
- * Media Object
- * This is the properties for the media object IE img
- */
-.media-object {
-  display: block;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
-.media-object.pull-left {
-  margin: 0px 12px 0px 0px;
-  margin: 0rem 0.75rem 0rem 0rem;
-}
-.media-object.pull-right {
-  margin: 0px 0px 0px 12px;
-  margin: 0rem 0rem 0rem 0.75rem;
-}
-.media-object img {
-  width: 50px;
-}
-@media only screen and (min-width: 768px) {
-  .media-object.pull-left {
-    margin: 0px 24px 0px 0px;
-    margin: 0rem 1.5rem 0rem 0rem;
-  }
-  .media-object.pull-right {
-    margin: 0px 0px 0px 24px;
-    margin: 0rem 0rem 0rem 1.5rem;
-  }
-  .media-object img {
-    width: 100px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .media-object.pull-left {
-    margin: 0px 48px 0px 0px;
-    margin: 0rem 3rem 0rem 0rem;
-  }
-  .media-object.pull-right {
-    margin: 0px 0px 0px 48px;
-    margin: 0rem 0rem 0rem 3rem;
-  }
-}
-/**
- * Media Body wrapper
- * This allows us to keep the body of the media eleement on the same line as the media object
- */
-.media-body {
-  overflow: hidden;
-  zoom: 1;
-}
-/**
- * Media Body Heading
- * We use a standard H3 tag for the heading but we may not wnat to use the default H3 styling
- */
-.media-heading {
-  color: #d94636;
-  margin: 0px 0px 6px;
-  margin: 0rem 0rem 0.375rem;
-}
-/**
- * Media Body Text
- * Sometimes e ned to change or modify the text to compensate the heading
- */
-.media-text {
-  color: #8d9ea6;
-  margin: 0;
-}
-/*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
 /*------------------------------------*\
@@ -2527,13 +2425,13 @@ a.badge:focus {
 .navbar {
   font-size: 24px;
   font-size: 1.5rem;
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #34495e;
+  color: #666666;
   padding: 12px;
   padding: 0.75rem;
 }
 .navbar a {
-  color: #999999;
+  color: #5d6d7e;
 }
 .navbar a:hover {
   color: #ffffff;
@@ -2542,7 +2440,7 @@ a.badge:focus {
  * Brand Logo in Navbar
  */
 .navbar-brand .brand-logo {
-  height: 40px;
+  height: 18px;
   width: 120px;
   margin-bottom: -10px;
 }
@@ -2559,6 +2457,7 @@ a.badge:focus {
 .sidenav {
   background-color: #edf1f2;
   display: inline-block;
+  height: 100%;
   left: -260px;
   margin: 0;
   position: absolute;
@@ -2590,8 +2489,8 @@ a.badge:focus {
  * sidenav menu
  */
 .sidenav-menu {
-  padding: 48px 15px;
-  padding: 3rem 0.9375rem;
+  padding: 48px 0px;
+  padding: 3rem 0rem;
   margin: 0;
 }
 .sidenav-menu > li {
@@ -2604,8 +2503,6 @@ a.badge:focus {
   line-height: 24px;
   line-height: 1.5rem;
   outline: 0;
-  border-bottom: 1px solid #c8cbcc;
-  box-shadow: 0 2px 1px -1px #ffffff;
   color: #b8c6cc;
   display: block;
   padding: 0px 0px 12px;
@@ -2641,19 +2538,16 @@ a.badge:focus {
   top: -4px;
 }
 .sidenav-menu > li .badge {
-  top: -5px;
+  margin: -24px 0px 0px -12px;
+  margin: -1.5rem 0rem 0rem -0.75rem;
 }
 .sidenav-menu > li.is-active > a {
-  border-bottom: 0;
-  box-shadow: none;
   color: #384f66;
 }
 /**
  * sidenav menu sub
  */
 .sidenav-menu-sub {
-  border-bottom: 1px solid #c8cbcc;
-  box-shadow: 0 2px 1px -1px #ffffff;
   display: none;
   padding: 0px 0px 12px;
   padding: 0rem 0rem 0.75rem;
@@ -2698,10 +2592,6 @@ body.is-active .sidenav {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-body.is-active .content {
-  border-left: 1px solid #c8cbcc;
-  border-radius: 0 0 0 5px;
-}
 body.is-active .outer-wrap {
   margin-left: 260px;
   margin-left: 16.25rem;
@@ -2714,9 +2604,6 @@ body.is-active .outer-wrap {
 \*------------------------------------*/
 .content {
   background: #edf1f2;
-  border-top: 1px solid #c8cbcc;
-  border-radius: 0;
-  box-shadow: -3px 0px 3px -2px #9da3a6;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -2732,7 +2619,6 @@ body.is-active .outer-wrap {
  * Since we use alot of list elemetns not as intended we need a micro reset for them to make styling things easier
  */
 .forums {
-  background-color: #ffffff;
   margin: 0;
 }
 .forum-list,
@@ -2752,13 +2638,24 @@ body.is-active .outer-wrap {
   }
 }
 /**
+ * Forum
+ *
+ * Individual forum class
+ */
+@media (min-width: 768px) {
+  .forum {
+    margin-top: 24px;
+    margin-top: 1.5rem;
+  }
+}
+/**
  * Forum Name
  *
  * This is the header for each forum section
  */
 .forum-name {
   line-height: 1;
-  background-color: #8d9ea6;
+  background-color: #34495e;
   margin: 0;
 }
 .forum-name > a {
@@ -2778,8 +2675,10 @@ body.is-active .outer-wrap {
  * Here we style the look of each forum row
  */
 .forum-row {
-  border-bottom: 1px solid #c8cbcc;
-  box-shadow: 0 2px 1px -1px #ffffff;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e4e5;
+  border-bottom: 1px solid #e0e4e5;
+  border-left: 1px solid #e0e4e5;
   padding-top: 6px;
   padding-top: 0.375rem;
   padding-bottom: 9px;
@@ -2799,7 +2698,7 @@ body.is-active .outer-wrap {
   }
 }
 .forum-row:hover {
-  background-color: #f2f2f2;
+  background-color: #ecf0f1;
 }
 /**
  * Forum Title
@@ -2818,10 +2717,10 @@ body.is-active .outer-wrap {
   }
 }
 .forum-title > a {
-  color: #46698c;
+  color: #34495e;
 }
 .forum-title > a:hover {
-  color: #1dbf9f;
+  color: #1abc9c;
 }
 .forum-title .label {
   margin-left: 6px;
@@ -2908,13 +2807,14 @@ body.is-active .outer-wrap {
   .forum-stats > p > dfn {
     font-weight: 700;
     font-style: normal;
-    color: #8d9ea6;
+    color: #95a5a6;
     padding-right: 12px;
     padding-right: 0.75rem;
   }
   .forum-stats > p > b {
-    background-color: #8d9ea6;
+    background-color: #95a5a6;
     border-radius: 3px;
+    color: #ffffff;
     margin-top: -3px;
     margin-top: -0.1875rem;
     padding: 3px 6px;
@@ -3004,9 +2904,15 @@ body.is-active .outer-wrap {
   margin-right: auto;
   width: 244px;
 }
+.info-stats > dd {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .info-stats {
     width: 627px;
+  }
+  .info-stats > dd {
+    text-align: left;
   }
 }
 @media (min-width: 984px) {
@@ -3015,7 +2921,7 @@ body.is-active .outer-wrap {
   }
 }
 .info-stats > dt {
-  color: #8d9ea6;
+  color: #95a5a6;
 }
 /*------------------------------------*\
     $COMPONENT-FOOTBAR
@@ -3025,18 +2931,18 @@ body.is-active .outer-wrap {
  * A section at the bottom of the page that replaces the footer similar to a navbar
  */
 .footbar {
-  background-color: #edf1f2;
-  color: #8d9ea6;
+  background-color: #ecf0f1;
+  color: #95a5a6;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar > a,
 .footbar > p > a {
-  color: #46698c;
+  color: #34495e;
 }
 .footbar > a:hover,
 .footbar > p > a:hover {
-  color: #1dbf9f;
+  color: #1abc9c;
 }
 /**
  * Footbar Brand
@@ -3049,10 +2955,10 @@ body.is-active .outer-wrap {
   line-height: 1.6875rem;
 }
 .footbar-brand .brand {
-  color: #46698c;
+  color: #34495e;
 }
 .footbar-brand .brand:hover {
-  color: #1dbf9f;
+  color: #1abc9c;
 }
 @media (max-width: 767px) {
   .footbar-brand {

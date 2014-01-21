@@ -16,7 +16,7 @@
  * 3. Remove outline on focus
  */
 a {
-  color: #21b5e4;
+  color: #34495e;
   text-decoration: none;
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -24,7 +24,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1482a4;
+  color: #1abc9c;
 }
 a:focus {
   outline: none;

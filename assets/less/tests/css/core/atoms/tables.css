@@ -19,7 +19,7 @@
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: #f4fbfe;
+  background-color: #adc0d2;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
