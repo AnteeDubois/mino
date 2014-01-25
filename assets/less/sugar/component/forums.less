@@ -30,7 +30,7 @@
  *
  * Individual forum class
  */
-.forum { @media (min-width: @screen-m-min) { .margin-top(@base-spacing-unit); } }
+.forum { @media (min-width: @screen-m-min) { .margin-top(@double-spacing-unit); } }
 
 /**
  * Forum Name
@@ -41,6 +41,7 @@
     line-height: 1;
 
     background-color: @forums-name-bg;
+    @media (min-width: @screen-m-min) { .border-top-radius(unit(@base-radius, px)); }
 
     margin: 0;
 
@@ -63,19 +64,30 @@
  */
 .forum-row {
     background-color: @forum-row-bg;
-    border-right: 1px solid @forum-row-border-color;
     border-bottom: 1px solid @forum-row-border-color;
-    border-left: 1px solid @forum-row-border-color;
 
     .padding-vertical(@quarter-spacing-unit, @quarter-spacing-unit + @eighth-spacing-unit);
     .padding-horizontal(@half-spacing-unit);
 
     @media (min-width: @screen-m-min) {
+        border-right: 1px solid @forum-row-border-color;
+        border-left: 1px solid @forum-row-border-color;
+
         .padding-horizontal(0);
         height: unit(@forum-row-height, px);
+
+        &:last-of-type { .border-bottom-radius(unit(@base-radius, px)); }
+    }
+    
+    .label { 
+        color: @forum-row-bg;
+        .margin-left(@quarter-spacing-unit); 
     }
 
-    &:hover { background-color: @forum-row-hover-bg; }
+    &:hover { 
+        background-color: @forum-row-hover-bg; 
+        .label { color: @forum-row-hover-bg; }
+    }
 }
 
 /**
@@ -94,7 +106,27 @@
         &:hover { color: @forum-title-link-hover-color; }
     }
 
-    .label { .margin-left(@quarter-spacing-unit); }
+    .icon {
+        .font-size(12);
+        vertical-align: middle;
+        
+        .margin-right(@quarter-spacing-unit);
+    }
+}
+
+/**
+ * Forum icon
+ *
+ * This is the icon next tot he forum title
+ */
+.forum-icon {
+    width: 10px;
+    height: 10px;
+    background-color: @forum-title-link-color;
+    border: 1px solid @forum-title-link-color;
+    display: inline-block;
+    margin-right: 6px;
+    border-radius: 50%;
 }
 
 /**
@@ -163,7 +195,7 @@
 
             display: inline-flex;
             float: right;
-
+            .margin-bottom(@quarter-spacing-unit);
 
             > dfn { 
                 font-weight: 700;
@@ -182,9 +214,6 @@
                 .margin-top(-@eighth-spacing-unit);
                 .padding(@eighth-spacing-unit, @quarter-spacing-unit);
             }
-
-            &:first-child { .margin-bottom(@quarter-spacing-unit); }
-
         }  
     }
 }
