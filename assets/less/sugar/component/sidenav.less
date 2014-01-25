@@ -1,7 +1,6 @@
 /*------------------------------------*\
     $COMPONENT-SIDENAV
 \*------------------------------------*/
-@sidenav-width: 260;
 
 /**
  * Sidenav
@@ -9,7 +8,7 @@
  * This is main class for establishing the sidenav section.
  */
 .sidenav { 
-    background-color: @silver-light;
+    background-color: @sidenav-bg;
 
     display: inline-block;
     height: 100%;
@@ -25,10 +24,6 @@
     -webkit-perspective: 1000;
 
     @media only screen and (max-width: @screen-s-max) {
-        border-right: 1px solid @bluegray-light;
-        box-shadow: 1px 1px 4px 1px @white-darker;
-    
-        
         padding-top: 0;
         position: fixed;
         z-index: 9999;
@@ -55,15 +50,13 @@
             .line-height(@base-spacing-unit);
             outline: 0;
     
-            //border-bottom: 1px solid @silver;
-            //box-shadow: 0 2px 1px -1px @white;
-            color: @bluegray-light;
+            color: @sidenav-link-color;
     
             display: block;
             .padding(0, 0, @half-spacing-unit);
             .margin(0, @half-spacing-unit+@eighth-spacing-unit);
 
-            &:hover { color: @navy; }    
+            &:hover { color: @sidenav-link-hover-color; }    
         }
 
         span { 
@@ -100,7 +93,7 @@
         &.is-active > a {
             //border-bottom: 0;
             //box-shadow: none;
-            color: @navy;
+            color: @sidenav-link-hover-color;
         }
     }
 }
@@ -110,10 +103,18 @@
  *
  * This is where we set the styles related tot he seach feild
  */
-.sidenav-menu-sub {
-    //border-bottom: 1px solid @silver;
-    //box-shadow: 0 2px 1px -1px @white;
+ .sidenav-search {
+    .form {
+        .margin-horizontal(@half-spacing-unit+@eighth-spacing-unit);
+    }
+ }
 
+/**
+ * Sidenav menu sub
+ *
+ * Here we establish the look of the submenu items.
+ */
+.sidenav-menu-sub {
     display: none;
     .padding(0, 0, @half-spacing-unit);
     .margin(0, @half-spacing-unit+@eighth-spacing-unit);
@@ -125,13 +126,13 @@
         .font-size(@half-spacing-unit);
         text-decoration: none;
 
-        color: @navy;
+        color: @sidenav-sub-link-color;
         
         display: block;
         .margin-bottom(@quarter-spacing-unit);
 
         &:hover span { text-decoration: underline; }
-
+        
         .is-active { font-weight: bold; }
     }
 
@@ -159,16 +160,21 @@
 body.is-active { 
     overflow-x: hidden;
     .sidenav {
-        border-right: 0;
-        box-shadow: none;
+        border-top: 1px solid @breadcrumb-border-color;
 
+        @media (min-width: @screen-m-min) { border-top: 3px solid @breadcrumb-border-color; }
         left: 0;
         position: absolute;
         width: unit(@sidenav-width, px); 
         .transition(.3s all ease );
     }
 
-    .outer-wrap { 
+    .content, .footbar { 
+        border-left: 1px solid @breadcrumb-border-color;
+        @media (min-width: @screen-m-min) { border-left: 0; } 
+    }
+
+    .outer-wrap, .footbar {
         .margin-left(@sidenav-width);
         overflow: hidden;
         .transition(.3s all ease );
