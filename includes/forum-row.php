@@ -1,7 +1,7 @@
 <li class="forum-row grid-row">
     <dl class="forum-row-wrap">
         <dt class="forum-header grid-m-6 grid-l-7 grid-w-8">
-            <h2 class="forum-title h5"><a href="#"><?php echo $title; ?></a><?php echo $status; ?></h2>
+            <h2 class="forum-title h5"><?php echo $status; ?><a href="#"><?php echo $title; ?></a><?php echo $label; ?></h2>
             <dfn class="forum-description"><?php echo $desc; ?></dfn>
         </dt>
         <dd class="forum-info grid-m-6 grid-l-5 grid-w-4">

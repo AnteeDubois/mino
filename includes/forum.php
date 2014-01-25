@@ -2,8 +2,9 @@
     <h2 class="forum-name h4"><a href="#" title="FORUM"><?php echo $forum; ?></a></h2>
     <ol class="forum-list list-unstyled">
         <?php
+            $status = '<span class="icon icon-circle peter-river"></span> ';
             $title = '[3.x] Discussion';
-            $status = ' <span class="label pomegranate">LOCKED</span>';
+            $label = ' <span class="label concrete">INFO</span> <span class="label pomegranate">REPORTED</span> <span class="label belize-hole">STICKY</span>';
             $desc = 'General discussion of development ideas and the approaches taken in the 3.x branch of phpBB. The next feature release of phpBB 3 will be 3.1/Ascreaus followed by 3.2/Arsia.';
             $topics = '623';
             $posts = '6439';            
@@ -14,8 +15,9 @@
         ?>
         <?php include("includes/forum-row.php"); ?>
         <?php
+            $status = '';
             $title = '[3.1/Ascraeus] Merged RFCs';
-            $status = ' <span class="label nephritis">NEW</span>';
+            $label = ' <span class="label emerald">NEW</span> <span class="label silver">LOCKED</span>';
             $desc = 'These requests for comments have lead to an implemented feature that has been successfully merged into the 3.1/Ascraeus branch. Everything listed in this forum will be available in phpBB 3.1.';
             $topics = '100';
             $posts = '3300';
@@ -26,8 +28,9 @@
         ?>
         <?php include("includes/forum-row.php"); ?>
         <?php
+            $status = '<span class="icon icon-circle-blank turquuoise"></span> ';
             $title = 'General Development Discussion';
-            $status = '';
+            $label = ' <span class="label orange">HOT</span>';
             $desc = 'Discuss general development subjects that are not specific to a particular version like the versioning control system we use or other infrastructure.';
             $topics = '200';
             $posts = '1398';
