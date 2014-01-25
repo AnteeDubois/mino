@@ -56,6 +56,7 @@
 
     /**
     * Button Clear
+    *
     * Inverts the button effect where it is outlined instead at first and on hover is filled in as in IOS7
     */
     &.clear {
@@ -76,6 +77,8 @@
             .box-shadow(none);
         }
     }
+
+    span { .margin-left(@quarter-spacing-unit); }
 }
 
 /**
@@ -87,11 +90,6 @@
 .btn-delta      { .font-size(@delta); }
 .btn-epsilon    { .font-size(@epsilon); }
 .btn-zeta       { .font-size(@zeta); }
-
-/**
- * Button Icon spacings
- */
-.btn span      { .margin-left(@quarter-spacing-unit); }
 
 /**
  * Button Wide
