@@ -14,6 +14,12 @@ $(function() {
         t.toggleClass("is-active");
         t.hasClass("is-active") ? t.find(".sidenav-menu-sub").slideDown("fast") : t.find(".sidenav-menu-sub").slideUp("fast");
     });
+    $(".navbar-nav-dropdown").click(function(e) {
+        e.stopPropagation();
+        var t = $(this).parent();
+        t.toggleClass("is-active");
+        t.hasClass("is-active") ? t.find(".navbar-nav-sub").slideDown("fast") : t.find(".navbar-nav-sub").slideUp("fast");
+    });
     var e = $(".sidenav");
     $("body").click(function() {
         $(this).hasClass("is-active") && $(this).removeClass("is-active");

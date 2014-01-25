@@ -40,6 +40,21 @@ $(function(){
         }
     });
 
+    // menu dropdown toggle
+    $(".navbar-nav-dropdown").click(function (e) {
+        e.stopPropagation();
+        
+        var $item = $(this).parent();
+        
+        $item.toggleClass("is-active");
+        
+        if ($item.hasClass("is-active")) {
+            $item.find(".navbar-nav-sub").slideDown("fast");
+        } else {
+            $item.find(".navbar-nav-sub").slideUp("fast");
+        }
+    });
+
 
     // mobile side-menu slide toggler
     var $menu = $(".sidenav");
