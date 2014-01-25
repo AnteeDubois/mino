@@ -8,36 +8,38 @@
  * This is where we style the main class
  */
 .breadcrumbs {
-    line-height: 1;
+    line-height: 0;
 
-    background-color: @breadcrumb-default-bg;
-    color: @breadcrumb-default-color;
+    background-color: @breadcrumb-bg;
+    color: @breadcrumb-color;
     
+    display: block;
     float: left;
-    display: inline-block;
-    // .margin(-@base-spacing-unit - @half-spacing-unit, 0, 0);
     margin: 0;
-    .padding-left(@half-spacing-unit);
+    padding: 0;
     position: relative;
     width: 100%;
 
     li {
         padding: 0;
-        > span { color: @breadcrumb-default-color; }
+        width: 100%;
+        > span { color: @breadcrumb-color; }
         a { 
-            
             .padding(@quarter-spacing-unit);
-            color: @breadcrumb-default-link-color; 
-            &:hover { color: @breadcrumb-default-link-hover-color; }  
+            color: @breadcrumb-link-color; 
+            &:hover { color: @breadcrumb-link-hover-color; }  
         }
     }
 
     .icon { .font-size(24); }
 
-    @media only screen and (max-width: @screen-s-max) {
-        display: block;
-        padding: 0;
-        li { width: 100%; }
+    @media only screen and (min-width: @screen-m-min) {
+        display: inline-block;
+        .padding-left(@half-spacing-unit);
+        li { 
+            width: auto; 
+            a { .padding-right(@half-spacing-unit+@eighth-spacing-unit); }
+        }
     }
 }
 
@@ -47,10 +49,15 @@
  * We need a wrapper to span page length and apply a grid
  */
 .breadcrumbs-wrap { 
-    background-color: @breadcrumb-default-bg;
+    background-color: @breadcrumb-bg; 
+    border-top: 1px solid @breadcrumb-border-color;
+    border-bottom: 1px solid @breadcrumb-border-color;   
+    @media (max-width: @screen-s-max) { .grid {.padding(0); } } 
+    @media (min-width: @screen-m-min) { 
+        border-top: 3px solid @breadcrumb-border-color;
+        border-bottom: 0;
 
-    @media (max-width: @screen-s-max) { 
-        .grid {.padding(0); } 
+        .padding-vertical(@eighth-spacing-unit, @quarter-spacing-unit); 
     } 
 }
 
@@ -60,21 +67,17 @@
  * The index link or home link needs its own treatment
  */
 .breadcrumbs-index {
-    float: left;
-    margin: 0;
-    margin-bottom: -2px;
+    display: inline-block;
+    float: none;
+    .pull-left { border-right: 1px solid @breadcrumb-border-color; }
 
-    .pull-left { 
-        //width: unit(@base-spacing-unit + @half-spacing-unit, px); 
-        @media only screen and (max-width: @screen-s-max) {
-            border-right: 1px solid @breadcrumb-default-color;
-            //box-shadow: 2px 0 1px -1px @white;
-        }
-    }
-    .pull-right { width: 86%; }
-    @media only screen and (max-width: @screen-s-max) {
-        display: inline-block;
-        float: none;
+    
+    @media only screen and (min-width: @screen-m-min) {
+        float: left;
+        margin: 0;
+        margin-bottom: -2px;
+        
+        .pull-left { border-right: 0; } 
     }
 }
 
@@ -84,6 +87,8 @@
  * for expanding menu on mobile we need a link to expand the menu
  */
 .breadcrumbs-toggle {
+    display: block;
+    @media only screen and (min-width: @screen-m-min) { display: none; }
     .icon { 
         .font-size(@half-spacing-unit); 
         
@@ -99,47 +104,57 @@
  * This is the indidual links in the breadbrumbs menu
  */
 .breadcrumbs-crumbs {
-    .margin-top(9);
-    .margin-left(@double-spacing-unit - @quarter-spacing-unit);
-    
+    display: none;
+    margin: 0;
     > ul {
         margin: 0;
 
-        // enables momentum scrolling in iOS overflow elements
-        -webkit-overflow-scrolling: touch; 
-        // improves performance issues on mobile
-        -webkit-backface-visibility: hidden;
-        -webkit-perspective: 1000;
-
-        > li:before {
-            .font-size(18);
-
-            content: "\276e"; // Unicode space added since inline-block means non-collapsing white-space
-            .padding(0, @half-spacing-unit, 0, @quarter-spacing-unit);
+        > li {
+            line-height: 1;
+            border-top: 1px solid @breadcrumb-border-color;
+            .padding(@half-spacing-unit);
+            
+            &:before { 
+                content: ""; 
+                padding: 0;
+            }
+            a { 
+                display: block;
+                padding: 0;
+                width: 100%; 
+            }
         }
     }
 
-    @media only screen and (max-width: @screen-s-max) {
-        display: none;
-        margin: 0;
-
+    @media only screen and (min-width: @screen-m-min) {
+        display: inline-block;
+        margin-top: 0;
+        //.margin-left(@double-spacing-unit - @quarter-spacing-unit);
+        
         > ul {
+            // enables momentum scrolling in iOS overflow elements
+            -webkit-overflow-scrolling: touch; 
+            // improves performance issues on mobile
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+    
             > li {
-                line-height: 1;
-
-                border-top: 1px solid @breadcrumb-default-color;
-
-                .padding(@half-spacing-unit);
-                
-                &:before { 
-                    content: ""; 
-                    padding: 0;
+                padding: 0;
+                border: 0;
+                &:before {
+                    .font-size(18);
+                    font-family: 'octicons';
+                    vertical-align: middle;
+    
+                    content: "\f078"; // Unicode space added since inline-block means non-collapsing white-space
+                    .padding(0, 9, 0, 0);
                 }
+                &:last-of-type:before { .padding-right(@half-spacing-unit+@eighth-spacing-unit); }
 
                 a { 
-                    display: block;
-                    padding: 0;
-                    width: 100%; 
+                    display: inline-block;
+                    .padding(9, @half-spacing-unit+@eighth-spacing-unit, @quarter-spacing-unit, @quarter-spacing-unit);
+                    width: auto; 
                 }
             }
         }
@@ -152,10 +167,5 @@
  * simple dymnamic state change
  */
 .breadcrumbs.is-active .breadcrumbs-crumbs { display: inline-block; }
-
-.breadcrumbs-toggle {
-    display: none;
-    @media only screen and (max-width: @screen-s-max) { display: block; }
-}
 
     
