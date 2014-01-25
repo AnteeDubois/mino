@@ -40,12 +40,14 @@
  *
  * This is one link item of the sub nav
  */
-.navbar-nav-item a { 
-    line-height: 1;
+.navbar-nav-item {
+    position: relative;
+    > a { 
+        line-height: 1;
 
-    display: block;
-    .padding(@half-spacing-unit, @half-spacing-unit + 1); 
-
+        display: block;
+        .padding(@half-spacing-unit, @half-spacing-unit + 1); 
+    }
     .cf();
 }
 
