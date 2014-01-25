@@ -8,11 +8,12 @@
     $TEST IMPORT
 \*------------------------------------*/
 /**
- * Icon Main Class
+ * Icons Main Class
+ *
  * This sets all the common properties to avoid large css class strings for all icon classes
  */
-.icon:before {
-  font-family: 'font-awsome';
+.icon,
+.octicons {
   font-style: inherit;
   font-weight: inherit;
   font-variant: normal;
@@ -26,14 +27,24 @@
   speak: none;
 }
 /**
+ * Icon Class
+ *
+ * sets font-family
+ */
+.icon:before {
+  font-family: 'font-awsome';
+}
+/**
  * Octicon Class
- * Same as Icon class just swaps out the font-family
+ *
+ * sets font-family
  */
 .octicons:before {
   font-family: 'octicons';
 }
 /**
  * Github Octicon Classes
+ *
  * per disscussion Github Octicons are released as is free to use (https://github.com/octokit/octokit.objc/issues/108#issuecomment-24928525)
  */
 .octicons-alert:before {
@@ -599,6 +610,7 @@
 }
 /**
  * Font-Awsome Classes
+ *
  * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome) Licensed under MIT.
  */
 .icon-IE:before {

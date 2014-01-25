@@ -10,6 +10,17 @@
 /*------------------------------------*\
     $COMPONENT-INFO
 \*------------------------------------*/
+/**
+ * Info Class
+ *
+ * Primary class for info section, used mostly for spacing
+ */
+.info {
+  padding-top: 48px;
+  padding-top: 3rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+}
 @media (min-width: 768px) and (max-width: 983px) {
   .info .list-inline > dt {
     font-size: 12px;
@@ -24,6 +35,11 @@
     margin-left: 0.375rem;
   }
 }
+/**
+ * Info Stats
+ *
+ * style how the info stats look
+ */
 .info-stats {
   text-align: center;
   margin-left: auto;

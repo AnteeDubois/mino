@@ -11,10 +11,12 @@
     $COMPONENT-SIDENAV
 \*------------------------------------*/
 /**
- * sidenav main class
+ * Sidenav
+ *
+ * This is main class for establishing the sidenav section.
  */
 .sidenav {
-  background-color: #edf1f2;
+  background-color: #ecf0f1;
   display: inline-block;
   height: 100%;
   left: -260px;
@@ -27,8 +29,6 @@
 }
 @media only screen and (max-width: 767px) {
   .sidenav {
-    border-right: 1px solid #b8c6cc;
-    box-shadow: 1px 1px 4px 1px #e6e6e6;
     padding-top: 0;
     position: fixed;
     z-index: 9999;
@@ -45,7 +45,9 @@
   clear: both;
 }
 /**
- * sidenav menu
+ * Sidenav Menu
+ *
+ * This class sets the styles for the menu items.
  */
 .sidenav-menu {
   padding: 48px 0px;
@@ -62,7 +64,7 @@
   line-height: 24px;
   line-height: 1.5rem;
   outline: 0;
-  color: #b8c6cc;
+  color: #bdc3c7;
   display: block;
   padding: 0px 0px 12px;
   padding: 0rem 0rem 0.75rem;
@@ -70,7 +72,7 @@
   margin: 0rem 0.9375rem;
 }
 .sidenav-menu > li > a:hover {
-  color: #384f66;
+  color: #1abc9c;
 }
 .sidenav-menu > li span {
   display: inline-block;
@@ -101,10 +103,23 @@
   margin: -1.5rem 0rem 0rem -0.75rem;
 }
 .sidenav-menu > li.is-active > a {
-  color: #384f66;
+  color: #1abc9c;
 }
 /**
- * sidenav menu sub
+ * Sidenav Seach
+ *
+ * This is where we set the styles related tot he seach feild
+ */
+.sidenav-search .form {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+}
+/**
+ * Sidenav menu sub
+ *
+ * Here we establish the look of the submenu items.
  */
 .sidenav-menu-sub {
   display: none;
@@ -121,7 +136,7 @@
   font-size: 12px;
   font-size: 0.75rem;
   text-decoration: none;
-  color: #384f66;
+  color: #1abc9c;
   display: block;
   margin-bottom: 6px;
   margin-bottom: 0.375rem;
@@ -132,6 +147,12 @@
 .sidenav-menu-sub a .is-active {
   font-weight: bold;
 }
+/**
+ * Outer Wrap
+ *
+ * We need to do a little magic to one of our atoms 
+ * inorder for the menu effect to work.
+ */
 @media only screen and (max-width: 767px) {
   .outer-wrap {
     margin: 0;
@@ -139,19 +160,40 @@
     transition: 0.3s all ease;
   }
 }
+/**
+ * Sidenav Active State Class
+ *
+ * Here we set the changes that need to occur to the 
+ * various wrapping classes to display the sidenav.
+ */
 body.is-active {
   overflow-x: hidden;
 }
 body.is-active .sidenav {
-  border-right: 0;
-  box-shadow: none;
+  border-top: 1px solid #c9cccd;
   left: 0;
   position: absolute;
   width: 260px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-body.is-active .outer-wrap {
+@media (min-width: 768px) {
+  body.is-active .sidenav {
+    border-top: 3px solid #c9cccd;
+  }
+}
+body.is-active .content,
+body.is-active .footbar {
+  border-left: 1px solid #c9cccd;
+}
+@media (min-width: 768px) {
+  body.is-active .content,
+  body.is-active .footbar {
+    border-left: 0;
+  }
+}
+body.is-active .outer-wrap,
+body.is-active .footbar {
   margin-left: 260px;
   margin-left: 16.25rem;
   overflow: hidden;

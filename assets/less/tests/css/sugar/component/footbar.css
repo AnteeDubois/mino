@@ -12,24 +12,26 @@
 \*------------------------------------*/
 /**
  * Footbar
+ *
  * A section at the bottom of the page that replaces the footer similar to a navbar
  */
 .footbar {
-  background-color: #ecf0f1;
-  color: #95a5a6;
+  background-color: #34495e;
+  color: #ffffff;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar > a,
-.footbar > p > a {
-  color: #34495e;
+.footbar p > a {
+  color: #677786;
 }
 .footbar > a:hover,
-.footbar > p > a:hover {
+.footbar p > a:hover {
   color: #1abc9c;
 }
 /**
  * Footbar Brand
+ *
  * Just like with the navbar we may want to include a brad in the footer
  */
 .footbar-brand {
@@ -39,7 +41,7 @@
   line-height: 1.6875rem;
 }
 .footbar-brand .brand {
-  color: #34495e;
+  color: #677786;
 }
 .footbar-brand .brand:hover {
   color: #1abc9c;
@@ -52,10 +54,12 @@
 }
 /**
  * Footbar Nav
+ *
  * sometimes footers need additional textual navigation links
  */
 /**
  * Footbar Icons
+ *
  * Common to see icons in footes IE Social icons, Logos, Compliance
  */
 .footbar-icons li {
@@ -78,6 +82,7 @@
 }
 /**
  * Footbar Copyright
+ *
  * Common place to place copyright information is in the footer
  */
 @media (max-width: 767px) {

@@ -10,8 +10,13 @@
 /*------------------------------------*\
     $COMPONENT-CONTENT
 \*------------------------------------*/
+/**
+ * Conctent class
+ *
+ * main content of site container element
+ */
 .content {
-  background: #edf1f2;
+  background: #ffffff;
   display: inline-block;
   margin: 0;
   padding: 0;

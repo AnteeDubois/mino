@@ -827,7 +827,7 @@ a .silver-dark.label:hover {
 }
 .silver {
   background-color: #bdc3c7;
-  color: #333333;
+  color: #ffffff;
 }
 .silver[href] {
   background-color: transparent;
@@ -844,25 +844,25 @@ a .silver-dark.label:hover {
 }
 .silver.label {
   background-color: #bdc3c7;
-  color: #333333;
+  color: #ffffff;
 }
 .silver.label[href],
 a .silver.label {
   background-color: #bdc3c7;
-  color: #333333;
+  color: #ffffff;
 }
 .silver.label[href]:hover,
 a .silver.label:hover {
   background-color: #a7afb4;
-  color: #333333;
+  color: #ffffff;
 }
 .silver.badge {
   background-color: #bdc3c7;
-  color: #333333;
+  color: #ffffff;
 }
 .silver.btn {
   background-color: #bdc3c7;
-  color: #333333;
+  color: #ffffff;
 }
 .silver.btn.clear {
   border: 2px solid #bdc3c7;
@@ -871,7 +871,7 @@ a .silver.label:hover {
 .silver.btn.clear:hover,
 .silver.btn.clear:focus {
   background: #bdc3c7;
-  color: #333333;
+  color: #ffffff;
 }
 .silver.btn.clear:active,
 .silver.btn.clear.active {

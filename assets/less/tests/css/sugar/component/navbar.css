@@ -11,31 +11,106 @@
     $COMPONENT-NAVBAR
 \*------------------------------------*/
 /**
- * Basic Navbar
+ * Navbar class
+ *
+ * main navbar class to set some general styles
  */
 .navbar {
   font-size: 24px;
   font-size: 1.5rem;
   background-color: #34495e;
-  color: #666666;
+  color: #95a5a6;
   padding: 12px;
   padding: 0.75rem;
 }
 .navbar a {
-  color: #5d6d7e;
+  color: #677786;
 }
 .navbar a:hover {
-  color: #ffffff;
+  color: #1abc9c;
+}
+.navbar .navbar-nav-item {
+  padding: 0;
+}
+.navbar .tooltip {
+  margin-top: -6px;
+}
+@media only screen and (max-width: 767px) {
+  .navbar .grid {
+    padding: 0px;
+    padding: 0rem;
+  }
 }
 /**
- * Brand Logo in Navbar
+ * Navbar Brand
+ *
+ * style the site logo
  */
 .navbar-brand .brand-logo {
-  height: 18px;
   width: 120px;
   margin-bottom: -10px;
+  padding-top: 3px;
+  padding-top: 0.1875rem;
 }
+/**
+ * Navbar Nav Item
+ *
+ * This is one link item of the sub nav
+ */
+.navbar-nav-item a {
+  line-height: 1;
+  display: block;
+  padding: 12px 13px;
+  padding: 0.75rem 0.8125rem;
+}
+.navbar-nav-item a:before,
+.navbar-nav-item a:after {
+  content: " ";
+  display: table;
+}
+.navbar-nav-item a:after {
+  clear: both;
+}
+/**
+ * Navbar Nav search
+ *
+ * This is one link item of the sub nav
+ */
+.navbar-nav-search {
+  display: inline-block;
+  float: left;
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  width: 300px;
+}
+@media only screen and (min-width: 768px) and (max-width: 983px) {
+  .navbar-nav-search {
+    width: 170px;
+  }
+}
+/**
+ * Badge
+ *
+ * we may need to position the badges when in the navbar
+ */
 .navbar .badge {
-  margin: -24px 0px 0px -15px;
-  margin: -1.5rem 0rem 0rem -0.9375rem;
+  float: right;
+  margin-top: -6px;
+  margin-top: -0.375rem;
+  position: absolute;
+  z-index: 100;
+}
+@media only screen and (min-width: 768px) {
+  .navbar .badge {
+    margin-left: 12px;
+    margin-left: 0.75rem;
+  }
+}
+/**
+ * Navbar Sub Nav
+ *
+ * swe may need to position the badges when in the navbar
+ */
+.navbar-nav-sub {
+  display: none;
 }

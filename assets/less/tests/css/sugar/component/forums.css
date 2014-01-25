@@ -26,7 +26,9 @@
   margin: 0;
 }
 /**
- * Forum-wrap used to apply grid
+ * Forum wrap
+ *
+ * used to assign forum to grid, breaks mobile first on purpose
  */
 @media (max-width: 767px) {
   .forums-wrap.grid {
@@ -41,8 +43,8 @@
  */
 @media (min-width: 768px) {
   .forum {
-    margin-top: 24px;
-    margin-top: 1.5rem;
+    margin-top: 48px;
+    margin-top: 3rem;
   }
 }
 /**
@@ -54,6 +56,12 @@
   line-height: 1;
   background-color: #34495e;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .forum-name {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
 }
 .forum-name > a {
   font-size: 16px;
@@ -73,9 +81,7 @@
  */
 .forum-row {
   background-color: #ffffff;
-  border-right: 1px solid #e0e4e5;
   border-bottom: 1px solid #e0e4e5;
-  border-left: 1px solid #e0e4e5;
   padding-top: 6px;
   padding-top: 0.375rem;
   padding-bottom: 9px;
@@ -87,15 +93,29 @@
 }
 @media (min-width: 768px) {
   .forum-row {
+    border-right: 1px solid #e0e4e5;
+    border-left: 1px solid #e0e4e5;
     padding-left: 0px;
     padding-right: 0px;
     padding-left: 0rem;
     padding-right: 0rem;
     height: 72px;
   }
+  .forum-row:last-of-type {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}
+.forum-row .label {
+  color: #ffffff;
+  margin-left: 6px;
+  margin-left: 0.375rem;
 }
 .forum-row:hover {
   background-color: #ecf0f1;
+}
+.forum-row:hover .label {
+  color: #ecf0f1;
 }
 /**
  * Forum Title
@@ -119,9 +139,26 @@
 .forum-title > a:hover {
   color: #1abc9c;
 }
-.forum-title .label {
-  margin-left: 6px;
-  margin-left: 0.375rem;
+.forum-title .icon {
+  font-size: 12px;
+  font-size: 0.75rem;
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-right: 0.375rem;
+}
+/**
+ * Forum icon
+ *
+ * This is the icon next tot he forum title
+ */
+.forum-icon {
+  width: 10px;
+  height: 10px;
+  background-color: #34495e;
+  border: 1px solid #34495e;
+  display: inline-block;
+  margin-right: 6px;
+  border-radius: 50%;
 }
 /**
  * Forum Desc.
@@ -200,6 +237,8 @@
     border-radius: 0;
     display: inline-flex;
     float: right;
+    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
   }
   .forum-stats > p > dfn {
     font-weight: 700;
@@ -216,10 +255,6 @@
     margin-top: -0.1875rem;
     padding: 3px 6px;
     padding: 0.1875rem 0.375rem;
-  }
-  .forum-stats > p:first-child {
-    margin-bottom: 6px;
-    margin-bottom: 0.375rem;
   }
 }
 /**
