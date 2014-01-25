@@ -2509,7 +2509,7 @@
   visibility: visible;
   display: block;
   position: absolute;
-  z-index: 1040;
+  z-index: 1000;
 }
 .tooltip.in {
   opacity: 1;
@@ -2643,9 +2643,6 @@
 .navbar .navbar-nav-item {
   padding: 0;
 }
-.navbar .tooltip {
-  margin-top: -6px;
-}
 @media only screen and (max-width: 767px) {
   .navbar .grid {
     padding: 0px;
@@ -2668,18 +2665,21 @@
  *
  * This is one link item of the sub nav
  */
-.navbar-nav-item a {
+.navbar-nav-item {
+  position: relative;
+}
+.navbar-nav-item > a {
   line-height: 1;
   display: block;
   padding: 12px 13px;
   padding: 0.75rem 0.8125rem;
 }
-.navbar-nav-item a:before,
-.navbar-nav-item a:after {
+.navbar-nav-item:before,
+.navbar-nav-item:after {
   content: " ";
   display: table;
 }
-.navbar-nav-item a:after {
+.navbar-nav-item:after {
   clear: both;
 }
 /**
@@ -2708,22 +2708,88 @@
   float: right;
   margin-top: -6px;
   margin-top: -0.375rem;
+  margin-left: 12px;
+  margin-left: 0.75rem;
   position: absolute;
   z-index: 100;
 }
-@media only screen and (min-width: 768px) {
-  .navbar .badge {
-    margin-left: 12px;
-    margin-left: 0.75rem;
-  }
-}
 /**
- * Navbar Sub Nav
+ * Navbar Nav Sub
  *
- * swe may need to position the badges when in the navbar
+ * standard sub mebu styles
  */
 .navbar-nav-sub {
+  font-size: 16px;
+  font-size: 1rem;
   display: none;
+  float: left;
+  position: absolute;
+  margin: 20px 0 0;
+  z-index: 1010;
+}
+.navbar-nav-sub > li:first-of-type > a {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.navbar-nav-sub > li.navbar-nav-sub-header {
+  background-color: #95a5a6;
+  color: #ffffff;
+  display: block;
+  padding: 6px 15px 8px;
+  padding: 0.375rem 0.9375rem 0.5rem;
+  white-space: nowrap;
+}
+.navbar-nav-sub > li:last-of-type > a {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.navbar-nav-sub a {
+  background-color: #34495e;
+  color: #1abc9c;
+  display: block;
+  padding: 6px 15px 8px;
+  padding: 0.375rem 0.9375rem 0.5rem;
+  white-space: nowrap;
+}
+.navbar-nav-sub a .icon,
+.navbar-nav-sub a .octicons {
+  padding-right: 6px;
+  padding-right: 0.375rem;
+}
+.navbar-nav-sub a:hover {
+  color: #ffffff;
+  background-color: #1abc9c;
+}
+.navbar-nav-sub a:hover .navbar-nav-sub-arrow {
+  color: #1abc9c;
+}
+.navbar-nav-sub .actions-posts,
+.navbar-nav-sub .actions-info {
+  background-color: #ecf0f1;
+  color: #34495e;
+}
+.navbar-nav-sub .actions-posts:hover,
+.navbar-nav-sub .actions-info:hover {
+  background-color: #ecf0f1;
+  color: #1abc9c;
+}
+.navbar-nav-sub.is-active {
+  display: block;
+}
+/**
+ * Navbar Nav Sub Arrow
+ *
+ * the arrow for the dropdown menu
+ */
+.navbar-nav-sub-arrow {
+  font-size: 24px;
+  font-size: 1.5rem;
+  float: left;
+  position: absolute;
+  z-index: 1020;
+  color: #34495e;
+  margin: -15px 0px 0px;
+  margin: -0.9375rem 0rem 0rem;
 }
 /*------------------------------------*\
     $COMPONENT-SIDENAV
@@ -2749,7 +2815,7 @@
   .sidenav {
     padding-top: 0;
     position: fixed;
-    z-index: 9999;
+    z-index: 1100;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
   }
