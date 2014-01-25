@@ -1,40 +1,69 @@
             <div class="grid">
-                <nav class="grid-row list-inline">
-                    <li class="active grid-s-3 text-center">
-                        <a class="pull-left sidenav-btn" href="#" title="Menu"><span class="icon icon-reorder"></span>  <span class="badge pomegranate">7</span></a>
-                    </li>
-                    <li class="active grid-s-6 text-center">
-                        <a class="navbar-brand brand" href="/" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo.png" alt="PHPBB | Creating Communities"> <span class="sr-only">PHPBB</span></a>
-                    </li>
-                    <li class="active grid-s-3 text-center">
-                        <a class="pull-right" href="#" title="Logout"><span class="octicons octicons-log-out"></span> <span class="sr-only">Logout</span> </a>
-                    </li>
-                </nav>    
-            </div>
-                <!-- 
-                <hgroup class="row hidden-sm">
-                    <h1 class="header-logo col-lg-2 col-sm-3"><a href="#"><img src="img/logo.png" height="40px" alt="PHPBB | Creating Communities" /><span class="text-hide">PHPBB</span></a></h1>
-                    <form action="" class="header-form form hidden-sm col-lg-3 col-sm-3">
-                            <input type="text" class="search form-control input-sm" placeholder="Search... " name="Search" title="Search" />
-                    </form>
-                    <nav class="header-nav col-lg-7 col-sm-6">
-                        <ul class="list-inline row">
-                            <li class="pull-left">
-                                <ul class="list-inline">
-                                    <li class="pull-left"><a href="#" title="Advanced Search"><span class="octicons octicons-list-alt"></span> <span class="text-hide">Advanced Search</span> </a></li>
-                                </ul>
+                <hgroup class="navbar-wrap grid-row visible-s">
+                    <nav class="navbar-nav visible-s">
+                        <ul class="list-inline"> 
+                            <li class="navbar-nav-item grid-s-3 text-center">
+                                <a class="pull-left sidenav-btn" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Menu"><span class="badge pomegranate">7</span> <span class="icon icon-reorder"></span> <span class="sr-only">Menu</span></a>
                             </li>
-                            <li class="pull-right">
-                                <ul class="list-inline">
-                                    <li class="header-avatar pull-left"><a href="#" title="Control Panel"><img src="img/user.jpg" width="30px" height="30px" title="Control Panel" alt="Control Panel" /></a> <span class="user">hanakin</span></li>
-                                    <li><a href="#" title="Notifications"><span class="octicons octicons-inbox"></span> <span class="text-hide">Notifications</span> <span class="badge">5</span></a></li>
-                                    <li><a href="#" title="Private Messages"><span class="octicons octicons-envelope"></span> <span class="text-hide">PMs</span> <span class="badge">2</span> </a></li>
-                                    <li><a href="#" title="Logout"><span class="octicons octicons-off"></span> <span class="text-hide">Logout</span> </a></li>
-                                    <li><a href="#" title="Moderator Control Panel"><span class="octicons octicons-cog"></span> <span class="text-hide">Moderator Control Panel</span> </a></li>
-                                </ul>
+                            <li class="grid-s-6 text-center">
+                                <a class="navbar-brand brand" href="/" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo.png" alt="PHPBB | Creating Communities"> <span class="sr-only">PHPBB</span></a>
+                            </li>
+                            <li class="navbar-nav-item grid-s-3 text-center">
+                                <a class="pull-right" href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Logout"><span class="octicons octicons-log-out"></span> <span class="sr-only">Logout</span></a>
                             </li>
                         </ul>
                     </nav>
                 </hgroup>
+                
+                <hgroup class="navbar-wrap grid-row hidden-s">
+                    <a class="navbar-brand brand grid-m-3" href="/" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo.png" alt="PHPBB | Creating Communities"> <span class="sr-only">PHPBB</span></a>
+                    <nav class="navbar-nav grid-m-9">
+                        <ul class="list-inline pull-right">                        
+                            <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Advanced Search"><span class="icon icon-cog"></span> <span class="sr-only">Advanced Search</span></a></li>
+                            <!-- Settings & Tools -->
+                            <li class="navbar-nav-item">
+                                <a class="navbar-nav-dropdown settings" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Settings & Tools"><span class="octicons octicons-settings"></span> <span class="sr-only">Settings & Tools</span></a>
+                                <div class="tooltip bottom"><div class="tooltip-arrow"></div><div class="tooltip-inner">Settings & Tools</div></div>
+                                <ul class="navbar-nav-sub settings-sub list-unstyled">
+                                    <li><a href="#" title="User Preferences"><span class="icon icon-cog"></span> <span>User Preferences</span></a></li>
+                                    <li><a href="#" title="Moderator Tools"><span class="icon icon-shield"></span> <span>Moderator Tools</span></a></li>
+                                    <li><a href="#" title="Admin Panel"><span class="icon icon-cogs"></span> <span>Admin Panel</span></a></li>
+                                </ul>
+                            </li>
+                            <!-- Notifications -->                   
+                            <li class="navbar-nav-item">
+                                <a class="navbar-nav-dropdown notifications" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Notifications"><span class="badge pomegranate">5</span> <span class="icon icon-bell"></span> <span class="sr-only">Notifications</span></a>
+                                <ul class="navbar-nav-sub notifications-sub list-unstyled">
+                                    <li><a href="#" title="User Preferences"><span class="icon icon-cog"></span> <span>User Preferences</span></a></li>
+                                    <li><a href="#" title="Moderator Tools"><span class="icon icon-shield"></span> <span>Moderator Tools</span></a></li>
+                                    <li><a href="#" title="Admin Panel"><span class="icon icon-cogs"></span> <span>Admin Panel</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Private Messages"><span class="badge pomegranate">2</span> <span class="icon icon-inbox"></span> <span class="sr-only">PMs</span></a></li>
+                            <!-- Forum Actions -->
+                            <li class="navbar-nav-item">
+                                <a class="navbar-nav-dropdown actions" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span class="sr-only">Forum Actions</span></a>
+                                <ul class="navbar-nav-sub actions-sub list-unstyled">
+                                    <li><a href="#" title="Mark Forums Read"><span class="icon icon-check"></span> <span>Mark Forums Read</span></a></li>
+                                    <li><a href="#" title="Delete Cookies"><span class="icon icon-refresh"></span> <span>Delete Cookies</span></a></li>
+                                    <li class="navbar-nav-sub-header"><span class="octicons octicons-info"></span> <span>Forum Info</span></li>
+                                    <li><a href="#" title="Faq"><span class="octicons octicons-question"></span> <span>Faq</span></a></li>
+                                    <li><a href="#" title="Members"><span class="icon icon-group"></span> <span>Members</span></a></li>
+                                    <li><a href="#" title="The Team"><span class="octicons octicons-organization"></span> <span>The Team</span></a></li>
+                                    <li class="navbar-nav-sub-header"><span class="icon icon-comments"></span> <span>Posts</span></li>
+                                    <li><a href="#" title="Yours"><span class="icon icon-circle peter-river"></span> <span>Yours</span></a></li>
+                                    <li><a href="#" title="Unanswered"><span class="icon icon-circle-blank turquuoise"></span> <span>Unanswered</span></a></li>
+                                    <li><a href="#" title="Unread"><span class="icon icon-circle-blank wet-asphalt"></span> <span>Unread</span></a></li>
+                                    <li><a href="#" title="New"><span class="icon icon-circle emerald"></span> <span>New</span></a></li>
+                                    <li><a href="#" title="Active"><span class="icon icon-circle orange"></span> <span>Active</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Logout"><span class="octicons octicons-log-out"></span> <span class="sr-only">Logout</span></a></li>
+                        </ul>
+                        <form action="" class="form navbar-nav-search pull-right">
+                            <input type="text" class="search form-control" placeholder="Search... " name="Search" title="Search" />
+                        </form>
+                    </nav>
+                </hgroup>
             </div>
-                 -->
+

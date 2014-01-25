@@ -13,13 +13,18 @@
     background-color: @navbar-default-bg;
     color: @navbar-default-color;
 
-    //height: 50px;
     .padding(@half-spacing-unit);
 
     a { 
         color: @navbar-default-link-color; 
         &:hover { color: @navbar-default-link-hover-color; }
     }
+    .navbar-nav-item { padding: 0; }
+    
+    // fix spacing of tooltips
+    .tooltip { margin-top: -6px; }
+
+    @media only screen and (max-width: @screen-s-max) { .grid {.padding(0); } }
 }
 
 /**
@@ -28,11 +33,57 @@
  * style the site logo
  */
 .navbar-brand .brand-logo {
-    height: unit(@navbar-height, px);
+    //height: unit(@navbar-height, px);
     width: 120px;
     margin-bottom: -10px; // Weird spacing anomoly in chrome on OSX Maverick
+    .padding-top(@eighth-spacing-unit);
 }
 
-.navbar .badge {
-    .margin(-@base-spacing-unit, 0, 0, -@half-spacing-unit - @eighth-spacing-unit);
+/**
+ * Navbar Nav Item
+ *
+ * This is one link item of the sub nav
+ */
+.navbar-nav-item a { 
+    line-height: 1;
+
+    display: block;
+    .padding(@half-spacing-unit, @half-spacing-unit + 1); 
+
+    .cf();
 }
+
+
+/**
+ * Navbar Nav search
+ *
+ * This is one link item of the sub nav
+ */
+.navbar-nav-search {
+    display: inline-block;
+    float: left;
+    .padding-top(4);
+    width: 300px;
+    @media only screen and (min-width: @screen-m-min) and (max-width: @screen-m-max) { width: 170px; }
+} 
+
+/**
+ * Badge
+ *
+ * we may need to position the badges when in the navbar
+ */
+.navbar .badge { 
+    float: right;
+    .margin-top(-@quarter-spacing-unit);
+    @media only screen and (min-width: @screen-m-min) { .margin-left(@half-spacing-unit); }
+    position: absolute;
+    z-index: 100; 
+}
+
+/**
+ * Navbar Sub Nav
+ *
+ * swe may need to position the badges when in the navbar
+ */
+.navbar-nav-sub { display: none; } 
+

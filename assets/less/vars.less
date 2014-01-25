@@ -51,10 +51,18 @@
 
 // Navbar
 @navbar-height:                             @base-spacing-unit - @quarter-spacing-unit;
-@navbar-default-color:                      @gray-darker;
+@navbar-default-color:                      @concrete;
 @navbar-default-bg:                         @wet-asphalt;
-@navbar-default-link-color:                 mix(@wet-asphalt, white, 80%);
-@navbar-default-link-hover-color:           @white;
+@navbar-default-link-color:                 mix(@wet-asphalt, white, 75%);
+@navbar-default-link-hover-color:           @turquuoise;
+
+// Tooltips
+@tooltip-max-width:                         200px;
+@tooltip-color:                             @white;
+@tooltip-bg:                                rgba(0,0,0,.9);
+
+@tooltip-arrow-width:                       unit(@quarter-spacing-unit - 1, px);
+@tooltip-arrow-color:                       @tooltip-bg;
 
 // Breadcrumb
 @breadcrumb-color:                          @concrete;
