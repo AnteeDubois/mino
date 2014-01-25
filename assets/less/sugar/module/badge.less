@@ -25,23 +25,22 @@
 
     // Empty badges collapse automatically (not available in IE8)
     &:empty { display: none; }
-}
 
-// Hover state, but only for links
-a.badge {
-    &:hover,
-    &:focus {
-        text-decoration: none;
+    [href] {
+        &:hover,
+        &:focus {
+            text-decoration: none;
 
-        color: @badge-link-hover-color;
+            color: @badge-link-hover-color;
         
-        cursor: pointer;
+            cursor: pointer;
+        }
     }
-}
 
-// Quick fix for labels/badges in buttons
-.btn .badge {
-    position: relative;
-    top: -1px;
+    // Quick fix for labels/badges in buttons
+    .btn & {
+        position: relative;
+        top: -1px;
+    }
 }
 
