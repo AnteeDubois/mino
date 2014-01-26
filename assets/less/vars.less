@@ -2,19 +2,28 @@
 //  $VARS
 //------------------------------------//
 
+// Color Scheme
+@primary: @wet-asphalt;
+@primary-accent: mix(@primary, white, 75%);
+@primary-hover: @turquuoise;
+
+@secondary: @clouds;
+@secondary-accent: mix(@secondary, black, 85%);
+@secondary-alt: @concrete;
+
 // Overide defaults.less
 
-@base-bg-color:                             @wet-asphalt;
+@base-bg-color:                             @primary;
 
 // Base colour for links & branding
-@base-link-color:                           @wet-asphalt;
-@base-link-hover-color:                     @turquuoise;
+@base-link-color:                           @primary;
+@base-link-hover-color:                     @primary-hover;
 
 // Form
-@form-color:                                @silver;
-@form-border-color:                         @silver;
-@form-disabled-color:                       @silver;
-@form-border-focus:                         @turquuoise;
+@form-color:                                @secondary-accent;
+@form-border-color:                         @secondary-accent;
+@form-disabled-color:                       @secondary-accent;
+@form-border-focus:                         @primary-hover;
 
 //------------------------------------//
 //  $MODULES
@@ -51,23 +60,23 @@
 
 // Navbar
 @navbar-height:                             @base-spacing-unit - @quarter-spacing-unit;
-@navbar-color:                              @concrete;
-@navbar-bg:                                 @wet-asphalt;
-@navbar-link-color:                         mix(@wet-asphalt, white, 75%);
-@navbar-link-hover-color:                   @turquuoise;
+@navbar-color:                              @secondary-alt;
+@navbar-bg:                                 @primary;
+@navbar-link-color:                         @primary-accent;
+@navbar-link-hover-color:                   @primary-hover;
 
-@navbar-sub-bg:                             @wet-asphalt;
+@navbar-sub-bg:                             @primary;
 @navbar-sub-color:                          @navbar-sub-bg;
-@navbar-sub-bg-hover-color:                 @turquuoise;
+@navbar-sub-bg-hover-color:                 @primary-hover;
 @navbar-sub-link-color:                     @navbar-sub-bg-hover-color;
 @navbar-sub-link-hover-color:               @white;
 
 @navbar-sub-header-color:                   @white;
-@navbar-sub-header-bg:                      @concrete;
+@navbar-sub-header-bg:                      @secondary-alt;
 
-@navbar-actions-sub-bg:                     @clouds;
-@navbar-actions-sub-link-color:             mix(@navbar-actions-sub-bg, black ,85%);
-@navbar-actions-sub-link-hover-color:       @turquuoise;
+@navbar-actions-sub-bg:                     @secondary;
+@navbar-actions-sub-link-color:             @secondary-accent;
+@navbar-actions-sub-link-hover-color:       @primary-hover;
 
 // Tooltips
 @tooltip-max-width:                         200px;
@@ -78,48 +87,48 @@
 @tooltip-arrow-color:                       @tooltip-bg;
 
 // Breadcrumb
-@breadcrumb-color:                          @concrete;
-@breadcrumb-bg:                             @clouds;
-@breadcrumb-link-color:                     mix(@breadcrumb-bg, black ,85%);
-@breadcrumb-link-hover-color:               @turquuoise;
-@breadcrumb-border-color:                   mix(@clouds, black, 85%);
+@breadcrumb-color:                          @secondary-alt;
+@breadcrumb-bg:                             @secondary;
+@breadcrumb-link-color:                     @secondary-accent;
+@breadcrumb-link-hover-color:               @primary-hover;
+@breadcrumb-border-color:                   @breadcrumb-link-color;
 
 // SideNav
 @sidenav-width:                             260;
-@sidenav-color:                             @concrete;
-@sidenav-bg:                                @clouds;
-@sidenav-link-color:                        mix(@sidenav-bg, black ,85%);;
-@sidenav-link-hover-color:                  @turquuoise;
-@sidenav-border-color:                      mix(@clouds, black, 85%);
-@sidenav-shadow-color:                      mix(@clouds, black, 85%);
+@sidenav-color:                             @secondary-alt;
+@sidenav-bg:                                @secondary;
+@sidenav-link-color:                        @secondary-accent;
+@sidenav-link-hover-color:                  @primary-hover;
+@sidenav-border-color:                      @sidenav-link-color;
+@sidenav-shadow-color:                      @sidenav-border-color;
 @sidenav-sub-link-color:                    @sidenav-link-hover-color;
 
 // Forums
-@forums-name-bg:                            @wet-asphalt;
+@forums-name-bg:                            @primary;
 @forums-name-link-color:                    @white;
 @forums-name-link-hover-color:              @white;
 
 // Forum
 @forum-row-height:                          @triple-spacing-unit;
 @forum-row-bg:                              @white;
-@forum-row-hover-bg:                        @clouds;
-@forum-row-border-color:                    mix(@clouds, black, 95%);
+@forum-row-hover-bg:                        @secondary;
+@forum-row-border-color:                    mix(@forum-row-hover-bg, black, 95%);
 
 @forum-default-color:                       @gray-darker;
 
-@forum-title-link-color:                    @wet-asphalt;
-@forum-title-link-hover-color:              @turquuoise;
+@forum-title-link-color:                    @primary;
+@forum-title-link-hover-color:              @primary-hover;
 
-@forum-stats-dfn-color:                     @concrete;
+@forum-stats-dfn-color:                     @secondary-alt;
 @forum-stats-label-bg:                      @forum-stats-dfn-color;
 @forum-stats-label-text-color:              @white;
 
 // Footbar
-@footbar-bg:                                @wet-asphalt;
+@footbar-bg:                                @primary;
 @footbar-color:                             @white;
-@footbar-link-color:                        mix(@wet-asphalt, white, 75%);
-@footbar-link-hover-color:                  @turquuoise;
+@footbar-link-color:                        @primary-accent;
+@footbar-link-hover-color:                  @primary-hover;
 
 // Info
-@info-default-color:                        @concrete;
+@info-default-color:                        @secondary-alt;
 
