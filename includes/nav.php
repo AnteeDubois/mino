@@ -52,24 +52,22 @@
                             <!-- Forum Actions -->
                             <li class="navbar-nav-item">
                                 <a class="navbar-nav-dropdown actions" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span class="sr-only">Forum Actions</span></a>
-                                <ul class="navbar-nav-sub actions-sub list-unstyled">
-                                    <li>
-                                        <a href="#" title="Mark Forums Read">
-                                            <span class="navbar-nav-sub-arrow octicons octicons-triangle-up"></span>
-                                            <span class="icon icon-check"></span> <span>Mark Forums Read</span>
-                                        </a>
+                                <ul class="navbar-nav-sub actions-sub list-unstyled">                                                                     
+                                    <li class="navbar-nav-sub-header">
+                                        <span class="navbar-nav-sub-arrow octicons octicons-triangle-up"></span>
+                                        <span class="octicons octicons-info"></span> <span>Forum Info</span>
                                     </li>
+                                    <li><a href="#" title="Faq"><span class="octicons octicons-question"></span> <span>Faq</span></a></li>
+                                    <li><a href="#" title="Members"><span class="icon icon-group"></span> <span>Members</span></a></li>
+                                    <li><a href="#" title="The Team"><span class="octicons octicons-organization"></span> <span>The Team</span></a></li>
+                                    <li><a href="#" title="Mark Forums Read"><span class="icon icon-check"></span> <span>Mark Forums Read</span></a></li>   
                                     <li><a href="#" title="Delete Cookies"><span class="icon icon-refresh"></span> <span>Delete Cookies</span></a></li>
-                                    <li class="navbar-nav-sub-header"><span class="octicons octicons-info"></span> <span>Forum Info</span></li>
-                                    <li><a class="actions-info" href="#" title="Faq"><span class="octicons octicons-question"></span> <span>Faq</span></a></li>
-                                    <li><a class="actions-info" href="#" title="Members"><span class="icon icon-group"></span> <span>Members</span></a></li>
-                                    <li><a class="actions-info" href="#" title="The Team"><span class="octicons octicons-organization"></span> <span>The Team</span></a></li>
                                     <li class="navbar-nav-sub-header"><span class="icon icon-comments"></span> <span>Posts</span></li>
-                                    <li><a class="actions-posts" href="#" title="Yours"><span class="icon icon-circle peter-river"></span> <span>Yours</span></a></li>
-                                    <li><a class="actions-posts" href="#" title="Unanswered"><span class="icon icon-circle-blank turquuoise"></span> <span>Unanswered</span></a></li>
-                                    <li><a class="actions-posts" href="#" title="Unread"><span class="icon icon-circle-blank wet-asphalt"></span> <span>Unread</span></a></li>
-                                    <li><a class="actions-posts" href="#" title="New"><span class="icon icon-circle emerald"></span> <span>New</span></a></li>
-                                    <li><a class="actions-posts" href="#" title="Active"><span class="icon icon-circle orange"></span> <span>Active</span></a></li>
+                                    <li><a href="#" title="Yours"><span class="icon icon-circle peter-river"></span> <span>Yours</span></a></li>
+                                    <li><a href="#" title="Unanswered"><span class="icon icon-circle-blank turquuoise"></span> <span>Unanswered</span></a></li>
+                                    <li><a href="#" title="Unread"><span class="icon icon-circle-blank wet-asphalt"></span> <span>Unread</span></a></li>
+                                    <li><a href="#" title="New"><span class="icon icon-circle emerald"></span> <span>New</span></a></li>
+                                    <li><a href="#" title="Active"><span class="icon icon-circle orange"></span> <span>Active</span></a></li>
                                 </ul>
                             </li>
                             <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Logout"><span class="octicons octicons-log-out"></span> <span class="sr-only">Logout</span></a></li>
