@@ -24,6 +24,9 @@
 $(function(){
     // Init tooltips
     $('[data-toogle="tooltip"]').tooltip();
+    $('[data-toogle="tooltip"]').on('click', function() {
+        $(this).tooltip('hide');
+    });
 
     // sidebar menu dropdown toggle
     $(".sidenav-dropdown-toggle").click(function (e) {

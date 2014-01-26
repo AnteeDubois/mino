@@ -8,6 +8,9 @@
 
 $(function() {
     $('[data-toogle="tooltip"]').tooltip();
+    $('[data-toogle="tooltip"]').on("click", function() {
+        $(this).tooltip("hide");
+    });
     $(".sidenav-dropdown-toggle").click(function(e) {
         e.stopPropagation();
         var t = $(this).parent();
