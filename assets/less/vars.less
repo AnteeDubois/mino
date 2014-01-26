@@ -51,10 +51,23 @@
 
 // Navbar
 @navbar-height:                             @base-spacing-unit - @quarter-spacing-unit;
-@navbar-default-color:                      @concrete;
-@navbar-default-bg:                         @wet-asphalt;
-@navbar-default-link-color:                 mix(@wet-asphalt, white, 75%);
-@navbar-default-link-hover-color:           @turquuoise;
+@navbar-color:                              @concrete;
+@navbar-bg:                                 @wet-asphalt;
+@navbar-link-color:                         mix(@wet-asphalt, white, 75%);
+@navbar-link-hover-color:                   @turquuoise;
+
+@navbar-sub-bg:                             @wet-asphalt;
+@navbar-sub-color:                          @navbar-sub-bg;
+@navbar-sub-bg-hover-color:                 @turquuoise;
+@navbar-sub-link-color:                     @navbar-sub-bg-hover-color;
+@navbar-sub-link-hover-color:               @white;
+
+@navbar-sub-header-color:                   @white;
+@navbar-sub-header-bg:                      @concrete;
+
+@navbar-actions-sub-bg:                     @clouds;
+@navbar-actions-sub-link-color:             mix(@navbar-actions-sub-bg, black ,85%);
+@navbar-actions-sub-link-hover-color:       @turquuoise;
 
 // Tooltips
 @tooltip-max-width:                         200px;

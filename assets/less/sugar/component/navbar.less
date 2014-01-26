@@ -10,14 +10,14 @@
 .navbar {
     .font-size(@base-spacing-unit);
 
-    background-color: @navbar-default-bg;
-    color: @navbar-default-color;
+    background-color: @navbar-bg;
+    color: @navbar-color;
 
     .padding(@half-spacing-unit);
 
     a { 
-        color: @navbar-default-link-color; 
-        &:hover { color: @navbar-default-link-hover-color; }
+        color: @navbar-link-color; 
+        &:hover { color: @navbar-link-hover-color; }
     }
     .navbar-nav-item { padding: 0; }
     @media only screen and (max-width: @screen-s-max) { .grid {.padding(0); } }
@@ -78,6 +78,21 @@
 }
 
 /**
+ * Navbar Nav Sub Arrow
+ *
+ * the arrow for the dropdown menu
+ */
+.navbar-nav-sub-arrow {
+    .font-size(@base-spacing-unit);
+
+    float: left;
+    position: absolute;
+    z-index: 1020;
+    color: @navbar-sub-color;
+    .margin(-@half-spacing-unit - @eighth-spacing-unit, 0, 0);
+}
+
+/**
  * Navbar Nav Sub
  *
  * standard sub mebu styles
@@ -89,63 +104,52 @@
     float: left;
     position: absolute;
     margin: 20px 0 0;
-    z-index: 1010;
+    z-index: 1020;
     > li {
         &:first-of-type > a { .border-top-radius(unit(@base-radius, px)); }
-        
-        &.navbar-nav-sub-header {
-            background-color: @concrete;
-            color: @white;
+
+        > a {
+            background-color: @navbar-sub-bg;
+            color: @navbar-sub-link-color;
 
             display: block;
             .padding(6,15,8);
             white-space: nowrap; // prevent links from randomly breaking onto new lines 
+        
+            .icon, .octicons { .padding-right(@quarter-spacing-unit); }
+
+            &:hover {
+                color: @navbar-sub-link-hover-color;
+                background-color: @navbar-sub-bg-hover-color;
+                .navbar-nav-sub-arrow { color: @navbar-sub-bg-hover-color; }
+            }
+        }
+        
+        &.navbar-nav-sub-header {
+            background-color: @navbar-sub-header-bg;
+            &:first-of-type { .border-top-radius(unit(@base-radius, px)); }
+            color: @navbar-sub-header-color;
+
+            display: block;
+            .padding(6,15,8);
+            white-space: nowrap; // prevent links from randomly breaking onto new lines 
+            .navbar-nav-sub-arrow { color: @navbar-sub-header-bg; }
         }
 
         &:last-of-type > a { .border-bottom-radius(unit(@base-radius, px)); }
     }
 
-    a {
-        background-color: @wet-asphalt;
-        color: @turquuoise;
-
-        display: block;
-        .padding(6,15,8);
-        white-space: nowrap; // prevent links from randomly breaking onto new lines 
-        
-        .icon, .octicons { .padding-right(@quarter-spacing-unit); }
-
-        &:hover {
-            color: @white;
-            background-color: @turquuoise;
-            .navbar-nav-sub-arrow { color: @turquuoise; }
-        }
-    }
-
-    .actions-posts, .actions-info {
-        background-color: @clouds;
-        color: @wet-asphalt;
-        &:hover { 
-            background-color: @clouds;
-            color: @turquuoise; 
+    &.actions-sub > li {
+        > a {
+            background-color: @navbar-actions-sub-bg;
+            color: @navbar-actions-sub-link-color;
+            &:hover { 
+                background-color: @navbar-actions-sub-bg;
+                color: @navbar-actions-sub-link-hover-color; 
+            }
         }
     }
 
     &.is-active { display: block; }
-}
-
-/**
- * Navbar Nav Sub Arrow
- *
- * the arrow for the dropdown menu
- */
-.navbar-nav-sub-arrow {
-    .font-size(@base-spacing-unit);
-
-    float: left;
-    position: absolute;
-    z-index: 1020;
-    color: @wet-asphalt;
-    .margin(-@half-spacing-unit - @eighth-spacing-unit, 0, 0);
 }
 
