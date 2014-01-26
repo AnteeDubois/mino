@@ -54,7 +54,7 @@
  */
 .forum-name {
   line-height: 1;
-  background-color: #34495e;
+  background-color: #2c3e50;
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -134,7 +134,7 @@
   }
 }
 .forum-title > a {
-  color: #34495e;
+  color: #2c3e50;
 }
 .forum-title > a:hover {
   color: #1abc9c;
@@ -154,8 +154,8 @@
 .forum-icon {
   width: 10px;
   height: 10px;
-  background-color: #34495e;
-  border: 1px solid #34495e;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
   display: inline-block;
   margin-right: 6px;
   border-radius: 50%;
