@@ -27,6 +27,14 @@
 
     // Empty badges collapse automatically (not available in IE8)
     &:empty { display: none; }
+    
+    [href] & {
+        float: left;
+        position: absolute;
+        left: unit(@base-spacing-unit, px);
+        top: unit(@quarter-spacing-unit, px);
+        z-index: 1050;
+    }
 
     [href] {
         &:hover,
@@ -41,7 +49,6 @@
 
     // Quick fix for labels/badges in buttons
     .btn & {
-        position: relative;
         top: -1px;
     }
 }

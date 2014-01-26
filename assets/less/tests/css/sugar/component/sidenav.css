@@ -99,8 +99,7 @@
   top: -4px;
 }
 .sidenav-menu > li .badge {
-  margin: -24px 0px 0px -12px;
-  margin: -1.5rem 0rem 0rem -0.75rem;
+  top: -6px;
 }
 .sidenav-menu > li.is-active > a {
   color: #1abc9c;
