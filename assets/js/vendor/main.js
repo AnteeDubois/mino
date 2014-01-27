@@ -28,6 +28,21 @@ $(function(){
         $(this).tooltip('hide');
     });
 
+    // menu dropdown toggle
+    $(".dropdown").click(function (e) {
+        e.stopPropagation();
+        
+        var $item = $(this).parent();
+        
+        $item.toggleClass("is-active");
+        
+        if ($item.hasClass("is-active")) {
+            $item.find("> ul").slideDown("fast");
+        } else {
+            $item.find("> ul").slideUp("fast");
+        }
+    });
+
     // sidebar menu dropdown toggle
     $(".sidenav-dropdown-toggle").click(function (e) {
         e.stopPropagation();
@@ -42,22 +57,6 @@ $(function(){
             $item.find(".sidenav-menu-sub").slideUp("fast");
         }
     });
-
-    // menu dropdown toggle
-    $(".navbar-nav-dropdown").click(function (e) {
-        e.stopPropagation();
-        
-        var $item = $(this).parent();
-        
-        $item.toggleClass("is-active");
-        
-        if ($item.hasClass("is-active")) {
-            $item.find(".navbar-nav-sub").slideDown("fast");
-        } else {
-            $item.find(".navbar-nav-sub").slideUp("fast");
-        }
-    });
-
 
     // mobile side-menu slide toggler
     var $menu = $(".sidenav");

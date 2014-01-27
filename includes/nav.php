@@ -22,7 +22,7 @@
                             <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Advanced Search"><span class="icon icon-cog"></span> <span class="sr-only">Advanced Search</span></a></li>
                             <!-- Settings & Tools -->
                             <li class="navbar-nav-item">
-                                <a class="navbar-nav-dropdown settings" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Settings & Tools"><span class="octicons octicons-settings"></span> <span class="sr-only">Settings & Tools</span></a>
+                                <a class="navbar-nav-dropdown dropdown settings" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Settings & Tools"><span class="octicons octicons-settings"></span> <span class="sr-only">Settings & Tools</span></a>
                                 <ul class="navbar-nav-sub settings-sub list-unstyled">
                                     <li>
                                         <a href="#" title="User Preferences">
@@ -36,22 +36,13 @@
                             </li>
                             <!-- Notifications -->                   
                             <li class="navbar-nav-item">
-                                <a class="navbar-nav-dropdown notifications" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Notifications"><span class="badge pomegranate">5</span> <span class="icon icon-bell"></span> <span class="sr-only">Notifications</span></a>
-                                <ul class="navbar-nav-sub notifications-sub list-unstyled">
-                                    <li>
-                                        <a href="#" title="User Preferences">
-                                            <span class="navbar-nav-sub-arrow octicons octicons-triangle-up"></span>
-                                            <span class="icon icon-cog"></span> <span>User Preferences</span>
-                                        </a>
-                                    </li>
-                                    <li><a href="#" title="Moderator Tools"><span class="icon icon-shield"></span> <span>Moderator Tools</span></a></li>
-                                    <li><a href="#" title="Admin Panel"><span class="icon icon-cogs"></span> <span>Admin Panel</span></a></li>
-                                </ul>
+                                <a class="navbar-nav-dropdown dropdown notifications" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Notifications"><span class="badge pomegranate">5</span> <span class="icon icon-bell"></span> <span class="sr-only">Notifications</span></a>
+                                <?php include("includes/notifications.php"); ?>
                             </li>
                             <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Private Messages"><span class="badge pomegranate">2</span> <span class="icon icon-inbox"></span> <span class="sr-only">PMs</span></a></li>
                             <!-- Forum Actions -->
                             <li class="navbar-nav-item">
-                                <a class="navbar-nav-dropdown actions" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span class="sr-only">Forum Actions</span></a>
+                                <a class="navbar-nav-dropdown dropdown actions" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span class="sr-only">Forum Actions</span></a>
                                 <ul class="navbar-nav-sub actions-sub list-unstyled">                                                                     
                                     <li class="navbar-nav-sub-header">
                                         <span class="navbar-nav-sub-arrow octicons octicons-triangle-up"></span>

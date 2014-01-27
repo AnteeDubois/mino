@@ -11,17 +11,17 @@ $(function() {
     $('[data-toogle="tooltip"]').on("click", function() {
         $(this).tooltip("hide");
     });
+    $(".dropdown").click(function(e) {
+        e.stopPropagation();
+        var t = $(this).parent();
+        t.toggleClass("is-active");
+        t.hasClass("is-active") ? t.find("> ul").slideDown("fast") : t.find("> ul").slideUp("fast");
+    });
     $(".sidenav-dropdown-toggle").click(function(e) {
         e.stopPropagation();
         var t = $(this).parent();
         t.toggleClass("is-active");
         t.hasClass("is-active") ? t.find(".sidenav-menu-sub").slideDown("fast") : t.find(".sidenav-menu-sub").slideUp("fast");
-    });
-    $(".navbar-nav-dropdown").click(function(e) {
-        e.stopPropagation();
-        var t = $(this).parent();
-        t.toggleClass("is-active");
-        t.hasClass("is-active") ? t.find(".navbar-nav-sub").slideDown("fast") : t.find(".navbar-nav-sub").slideUp("fast");
     });
     var e = $(".sidenav");
     $("body").click(function() {
