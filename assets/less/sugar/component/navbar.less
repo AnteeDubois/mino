@@ -86,12 +86,16 @@
  */
 .navbar-nav-sub {
     .font-size(@base-font-size);
+    
+    background-color: transparent;
+    .box-shadow(0 6px 12px rgba(0,0,0,.175));
 
     display: none;
     float: left;
     position: absolute;
     margin: 20px 0 0;
     z-index: 1020;
+
     > li {
         &:first-of-type > a { .border-top-radius(unit(@base-radius, px)); }
 
