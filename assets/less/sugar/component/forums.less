@@ -156,44 +156,30 @@
 }
 
 /**
- * Forum info
+ * Forum details
  *
  * Grouping of none header info for forums, used for grid
  */
-.forum-info {
+.forum-details {
     .margin-top(@quarter-spacing-unit - 1);
     @media (min-width: @screen-m-min) { .padding-left(20); }
     @media (min-width: @screen-l-min) { .padding-left(@double-spacing-unit); }
     @media (min-width: @screen-w-min) { .padding-left(40); }
-}
 
-/**
- * Forum stats
- *
- * Master class for all the styles to the stats for each forum row. 
- * IE: topics, posts, links, views, replies
- *
- * The individual classes themselves are used more as a located and for positioning.
- */
-.forum-stats {
-    line-height: 1;
-    
-    .padding-top(@eighth-spacing-unit);
-    width: unit(@quadruple-spacing-unit, px);
-
-    > p { 
+    //.details-stats { width: unit(@quadruple-spacing-unit, px); }
+    .forum-stat {
         line-height: 1;
-
         display: inline-block;
-        margin-right: 2px;
-    }
 
-    @media (min-width: @screen-m-min) { 
-        > p {
+        @media (min-width: @screen-m-min) {
+            text-align: right;
+
             background-color: transparent;
             border-radius: 0;
-
-            display: inline-flex;
+            
+            clear: both;
+            display: block;
+            width: 105px;
             float: right;
             .margin-bottom(@quarter-spacing-unit);
 
@@ -203,6 +189,7 @@
 
                 color: @forum-stats-dfn-color;
 
+                float: left;
                 .padding-right(@half-spacing-unit); 
             }
 
@@ -217,60 +204,4 @@
         }  
     }
 }
-
-/**
- * Forum recent
- *
- * Position the recent post section
- */
-.forum-recent { 
-    line-height: 1;
-    
-    .padding-left(@base-spacing-unit+@half-spacing-unit);
-    .padding-top(@eighth-spacing-unit);
-}
-
-/**
- * Forum avatar
- *
- * Style the size and position of the avatars
- */
-.forum-avatar { 
-    .margin-right(@half-spacing-unit);
-    width: 42px; 
-}
-
-/**
- * Forum recent info
- *
- * Position the text block for the recent post section
- */
-.forum-recent-info { 
-    line-height: 1;
-
-    margin: 0;
-    .padding-top(@eighth-spacing-unit);
-}
-
-/**
- * Forum recent post user
- *
- * Style the user of the most recent post
- */
-.forum-recent-user {
-    line-height: 1;
-
-    margin: 0;
-    > a { .line-height(24); }
-}  
-
-/**
- * Forum recent post time
- *
- * Style the time of the most recent post
- */
-.forum-recent-time { 
-    .font-size(@half-spacing-unit);
-    line-height: 1; 
-}  
 
