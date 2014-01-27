@@ -1025,6 +1025,38 @@ input:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.form-group.focus select:-moz-placeholder,
+.form-group.focus textarea:-moz-placeholder,
+.form-group.focus input:-moz-placeholder,
+select:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder,
+input:focus:-moz-placeholder {
+  color: #34495e;
+}
+.form-group.focus select::-moz-placeholder,
+.form-group.focus textarea::-moz-placeholder,
+.form-group.focus input::-moz-placeholder,
+select:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder,
+input:focus::-moz-placeholder {
+  color: #34495e;
+}
+.form-group.focus select:-ms-input-placeholder,
+.form-group.focus textarea:-ms-input-placeholder,
+.form-group.focus input:-ms-input-placeholder,
+select:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder,
+input:focus:-ms-input-placeholder {
+  color: #34495e;
+}
+.form-group.focus select::-webkit-input-placeholder,
+.form-group.focus textarea::-webkit-input-placeholder,
+.form-group.focus input::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+  color: #34495e;
+}
 select:-moz-placeholder,
 textarea:-moz-placeholder,
 input:-moz-placeholder {

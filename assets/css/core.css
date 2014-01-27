@@ -6616,6 +6616,30 @@ input[type="file"].form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.form-group.focus .form-control:-moz-placeholder,
+.form-group.focus input[type="file"].form-control:-moz-placeholder,
+.form-control:focus:-moz-placeholder,
+input[type="file"].form-control:focus:-moz-placeholder {
+  color: #1abc9c;
+}
+.form-group.focus .form-control::-moz-placeholder,
+.form-group.focus input[type="file"].form-control::-moz-placeholder,
+.form-control:focus::-moz-placeholder,
+input[type="file"].form-control:focus::-moz-placeholder {
+  color: #1abc9c;
+}
+.form-group.focus .form-control:-ms-input-placeholder,
+.form-group.focus input[type="file"].form-control:-ms-input-placeholder,
+.form-control:focus:-ms-input-placeholder,
+input[type="file"].form-control:focus:-ms-input-placeholder {
+  color: #1abc9c;
+}
+.form-group.focus .form-control::-webkit-input-placeholder,
+.form-group.focus input[type="file"].form-control::-webkit-input-placeholder,
+.form-control:focus::-webkit-input-placeholder,
+input[type="file"].form-control:focus::-webkit-input-placeholder {
+  color: #1abc9c;
+}
 .form-control:-moz-placeholder,
 input[type="file"].form-control:-moz-placeholder {
   color: #c9cccd;

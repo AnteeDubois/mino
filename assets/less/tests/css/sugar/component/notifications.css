@@ -1,0 +1,141 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENT-NOTIFICATIONS
+\*------------------------------------*/
+/**
+ * Notification Main Class
+ *
+ * Set the base styling for the notifications menu
+ */
+.notification-sub {
+  font-size: 16px;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  display: none;
+  float: left;
+  position: absolute;
+  margin: 20px 0 0;
+  margin: 20px 0px 0px -382px;
+  margin: 1.25rem 0rem 0rem -23.875rem;
+  white-space: nowrap;
+  z-index: 1020;
+}
+.notification-sub > li {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e4e5;
+  border-right: 1px solid #e0e4e5;
+  border-left: 1px solid #e0e4e5;
+  color: gray;
+  padding: 6px 12px;
+  padding: 0.375rem 0.75rem;
+  display: block;
+  white-space: nowrap;
+  width: 492px;
+}
+.notification-sub > li .icon,
+.notification-sub > li .octicons {
+  vertical-align: middle;
+  padding-right: 6px;
+  padding-right: 0.375rem;
+}
+.notification-sub > li:hover {
+  background-color: #ecf0f1;
+}
+.notification-sub > li:first-of-type,
+.notification-sub > li:last-of-type {
+  background-color: #2c3e50;
+  border: 0;
+  color: #ffffff;
+}
+.notification-sub > li:first-of-type a,
+.notification-sub > li:last-of-type a {
+  color: #616e7c;
+}
+.notification-sub > li:first-of-type a:hover,
+.notification-sub > li:last-of-type a:hover {
+  color: #1abc9c;
+}
+.notification-sub > li:first-of-type {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.notification-sub > li:last-of-type {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.notification-sub > li:before,
+.notification-sub > li:after {
+  content: " ";
+  display: table;
+}
+.notification-sub > li:after {
+  clear: both;
+}
+.notification-sub.is-active {
+  display: block;
+}
+.notification-sub .details-stats {
+  width: 250px;
+}
+.notification-sub .details-recent {
+  width: 216px;
+}
+.notification-sub .navbar-nav-sub-arrow {
+  margin-left: 386px;
+  margin-left: 24.125rem;
+}
+/**
+ * Notification Topic
+ *
+ * style the titel of the notification
+ */
+.notification-topic {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.667;
+  text-align: right;
+}
+.notification-topic > a {
+  font-weight: 700;
+  color: #2c3e50;
+}
+.notification-topic > a:hover {
+  color: #1abc9c;
+}
+/**
+ * Notification Status
+ *
+ * style the status msg of the notification
+ */
+.notification-status {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.667;
+  font-weight: 700;
+  text-align: right;
+  color: #95a5a6;
+}
+/**
+ * Notification More
+ *
+ * style the more/see all link
+ */
+.notification-more {
+  position: relative;
+  width: 100%;
+}
+.notification-more > a {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}

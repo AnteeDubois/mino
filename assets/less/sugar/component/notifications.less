@@ -1,0 +1,120 @@
+/*------------------------------------*\
+    $COMPONENT-NOTIFICATIONS
+\*------------------------------------*/
+
+/**
+ * Notification Main Class
+ *
+ * Set the base styling for the notifications menu
+ */
+.notification-sub {
+    .font-size(@base-font-size);
+
+    .box-shadow(0 6px 12px rgba(0,0,0,.175));
+
+    display: none;
+    float: left;
+    position: absolute;
+    margin: 20px 0 0;
+    .margin(20, 0, 0, -382);
+    white-space: nowrap; // prevent links from randomly breaking onto new lines 
+    z-index: 1020;
+
+    > li {
+        background-color: @forum-row-bg;
+        border-bottom: 1px solid @forum-row-border-color;
+        border-right: 1px solid @forum-row-border-color;
+        border-left: 1px solid @forum-row-border-color;
+
+        color: gray;
+
+        .padding(@quarter-spacing-unit, @half-spacing-unit);
+        display: block;
+        white-space: nowrap; // prevent links from randomly breaking onto new lines
+        width: 492px;
+        
+        .icon, .octicons { 
+            vertical-align: middle;
+
+            .padding-right(@quarter-spacing-unit); 
+        }
+
+        &:hover { background-color: @forum-row-hover-bg; }
+
+        &:first-of-type, &:last-of-type { 
+            background-color: @primary;
+            border: 0;
+            color: @white;
+            
+            a { 
+                color: @primary-accent; 
+                &:hover { color: @primary-hover; }
+            }            
+        }
+
+        &:first-of-type { .border-top-radius(unit(@base-radius, px)); }
+
+        &:last-of-type { .border-bottom-radius(unit(@base-radius, px)); }
+        .cf();
+    }
+
+    &.is-active { display: block; }
+    
+    .details-stats { width: 250px; }
+    .details-recent { width: 216px; }
+    .navbar-nav-sub-arrow { .margin-left(386); }
+}
+
+/**
+ * Notification Topic
+ *
+ * style the titel of the notification
+ */
+.notification-topic {
+    .font-size(14);
+    line-height: @badge-line-height;
+    text-align: right;
+
+    > a { 
+        font-weight: 700;
+
+        color: @primary;
+        
+        &:hover { color: @primary-hover; }
+    }
+}
+
+/**
+ * Notification Status
+ *
+ * style the status msg of the notification
+ */
+.notification-status {
+    .font-size(14);
+    line-height: @badge-line-height;
+    font-weight: 700;
+
+    text-align: right;
+
+    color: @secondary-alt;
+}
+
+/**
+ * Notification More
+ *
+ * style the more/see all link
+ */
+.notification-more {
+    position: relative;
+    width: 100%;
+
+    > a {
+        text-align: center;
+
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+
