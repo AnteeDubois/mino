@@ -1,6 +1,6 @@
 <li class="notification-item details">
     <div class="details-stats pull-left">
-        <p class="notification-topic"><a href="" title="<?php echo $title; ?>"><?php echo $title; ?></a></p>
+        <p class="notification-topic"><?php echo $title; ?></p>
         <?php echo $status; ?>
     </div>
     <div class="details-recent pull-left">
