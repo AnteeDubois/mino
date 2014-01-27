@@ -472,11 +472,12 @@
 
 .form-control-focus(@color: @base-link-color) {
     .form-group.focus &,
-  &:focus {
-    border-color: @color;
-    outline: 0;
-    .box-shadow(none);
-  }
+    &:focus {
+        border-color: @color;
+        outline: 0;
+        .box-shadow(none);
+        .placeholder(@color);
+    }
 }
 
 
