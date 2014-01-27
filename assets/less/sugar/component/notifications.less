@@ -74,12 +74,17 @@
     .font-size(14);
     line-height: @badge-line-height;
     text-align: right;
+    text-overflow: ellipsis;
+    
+    //display: inline-block;
+    max-width: 250px;
+    overflow: hidden;
 
     > a { 
         font-weight: 700;
-
-        color: @primary;
         
+        color: @primary;
+                
         &:hover { color: @primary-hover; }
     }
 }
@@ -116,5 +121,4 @@
         width: 100%;
     }
 }
-
 

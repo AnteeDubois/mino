@@ -103,6 +103,9 @@
   font-size: 0.875rem;
   line-height: 1.667;
   text-align: right;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  overflow: hidden;
 }
 .notification-topic > a {
   font-weight: 700;
