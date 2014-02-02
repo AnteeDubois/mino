@@ -141,15 +141,19 @@
         &:last-of-type > a { .border-bottom-radius(unit(@base-radius, px)); }
     }
 
-    &.actions-sub > li {
-        > a {
-            background-color: @navbar-actions-sub-bg;
-            color: @navbar-actions-sub-link-color;
-            &:hover { 
+    &.actions-sub {
+        .margin-left(-@sextuple-spacing-unit);
+        > li {
+            > a {
                 background-color: @navbar-actions-sub-bg;
-                color: @navbar-actions-sub-link-hover-color; 
+                color: @navbar-actions-sub-link-color;
+                &:hover { 
+                    background-color: @navbar-actions-sub-bg;
+                    color: @navbar-actions-sub-link-hover-color; 
+                }
             }
         }
+        .navbar-nav-sub-arrow { .margin-left(@sextuple-spacing-unit); }
     }
 
     &.is-active-nav { display: block; }
