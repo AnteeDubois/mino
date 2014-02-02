@@ -194,6 +194,6 @@
  *
  * simple dymnamic state change
  */
-.breadcrumbs.is-active .breadcrumbs-crumbs {
+.is-active-breadcrumbs .breadcrumbs-crumbs {
   display: inline-block;
 }

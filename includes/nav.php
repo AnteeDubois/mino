@@ -3,14 +3,12 @@
                     <nav class="navbar-nav visible-s">
                         <ul class="list-inline"> 
                             <li class="navbar-nav-item grid-s-3 text-center">
-                                <a class="pull-left sidenav-btn" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Menu"><span class="badge pomegranate">7</span> <span class="icon icon-reorder"></span> <span class="sr-only">Menu</span></a>
+                                <a class="pull-left sidenav-toggle" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Menu"><span class="badge pomegranate">7</span> <span class="icon icon-reorder"></span> <span class="sr-only">Menu</span></a>
                             </li>
                             <li class="grid-s-6 text-center">
                                 <a class="navbar-brand brand" href="/" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo.png" alt="PHPBB | Creating Communities"> <span class="sr-only">PHPBB</span></a>
                             </li>
-                            <li class="navbar-nav-item grid-s-3 text-center">
-                                <a class="pull-right" href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Logout"><span class="octicons octicons-log-out"></span> <span class="sr-only">Logout</span></a>
-                            </li>
+                            <li class="navbar-nav-item grid-s-3 text-center"><a class="login-toggle pull-right" href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Login"><span class="octicons octicons-log-in"></span> <span class="sr-only">Login</span></a></li>
                         </ul>
                     </nav>
                 </hgroup>
@@ -61,7 +59,8 @@
                                     <li><a href="#" title="Active"><span class="icon icon-circle orange"></span> <span>Active</span></a></li>
                                 </ul>
                             </li>
-                            <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Logout"><span class="octicons octicons-log-out"></span> <span class="sr-only">Logout</span></a></li>
+                            <li class="navbar-nav-item"><a class="login-toggle" href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Login"><span class="octicons octicons-log-in"></span> <span class="sr-only">Login</span></a></li>
+                            <!-- <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Logout"><span class="octicons octicons-log-out"></span> <span class="sr-only">Logout</span></a></li> -->
                         </ul>
                         <form action="" class="form navbar-nav-search pull-right">
                             <input type="text" class="search form-control" placeholder="Search... " name="Search" title="Search" />

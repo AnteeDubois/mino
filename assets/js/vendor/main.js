@@ -34,9 +34,9 @@ $(function(){
         
         var $item = $(this).parent();
         
-        $item.toggleClass("is-active");
+        $item.toggleClass("is-active-nav");
         
-        if ($item.hasClass("is-active")) {
+        if ($item.hasClass("is-active-nav")) {
             $item.find("> ul").slideDown("fast");
         } else {
             $item.find("> ul").slideUp("fast");
@@ -49,12 +49,27 @@ $(function(){
         
         var $item = $(this).parent();
         
-        $item.toggleClass("is-active");
+        $item.toggleClass("is-active-sidenav-dropdown");
         
-        if ($item.hasClass("is-active")) {
+        if ($item.hasClass("is-active-sidenav-dropdown")) {
             $item.find(".sidenav-menu-sub").slideDown("fast");
         } else {
             $item.find(".sidenav-menu-sub").slideUp("fast");
+        }
+    });
+
+    // Login section toggle
+    $(".login-toggle").click(function (e) {
+        e.stopPropagation();
+
+        var $item = $(".login");
+
+        $item.toggleClass("is-active-login");
+
+         if ($item.hasClass("is-active-login")) {
+            $(".login-wrap").slideDown("fast");
+        } else {
+            $(".login-wrap").slideUp("fast");
         }
     });
 
@@ -62,8 +77,8 @@ $(function(){
     var $menu = $(".sidenav");
     
     $("body").click(function () {
-        if ($(this).hasClass("is-active")) {
-            $(this).removeClass("is-active");
+        if ($(this).hasClass("is-active-sidenav")) {
+            $(this).removeClass("is-active-sidenav");
         }
     });
     
@@ -71,9 +86,9 @@ $(function(){
         e.stopPropagation();
     });
     
-    $(".sidenav-btn").click(function (e) {
+    $(".sidenav-toggle").click(function (e) {
         e.stopPropagation();
-        $("body").toggleClass("is-active");
+        $("body").toggleClass("is-active-sidenav");
     });
 
     // mobile breadcrumbs sliding menu
@@ -82,9 +97,9 @@ $(function(){
         
         var $item = $(".breadcrumbs");
         
-        $item.toggleClass("is-active");
+        $item.toggleClass("is-active-breadcrumbs");
 
-        if ($item.hasClass("is-active")) {
+        if ($item.hasClass("is-active-breadcrumbs")) {
             $(".breadcrumbs-crumbs").slideDown("fast");
         } else {
             $(".breadcrumbs-crumbs").slideUp("fast");

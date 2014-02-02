@@ -8,30 +8,29 @@
  * Set the base styling for the notifications menu
  */
 .notification-sub {
-    .font-size(@base-font-size);
+    .font-size(@notification-font-size);
 
     .box-shadow(0 6px 12px rgba(0,0,0,.175));
 
     display: none;
     float: left;
     position: absolute;
-    margin: 20px 0 0;
-    .margin(20, 0, 0, -382);
+    .margin(20, 0, 0, @notification-offset);
     white-space: nowrap; // prevent links from randomly breaking onto new lines 
     z-index: 1020;
 
     > li {
-        background-color: @forum-row-bg;
-        border-bottom: 1px solid @forum-row-border-color;
-        border-right: 1px solid @forum-row-border-color;
-        border-left: 1px solid @forum-row-border-color;
+        background-color: @notification-bg;
+        border-bottom: 1px solid @notification-border-color;
+        border-right: 1px solid @notification-border-color;
+        border-left: 1px solid @notification-border-color;
 
         color: gray;
 
         .padding(@quarter-spacing-unit, @half-spacing-unit);
         display: block;
         white-space: nowrap; // prevent links from randomly breaking onto new lines
-        width: 492px;
+        width: @notification-width;
         
         .icon, .octicons { 
             vertical-align: middle;
@@ -39,16 +38,16 @@
             .padding-right(@quarter-spacing-unit); 
         }
 
-        &:hover { background-color: @forum-row-hover-bg; }
+        &:hover { background-color: @notification-bg-hover-color; }
 
         &:first-of-type, &:last-of-type { 
-            background-color: @primary;
+            background-color: @notification-header-bg;
             border: 0;
-            color: @white;
+            color: @notification-header-color;
             
             a { 
-                color: @primary-accent; 
-                &:hover { color: @primary-hover; }
+                color: @notification-header-link-color; 
+                &:hover { color: @notification-header-link-hover-color; }
             }            
         }
 
@@ -60,9 +59,9 @@
 
     &.is-active { display: block; }
     
-    .details-stats { width: 250px; }
-    .details-recent { width: 216px; }
-    .navbar-nav-sub-arrow { .margin-left(386); }
+    .details-stats { width: @notification-stats-width; }
+    .details-recent { width: @notification-recent-width; }
+    .navbar-nav-sub-arrow { .margin-left(@notification-arrow-offset); }
 }
 
 /**
@@ -72,20 +71,20 @@
  */
 .notification-topic {
     .font-size(14);
-    line-height: @badge-line-height;
+    line-height: @notification-line-height;
     text-align: right;
     text-overflow: ellipsis;
     
     //display: inline-block;
-    max-width: 250px;
+    max-width: 100%;
     overflow: hidden;
 
     > a { 
         font-weight: 700;
         
-        color: @primary;
+        color: @notification-link-color;
                 
-        &:hover { color: @primary-hover; }
+        &:hover { color: @notification-link-hover-color; }
     }
 }
 
@@ -96,12 +95,10 @@
  */
 .notification-status {
     .font-size(14);
-    line-height: @badge-line-height;
+    line-height: @notification-line-height;
     font-weight: 700;
 
     text-align: right;
-
-    color: @secondary-alt;
 }
 
 /**

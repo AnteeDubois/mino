@@ -203,6 +203,6 @@
   background-color: #ecf0f1;
   color: #1abc9c;
 }
-.navbar-nav-sub.is-active {
+.navbar-nav-sub.is-active-nav {
   display: block;
 }

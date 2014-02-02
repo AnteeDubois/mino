@@ -87,7 +87,7 @@
 
         .badge { top:-6px; }
 
-        &.is-active > a {
+        &.is-active-sidenav > a {
             //border-bottom: 0;
             //box-shadow: none;
             color: @sidenav-link-hover-color;
@@ -116,7 +116,7 @@
     .padding(0, 0, @half-spacing-unit);
     .margin(0, @half-spacing-unit+@eighth-spacing-unit);
 
-    .is-active { display: block; }
+    .is-active-sidenav-dropdown { display: block; }
 
     a {
         font-weight: normal;
@@ -130,7 +130,7 @@
 
         &:hover span { text-decoration: underline; }
         
-        .is-active { font-weight: bold; }
+        .is-active-sidenav { font-weight: bold; }
     }
 
 }
@@ -154,7 +154,7 @@
  * Here we set the changes that need to occur to the 
  * various wrapping classes to display the sidenav.
  */
-body.is-active { 
+body.is-active-sidenav { 
     overflow-x: hidden;
     .sidenav {
         border-top: 1px solid @breadcrumb-border-color;

@@ -2,7 +2,7 @@
     <li>
         <span class="navbar-nav-sub-arrow octicons octicons-triangle-up"></span>
         <span class="pull-left">Notifications</span>
-        <a class="pull-right" href="#" title="Settings"><span class="octicons octicons-settings"></span> <span>Settings</span></a>
+        <a class="pull-right" href="#" title="Settings" data-toogle="tooltip" data-placement="bottom" data-container=".navbar"><span class="octicons octicons-settings"></span> <span>Settings</span></a>
     </li>
     <?php
         $status = '<p class="notification-status"><span class="label quoted">QUOTED</span></p>';

@@ -5,10 +5,10 @@
  * Used for comon clour changes to text
  */
 
-.black-pure         { .color(@black-pure, @white, @bg-hover-color: mix(@black-pure, white, 70%), @black); }
-.black-dark         { .color(@black-dark, @white, @bg-hover-color: mix(@black-dark, white, 70%), @black-pure); }
-.black              { .color(@black, @white, @bg-hover-color: mix(@black, white, 70%), @black-dark); }
-.black-light        { .color(@black-light, @white, @bg-hover-color: mix(@black-light, white, 70%), @black); }
+.black-pure         { .color(@black-pure, @white, mix(@black-pure, white, 70%), @black); }
+.black-dark         { .color(@black-dark, @white, mix(@black-dark, white, 70%), @black-pure); }
+.black              { .color(@black, @white, mix(@black, white, 70%), @black-dark); }
+.black-light        { .color(@black-light, @white, mix(@black-light, white, 70%), @black); }
 
 .gray-darker        { .color(@gray-darker); }
 .gray-dark          { .color(@gray-dark); }
@@ -106,12 +106,14 @@
 
 .text-black         { color: @black !important; }
 
-.user               { .color(@wet-asphalt, @white, @turquuoise); }
-.admin              { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
-.mod                { .color(mix(@emerald, white, 70%), @white, @nephritis); }
+.user                   { .color(@wet-asphalt, @white, @turquuoise); }
+.admin                  { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
+.mod                    { .color(mix(@emerald, white, 70%), @white, @nephritis); }
 
-.quoted, .replied { .color(@concrete); }
-.approved, .approve { .color(@emerald); }
-.rejected, .reported { .color(@pomegranate); }
-.created, .pmed { .color(@peter-river); }
+.link                   { .color(@secondary-accent, @white, @primary-hover, mix(@primary-hover, black, 85%), @primary-hover) }
+
+.quoted, .replied       { .color(@concrete); }
+.approved, .approve     { .color(@emerald); }
+.rejected, .reported    { .color(@pomegranate); }
+.created, .pmed         { .color(@peter-river); }
 

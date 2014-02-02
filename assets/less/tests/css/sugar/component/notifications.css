@@ -23,7 +23,6 @@
   display: none;
   float: left;
   position: absolute;
-  margin: 20px 0 0;
   margin: 20px 0px 0px -382px;
   margin: 1.25rem 0rem 0rem -23.875rem;
   white-space: nowrap;
@@ -31,9 +30,9 @@
 }
 .notification-sub > li {
   background-color: #ffffff;
-  border-bottom: 1px solid #e0e4e5;
-  border-right: 1px solid #e0e4e5;
-  border-left: 1px solid #e0e4e5;
+  border-bottom: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
   color: gray;
   padding: 6px 12px;
   padding: 0.375rem 0.75rem;
@@ -104,12 +103,12 @@
   line-height: 1.667;
   text-align: right;
   text-overflow: ellipsis;
-  max-width: 250px;
+  max-width: 100%;
   overflow: hidden;
 }
 .notification-topic > a {
   font-weight: 700;
-  color: #2c3e50;
+  color: #34495e;
 }
 .notification-topic > a:hover {
   color: #1abc9c;
@@ -125,7 +124,6 @@
   line-height: 1.667;
   font-weight: 700;
   text-align: right;
-  color: #95a5a6;
 }
 /**
  * Notification More

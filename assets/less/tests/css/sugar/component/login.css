@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    TEST.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEST IMPORT
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENT-LOGIN
+\*------------------------------------*/
+/**
+ * Login main class
+ *
+ * This is main class for establishing the login section.
+ */
+.login {
+  background-color: #ecf0f1;
+  display: none;
+  padding: 12px 0px;
+  padding: 0.75rem 0rem;
+}
+.login.is-active-login {
+  display: block;
+}

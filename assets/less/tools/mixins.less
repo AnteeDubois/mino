@@ -482,7 +482,7 @@
 
 
 // Color Variantes
-.color(@bg-color, @text-color: @white, @bg-hover-color: darken(@bg-color, 8%), @bg-active-color: mix(@bg-color, black, 85%)) {
+.color(@bg-color, @text-color: @white, @bg-hover-color: darken(@bg-color, 8%), @bg-active-color: mix(@bg-color, black, 85%), @bg-hover-color-clear: @bg-color) {
     background-color: @bg-color;
     color: @text-color;
 
@@ -527,18 +527,24 @@
         background-color: @bg-color;
         color: @text-color;
 
+        &:hover { 
+            background-color: darken(@bg-color, 8%);
+            color: @text-color;
+        }
+
         &.clear {
             border: 2px solid @bg-color;
             color: @bg-color;
 
-            &:hover, &:focus { 
-                background: @bg-color;  
+            &:hover, &:focus {
+                background: @bg-hover-color-clear;
+                border-color: @bg-hover-color-clear;                 
                 color: @text-color;
             }
 
             &:active, &.active {
-                border-color: @bg-active-color;
                 background: @bg-active-color;
+                border-color: @bg-active-color;                
             }
         }
     }
