@@ -1,12 +1,14 @@
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $DEFAULTS
-//------------------------------------//
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
 //  Redefine these in your own `vars.less` to override them.
+//--------------------------------------------------------------------------//
 
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $COLORS
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 // Blacks
 @black-pure:                                #000;
@@ -128,9 +130,9 @@
 @social-twitter:                            #00bdef;
 
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $BASE
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 // Base font
 @base-font-size:                            16;
@@ -210,9 +212,9 @@
 @base-quote-border-color:                   @white-dark;
 @base-quote-small-color:                    @base-ui-color;
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $UNITS
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 //Large units
 @nonuple-spacing-unit:                      (@base-spacing-unit * 8);       // 192
@@ -228,9 +230,9 @@
 @quarter-spacing-unit:                      (@base-spacing-unit / 4);       // 6
 @eighth-spacing-unit:                       ceil((@base-spacing-unit / 8)); // 3   
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $CORE & ATOMS
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 // Code
 @code-font-family:                          Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -274,34 +276,34 @@
 @img-border-radius:                         @base-radius;
 
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $BREAKPOINTS
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 // Different breakpoints for the project.
-@screen-s-min:                                 480px;   // Small screen / phone
-@screen-m-min:                                 768px;   // Medium screen / tablet
-@screen-l-min:                                 984px;   // Large screen / desktop
-@screen-w-min:                                 1200px;  // Wide screen / wide desktop
+@screen-s-min:                              480px;   // Small screen / phone
+@screen-m-min:                              768px;   // Medium screen / tablet
+@screen-l-min:                              984px;   // Large screen / desktop
+@screen-w-min:                              1200px;  // Wide screen / wide desktop
 
 // So media queries don't overlap when required, provide a maximum
-@screen-s-max:                                 (@screen-m-min - 1);
-@screen-m-max:                                 (@screen-l-min - 1);
-@screen-l-max:                                 (@screen-w-min - 1);
+@screen-s-max:                              (@screen-m-min - 1);
+@screen-m-max:                              (@screen-l-min - 1);
+@screen-l-max:                              (@screen-w-min - 1);
 
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $GRIDS
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 // Number of columns in the grid system
-@grid-columns:                                 12;
+@grid-columns:                              12;
 // Padding, to be divided by two and applied to the left and right of all columns
 @grid-gutter-width:                            @base-spacing-unit;
 
 // Different Grid sizes for the project.
-@container-s:                                   100%;                         // Small screen / Phone
-@container-m:                                   (720 + @grid-gutter-width);   // Medium screen / tablet
-@container-l:                                   (936 + @grid-gutter-width);   // Large screen / desktop
-@container-w:                                   (1140 + @grid-gutter-width);  // Wide screen / wide desktop
+@container-s:                               100%;                         // Small screen / Phone
+@container-m:                               (720 + @grid-gutter-width);   // Medium screen / tablet
+@container-l:                               (936 + @grid-gutter-width);   // Large screen / desktop
+@container-w:                               (1140 + @grid-gutter-width);  // Wide screen / wide desktop
 
