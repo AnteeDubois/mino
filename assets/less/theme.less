@@ -16,4 +16,13 @@
     $USER STYLES
 \*------------------------------------*/
 .ui-page { outline: none; }
-.ui-loader { display: none; }
+.ui-loader { display: none; }.user                   { .color(@wet-asphalt, @white, @turquuoise); }
+.admin                  { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
+.mod                    { .color(mix(@emerald, white, 70%), @white, @nephritis); }
+
+.quoted, .replied       { .color(@concrete); }
+.approved, .approve     { .color(@emerald); }
+.rejected, .reported    { .color(@pomegranate); }
+.created, .pmed         { .color(@peter-river); }
+
+.link                   { .color(@secondary-accent, @white, @primary-hover, mix(@primary-hover, black, 85%), @primary-hover) }
