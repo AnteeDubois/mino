@@ -29,10 +29,8 @@
                     <?php include("includes/breadcrumbs.php"); ?>
                 </section>
                 <div class="content inner-wrap">
-
                     <?php include("includes/forumlist.php"); ?>
-                    <?php include("includes/info.php"); ?>
-                    
+                    <?php include("includes/info.php"); ?>                    
                 </div>
             </div>
             <footer class="footbar">
