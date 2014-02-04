@@ -61,7 +61,11 @@
     
     .details-stats { width: @notification-stats-width; }
     .details-recent { width: @notification-recent-width; }
-    .navbar-nav-sub-arrow { .margin-left(@notification-arrow-offset); }
+    .navbar-nav-sub-arrow {
+        color: @notification-header-bg;
+        
+        .margin-left(@notification-arrow-offset); 
+    }
 }
 
 /**
