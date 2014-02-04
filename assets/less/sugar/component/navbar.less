@@ -64,13 +64,13 @@
     @media only screen and (min-width: @screen-m-min) and (max-width: @screen-m-max) { width: 170px; }
 
     > .search {
-        border-color: @navbar-link-color;
-        color: @navbar-link-color;
-        .placeholder(@navbar-link-color);
+        border-color: @navbar-form-border-color;
+        color: @navbar-form-color;
+        .placeholder(@navbar-form-border-color);
         &:focus {
-            border-color: @navbar-link-hover-color;
-            color: @navbar-link-hover-color;
-            .placeholder(@navbar-link-hover-color);
+            border-color: @navbar-form-border-focus;
+            color: @navbar-form-focus-color;
+            .placeholder(@navbar-form-border-focus);
         }
     }
 } 
