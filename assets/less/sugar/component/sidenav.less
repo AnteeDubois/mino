@@ -87,7 +87,7 @@
 
         .badge { top:-6px; }
 
-        &.is-active-sidenav > a {
+        &.is-active-sidenav-dropdown > a {
             //border-bottom: 0;
             //box-shadow: none;
             color: @sidenav-link-hover-color;
@@ -103,6 +103,17 @@
  .sidenav-search {
     .form {
         .margin-horizontal(@half-spacing-unit+@eighth-spacing-unit);
+    }
+
+    .search {
+        border-color: @navbar-link-color;
+        color: @navbar-link-color;
+        .placeholder(@navbar-link-color);
+        &:focus {
+            border-color: @navbar-link-hover-color;
+            color: @navbar-link-hover-color;
+            .placeholder(@navbar-link-hover-color);
+        }
     }
  }
 
@@ -157,18 +168,11 @@
 body.is-active-sidenav { 
     overflow-x: hidden;
     .sidenav {
-        border-top: 1px solid @breadcrumb-border-color;
-
         @media (min-width: @screen-m-min) { border-top: 3px solid @breadcrumb-border-color; }
         left: 0;
         position: absolute;
         width: unit(@sidenav-width, px); 
         .transition(.3s all ease );
-    }
-
-    .content, .footbar { 
-        border-left: 1px solid @breadcrumb-border-color;
-        @media (min-width: @screen-m-min) { border-left: 0; } 
     }
 
     .outer-wrap, .footbar {
