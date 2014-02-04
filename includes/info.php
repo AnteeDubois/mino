@@ -4,7 +4,7 @@
         <dd><span class="label">148236</span></dd>
 
         <dt>Total Members</dt>
-        <dd><span class="label">61289</span></dd>
+        <dd><a href="#" title="Members"><span class="label user">61289</span></a></dd>
 
         <dt>Most Online</dt>
         <dd><span class="label">19245</span></dd>

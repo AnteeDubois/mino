@@ -47,7 +47,6 @@
                                         <span class="octicons octicons-info"></span> <span>Forum Info</span>
                                     </li>
                                     <li><a href="#" title="Faq"><span class="octicons octicons-question"></span> <span>Faq</span></a></li>
-                                    <li><a href="#" title="Members"><span class="icon icon-group"></span> <span>Members</span></a></li>
                                     <li><a href="#" title="The Team"><span class="octicons octicons-organization"></span> <span>The Team</span></a></li>
                                     <li><a href="#" title="Mark Forums Read"><span class="icon icon-check"></span> <span>Mark Forums Read</span></a></li>   
                                     <li><a href="#" title="Delete Cookies"><span class="icon icon-refresh"></span> <span>Delete Cookies</span></a></li>
