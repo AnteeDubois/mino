@@ -6,8 +6,8 @@
             </form>
         </li>
         <li><a href="#" title="Advanced Search"><span class="icon icon-cog"></span> <span>Advanced Search</span></a></li>
-        <li><a href="#" title="Notifications"><span class="badge pomegranate">5</span> <span class="icon icon-bell"></span> <span>Notifications</span></a></li>
-        <li><a href="#" title="Private Messages"><span class="badge pomegranate">2</span> <span class="icon icon-inbox"></span> <span>PMs</span></a></li>
+        <li><a href="#" title="Notifications"><span class="badge">8</span> <span class="icon icon-bell"></span> <span>Notifications</span></a></li>
+        <li><a href="#" title="Private Messages"><span class="badge">2</span> <span class="icon icon-inbox"></span> <span>PMs</span></a></li>
         <!-- Settings & Tools -->
         <li>
             <a class="sidenav-dropdown-toggle" href="#" title="Settings & Tools"><span class="octicons octicons-settings"></span> <span>Settings & Tools</span> <span class="icon icon-chevron-down"></span></a>

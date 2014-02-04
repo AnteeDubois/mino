@@ -2,67 +2,67 @@
     THEME.LESS
 \*------------------------------------*/
 .user {
-  background-color: #34495e;
+  background-color: #f4726d;
   color: #ffffff;
 }
 .user[href] {
   background-color: transparent;
-  color: #34495e;
+  color: #f4726d;
 }
 .user[href]:hover {
   background-color: transparent;
-  color: #1abc9c;
+  color: #f79592;
 }
 .user.icon,
 .user.octicons {
   background-color: transparent;
-  color: #34495e;
+  color: #f4726d;
 }
 .user.label {
-  background-color: #34495e;
+  background-color: #f4726d;
   color: #ffffff;
 }
 .user.label[href],
 a .user.label {
-  background-color: #34495e;
+  background-color: #f4726d;
   color: #ffffff;
 }
 .user.label[href]:hover,
 a .user.label:hover {
-  background-color: #1abc9c;
+  background-color: #f79592;
   color: #ffffff;
 }
 .user.badge {
-  background-color: #34495e;
+  background-color: #f4726d;
   color: #ffffff;
 }
 .user.btn {
-  background-color: #34495e;
+  background-color: #f4726d;
   color: #ffffff;
 }
 .user.btn:hover {
-  background-color: #253544;
+  background-color: #f14d47;
   color: #ffffff;
 }
 .user.btn.clear {
-  border: 2px solid #34495e;
-  color: #34495e;
+  border: 2px solid #f4726d;
+  color: #f4726d;
 }
 .user.btn.clear:hover,
 .user.btn.clear:focus {
-  background: #34495e;
-  border-color: #34495e;
+  background: #f4726d;
+  border-color: #f4726d;
   color: #ffffff;
 }
 .user.btn.clear:active,
 .user.btn.clear.active {
-  background: #2c3e50;
-  border-color: #2c3e50;
+  background: #cf615d;
+  border-color: #cf615d;
 }
 .user.clear {
   background-color: transparent;
-  border: 2px solid #34495e;
-  color: #34495e;
+  border: 2px solid #f4726d;
+  color: #f4726d;
 }
 .admin {
   background-color: #d3746b;
@@ -192,85 +192,85 @@ a .mod.label:hover {
 }
 .quoted,
 .replied {
-  background-color: #95a5a6;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .quoted[href],
 .replied[href] {
   background-color: transparent;
-  color: #95a5a6;
+  color: #b3b3b3;
 }
 .quoted[href]:hover,
 .replied[href]:hover {
   background-color: transparent;
-  color: #7f9293;
+  color: #9e9e9e;
 }
 .quoted.icon,
 .replied.icon,
 .quoted.octicons,
 .replied.octicons {
   background-color: transparent;
-  color: #95a5a6;
+  color: #b3b3b3;
 }
 .quoted.label,
 .replied.label {
-  background-color: #95a5a6;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .quoted.label[href],
 .replied.label[href],
 a .quoted.label,
 a .replied.label {
-  background-color: #95a5a6;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .quoted.label[href]:hover,
 .replied.label[href]:hover,
 a .quoted.label:hover,
 a .replied.label:hover {
-  background-color: #7f9293;
+  background-color: #9e9e9e;
   color: #ffffff;
 }
 .quoted.badge,
 .replied.badge {
-  background-color: #95a5a6;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .quoted.btn,
 .replied.btn {
-  background-color: #95a5a6;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .quoted.btn:hover,
 .replied.btn:hover {
-  background-color: #7f9293;
+  background-color: #9e9e9e;
   color: #ffffff;
 }
 .quoted.btn.clear,
 .replied.btn.clear {
-  border: 2px solid #95a5a6;
-  color: #95a5a6;
+  border: 2px solid #b3b3b3;
+  color: #b3b3b3;
 }
 .quoted.btn.clear:hover,
 .replied.btn.clear:hover,
 .quoted.btn.clear:focus,
 .replied.btn.clear:focus {
-  background: #95a5a6;
-  border-color: #95a5a6;
+  background: #b3b3b3;
+  border-color: #b3b3b3;
   color: #ffffff;
 }
 .quoted.btn.clear:active,
 .replied.btn.clear:active,
 .quoted.btn.clear.active,
 .replied.btn.clear.active {
-  background: #7f8c8d;
-  border-color: #7f8c8d;
+  background: #989898;
+  border-color: #989898;
 }
 .quoted.clear,
 .replied.clear {
   background-color: transparent;
-  border: 2px solid #95a5a6;
-  color: #95a5a6;
+  border: 2px solid #b3b3b3;
+  color: #b3b3b3;
 }
 .approved,
 .approve {
@@ -518,66 +518,192 @@ a .pmed.label:hover {
   border: 2px solid #3498db;
   color: #3498db;
 }
+.primary {
+  background-color: #f4726d;
+  color: #ffffff;
+}
+.primary[href] {
+  background-color: transparent;
+  color: #f4726d;
+}
+.primary[href]:hover {
+  background-color: transparent;
+  color: #f14d47;
+}
+.primary.icon,
+.primary.octicons {
+  background-color: transparent;
+  color: #f4726d;
+}
+.primary.label {
+  background-color: #f4726d;
+  color: #ffffff;
+}
+.primary.label[href],
+a .primary.label {
+  background-color: #f4726d;
+  color: #ffffff;
+}
+.primary.label[href]:hover,
+a .primary.label:hover {
+  background-color: #f14d47;
+  color: #ffffff;
+}
+.primary.badge {
+  background-color: #f4726d;
+  color: #ffffff;
+}
+.primary.btn {
+  background-color: #f4726d;
+  color: #ffffff;
+}
+.primary.btn:hover {
+  background-color: #f14d47;
+  color: #ffffff;
+}
+.primary.btn.clear {
+  border: 2px solid #f4726d;
+  color: #f4726d;
+}
+.primary.btn.clear:hover,
+.primary.btn.clear:focus {
+  background: #f4726d;
+  border-color: #f4726d;
+  color: #ffffff;
+}
+.primary.btn.clear:active,
+.primary.btn.clear.active {
+  background: #cf615d;
+  border-color: #cf615d;
+}
+.primary.clear {
+  background-color: transparent;
+  border: 2px solid #f4726d;
+  color: #f4726d;
+}
+.primary-accent {
+  background-color: #f79592;
+  color: #ffffff;
+}
+.primary-accent[href] {
+  background-color: transparent;
+  color: #f79592;
+}
+.primary-accent[href]:hover {
+  background-color: transparent;
+  color: #f4716c;
+}
+.primary-accent.icon,
+.primary-accent.octicons {
+  background-color: transparent;
+  color: #f79592;
+}
+.primary-accent.label {
+  background-color: #f79592;
+  color: #ffffff;
+}
+.primary-accent.label[href],
+a .primary-accent.label {
+  background-color: #f79592;
+  color: #ffffff;
+}
+.primary-accent.label[href]:hover,
+a .primary-accent.label:hover {
+  background-color: #f4716c;
+  color: #ffffff;
+}
+.primary-accent.badge {
+  background-color: #f79592;
+  color: #ffffff;
+}
+.primary-accent.btn {
+  background-color: #f79592;
+  color: #ffffff;
+}
+.primary-accent.btn:hover {
+  background-color: #f4716c;
+  color: #ffffff;
+}
+.primary-accent.btn.clear {
+  border: 2px solid #f79592;
+  color: #f79592;
+}
+.primary-accent.btn.clear:hover,
+.primary-accent.btn.clear:focus {
+  background: #f79592;
+  border-color: #f79592;
+  color: #ffffff;
+}
+.primary-accent.btn.clear:active,
+.primary-accent.btn.clear.active {
+  background: #d27f7c;
+  border-color: #d27f7c;
+}
+.primary-accent.clear {
+  background-color: transparent;
+  border: 2px solid #f79592;
+  color: #f79592;
+}
 .link {
-  background-color: #c9cccd;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link[href] {
   background-color: transparent;
-  color: #c9cccd;
+  color: #b3b3b3;
 }
 .link[href]:hover {
   background-color: transparent;
-  color: #1abc9c;
+  color: #f4726d;
 }
 .link.icon,
 .link.octicons {
   background-color: transparent;
-  color: #c9cccd;
+  color: #b3b3b3;
 }
 .link.label {
-  background-color: #c9cccd;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link.label[href],
 a .link.label {
-  background-color: #c9cccd;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link.label[href]:hover,
 a .link.label:hover {
-  background-color: #1abc9c;
+  background-color: #f4726d;
   color: #ffffff;
 }
 .link.badge {
-  background-color: #c9cccd;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link.btn {
-  background-color: #c9cccd;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link.btn:hover {
-  background-color: #b3b8b9;
+  background-color: #9e9e9e;
   color: #ffffff;
 }
 .link.btn.clear {
-  border: 2px solid #c9cccd;
-  color: #c9cccd;
+  border: 2px solid #b3b3b3;
+  color: #b3b3b3;
 }
 .link.btn.clear:hover,
 .link.btn.clear:focus {
-  background: #1abc9c;
-  border-color: #1abc9c;
+  background: #f4726d;
+  border-color: #f4726d;
   color: #ffffff;
 }
 .link.btn.clear:active,
 .link.btn.clear.active {
-  background: #16a085;
-  border-color: #16a085;
+  background: #d9d9d9;
+  border-color: #d9d9d9;
 }
 .link.clear {
   background-color: transparent;
-  border: 2px solid #c9cccd;
-  color: #c9cccd;
+  border: 2px solid #b3b3b3;
+  color: #b3b3b3;
 }

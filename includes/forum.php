@@ -28,7 +28,7 @@
         ?>
         <?php include("includes/forum-row.php"); ?>
         <?php
-            $status = '<span class="icon icon-circle-blank turquuoise"></span> ';
+            $status = '<span class="icon icon-circle turquuoise"></span> ';
             $title = 'General Development Discussion';
             $label = ' <span class="label orange">HOT</span>';
             $desc = 'Discuss general development subjects that are not specific to a particular version like the versioning control system we use or other infrastructure.';

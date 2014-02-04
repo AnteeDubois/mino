@@ -38,21 +38,21 @@
   padding-right: 0.375rem;
 }
 .notification-sub > li:hover {
-  background-color: #ecf0f1;
+  background-color: #ffffff;
 }
 .notification-sub > li:first-of-type,
 .notification-sub > li:last-of-type {
-  background-color: #2c3e50;
+  background-color: #f4726d;
   border: 0;
   color: #ffffff;
 }
 .notification-sub > li:first-of-type a,
 .notification-sub > li:last-of-type a {
-  color: #616e7c;
+  color: #f79592;
 }
 .notification-sub > li:first-of-type a:hover,
 .notification-sub > li:last-of-type a:hover {
-  color: #1abc9c;
+  color: #ffffff;
 }
 .notification-sub > li:first-of-type {
   border-top-right-radius: 4px;
@@ -80,6 +80,7 @@
   width: 216px;
 }
 .notification-sub .navbar-nav-sub-arrow {
+  color: #f4726d;
   margin-left: 386px;
   margin-left: 24.125rem;
 }
@@ -99,10 +100,10 @@
 }
 .notification-topic > a {
   font-weight: 700;
-  color: #34495e;
+  color: #f4726d;
 }
 .notification-topic > a:hover {
-  color: #1abc9c;
+  color: #f79592;
 }
 /**
  * Notification Status

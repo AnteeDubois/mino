@@ -3,28 +3,29 @@
 //--------------------------------------------------------------------------//
 
 // Color Scheme
-@primary:                                   @midnight-blue;
-@primary-alt:                               @wet-asphalt;
+@primary:                                   #f4726d;
+@primary-alt:                               mix(@primary, black, 75%);
 @primary-accent:                            mix(@primary, white, 75%);
-@primary-hover:                             @turquuoise;
+@primary-hover:                             @white;
 
-@secondary:                                 @clouds;
-@secondary-accent:                          mix(@secondary, black, 85%);
-@secondary-alt:                             @concrete;
+@secondary:                                 @primary-hover;
+@secondary-accent:                          @gray-light;
+@secondary-alt:                             @white-dark;
+@secondary-hover:                           @primary;
 
 // Overide defaults.less
 
 @base-bg-color:                             @primary;
 
 // Base colour for links & branding
-@base-link-color:                           @primary-alt;
-@base-link-hover-color:                     @primary-hover;
+@base-link-color:                           @primary;
+@base-link-hover-color:                     @primary-accent;
 
 // Form
 @form-color:                                @secondary-accent;
 @form-border-color:                         @secondary-accent;
 @form-disabled-color:                       @secondary-accent;
-@form-border-focus:                         @primary-hover;
+@form-border-focus:                         @primary;
 
 //--------------------------------------------------------------------------//
 //  $MODULES
@@ -50,7 +51,7 @@
 // Badges
 @badge-color:                               @white;
 @badge-link-hover-color:                    @white;
-@badge-bg:                                  @red;
+@badge-bg:                                  @primary-alt;
                 
 @badge-font-weight:                         bold;
 @badge-line-height:                         1.667;
@@ -75,26 +76,26 @@
 
 @navbar-sub-bg:                             @primary-accent;
 @navbar-sub-color:                          @navbar-sub-bg;
-@navbar-sub-bg-hover-color:                 @primary-hover;
-@navbar-sub-link-color:                     @navbar-sub-bg-hover-color;
+@navbar-sub-bg-hover-color:                 @primary;
+@navbar-sub-link-color:                     @white;
 @navbar-sub-link-hover-color:               @white;
 
 @navbar-sub-header-color:                   @white;
-@navbar-sub-header-bg:                      @secondary-alt;
+@navbar-sub-header-bg:                      @primary;
 
 @navbar-actions-sub-bg:                     @secondary;
 @navbar-actions-sub-link-color:             @secondary-accent;
-@navbar-actions-sub-link-hover-color:       @primary-hover;
+@navbar-actions-sub-link-hover-color:       @primary;
 
 // Notifications
 @notification-font-size:                    @base-font-size;
 @notification-line-height:                  1.667;
-@notification-color:                        @base-ui-color;
+@notification-color:                        @secondary-accent;
 @notification-bg:                           @white;
 @notification-bg-hover-color:               @secondary;
-@notification-border-color:                 mix(@notification-bg, black, 95%);
-@notification-link-color:                   @primary-alt;
-@notification-link-hover-color:             @primary-hover;
+@notification-border-color:                 @secondary-alt;
+@notification-link-color:                   @base-link-color;
+@notification-link-hover-color:             @base-link-hover-color;
 
 @notification-header-bg:                    @primary;
 @notification-header-color:                 @white;
@@ -116,11 +117,11 @@
 @tooltip-arrow-color:                       @tooltip-bg;
 
 // Breadcrumb
-@breadcrumb-color:                          @secondary-alt;
+@breadcrumb-color:                          @secondary-hover;
 @breadcrumb-bg:                             @secondary;
 @breadcrumb-link-color:                     @secondary-accent;
-@breadcrumb-link-hover-color:               @primary-hover;
-@breadcrumb-border-color:                   @breadcrumb-link-color;
+@breadcrumb-link-hover-color:               @breadcrumb-color;
+@breadcrumb-border-color:                   @secondary-alt;
 
 // SideNav
 @sidenav-width:                             260;
@@ -149,15 +150,15 @@
 // Forum
 @forum-row-height:                          @triple-spacing-unit;
 @forum-row-bg:                              @white;
-@forum-row-hover-bg:                        @secondary;
-@forum-row-border-color:                    mix(@forum-row-hover-bg, black, 95%);
+@forum-row-hover-bg:                        @secondary-alt;
+@forum-row-border-color:                    @forum-row-hover-bg;
 
 @forum-default-color:                       @gray-darker;
 
-@forum-title-link-color:                    @primary;
-@forum-title-link-hover-color:              @primary-hover;
+@forum-title-link-color:                    @base-link-color;
+@forum-title-link-hover-color:              @base-link-hover-color;
 
-@forum-stats-dfn-color:                     @secondary-alt;
+@forum-stats-dfn-color:                     @secondary-accent;
 @forum-stats-label-bg:                      @forum-stats-dfn-color;
 @forum-stats-label-text-color:              @white;
 
@@ -168,5 +169,5 @@
 @footbar-link-hover-color:                  @primary-hover;
 
 // Info
-@info-default-color:                        @secondary-alt;
+@info-default-color:                        @secondary-accent;
 

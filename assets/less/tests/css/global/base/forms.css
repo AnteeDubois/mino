@@ -150,7 +150,7 @@ fieldset[disabled] input {
 select:focus,
 textarea:focus,
 input:focus {
-  border-color: #34495e;
+  border-color: #f4726d;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -161,7 +161,7 @@ input:focus {
 select:focus:-moz-placeholder,
 textarea:focus:-moz-placeholder,
 input:focus:-moz-placeholder {
-  color: #34495e;
+  color: #f4726d;
 }
 .form-group.focus select::-moz-placeholder,
 .form-group.focus textarea::-moz-placeholder,
@@ -169,7 +169,7 @@ input:focus:-moz-placeholder {
 select:focus::-moz-placeholder,
 textarea:focus::-moz-placeholder,
 input:focus::-moz-placeholder {
-  color: #34495e;
+  color: #f4726d;
 }
 .form-group.focus select:-ms-input-placeholder,
 .form-group.focus textarea:-ms-input-placeholder,
@@ -177,7 +177,7 @@ input:focus::-moz-placeholder {
 select:focus:-ms-input-placeholder,
 textarea:focus:-ms-input-placeholder,
 input:focus:-ms-input-placeholder {
-  color: #34495e;
+  color: #f4726d;
 }
 .form-group.focus select::-webkit-input-placeholder,
 .form-group.focus textarea::-webkit-input-placeholder,
@@ -185,7 +185,7 @@ input:focus:-ms-input-placeholder {
 select:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder,
 input:focus::-webkit-input-placeholder {
-  color: #34495e;
+  color: #f4726d;
 }
 select:-moz-placeholder,
 textarea:-moz-placeholder,

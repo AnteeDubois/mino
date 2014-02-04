@@ -34,7 +34,7 @@
   -webkit-font-smoothing: subpixel-antialiased;
   /* [7] */
   /* Decoration */
-  background-color: #34495e;
+  background-color: #f4726d;
   /* [4] */
   background-image: none;
   /* [5] */
@@ -66,7 +66,7 @@
 .btn:hover {
   text-decoration: none;
   /* [9] */
-  background-color: #253544;
+  background-color: #f14d47;
   color: #ffffff;
 }
 .btn:active,
@@ -80,20 +80,20 @@
 }
 .btn.clear {
   background: none;
-  border: 2px solid #34495e;
-  color: #34495e;
+  border: 2px solid #f4726d;
+  color: #f4726d;
   padding: 10px 16px;
   padding: 0.625rem 1rem;
 }
 .btn.clear:hover,
 .btn.clear:focus {
-  background: #34495e;
+  background: #f4726d;
   color: #ffffff;
 }
 .btn.clear:active,
 .btn.clear.active {
-  border-color: #2c3e50;
-  background: #2c3e50;
+  border-color: #cf615d;
+  background: #cf615d;
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: none;
   box-shadow: none;

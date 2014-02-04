@@ -3,7 +3,7 @@
                     <nav class="navbar-nav visible-s">
                         <ul class="list-inline"> 
                             <li class="navbar-nav-item grid-s-3 text-center">
-                                <a class="pull-left sidenav-toggle" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Menu"><span class="badge pomegranate">7</span> <span class="icon icon-reorder"></span> <span class="sr-only">Menu</span></a>
+                                <a class="pull-left sidenav-toggle" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Menu"><span class="badge">10</span> <span class="icon icon-reorder"></span> <span class="sr-only">Menu</span></a>
                             </li>
                             <li class="grid-s-6 text-center">
                                 <a class="navbar-brand brand" href="/" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo.png" alt="PHPBB | Creating Communities"> <span class="sr-only">PHPBB</span></a>
@@ -34,10 +34,10 @@
                             </li>
                             <!-- Notifications -->                   
                             <li class="navbar-nav-item">
-                                <a class="navbar-nav-dropdown dropdown notifications" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Notifications"><span class="badge pomegranate">5</span> <span class="icon icon-bell"></span> <span class="sr-only">Notifications</span></a>
+                                <a class="navbar-nav-dropdown dropdown notifications" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Notifications"><span class="badge">8</span> <span class="icon icon-bell"></span> <span class="sr-only">Notifications</span></a>
                                 <?php include("includes/notifications.php"); ?>
                             </li>
-                            <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Private Messages"><span class="badge pomegranate">2</span> <span class="icon icon-inbox"></span> <span class="sr-only">PMs</span></a></li>
+                            <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Private Messages"><span class="badge">2</span> <span class="icon icon-inbox"></span> <span class="sr-only">PMs</span></a></li>
                             <!-- Forum Actions -->
                             <li class="navbar-nav-item">
                                 <a class="navbar-nav-dropdown dropdown actions" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span class="sr-only">Forum Actions</span></a>
@@ -52,8 +52,8 @@
                                     <li><a href="#" title="Delete Cookies"><span class="icon icon-refresh"></span> <span>Delete Cookies</span></a></li>
                                     <li class="navbar-nav-sub-header"><span class="icon icon-comments"></span> <span>Posts</span></li>
                                     <li><a href="#" title="Yours"><span class="icon icon-circle peter-river"></span> <span>Yours</span></a></li>
-                                    <li><a href="#" title="Unanswered"><span class="icon icon-circle-blank turquuoise"></span> <span>Unanswered</span></a></li>
-                                    <li><a href="#" title="Unread"><span class="icon icon-circle-blank wet-asphalt"></span> <span>Unread</span></a></li>
+                                    <li><a href="#" title="Unanswered"><span class="icon icon-circle turquuoise"></span> <span>Unanswered</span></a></li>
+                                    <li><a href="#" title="Unread"><span class="icon icon-circle primary"></span> <span>Unread</span></a></li>
                                     <li><a href="#" title="New"><span class="icon icon-circle emerald"></span> <span>New</span></a></li>
                                     <li><a href="#" title="Active"><span class="icon icon-circle orange"></span> <span>Active</span></a></li>
                                 </ul>
