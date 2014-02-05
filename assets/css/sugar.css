@@ -2263,7 +2263,7 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #b3b3b3;
+  background-color: #808080;
   border-radius: 3px;
   color: #ffffff;
   display: inline;
@@ -2291,7 +2291,7 @@
  */
 .label-group > p {
   font-size: 75%;
-  background-color: #b3b3b3;
+  background-color: #808080;
   color: #ffffff;
   margin-right: -1px;
   padding: 3px 6px;
@@ -3228,8 +3228,10 @@
  * inorder for the menu effect to work.
  */
 @media only screen and (max-width: 767px) {
-  .outer-wrap {
+  .inner-wrap {
     margin: 0;
+    position: absolute;
+    height: 100%;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
   }
@@ -3250,15 +3252,11 @@ body.is-active-sidenav .sidenav {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-@media (min-width: 768px) {
-  body.is-active-sidenav .sidenav {
-    border-top: 3px solid #f2f2f2;
-  }
-}
-body.is-active-sidenav .outer-wrap,
-body.is-active-sidenav .footbar {
+body.is-active-sidenav .inner-wrap {
   margin-left: 260px;
   margin-left: 16.25rem;
+  margin-bottom: -8px;
+  margin-bottom: -0.5rem;
   overflow: hidden;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -3503,13 +3501,13 @@ body.is-active-sidenav .footbar {
   .forum-details .forum-stat > dfn {
     font-weight: 700;
     font-style: normal;
-    color: #b3b3b3;
+    color: #808080;
     float: left;
     padding-right: 12px;
     padding-right: 0.75rem;
   }
   .forum-details .forum-stat > b {
-    background-color: #b3b3b3;
+    background-color: #808080;
     border-radius: 3px;
     color: #ffffff;
     margin-top: -3px;
@@ -3574,7 +3572,7 @@ body.is-active-sidenav .footbar {
   }
 }
 .info-stats > dt {
-  color: #b3b3b3;
+  color: #808080;
 }
 /*------------------------------------*\
     $COMPONENT-FOOTBAR

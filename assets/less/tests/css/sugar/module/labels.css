@@ -13,7 +13,7 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #b3b3b3;
+  background-color: #808080;
   border-radius: 3px;
   color: #ffffff;
   display: inline;
@@ -41,7 +41,7 @@
  */
 .label-group > p {
   font-size: 75%;
-  background-color: #b3b3b3;
+  background-color: #808080;
   color: #ffffff;
   margin-right: -1px;
   padding: 3px 6px;

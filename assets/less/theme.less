@@ -21,7 +21,9 @@
 .admin                  { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
 .mod                    { .color(mix(@emerald, white, 70%), @white, @nephritis); }
 
-.quoted, .replied       { .color(@secondary-accent); }
+.quoted, 
+.replied, 
+.locked                 { .color(@secondary-accent); }
 .approved, .approve     { .color(@emerald); }
 .rejected, .reported    { .color(@pomegranate); }
 .created, .pmed         { .color(@peter-river); }
@@ -29,4 +31,4 @@
 .primary                { .color(@primary); }
 .primary-accent         { .color(@primary-accent); }
 
-.link                   { .color(@secondary-accent, @white, @primary, mix(@primary-hover, black, 85%), @primary) }
+.link                   { .color(@secondary, @white, @primary, mix(@primary-hover, black, 85%), @primary) }

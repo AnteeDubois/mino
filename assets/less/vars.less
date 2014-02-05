@@ -8,23 +8,23 @@
 @primary-accent:                            mix(@primary, white, 75%);
 @primary-hover:                             @white;
 
-@secondary:                                 @primary-hover;
-@secondary-accent:                          @gray-light;
+@secondary:                                 @gray-light;
+@secondary-accent:                          @gray-dark;
 @secondary-alt:                             @white-dark;
 @secondary-hover:                           @primary;
 
 // Overide defaults.less
 
-@base-bg-color:                             @primary;
+@base-bg-color:                             mix(@footbar-bg, black, 75%);
 
 // Base colour for links & branding
 @base-link-color:                           @primary;
 @base-link-hover-color:                     @primary-accent;
 
 // Form
-@form-color:                                @secondary-accent;
-@form-border-color:                         @secondary-accent;
-@form-disabled-color:                       @secondary-accent;
+@form-color:                                @secondary;
+@form-border-color:                         @secondary;
+@form-disabled-color:                       @secondary;
 @form-border-focus:                         @primary;
 
 //--------------------------------------------------------------------------//
@@ -33,7 +33,7 @@
 
 // Buttons
 @button-default-bg:                         @base-link-color;
-@button-default-color:                      @white;
+@button-default-color:                      @primary-hover;
 @button-default-border:                     0;
 @button-default-border-radius:              @base-radius-medium;
 
@@ -49,8 +49,8 @@
 @label-default-bg:                          @secondary-accent;
 
 // Badges
-@badge-color:                               @white;
-@badge-link-hover-color:                    @white;
+@badge-color:                               @primary-hover;
+@badge-link-hover-color:                    @primary-hover;
 @badge-bg:                                  @primary-alt;
                 
 @badge-font-weight:                         bold;
@@ -77,28 +77,28 @@
 @navbar-sub-bg:                             @primary-accent;
 @navbar-sub-color:                          @navbar-sub-bg;
 @navbar-sub-bg-hover-color:                 @primary;
-@navbar-sub-link-color:                     @white;
-@navbar-sub-link-hover-color:               @white;
+@navbar-sub-link-color:                     @primary-hover;
+@navbar-sub-link-hover-color:               @primary-hover;
 
-@navbar-sub-header-color:                   @white;
+@navbar-sub-header-color:                   @primary-hover;
 @navbar-sub-header-bg:                      @primary;
 
-@navbar-actions-sub-bg:                     @secondary;
-@navbar-actions-sub-link-color:             @secondary-accent;
+@navbar-actions-sub-bg:                     @primary-hover;
+@navbar-actions-sub-link-color:             @secondary;
 @navbar-actions-sub-link-hover-color:       @primary;
 
 // Notifications
 @notification-font-size:                    @base-font-size;
 @notification-line-height:                  1.667;
-@notification-color:                        @secondary-accent;
-@notification-bg:                           @white;
-@notification-bg-hover-color:               @secondary;
+@notification-color:                        @secondary;
+@notification-bg:                           @primary-hover;
+@notification-bg-hover-color:               @primary-hover;
 @notification-border-color:                 @secondary-alt;
 @notification-link-color:                   @base-link-color;
 @notification-link-hover-color:             @base-link-hover-color;
 
 @notification-header-bg:                    @primary;
-@notification-header-color:                 @white;
+@notification-header-color:                 @primary-hover;
 @notification-header-link-color:            @primary-accent;
 @notification-header-link-hover-color:      @primary-hover;
 
@@ -110,7 +110,7 @@
 
 // Tooltips
 @tooltip-max-width:                         200px;
-@tooltip-color:                             @white;
+@tooltip-color:                             @primary-hover;
 @tooltip-bg:                                rgba(0,0,0,.9);
 
 @tooltip-arrow-width:                       unit(@quarter-spacing-unit - 1, px);
@@ -118,8 +118,8 @@
 
 // Breadcrumb
 @breadcrumb-color:                          @secondary-hover;
-@breadcrumb-bg:                             @secondary;
-@breadcrumb-link-color:                     @secondary-accent;
+@breadcrumb-bg:                             @primary-hover;
+@breadcrumb-link-color:                     @secondary;
 @breadcrumb-link-hover-color:               @breadcrumb-color;
 @breadcrumb-border-color:                   @secondary-alt;
 
@@ -139,17 +139,17 @@
 @sidenav-form-focus-color:                  @primary-accent;
 
 // Login
-@login-bg:                                  @secondary;
+@login-bg:                                  @primary-hover;
 @login-border-color:                        @secondary-alt;
 
 // Forums
 @forums-name-bg:                            @primary;
-@forums-name-link-color:                    @white;
-@forums-name-link-hover-color:              @white;
+@forums-name-link-color:                    @primary-hover;
+@forums-name-link-hover-color:              @primary-hover;
 
 // Forum
 @forum-row-height:                          @triple-spacing-unit;
-@forum-row-bg:                              @white;
+@forum-row-bg:                              @primary-hover;
 @forum-row-hover-bg:                        @secondary-alt;
 @forum-row-border-color:                    @forum-row-hover-bg;
 
@@ -160,20 +160,20 @@
 
 @forum-stats-dfn-color:                     @secondary-accent;
 @forum-stats-label-bg:                      @forum-stats-dfn-color;
-@forum-stats-label-text-color:              @white;
+@forum-stats-label-text-color:              @primary-hover;
 
 // Footbar
 @footbar-bg:                                @black;
-@footbar-color:                             @white;
-@footbar-link-color:                        @secondary-accent;
+@footbar-color:                             @primary-hover;
+@footbar-link-color:                        @secondary;
 @footbar-link-hover-color:                  @primary;
 @footbar-brand-height:                      45;
 
 @footbar-copyright-bg:                      mix(@footbar-bg, black, 75%);
 @footbar-copyright-color:                   @gray-darker;
 @footbar-copyright-font-size:               @half-spacing-unit;
-@footbar-copyright-link-color:              @secondary-accent;
-@footbar-copyright-link-hover-color:        @white;
+@footbar-copyright-link-color:              @secondary;
+@footbar-copyright-link-hover-color:        @primary-hover;
 @footbar-copyright-border-color:            mix(@footbar-copyright-bg, black, 90%);
 
 // Info

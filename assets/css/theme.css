@@ -191,86 +191,105 @@ a .mod.label:hover {
   color: #6ddb9c;
 }
 .quoted,
-.replied {
-  background-color: #b3b3b3;
+.replied,
+.locked {
+  background-color: #808080;
   color: #ffffff;
 }
 .quoted[href],
-.replied[href] {
+.replied[href],
+.locked[href] {
   background-color: transparent;
-  color: #b3b3b3;
+  color: #808080;
 }
 .quoted[href]:hover,
-.replied[href]:hover {
+.replied[href]:hover,
+.locked[href]:hover {
   background-color: transparent;
-  color: #9e9e9e;
+  color: #6b6b6b;
 }
 .quoted.icon,
 .replied.icon,
+.locked.icon,
 .quoted.octicons,
-.replied.octicons {
+.replied.octicons,
+.locked.octicons {
   background-color: transparent;
-  color: #b3b3b3;
+  color: #808080;
 }
 .quoted.label,
-.replied.label {
-  background-color: #b3b3b3;
+.replied.label,
+.locked.label {
+  background-color: #808080;
   color: #ffffff;
 }
 .quoted.label[href],
 .replied.label[href],
+.locked.label[href],
 a .quoted.label,
-a .replied.label {
-  background-color: #b3b3b3;
+a .replied.label,
+a .locked.label {
+  background-color: #808080;
   color: #ffffff;
 }
 .quoted.label[href]:hover,
 .replied.label[href]:hover,
+.locked.label[href]:hover,
 a .quoted.label:hover,
-a .replied.label:hover {
-  background-color: #9e9e9e;
+a .replied.label:hover,
+a .locked.label:hover {
+  background-color: #6b6b6b;
   color: #ffffff;
 }
 .quoted.badge,
-.replied.badge {
-  background-color: #b3b3b3;
+.replied.badge,
+.locked.badge {
+  background-color: #808080;
   color: #ffffff;
 }
 .quoted.btn,
-.replied.btn {
-  background-color: #b3b3b3;
+.replied.btn,
+.locked.btn {
+  background-color: #808080;
   color: #ffffff;
 }
 .quoted.btn:hover,
-.replied.btn:hover {
-  background-color: #9e9e9e;
+.replied.btn:hover,
+.locked.btn:hover {
+  background-color: #6b6b6b;
   color: #ffffff;
 }
 .quoted.btn.clear,
-.replied.btn.clear {
-  border: 2px solid #b3b3b3;
-  color: #b3b3b3;
+.replied.btn.clear,
+.locked.btn.clear {
+  border: 2px solid #808080;
+  color: #808080;
 }
 .quoted.btn.clear:hover,
 .replied.btn.clear:hover,
+.locked.btn.clear:hover,
 .quoted.btn.clear:focus,
-.replied.btn.clear:focus {
-  background: #b3b3b3;
-  border-color: #b3b3b3;
+.replied.btn.clear:focus,
+.locked.btn.clear:focus {
+  background: #808080;
+  border-color: #808080;
   color: #ffffff;
 }
 .quoted.btn.clear:active,
 .replied.btn.clear:active,
+.locked.btn.clear:active,
 .quoted.btn.clear.active,
-.replied.btn.clear.active {
-  background: #989898;
-  border-color: #989898;
+.replied.btn.clear.active,
+.locked.btn.clear.active {
+  background: #6c6c6c;
+  border-color: #6c6c6c;
 }
 .quoted.clear,
-.replied.clear {
+.replied.clear,
+.locked.clear {
   background-color: transparent;
-  border: 2px solid #b3b3b3;
-  color: #b3b3b3;
+  border: 2px solid #808080;
+  color: #808080;
 }
 .approved,
 .approve {

@@ -222,13 +222,13 @@
   .forum-details .forum-stat > dfn {
     font-weight: 700;
     font-style: normal;
-    color: #b3b3b3;
+    color: #808080;
     float: left;
     padding-right: 12px;
     padding-right: 0.75rem;
   }
   .forum-details .forum-stat > b {
-    background-color: #b3b3b3;
+    background-color: #808080;
     border-radius: 3px;
     color: #ffffff;
     margin-top: -3px;

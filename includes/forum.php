@@ -17,7 +17,7 @@
         <?php
             $status = '';
             $title = '[3.1/Ascraeus] Merged RFCs';
-            $label = ' <span class="label emerald">NEW</span> <span class="label silver">LOCKED</span>';
+            $label = ' <span class="label emerald">NEW</span> <span class="label secondary-accent">LOCKED</span>';
             $desc = 'These requests for comments have lead to an implemented feature that has been successfully merged into the 3.1/Ascraeus branch. Everything listed in this forum will be available in phpBB 3.1.';
             $topics = '100';
             $posts = '3300';
