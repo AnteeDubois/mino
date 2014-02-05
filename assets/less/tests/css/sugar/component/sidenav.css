@@ -176,8 +176,10 @@
  * inorder for the menu effect to work.
  */
 @media only screen and (max-width: 767px) {
-  .outer-wrap {
+  .inner-wrap {
     margin: 0;
+    position: absolute;
+    height: 100%;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
   }
@@ -198,15 +200,11 @@ body.is-active-sidenav .sidenav {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-@media (min-width: 768px) {
-  body.is-active-sidenav .sidenav {
-    border-top: 3px solid #f2f2f2;
-  }
-}
-body.is-active-sidenav .outer-wrap,
-body.is-active-sidenav .footbar {
+body.is-active-sidenav .inner-wrap {
   margin-left: 260px;
   margin-left: 16.25rem;
+  margin-bottom: -8px;
+  margin-bottom: -0.5rem;
   overflow: hidden;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;

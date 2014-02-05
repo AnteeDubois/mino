@@ -152,9 +152,11 @@
  * We need to do a little magic to one of our atoms 
  * inorder for the menu effect to work.
  */
-.outer-wrap { 
+.inner-wrap { 
     @media only screen and (max-width: @screen-s-max) {
         margin: 0;
+        position: absolute;
+        height: 100%;
         .transition(.3s all ease );
     }
 }
@@ -168,15 +170,15 @@
 body.is-active-sidenav { 
     overflow-x: hidden;
     .sidenav {
-        @media (min-width: @screen-m-min) { border-top: 3px solid @breadcrumb-border-color; }
         left: 0;
         position: absolute;
         width: unit(@sidenav-width, px); 
         .transition(.3s all ease );
     }
 
-    .outer-wrap, .footbar {
+    .inner-wrap {
         .margin-left(@sidenav-width);
+        .margin-bottom(-8);
         overflow: hidden;
         .transition(.3s all ease );
     }

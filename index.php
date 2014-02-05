@@ -23,11 +23,11 @@
         <header class="navbar">
             <?php include("includes/nav.php"); ?>
         </header>
-        <?php include("includes/sidenav.php"); ?>
         <div class="outer-wrap">
             <section class="breadcrumbs-wrap">
                 <?php include("includes/breadcrumbs.php"); ?>
             </section>
+            <?php include("includes/sidenav.php"); ?>
             <div class="content inner-wrap">
                 <?php include("includes/forumlist.php"); ?>
                 <?php include("includes/info.php"); ?>                    
