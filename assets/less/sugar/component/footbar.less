@@ -3,18 +3,17 @@
 \*------------------------------------*/
 
 /**
- * Footbar
+ * Footbar Wrap
  *
- * A section at the bottom of the page that replaces the footer similar to a navbar
+ * A simple wrapper to set full page color
  */
-.footbar {
+.footbar-wrap {
     background-color: @footbar-bg;
     color: @footbar-color;
     
-    .padding(@base-spacing-unit+@half-spacing-unit);
+    .padding(@base-spacing-unit);
 
-    > a,
-    p > a { 
+    a{ 
         color: @footbar-link-color; 
         
         &:hover { color: @footbar-link-hover-color; }
@@ -27,12 +26,9 @@
  * Just like with the navbar we may want to include a brad in the footer
  */
 .footbar-brand {
-    .font-size(24);
-    .line-height(@base-line-height);
-
-    .brand { 
-        color: @footbar-link-color; 
-        &:hover { color: @footbar-link-hover-color; }
+    .brand .brand-logo { 
+        height: unit(@footbar-brand-height, px);
+        margin-bottom: -10px; // Weird spacing anomoly in chrome on OSX Maverick
     }
     @media (max-width: @screen-s-max) { .margin-bottom(@base-spacing-unit); }
 
@@ -43,25 +39,57 @@
  *
  * sometimes footers need additional textual navigation links
  */
-.footbar-nav {  }
+.footbar-nav {
+    display: block;
+    margin: 0;
+    > ul {
+        margin: 0;
+        @media (min-width: @screen-s-max) { float: right; }
+
+        > li {
+            line-height: 1;
+
+            display: block;
+            margin: 0;
+            @media (min-width: @screen-s-max) { display: inline-block; }
+            .padding(0, @half-spacing-unit);
+            
+            &:before { 
+                content: ""; 
+                padding: 0;
+            }
+            
+            a {
+                text-transform: uppercase;
+
+                display: block;
+                .padding((@footbar-brand-height - @base-font-size) / 2, 0);
+                width: 100%; 
+            }
+        }
+    }        
+}
 
 /**
- * Footbar Icons
+ * Footbar Copyright Wrap
  *
- * Common to see icons in footes IE Social icons, Logos, Compliance
+ * A simple wrapper to set full page color
  */
-.footbar-icons { 
-    li {
-        padding: 0;
-        .margin-left(@half-spacing-unit);
-    }
-    
-    @media (max-width: @screen-s-max) { 
-        > li:first-child { margin: 0; }
-        .margin(0, 0, @base-spacing-unit); 
-    }
+.footbar-copyright-wrap {
+    .font-size(@footbar-copyright-font-size);
+    text-transform: uppercase;
 
-    .icon { .font-size(20); }
+    background-color: @footbar-copyright-bg;
+    border-top: 1px solid @footbar-copyright-border-color;
+    color: @footbar-copyright-color;
+    
+    .padding(@half-spacing-unit);
+
+    a { 
+        color: @footbar-copyright-link-color; 
+        
+        &:hover { color: @footbar-copyright-link-hover-color; }
+    }
 }
 
 /**

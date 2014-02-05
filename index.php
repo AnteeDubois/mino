@@ -16,29 +16,24 @@
        <!-- <script>window.jQuery || document.write('<script src="assets/js/vendor/modernizr-ck.js"><\/script>')</script> -->
     </head>
     <body class="">
-            <!--[if lt IE 7]>
-                <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-            <![endif]-->
-            <?php include("includes/login.php"); ?>
-            <header class="navbar">
-                <?php include("includes/nav.php"); ?>
-            </header>
-            <?php include("includes/sidenav.php"); ?>
-            <div class="outer-wrap">
-                <section class="breadcrumbs-wrap">
-                    <?php include("includes/breadcrumbs.php"); ?>
-                </section>
-                <div class="content inner-wrap">
-                    <?php include("includes/forumlist.php"); ?>
-                    <?php include("includes/info.php"); ?>                    
-                </div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <?php include("includes/login.php"); ?>
+        <header class="navbar">
+            <?php include("includes/nav.php"); ?>
+        </header>
+        <?php include("includes/sidenav.php"); ?>
+        <div class="outer-wrap">
+            <section class="breadcrumbs-wrap">
+                <?php include("includes/breadcrumbs.php"); ?>
+            </section>
+            <div class="content inner-wrap">
+                <?php include("includes/forumlist.php"); ?>
+                <?php include("includes/info.php"); ?>                    
             </div>
-            <footer class="footbar">
-                <section class="footbar-wrap grid">                    
-                    <?php include("includes/copyright.php"); ?>
-                </section>                        
-            </footer>
-            
+        </div>                              
+        <?php include("includes/footer.php"); ?>            
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
        <!--  // <script src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script> -->
         
