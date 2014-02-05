@@ -15,7 +15,7 @@
 
 // Overide defaults.less
 
-@base-bg-color:                             mix(@footbar-bg, black, 75%);
+@base-bg-color:                             @footbar-copyright-bg;
 
 // Base colour for links & branding
 @base-link-color:                           @primary;
@@ -163,17 +163,17 @@
 @forum-stats-label-text-color:              @primary-hover;
 
 // Footbar
-@footbar-bg:                                @black;
+@footbar-bg:                                mix(@black, black, 75%);
 @footbar-color:                             @primary-hover;
-@footbar-link-color:                        @secondary;
+@footbar-link-color:                        mix(@black, white, 91.5%);
 @footbar-link-hover-color:                  @primary;
-@footbar-brand-height:                      45;
+@footbar-brand-height:                      30;
 
-@footbar-copyright-bg:                      mix(@footbar-bg, black, 75%);
+@footbar-copyright-bg:                      mix(@footbar-bg, black, 90%);
 @footbar-copyright-color:                   @gray-darker;
 @footbar-copyright-font-size:               @half-spacing-unit;
-@footbar-copyright-link-color:              @secondary;
-@footbar-copyright-link-hover-color:        @primary-hover;
+@footbar-copyright-link-color:              mix(@black, white, 91.5%);
+@footbar-copyright-link-hover-color:        @primary;
 @footbar-copyright-border-color:            mix(@footbar-copyright-bg, black, 90%);
 
 // Info

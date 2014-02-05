@@ -26,9 +26,11 @@
  * Just like with the navbar we may want to include a brad in the footer
  */
 .footbar-brand {
-    .brand .brand-logo { 
-        height: unit(@footbar-brand-height, px);
-        margin-bottom: -10px; // Weird spacing anomoly in chrome on OSX Maverick
+    .brand {
+        .brand-logo { 
+            height: unit(@footbar-brand-height, px);
+            margin-bottom: -10px; // Weird spacing anomoly in chrome on OSX Maverick
+        }
     }
     @media (max-width: @screen-s-max) { .margin-bottom(@base-spacing-unit); }
 

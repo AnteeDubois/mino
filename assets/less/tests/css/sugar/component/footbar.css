@@ -7,13 +7,13 @@
  * A simple wrapper to set full page color
  */
 .footbar-wrap {
-  background-color: #333333;
+  background-color: #262626;
   color: #ffffff;
   padding: 24px;
   padding: 1.5rem;
 }
 .footbar-wrap a {
-  color: #b3b3b3;
+  color: #444444;
 }
 .footbar-wrap a:hover {
   color: #f4726d;
@@ -24,7 +24,7 @@
  * Just like with the navbar we may want to include a brad in the footer
  */
 .footbar-brand .brand .brand-logo {
-  height: 45px;
+  height: 30px;
   margin-bottom: -10px;
 }
 @media (max-width: 767px) {
@@ -69,8 +69,8 @@
 .footbar-nav > ul > li a {
   text-transform: uppercase;
   display: block;
-  padding: 14.5px 0px;
-  padding: 0.90625rem 0rem;
+  padding: 7px 0px;
+  padding: 0.4375rem 0rem;
   width: 100%;
 }
 /**
@@ -82,17 +82,17 @@
   font-size: 12px;
   font-size: 0.75rem;
   text-transform: uppercase;
-  background-color: #262626;
-  border-top: 1px solid #222222;
+  background-color: #222222;
+  border-top: 1px solid #1f1f1f;
   color: #666666;
   padding: 12px;
   padding: 0.75rem;
 }
 .footbar-copyright-wrap a {
-  color: #b3b3b3;
+  color: #444444;
 }
 .footbar-copyright-wrap a:hover {
-  color: #ffffff;
+  color: #f4726d;
 }
 /**
  * Footbar Copyright

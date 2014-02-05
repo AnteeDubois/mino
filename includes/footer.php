@@ -3,7 +3,7 @@
         <article class="grid">
             <div class="grid-row">
                 <div class="footbar-brand text-center grid-s-12 grid-m-3">
-                    <a class="brand" href="" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo.png" alt="PHPBB | Creating Communities"> <span class="sr-only">PHPBB</span></a>
+                    <a class="brand" href="" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo-condensed.png" alt="PHPBB | Creating Communities"> <span class="sr-only">phpBB</span></a>
                 </div>            
                 <div class="footbar-nav grid-s-12 grid-m-9">
                     <ul class="list-inline">
