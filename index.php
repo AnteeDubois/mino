@@ -19,10 +19,8 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <?php include("includes/login.php"); ?>
-        <header class="navbar">
-            <?php include("includes/nav.php"); ?>
-        </header>
+        <?php include("includes/login.php"); ?>        
+        <?php include("includes/nav.php"); ?>
         <div class="outer-wrap">
             <?php include("includes/sidenav.php"); ?>
             <div class="content inner-wrap">
