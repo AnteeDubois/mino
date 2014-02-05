@@ -3580,40 +3580,30 @@ body.is-active-sidenav .footbar {
     $COMPONENT-FOOTBAR
 \*------------------------------------*/
 /**
- * Footbar
+ * Footbar Wrap
  *
- * A section at the bottom of the page that replaces the footer similar to a navbar
+ * A simple wrapper to set full page color
  */
-.footbar {
-  background-color: #f4726d;
+.footbar-wrap {
+  background-color: #333333;
   color: #ffffff;
-  padding: 36px;
-  padding: 2.25rem;
+  padding: 24px;
+  padding: 1.5rem;
 }
-.footbar > a,
-.footbar p > a {
-  color: #f79592;
+.footbar-wrap a {
+  color: #b3b3b3;
 }
-.footbar > a:hover,
-.footbar p > a:hover {
-  color: #ffffff;
+.footbar-wrap a:hover {
+  color: #f4726d;
 }
 /**
  * Footbar Brand
  *
  * Just like with the navbar we may want to include a brad in the footer
  */
-.footbar-brand {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 27px;
-  line-height: 1.6875rem;
-}
-.footbar-brand .brand {
-  color: #f79592;
-}
-.footbar-brand .brand:hover {
-  color: #ffffff;
+.footbar-brand .brand .brand-logo {
+  height: 45px;
+  margin-bottom: -10px;
 }
 @media (max-width: 767px) {
   .footbar-brand {
@@ -3626,28 +3616,61 @@ body.is-active-sidenav .footbar {
  *
  * sometimes footers need additional textual navigation links
  */
-/**
- * Footbar Icons
- *
- * Common to see icons in footes IE Social icons, Logos, Compliance
- */
-.footbar-icons li {
+.footbar-nav {
+  display: block;
+  margin: 0;
+}
+.footbar-nav > ul {
+  margin: 0;
+}
+@media (min-width: 767px) {
+  .footbar-nav > ul {
+    float: right;
+  }
+}
+.footbar-nav > ul > li {
+  line-height: 1;
+  display: block;
+  margin: 0;
+  padding: 0px 12px;
+  padding: 0rem 0.75rem;
+}
+@media (min-width: 767px) {
+  .footbar-nav > ul > li {
+    display: inline-block;
+  }
+}
+.footbar-nav > ul > li:before {
+  content: "";
   padding: 0;
-  margin-left: 12px;
-  margin-left: 0.75rem;
 }
-@media (max-width: 767px) {
-  .footbar-icons {
-    margin: 0px 0px 24px;
-    margin: 0rem 0rem 1.5rem;
-  }
-  .footbar-icons > li:first-child {
-    margin: 0;
-  }
+.footbar-nav > ul > li a {
+  text-transform: uppercase;
+  display: block;
+  padding: 14.5px 0px;
+  padding: 0.90625rem 0rem;
+  width: 100%;
 }
-.footbar-icons .icon {
-  font-size: 20px;
-  font-size: 1.25rem;
+/**
+ * Footbar Copyright Wrap
+ *
+ * A simple wrapper to set full page color
+ */
+.footbar-copyright-wrap {
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  background-color: #262626;
+  border-top: 1px solid #222222;
+  color: #666666;
+  padding: 12px;
+  padding: 0.75rem;
+}
+.footbar-copyright-wrap a {
+  color: #b3b3b3;
+}
+.footbar-copyright-wrap a:hover {
+  color: #ffffff;
 }
 /**
  * Footbar Copyright
