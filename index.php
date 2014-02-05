@@ -24,11 +24,9 @@
             <?php include("includes/nav.php"); ?>
         </header>
         <div class="outer-wrap">
-            <section class="breadcrumbs-wrap">
-                <?php include("includes/breadcrumbs.php"); ?>
-            </section>
             <?php include("includes/sidenav.php"); ?>
             <div class="content inner-wrap">
+                <?php include("includes/breadcrumbs.php"); ?>
                 <?php include("includes/forumlist.php"); ?>
                 <?php include("includes/info.php"); ?>                    
             </div>
