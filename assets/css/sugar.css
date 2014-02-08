@@ -2477,6 +2477,9 @@
   display: none;
   margin: 0;
 }
+.breadcrumbs-crumbs.is-active-breadcrumbs {
+  display: inline-block;
+}
 @media only screen and (min-width: 48em) {
   .breadcrumbs-crumbs {
     display: inline-block;
@@ -2559,9 +2562,6 @@
  *
  * simple dymnamic state change
  */
-.is-active-breadcrumbs .breadcrumbs-crumbs {
-  display: inline-block;
-}
 /*------------------------------------*\
     $MODULE-TOOLTIPS
 \*------------------------------------*/
@@ -2693,7 +2693,7 @@
  */
 .login {
   background-color: #ffffff;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #b3b3b3;
   display: none;
   padding: 12px 0px;
 }
@@ -2701,12 +2701,12 @@
   display: block;
 }
 .link {
-  background-color: #f2f2f2;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link[href] {
   background-color: transparent;
-  color: #f2f2f2;
+  color: #b3b3b3;
 }
 .link[href]:hover {
   background-color: transparent;
@@ -2715,15 +2715,15 @@
 .link.icon,
 .link.octicons {
   background-color: transparent;
-  color: #f2f2f2;
+  color: #b3b3b3;
 }
 .link.label {
-  background-color: #f2f2f2;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link.label[href],
 a .link.label {
-  background-color: #f2f2f2;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link.label[href]:hover,
@@ -2732,20 +2732,20 @@ a .link.label:hover {
   color: #ffffff;
 }
 .link.badge {
-  background-color: #f2f2f2;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link.btn {
-  background-color: #f2f2f2;
+  background-color: #b3b3b3;
   color: #ffffff;
 }
 .link.btn:hover {
-  background-color: #dedede;
+  background-color: #9e9e9e;
   color: #ffffff;
 }
 .link.btn.clear {
-  border: 2px solid #f2f2f2;
-  color: #f2f2f2;
+  border: 2px solid #b3b3b3;
+  color: #b3b3b3;
 }
 .link.btn.clear:hover,
 .link.btn.clear:focus {
@@ -2760,8 +2760,8 @@ a .link.label:hover {
 }
 .link.clear {
   background-color: transparent;
-  border: 2px solid #f2f2f2;
-  color: #f2f2f2;
+  border: 2px solid #b3b3b3;
+  color: #b3b3b3;
 }
 /*------------------------------------*\
     $COMPONENT-NAVBAR
@@ -2918,6 +2918,9 @@ a .link.label:hover {
   margin: 8px 0px 0px;
   z-index: 1020;
 }
+.navbar-nav-sub.is-active-nav {
+  display: block;
+}
 .navbar-nav-sub > li:first-of-type > a {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -2971,9 +2974,6 @@ a .link.label:hover {
 }
 .navbar-nav-sub.actions-sub .navbar-nav-sub-arrow {
   margin-left: 144px;
-}
-.navbar-nav-sub.is-active-nav {
-  display: block;
 }
 /*------------------------------------*\
     $COMPONENT-NOTIFICATIONS
