@@ -28,7 +28,6 @@ a {
 // p { .margin(0, 0, @base-spacing-unit); }
 p {
     .font-size(@base-font-size);
-    .line-height(@base-line-height);
 
     .margin(0, 0, @half-spacing-unit);
 }
@@ -37,10 +36,7 @@ p {
  * Set default consistent size
  */
 // small   { font-size: 85%; }
-small, .small {
-    font-size: 83%;       // ~15px
-    .line-height(@base-font-size * 2.067); // ~31px
-}
+small, .small { font-size: 83%; } // ~15px
 
 /**
  * Undo browser default styling
@@ -75,7 +71,6 @@ abbr[data-original-title] {
 address {
     // ** Text ** \\
     font-style: normal;
-    .line-height(@base-line-height);
     // ** Layout ** \\
     .margin-bottom(@base-spacing-unit);
 }
@@ -84,9 +79,7 @@ address {
  * Ensure no content before or after blockquotes
  */
 blockquote:before,
-blockquote:after {
-    content: "";
-}
+blockquote:after { content: ""; }
 
 /**
  * A better looking default horizontal rule
@@ -102,5 +95,4 @@ hr {
     height: 1px;
     .margin(@base-spacing-unit, 0);
 }
-
 
