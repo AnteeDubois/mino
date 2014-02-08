@@ -5,12 +5,27 @@
  *  simple defaults for root level
  */
 html {
-  font: 16px 1.722 "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.722;
+  font-size: 100%;
 }
 body {
+  font-size: 1em;
+  line-height: 1.25;
   background-color: #222222;
   color: #808080;
+}
+@media (min-width: 61.5em) {
+  body {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.5;
 }

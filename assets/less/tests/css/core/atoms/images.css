@@ -16,8 +16,6 @@
   max-width: 100%;
 }
 .img-thumbnail {
-  line-height: 16px;
-  line-height: 1rem;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
@@ -27,5 +25,4 @@
   height: auto;
   max-width: 100%;
   padding: 4px;
-  padding: 0.25rem;
 }

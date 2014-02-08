@@ -17,18 +17,17 @@
 //--------------------------------------------------------------------------//
 //  $USER STYLES
 //--------------------------------------------------------------------------//
-.user                   { .color(@primary, @white, @primary-accent); }
+.user                   { .color(@base-link-color, @white, @base-link-hover-color); }
 .admin                  { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
 .mod                    { .color(mix(@emerald, white, 70%), @white, @nephritis); }
 
 .quoted, 
-.replied, 
-.locked                 { .color(@secondary-accent); }
-.approved, .approve     { .color(@emerald); }
-.rejected, .reported    { .color(@pomegranate); }
-.created, .pmed         { .color(@peter-river); }
+.replied                { .color(@peter-river); }
+.approved,
+.pmed,
+.created                { .color(@emerald); }
+.approve                { .color(mix(@emerald, white, 30%)); }
+.rejected, 
+.reported,
+.locked                 { .color(@pomegranate); }
 
-.primary                { .color(@primary); }
-.primary-accent         { .color(@primary-accent); }
-
-.link                   { .color(@secondary, @white, @primary, mix(@primary-hover, black, 85%), @primary) }

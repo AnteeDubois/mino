@@ -22,14 +22,6 @@
     // improves performance issues on mobile
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
-
-    @media only screen and (max-width: @screen-s-max) {
-        padding-top: 0;
-        position: fixed;
-        z-index: 1010;
-        .transition(.3s all ease );
-    }
-    .cf();
 }
 
 /**
@@ -47,7 +39,6 @@
         position: relative;
         
         > a {
-            .line-height(@base-spacing-unit);
             outline: 0;
     
             color: @sidenav-link-color;
@@ -61,8 +52,7 @@
 
         span { 
             display: inline-block;
-            .margin-left(@half-spacing-unit); 
-            top: -4px;
+            .margin-left(@half-spacing-unit);
             position: relative;
         }
 
@@ -85,7 +75,7 @@
             top: -4px;
         }
 
-        .badge { top:-6px; }
+        .badge { top: -3px; }
 
         &.is-active-sidenav-dropdown > a {
             //border-bottom: 0;
@@ -153,7 +143,7 @@
  * inorder for the menu effect to work.
  */
 .inner-wrap { 
-    @media only screen and (max-width: @screen-s-max) {
+    @media only screen and (max-width: @screen-m-min) {
         margin: 0;
         position: absolute;
         height: 100%;
@@ -178,7 +168,7 @@ body.is-active-sidenav {
 
     .inner-wrap {
         .margin-left(@sidenav-width);
-        .margin-bottom(-8);
+        .margin-bottom(-4);
         overflow: hidden;
         .transition(.3s all ease );
     }

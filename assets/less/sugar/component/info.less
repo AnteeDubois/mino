@@ -7,18 +7,7 @@
  *
  * Primary class for info section, used mostly for spacing
  */
-.info { 
-    .padding-vertical(@double-spacing-unit, @base-spacing-unit);
-    @media (min-width: @screen-m-min) and (max-width: @screen-m-max) {    
-        .list-inline > dt { .font-size(@half-spacing-unit); }
-        .list-inline > dd { 
-            .font-size(@half-spacing-unit); 
-
-            .margin-left(-2);
-            .margin-left(@quarter-spacing-unit);
-        }
-    }
-}
+.info { .padding-vertical(@double-spacing-unit, @base-spacing-unit); }
 
 /**
  * Info Stats
@@ -31,14 +20,21 @@
     margin-left: auto;
     margin-right: auto;
     width: 244px;
-
-    > dd { text-align: center; }
-
-    @media (min-width: @screen-m-min) { 
-        width: 627px; 
-        > dd { text-align: left; }
-    }
+    @media (min-width: @screen-m-min) { width: 627px; }
     @media (min-width: @screen-l-min) { width: 751px; }
 
+    > dd { 
+        text-align: center;
+        @media (min-width: @screen-m-min) { text-align: left; }
+
+        @media (min-width: @screen-m-min) and (max-width: @screen-l-min) { .margin-left(@quarter-spacing-unit); }
+    }
+
     > dt { color: @info-default-color; }
+
+    > dd, > dt { 
+        @media (min-width: @screen-m-min) and (max-width: @screen-l-min) { .font-size(@half-spacing-unit); }
+        .margin-bottom(@quarter-spacing-unit);
+        @media (min-width: @screen-m-min) { .margin-bottom(0); }
+    }   
 }

@@ -15,7 +15,7 @@
     display: none;
     float: left;
     position: absolute;
-    .margin(20, 0, 0, @notification-offset);
+    .margin(8, 0, 0, @notification-offset);
     white-space: nowrap; // prevent links from randomly breaking onto new lines 
     z-index: 1020;
 
@@ -75,7 +75,6 @@
  */
 .notification-topic {
     .font-size(14);
-    line-height: @notification-line-height;
     text-align: right;
     text-overflow: ellipsis;
     
@@ -99,7 +98,6 @@
  */
 .notification-status {
     .font-size(14);
-    line-height: @notification-line-height;
     font-weight: 700;
 
     text-align: right;

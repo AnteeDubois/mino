@@ -8,9 +8,8 @@
  * applying the styles for badges
  */
 .badge {
-    .font-size(12);
+    .font-size(@half-spacing-unit);
     font-weight: @badge-font-weight;
-    line-height: @badge-line-height;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
@@ -22,7 +21,7 @@
 
     display: inline-block;
     min-width: 20px;
-    .padding(0, 2);
+    .padding(2);
     //    .padding(@eighth-spacing-unit, @quarter-spacing-unit);
 
     // Empty badges collapse automatically (not available in IE8)
@@ -32,7 +31,7 @@
         float: left;
         position: absolute;
         left: unit(@base-spacing-unit, px);
-        top: unit(@quarter-spacing-unit, px);
+        top: 10px;
         z-index: 1050;
     }
 

@@ -25,11 +25,8 @@ a:focus {
  */
 p {
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 27px;
-  line-height: 1.6875rem;
+  font-size: 1em;
   margin: 0px 0px 12px;
-  margin: 0rem 0rem 0.75rem;
 }
 /**
  * Set default consistent size
@@ -37,8 +34,6 @@ p {
 small,
 .small {
   font-size: 83%;
-  line-height: 33.072px;
-  line-height: 2.067rem;
 }
 /**
  * Undo browser default styling
@@ -73,10 +68,7 @@ abbr[data-original-title] {
  */
 address {
   font-style: normal;
-  line-height: 27px;
-  line-height: 1.6875rem;
   margin-bottom: 24px;
-  margin-bottom: 1.5rem;
 }
 /**
  * Ensure no content before or after blockquotes
@@ -96,5 +88,4 @@ hr {
   display: block;
   height: 1px;
   margin: 24px 0px;
-  margin: 1.5rem 0rem;
 }

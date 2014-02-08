@@ -19,12 +19,11 @@
 .table-condensed > tbody > tr > td,
 .table-condensed > tfoot > tr > td {
   padding: 6px;
-  padding: 0.375rem;
 }
 .table-bordered {
   border: 2px solid #dddddd;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   border-radius: 0;
 }
 .table-bordered > thead > tr th,

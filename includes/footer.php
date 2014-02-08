@@ -18,7 +18,7 @@
     <section class="footbar-copyright-wrap">
         <article class="grid">
             <div class="footbar-copyright grid-row text-center">
-                Powered by <a href="">phpBB®</a> Forum Software © phpBB Group - All times are GMT+00:00 | Time : 0.646s | 20 Queries | GZIP : On
+                Powered by <a href="">phpBB®</a> Forum Software © phpBB Group<br />All times are GMT+00:00 | Time : 0.646s | 20 Queries | GZIP : On
             </div>
         </article>            
     </section>                        

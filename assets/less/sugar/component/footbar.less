@@ -9,6 +9,7 @@
  */
 .footbar-wrap {
     background-color: @footbar-bg;
+    border-top: 1px solid @footbar-border-color;
     color: @footbar-color;
     
     .padding(@base-spacing-unit);
@@ -29,11 +30,10 @@
     .brand {
         .brand-logo { 
             height: unit(@footbar-brand-height, px);
-            margin-bottom: -10px; // Weird spacing anomoly in chrome on OSX Maverick
+            .margin-bottom(@quarter-spacing-unit);
+            @media (min-width: @screen-m-min) { margin-bottom: -10px; }
         }
     }
-    @media (max-width: @screen-s-max) { .margin-bottom(@base-spacing-unit); }
-
 }
 
 /**
@@ -46,14 +46,12 @@
     margin: 0;
     > ul {
         margin: 0;
-        @media (min-width: @screen-s-max) { float: right; }
+        @media (min-width: @screen-m-min) { float: right; }
 
         > li {
-            line-height: 1;
-
             display: block;
-            margin: 0;
-            @media (min-width: @screen-s-max) { display: inline-block; }
+            @media (min-width: @screen-m-min) { display: inline-block; }
+            margin: 0;            
             .padding(0, @half-spacing-unit);
             
             &:before { 
@@ -65,7 +63,7 @@
                 text-transform: uppercase;
 
                 display: block;
-                .padding((@footbar-brand-height - @base-font-size) / 2, 0);
+                .padding((@footbar-brand-height - @base-line-height - 2) / 2, 0);
                 width: 100%; 
             }
         }
@@ -85,7 +83,7 @@
     border-top: 1px solid @footbar-copyright-border-color;
     color: @footbar-copyright-color;
     
-    .padding(@half-spacing-unit);
+    .padding(@base-spacing-unit);
 
     a { 
         color: @footbar-copyright-link-color; 
@@ -99,5 +97,8 @@
  *
  * Common place to place copyright information is in the footer
  */
-.footbar-copyright { @media (max-width: @screen-s-max) { .margin-bottom(@base-spacing-unit); } }
+.footbar-copyright { 
+    .margin-bottom(@base-spacing-unit);
+    @media (min-width: @screen-s-min) { .margin-bottom(0); } 
+}
 

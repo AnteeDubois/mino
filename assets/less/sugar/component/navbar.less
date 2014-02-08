@@ -8,19 +8,15 @@
  * main navbar class to set some general styles
  */
 .navbar {
-    .font-size(@base-spacing-unit);
-
     background-color: @navbar-bg;
     color: @navbar-color;
-
-    .padding(@half-spacing-unit);
 
     a { 
         color: @navbar-link-color; 
         &:hover { color: @navbar-link-hover-color; }
     }
     .navbar-nav-item { padding: 0; }
-    @media only screen and (max-width: @screen-s-max) { .grid {.padding(0); } }
+    @media only screen and (max-width: @screen-s-min) { .grid {.padding(0); } }
 }
 
 /**
@@ -32,7 +28,7 @@
     //height: unit(@navbar-height, px);
     width: 120px;
     margin-bottom: -10px; // Weird spacing anomoly in chrome on OSX Maverick
-    .padding-top(@eighth-spacing-unit);
+    .padding-top(@quarter-spacing-unit);
 }
 
 /**
@@ -43,11 +39,16 @@
 .navbar-nav-item {
     position: relative;
     > a { 
-        line-height: 1;
+        .font-size(@base-font-size);
 
         display: block;
-        .padding(@half-spacing-unit, @half-spacing-unit + 1); 
+        .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
+
+        > .icon, > .octicons { .font-size(@base-spacing-unit); }
+        .badge { left: 29px; }
     }
+
+
     .cf();
 }
 
@@ -59,10 +60,10 @@
 .navbar-nav-search {
     display: inline-block;
     float: left;
-    .padding-top(4);
+    .padding-top(8);
     width: 300px;
-    @media only screen and (min-width: @screen-m-min) and (max-width: @screen-m-max) { width: 170px; }
-
+    @media only screen and (min-width: @screen-m-min) { width: 130px; }
+    @media only screen and (min-width: @screen-l-min) { width: 250px; }
     > .search {
         border-color: @navbar-form-border-color;
         color: @navbar-form-color;
@@ -87,7 +88,9 @@
     position: absolute;
     z-index: 1020;
     color: @navbar-sub-color;
-    .margin(-@half-spacing-unit - @eighth-spacing-unit, 0, 0);
+    .margin(-18, 0, 0);
+    @media only screen and (min-width: @screen-l-min) { .margin(-20, 0, 0); }
+
 }
 
 /**
@@ -104,7 +107,7 @@
     display: none;
     float: left;
     position: absolute;
-    margin: 20px 0 0;
+    .margin(8, 0, 0);
     z-index: 1020;
 
     > li {

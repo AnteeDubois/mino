@@ -8,23 +8,7 @@
  */
 .info {
   padding-top: 48px;
-  padding-top: 3rem;
   padding-bottom: 24px;
-  padding-bottom: 1.5rem;
-}
-@media (min-width: 768px) and (max-width: 983px) {
-  .info .list-inline > dt {
-    font-size: 12px;
-    font-size: 0.75rem;
-  }
-  .info .list-inline > dd {
-    font-size: 12px;
-    font-size: 0.75rem;
-    margin-left: -2px;
-    margin-left: -0.125rem;
-    margin-left: 6px;
-    margin-left: 0.375rem;
-  }
 }
 /**
  * Info Stats
@@ -37,22 +21,46 @@
   margin-right: auto;
   width: 244px;
 }
-.info-stats > dd {
-  text-align: center;
-}
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .info-stats {
     width: 627px;
   }
-  .info-stats > dd {
-    text-align: left;
-  }
 }
-@media (min-width: 984px) {
+@media (min-width: 61.5em) {
   .info-stats {
     width: 751px;
   }
 }
+.info-stats > dd {
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .info-stats > dd {
+    text-align: left;
+  }
+}
+@media (min-width: 48em) and (max-width: 61.5em) {
+  .info-stats > dd {
+    margin-left: 6px;
+  }
+}
 .info-stats > dt {
   color: #808080;
+}
+.info-stats > dd,
+.info-stats > dt {
+  margin-bottom: 6px;
+}
+@media (min-width: 48em) and (max-width: 61.5em) {
+  .info-stats > dd,
+  .info-stats > dt {
+    font-size: 12px;
+    font-size: 0.75em;
+  }
+}
+@media (min-width: 48em) {
+  .info-stats > dd,
+  .info-stats > dt {
+    margin-bottom: 0px;
+  }
 }

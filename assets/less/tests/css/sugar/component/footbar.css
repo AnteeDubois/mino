@@ -8,9 +8,9 @@
  */
 .footbar-wrap {
   background-color: #262626;
+  border-top: 1px solid #222222;
   color: #ffffff;
   padding: 24px;
-  padding: 1.5rem;
 }
 .footbar-wrap a {
   color: #444444;
@@ -25,12 +25,11 @@
  */
 .footbar-brand .brand .brand-logo {
   height: 30px;
-  margin-bottom: -10px;
+  margin-bottom: 6px;
 }
-@media (max-width: 767px) {
-  .footbar-brand {
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
+@media (min-width: 48em) {
+  .footbar-brand .brand .brand-logo {
+    margin-bottom: -10px;
   }
 }
 /**
@@ -45,19 +44,17 @@
 .footbar-nav > ul {
   margin: 0;
 }
-@media (min-width: 767px) {
+@media (min-width: 48em) {
   .footbar-nav > ul {
     float: right;
   }
 }
 .footbar-nav > ul > li {
-  line-height: 1;
   display: block;
   margin: 0;
   padding: 0px 12px;
-  padding: 0rem 0.75rem;
 }
-@media (min-width: 767px) {
+@media (min-width: 48em) {
   .footbar-nav > ul > li {
     display: inline-block;
   }
@@ -69,8 +66,7 @@
 .footbar-nav > ul > li a {
   text-transform: uppercase;
   display: block;
-  padding: 7px 0px;
-  padding: 0.4375rem 0rem;
+  padding: 4px 0px;
   width: 100%;
 }
 /**
@@ -80,13 +76,12 @@
  */
 .footbar-copyright-wrap {
   font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 0.75em;
   text-transform: uppercase;
   background-color: #222222;
   border-top: 1px solid #1f1f1f;
   color: #666666;
-  padding: 12px;
-  padding: 0.75rem;
+  padding: 24px;
 }
 .footbar-copyright-wrap a {
   color: #444444;
@@ -99,9 +94,11 @@
  *
  * Common place to place copyright information is in the footer
  */
-@media (max-width: 767px) {
+.footbar-copyright {
+  margin-bottom: 24px;
+}
+@media (min-width: 30em) {
   .footbar-copyright {
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0px;
   }
 }

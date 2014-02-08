@@ -8,14 +8,13 @@
  */
 .notification-sub {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1em;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   display: none;
   float: left;
   position: absolute;
-  margin: 20px 0px 0px -382px;
-  margin: 1.25rem 0rem 0rem -23.875rem;
+  margin: 8px 0px 0px -382px;
   white-space: nowrap;
   z-index: 1020;
 }
@@ -26,7 +25,6 @@
   border-left: 1px solid #f2f2f2;
   color: gray;
   padding: 6px 12px;
-  padding: 0.375rem 0.75rem;
   display: block;
   white-space: nowrap;
   width: 492px;
@@ -35,7 +33,6 @@
 .notification-sub > li .octicons {
   vertical-align: middle;
   padding-right: 6px;
-  padding-right: 0.375rem;
 }
 .notification-sub > li:hover {
   background-color: #ffffff;
@@ -82,7 +79,6 @@
 .notification-sub .navbar-nav-sub-arrow {
   color: #f4726d;
   margin-left: 386px;
-  margin-left: 24.125rem;
 }
 /**
  * Notification Topic
@@ -91,8 +87,7 @@
  */
 .notification-topic {
   font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.667;
+  font-size: 0.875em;
   text-align: right;
   text-overflow: ellipsis;
   max-width: 100%;
@@ -112,8 +107,7 @@
  */
 .notification-status {
   font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.667;
+  font-size: 0.875em;
   font-weight: 700;
   text-align: right;
 }

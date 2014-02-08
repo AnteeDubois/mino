@@ -15,7 +15,6 @@ input[type="file"].form-control {
   transition: border .25s linear, color .25s linear, background-color .25s linear;
   -webkit-appearance: none;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
   height: 42px;
 }
 .form-control[disabled],
@@ -33,7 +32,7 @@ fieldset[disabled] input[type="file"].form-control {
 .form-group.focus input[type="file"].form-control,
 .form-control:focus,
 input[type="file"].form-control:focus {
-  border-color: #f4726d;
+  border-color: #f79592;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -42,25 +41,25 @@ input[type="file"].form-control:focus {
 .form-group.focus input[type="file"].form-control:-moz-placeholder,
 .form-control:focus:-moz-placeholder,
 input[type="file"].form-control:focus:-moz-placeholder {
-  color: #f4726d;
+  color: #f79592;
 }
 .form-group.focus .form-control::-moz-placeholder,
 .form-group.focus input[type="file"].form-control::-moz-placeholder,
 .form-control:focus::-moz-placeholder,
 input[type="file"].form-control:focus::-moz-placeholder {
-  color: #f4726d;
+  color: #f79592;
 }
 .form-group.focus .form-control:-ms-input-placeholder,
 .form-group.focus input[type="file"].form-control:-ms-input-placeholder,
 .form-control:focus:-ms-input-placeholder,
 input[type="file"].form-control:focus:-ms-input-placeholder {
-  color: #f4726d;
+  color: #f79592;
 }
 .form-group.focus .form-control::-webkit-input-placeholder,
 .form-group.focus input[type="file"].form-control::-webkit-input-placeholder,
 .form-control:focus::-webkit-input-placeholder,
 input[type="file"].form-control:focus::-webkit-input-placeholder {
-  color: #f4726d;
+  color: #f79592;
 }
 .form-control:-moz-placeholder,
 input[type="file"].form-control:-moz-placeholder {
@@ -84,7 +83,6 @@ textareainput[type="file"].form-control {
 }
 input[type="file"].form-control {
   padding-top: 9px;
-  padding-top: 0.5625rem;
 }
 /**
  *  Checkboxes and radios
@@ -95,7 +93,7 @@ input[type="file"].form-control {
 .checkbox {
   vertical-align: middle;
   display: block;
-  min-height: 27px;
+  min-height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 20px;

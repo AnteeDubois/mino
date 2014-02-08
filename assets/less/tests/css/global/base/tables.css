@@ -19,7 +19,6 @@
 table {
   width: 100%;
   margin-bottom: 24px;
-  margin-bottom: 1.5rem;
   /**
     * Bottom align for column headings
     */
@@ -36,8 +35,6 @@ table > tfoot > tr > th,
 table > thead > tr > td,
 table > tbody > tr > td,
 table > tfoot > tr > td {
-  line-height: 19.696px;
-  line-height: 1.231rem;
   text-align: center;
   vertical-align: top;
   border-top: 2px solid #e6e6e6;

@@ -29,11 +29,9 @@
   color: #fff;
   /* Layout */
   padding: 12px 6px;
-  padding: 0.75rem 0.375rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .grid-paint {
     padding: 12px;
-    padding: 0.75rem;
   }
 }

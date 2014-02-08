@@ -11,8 +11,70 @@
   border-bottom: 1px solid #f2f2f2;
   display: none;
   padding: 12px 0px;
-  padding: 0.75rem 0rem;
 }
 .login.is-active-login {
   display: block;
+}
+.link {
+  background-color: #f2f2f2;
+  color: #ffffff;
+}
+.link[href] {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+.link[href]:hover {
+  background-color: transparent;
+  color: #f4726d;
+}
+.link.icon,
+.link.octicons {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+.link.label {
+  background-color: #f2f2f2;
+  color: #ffffff;
+}
+.link.label[href],
+a .link.label {
+  background-color: #f2f2f2;
+  color: #ffffff;
+}
+.link.label[href]:hover,
+a .link.label:hover {
+  background-color: #f4726d;
+  color: #ffffff;
+}
+.link.badge {
+  background-color: #f2f2f2;
+  color: #ffffff;
+}
+.link.btn {
+  background-color: #f2f2f2;
+  color: #ffffff;
+}
+.link.btn:hover {
+  background-color: #dedede;
+  color: #ffffff;
+}
+.link.btn.clear {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+.link.btn.clear:hover,
+.link.btn.clear:focus {
+  background: #f4726d;
+  border-color: #f4726d;
+  color: #ffffff;
+}
+.link.btn.clear:active,
+.link.btn.clear.active {
+  background: #d9d9d9;
+  border-color: #d9d9d9;
+}
+.link.clear {
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
 }

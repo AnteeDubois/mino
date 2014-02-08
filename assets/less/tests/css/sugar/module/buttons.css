@@ -51,11 +51,7 @@
   /* Layout */
   display: inline-block;
   /* [7] */
-  margin: 6px;
-  margin: 0.375rem;
-  /* [8] */
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
   /* [8] */
   /**
     * Button Clear
@@ -83,7 +79,6 @@
   border: 2px solid #f4726d;
   color: #f4726d;
   padding: 10px 16px;
-  padding: 0.625rem 1rem;
 }
 .btn.clear:hover,
 .btn.clear:focus {
@@ -100,34 +95,33 @@
 }
 .btn span {
   margin-left: 6px;
-  margin-left: 0.375rem;
 }
 /**
  * Button font-size modifiers.
  */
 .btn-alpha {
   font-size: 54px;
-  font-size: 3.375rem;
+  font-size: 3.375em;
 }
 .btn-beta {
   font-size: 42px;
-  font-size: 2.625rem;
+  font-size: 2.625em;
 }
 .btn-gamma {
   font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 2.25em;
 }
 .btn-delta {
   font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .btn-epsilon {
   font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 1.3125em;
 }
 .btn-zeta {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 /**
  * Button Wide
@@ -151,7 +145,6 @@
   border: 2px solid #3399ff !important;
   color: #3399ff !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-delicious.btn-clear:hover,
 .btn-delicious.btn-clear:focus {
@@ -177,7 +170,6 @@
   border: 2px solid #070707 !important;
   color: #070707 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-digg.btn-clear:hover,
 .btn-digg.btn-clear:focus {
@@ -203,7 +195,6 @@
   border: 2px solid #7fce2c !important;
   color: #7fce2c !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-evernote.btn-clear:hover,
 .btn-evernote.btn-clear:focus {
@@ -229,7 +220,6 @@
   border: 2px solid #2f5890 !important;
   color: #2f5890 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-facebook.btn-clear:hover,
 .btn-facebook.btn-clear:focus {
@@ -255,7 +245,6 @@
   border: 2px solid #4183c4 !important;
   color: #4183c4 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-github.btn-clear:hover,
 .btn-github.btn-clear:focus {
@@ -281,7 +270,6 @@
   border: 2px solid #c92527 !important;
   color: #c92527 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-gmail.btn-clear:hover,
 .btn-gmail.btn-clear:focus {
@@ -307,7 +295,6 @@
   border: 2px solid #cf4b33 !important;
   color: #cf4b33 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-gplus.btn-clear:hover,
 .btn-gplus.btn-clear:focus {
@@ -333,7 +320,6 @@
   border: 2px solid #4897c9 !important;
   color: #4897c9 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-linkedin.btn-clear:hover,
 .btn-linkedin.btn-clear:focus {
@@ -359,7 +345,6 @@
   border: 2px solid #c92527 !important;
   color: #c92527 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-pinterest.btn-clear:hover,
 .btn-pinterest.btn-clear:focus {
@@ -385,7 +370,6 @@
   border: 2px solid #2f5070 !important;
   color: #2f5070 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-tumblr.btn-clear:hover,
 .btn-tumblr.btn-clear:focus {
@@ -411,7 +395,6 @@
   border: 2px solid #00bdef !important;
   color: #00bdef !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-twitter.btn-clear:hover,
 .btn-twitter.btn-clear:focus {

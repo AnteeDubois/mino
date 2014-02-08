@@ -15,7 +15,7 @@
 
 // Overide defaults.less
 
-@base-bg-color:                             @footbar-copyright-bg;
+@base-bg-color:                             mix(@footbar-bg, black, 90%);
 
 // Base colour for links & branding
 @base-link-color:                           @primary;
@@ -25,7 +25,7 @@
 @form-color:                                @secondary;
 @form-border-color:                         @secondary;
 @form-disabled-color:                       @secondary;
-@form-border-focus:                         @primary;
+@form-border-focus:                         @base-link-hover-color;
 
 //--------------------------------------------------------------------------//
 //  $MODULES
@@ -54,7 +54,6 @@
 @badge-bg:                                  @primary-alt;
                 
 @badge-font-weight:                         bold;
-@badge-line-height:                         1.667;
 @badge-border-radius:                       10px;
 
 
@@ -62,9 +61,11 @@
 //  $COMPONENTS
 //--------------------------------------------------------------------------//
 
+// Colors //
+//--------------------------------------------------------------------------//
+
 // Navbar
-@navbar-height:                             @base-spacing-unit - @quarter-spacing-unit;
-@navbar-color:                              @secondary-alt;
+@navbar-color:                              @secondary-hover;
 @navbar-bg:                                 @primary;
 @navbar-link-color:                         @primary-accent;
 @navbar-link-hover-color:                   @primary-hover;
@@ -88,8 +89,6 @@
 @navbar-actions-sub-link-hover-color:       @primary;
 
 // Notifications
-@notification-font-size:                    @base-font-size;
-@notification-line-height:                  1.667;
 @notification-color:                        @secondary;
 @notification-bg:                           @primary-hover;
 @notification-bg-hover-color:               @primary-hover;
@@ -102,18 +101,9 @@
 @notification-header-link-color:            @primary-accent;
 @notification-header-link-hover-color:      @primary-hover;
 
-@notification-width:                       492px;
-@notification-offset:                      -382;
-@notification-arrow-offset:                386;
-@notification-stats-width:                 250px;
-@notification-recent-width:                216px;
-
 // Tooltips
-@tooltip-max-width:                         200px;
 @tooltip-color:                             @primary-hover;
-@tooltip-bg:                                rgba(0,0,0,.9);
 
-@tooltip-arrow-width:                       unit(@quarter-spacing-unit - 1, px);
 @tooltip-arrow-color:                       @tooltip-bg;
 
 // Breadcrumb
@@ -121,10 +111,9 @@
 @breadcrumb-bg:                             @primary-hover;
 @breadcrumb-link-color:                     @secondary;
 @breadcrumb-link-hover-color:               @breadcrumb-color;
-@breadcrumb-border-color:                   @secondary-alt;
+@breadcrumb-border-color:                   mix(@breadcrumb-bg, black, 90%);
 
 // SideNav
-@sidenav-width:                             260;
 @sidenav-color:                             @primary-accent;
 @sidenav-bg:                                @primary;
 @sidenav-link-color:                        @primary-accent;
@@ -140,6 +129,7 @@
 
 // Login
 @login-bg:                                  @primary-hover;
+@login-bg-hover-color:                      @primary;
 @login-border-color:                        @secondary-alt;
 
 // Forums
@@ -148,15 +138,17 @@
 @forums-name-link-hover-color:              @primary-hover;
 
 // Forum
-@forum-row-height:                          @triple-spacing-unit;
 @forum-row-bg:                              @primary-hover;
-@forum-row-hover-bg:                        @secondary-alt;
-@forum-row-border-color:                    @forum-row-hover-bg;
+@forum-row-bg-alt:                          @secondary-alt;
+@forum-row-hover-bg:                        mix(@forum-row-bg, black, 90%);
+@forum-row-border-color:                    mix(@forum-row-bg, black, 90%);
 
 @forum-default-color:                       @gray-darker;
 
 @forum-title-link-color:                    @base-link-color;
 @forum-title-link-hover-color:              @base-link-hover-color;
+@forum-title-label-color:                   @primary-hover;
+@forum-title-label-hover-color:             @primary-hover;
 
 @forum-stats-dfn-color:                     @secondary-accent;
 @forum-stats-label-bg:                      @forum-stats-dfn-color;
@@ -167,15 +159,44 @@
 @footbar-color:                             @primary-hover;
 @footbar-link-color:                        mix(@black, white, 91.5%);
 @footbar-link-hover-color:                  @primary;
-@footbar-brand-height:                      30;
+@footbar-border-color:                      mix(@footbar-bg, black, 90%);
 
-@footbar-copyright-bg:                      mix(@footbar-bg, black, 90%);
+@footbar-copyright-bg:                      @base-bg-color;
 @footbar-copyright-color:                   @gray-darker;
-@footbar-copyright-font-size:               @half-spacing-unit;
 @footbar-copyright-link-color:              mix(@black, white, 91.5%);
 @footbar-copyright-link-hover-color:        @primary;
 @footbar-copyright-border-color:            mix(@footbar-copyright-bg, black, 90%);
 
 // Info
 @info-default-color:                        @secondary-accent;
+
+
+// Other //
+//--------------------------------------------------------------------------//
+
+// Navbar
+@navbar-height:                             @base-spacing-unit - @quarter-spacing-unit;
+
+// Notifications
+@notification-font-size:                    @base-font-size;
+
+@notification-width:                       492px;
+@notification-offset:                      -382;
+@notification-arrow-offset:                386;
+@notification-stats-width:                 250px;
+@notification-recent-width:                216px;
+
+// Tooltips
+@tooltip-max-width:                         200px;
+@tooltip-bg:                                rgba(0,0,0,.9);
+
+@tooltip-arrow-width:                       unit(@quarter-spacing-unit - 1, px);
+
+// SideNav
+@sidenav-width:                             260;
+
+// Footbar
+@footbar-brand-height:                      30;
+
+@footbar-copyright-font-size:               @half-spacing-unit;
 

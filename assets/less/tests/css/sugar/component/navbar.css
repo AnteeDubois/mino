@@ -7,12 +7,8 @@
  * main navbar class to set some general styles
  */
 .navbar {
-  font-size: 24px;
-  font-size: 1.5rem;
   background-color: #f4726d;
-  color: #f2f2f2;
-  padding: 12px;
-  padding: 0.75rem;
+  color: #f4726d;
 }
 .navbar a {
   color: #f79592;
@@ -23,10 +19,9 @@
 .navbar .navbar-nav-item {
   padding: 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 30em) {
   .navbar .grid {
     padding: 0px;
-    padding: 0rem;
   }
 }
 /**
@@ -37,8 +32,7 @@
 .navbar-brand .brand-logo {
   width: 120px;
   margin-bottom: -10px;
-  padding-top: 3px;
-  padding-top: 0.1875rem;
+  padding-top: 6px;
 }
 /**
  * Navbar Nav Item
@@ -49,10 +43,18 @@
   position: relative;
 }
 .navbar-nav-item > a {
-  line-height: 1;
+  font-size: 16px;
+  font-size: 1em;
   display: block;
-  padding: 12px 13px;
-  padding: 0.75rem 0.8125rem;
+  padding: 12px 18px;
+}
+.navbar-nav-item > a > .icon,
+.navbar-nav-item > a > .octicons {
+  font-size: 24px;
+  font-size: 1.5em;
+}
+.navbar-nav-item > a .badge {
+  left: 29px;
 }
 .navbar-nav-item:before,
 .navbar-nav-item:after {
@@ -70,13 +72,17 @@
 .navbar-nav-search {
   display: inline-block;
   float: left;
-  padding-top: 4px;
-  padding-top: 0.25rem;
+  padding-top: 8px;
   width: 300px;
 }
-@media only screen and (min-width: 768px) and (max-width: 983px) {
+@media only screen and (min-width: 48em) {
   .navbar-nav-search {
-    width: 170px;
+    width: 130px;
+  }
+}
+@media only screen and (min-width: 61.5em) {
+  .navbar-nav-search {
+    width: 250px;
   }
 }
 .navbar-nav-search > .search {
@@ -118,13 +124,17 @@
  */
 .navbar-nav-sub-arrow {
   font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   float: left;
   position: absolute;
   z-index: 1020;
   color: #f79592;
-  margin: -15px 0px 0px;
-  margin: -0.9375rem 0rem 0rem;
+  margin: -18px 0px 0px;
+}
+@media only screen and (min-width: 61.5em) {
+  .navbar-nav-sub-arrow {
+    margin: -20px 0px 0px;
+  }
 }
 /**
  * Navbar Nav Sub
@@ -133,14 +143,14 @@
  */
 .navbar-nav-sub {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1em;
   background-color: transparent;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   display: none;
   float: left;
   position: absolute;
-  margin: 20px 0 0;
+  margin: 8px 0px 0px;
   z-index: 1020;
 }
 .navbar-nav-sub > li:first-of-type > a {
@@ -152,13 +162,11 @@
   color: #ffffff;
   display: block;
   padding: 6px 15px 8px;
-  padding: 0.375rem 0.9375rem 0.5rem;
   white-space: nowrap;
 }
 .navbar-nav-sub > li > a .icon,
 .navbar-nav-sub > li > a .octicons {
   padding-right: 6px;
-  padding-right: 0.375rem;
 }
 .navbar-nav-sub > li > a:hover {
   color: #ffffff;
@@ -172,7 +180,6 @@
   color: #ffffff;
   display: block;
   padding: 6px 15px 8px;
-  padding: 0.375rem 0.9375rem 0.5rem;
   white-space: nowrap;
 }
 .navbar-nav-sub > li.navbar-nav-sub-header:first-of-type {
@@ -188,7 +195,6 @@
 }
 .navbar-nav-sub.actions-sub {
   margin-left: -144px;
-  margin-left: -9rem;
 }
 .navbar-nav-sub.actions-sub > li > a {
   background-color: #ffffff;
@@ -200,7 +206,6 @@
 }
 .navbar-nav-sub.actions-sub .navbar-nav-sub-arrow {
   margin-left: 144px;
-  margin-left: 9rem;
 }
 .navbar-nav-sub.is-active-nav {
   display: block;

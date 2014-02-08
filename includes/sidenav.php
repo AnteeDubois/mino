@@ -17,21 +17,11 @@
                 <li><a href="#" title="Admin Panel"><span class="icon icon-cogs"></span> <span>Admin Panel</span></a></li>
             </ul>
         </li>
-        <!-- Forum Info -->
-        <li>
-            <a class="sidenav-dropdown-toggle" href="#" title="Forum Info"><span class="octicons octicons-info"></span> <span>Forum Info</span> <span class="icon icon-chevron-down"></span></a>
-            <ul class="sidenav-menu-sub">
-                <li><a href="#" title="Faq"><span class="octicons octicons-question"></span> <span>Faq</span></a></li>
-                <li><a href="#" title="Members"><span class="icon icon-group"></span> <span>Members</span></a></li>
-                <li><a href="#" title="The Team"><span class="octicons octicons-organization"></span> <span>The Team</span></a></li>
-            </ul>
-        </li>
         <!-- Forum Actions -->
         <li>
             <a class="sidenav-dropdown-toggle" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span>Forum Actions</span> <span class="icon icon-chevron-down"></span></a>
             <ul class="sidenav-menu-sub">
                 <li><a href="#" title="Mark Forums Read"><span class="icon icon-check"></span> <span>Mark Forums Read</span></a></li>
-                <li><a href="#" title="Delete Cookies"><span class="icon icon-refresh"></span> <span>Delete Cookies</span></a></li>
             </ul>
         </li>
         <!-- Posts -->
@@ -39,8 +29,8 @@
             <a class="sidenav-dropdown-toggle" href="#" title="Posts"><span class="icon icon-comments"></span> <span>Posts</span> <span class="icon icon-chevron-down"></span></a>
             <ul class="sidenav-menu-sub">
                 <li><a href="#" title="Yours"><span class="icon icon-circle peter-river"></span> <span>Yours</span></a></li>
-                <li><a href="#" title="Unanswered"><span class="icon icon-circle-blank turquuoise"></span> <span>Unanswered</span></a></li>
-                <li><a href="#" title="Unread"><span class="icon icon-circle-blank wet-asphalt"></span> <span>Unread</span></a></li>
+                <li><a href="#" title="Unanswered"><span class="icon icon-circle turquuoise"></span> <span>Unanswered</span></a></li>
+                <li><a href="#" title="Unread"><span class="icon icon-circle base-link-color"></span> <span>Unread</span></a></li>
                 <li><a href="#" title="New"><span class="icon icon-circle emerald"></span> <span>New</span></a></li>
                 <li><a href="#" title="Active"><span class="icon icon-circle orange"></span> <span>Active</span></a></li>
             </ul>
