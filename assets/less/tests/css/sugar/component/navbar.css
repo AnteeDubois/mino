@@ -153,6 +153,9 @@
   margin: 8px 0px 0px;
   z-index: 1020;
 }
+.navbar-nav-sub.is-active-nav {
+  display: block;
+}
 .navbar-nav-sub > li:first-of-type > a {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -206,7 +209,4 @@
 }
 .navbar-nav-sub.actions-sub .navbar-nav-sub-arrow {
   margin-left: 144px;
-}
-.navbar-nav-sub.is-active-nav {
-  display: block;
 }

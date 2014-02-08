@@ -133,6 +133,9 @@
   display: none;
   margin: 0;
 }
+.breadcrumbs-crumbs.is-active-breadcrumbs {
+  display: inline-block;
+}
 @media only screen and (min-width: 48em) {
   .breadcrumbs-crumbs {
     display: inline-block;
@@ -215,6 +218,3 @@
  *
  * simple dymnamic state change
  */
-.is-active-breadcrumbs .breadcrumbs-crumbs {
-  display: inline-block;
-}

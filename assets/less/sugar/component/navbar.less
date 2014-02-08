@@ -105,6 +105,7 @@
     .box-shadow(0 6px 12px rgba(0,0,0,.175));
 
     display: none;
+    &.is-active-nav { display: block; }
     float: left;
     position: absolute;
     .margin(8, 0, 0);
@@ -158,7 +159,5 @@
         }
         .navbar-nav-sub-arrow { .margin-left(@sextuple-spacing-unit); }
     }
-
-    &.is-active-nav { display: block; }
 }
 

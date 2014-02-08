@@ -6,6 +6,8 @@
     }
 })();
 
+var $dropdown, $login, $breadcrumbs;
+
 $(function() {
     $('[data-toogle="tooltip"]').tooltip();
     $('[data-toogle="tooltip"]').on("click", function() {
@@ -13,9 +15,10 @@ $(function() {
     });
     $(".dropdown").click(function(e) {
         e.stopPropagation();
-        var t = $(this).parent();
-        t.toggleClass("is-active-nav");
-        t.hasClass("is-active-nav") ? t.find("> ul").slideDown("fast") : t.find("> ul").slideUp("fast");
+        $dropdown = $(this).parent();
+        $dropdown = $dropdown.find("> ul");
+        $dropdown.toggleClass("is-active-nav");
+        $dropdown.hasClass("is-active-nav") ? $dropdown.slideDown("fast") : $dropdown.slideUp("fast");
     });
     $(".sidenav-dropdown-toggle").click(function(e) {
         e.stopPropagation();
@@ -25,14 +28,11 @@ $(function() {
     });
     $(".login-toggle").click(function(e) {
         e.stopPropagation();
-        var t = $(".login");
-        t.toggleClass("is-active-login");
-        t.hasClass("is-active-login") ? $(".login-wrap").slideDown("fast") : $(".login-wrap").slideUp("fast");
+        $login = $(".login");
+        $login.toggleClass("is-active-login");
+        $login.hasClass("is-active-login") ? $(".login-wrap").slideDown("fast") : $(".login-wrap").slideUp("fast");
     });
     var e = $(".sidenav");
-    $("body").click(function() {
-        $(this).hasClass("is-active-sidenav") && $(this).removeClass("is-active-sidenav");
-    });
     e.click(function(e) {
         e.stopPropagation();
     });
@@ -42,11 +42,17 @@ $(function() {
     });
     $(".breadcrumbs-toggle").click(function(e) {
         e.stopPropagation();
-        var t = $(".breadcrumbs");
-        t.toggleClass("is-active-breadcrumbs");
-        t.hasClass("is-active-breadcrumbs") ? $(".breadcrumbs-crumbs").slideDown("fast") : $(".breadcrumbs-crumbs").slideUp("fast");
+        $breadcrumbs = $(".breadcrumbs-crumbs");
+        $breadcrumbs.toggleClass("is-active-breadcrumbs");
+        $breadcrumbs.hasClass("is-active-breadcrumbs") ? $breadcrumbs.slideDown("fast") : $breadcrumbs.slideUp("fast");
     });
     $(window).resize(function() {
-        $(this).width() > 769 && $(".breadcrumbs-crumbs").css("display", "");
+        $(this).width() > 769 && $breadcrumbs.css("display", "");
+    });
+    $("body").click(function() {
+        $(this).hasClass("is-active-sidenav") && $(this).removeClass("is-active-sidenav");
+        $login.hasClass("is-active-login") && $login.removeClass("is-active-login");
+        $dropdown.hasClass("is-active-nav") && $dropdown.removeClass("is-active-nav");
+        $breadcrumbs.hasClass("is-active-breadcrumbs") && $breadcrumbs.removeClass("is-active-breadcrumbs");
     });
 });
