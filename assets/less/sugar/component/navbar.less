@@ -108,7 +108,7 @@
     &.is-active-nav { display: block; }
     float: left;
     position: absolute;
-    .margin(8, 0, 0);
+    .margin(8, 0, 0, @quarter-spacing-unit);
     z-index: 1020;
 
     > li {
@@ -146,7 +146,7 @@
     }
 
     &.actions-sub {
-        .margin-left(-@sextuple-spacing-unit);
+        .margin-left(@navbar-actions-sub-offset);
         > li {
             > a {
                 background-color: @navbar-actions-sub-bg;

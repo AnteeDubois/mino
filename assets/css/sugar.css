@@ -2915,7 +2915,7 @@ a .link.label:hover {
   display: none;
   float: left;
   position: absolute;
-  margin: 8px 0px 0px;
+  margin: 8px 0px 0px 6px;
   z-index: 1020;
 }
 .navbar-nav-sub.is-active-nav {
@@ -2962,7 +2962,7 @@ a .link.label:hover {
   border-bottom-left-radius: 4px;
 }
 .navbar-nav-sub.actions-sub {
-  margin-left: -144px;
+  margin-left: -137px;
 }
 .navbar-nav-sub.actions-sub > li > a {
   background-color: #ffffff;
@@ -2991,7 +2991,7 @@ a .link.label:hover {
   display: none;
   float: left;
   position: absolute;
-  margin: 8px 0px 0px -382px;
+  margin: 8px 0px 0px -377px;
   white-space: nowrap;
   z-index: 1020;
 }
