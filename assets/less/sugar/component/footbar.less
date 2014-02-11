@@ -71,6 +71,52 @@
 }
 
 /**
+ * Navbar Nav Sub Arrow
+ *
+ * the arrow for the dropdown menu
+ */
+.footbar-sub-arrow {
+    .font-size(@base-spacing-unit);
+    
+    float: right;
+    position: absolute;
+    z-index: 1020;
+    color: @footbar-sub-bg;
+    .margin(339, 0, 0, 32);
+    @media (min-width: @screen-l-min) { .margin(359, 0, 0, 32); }
+}
+
+/**
+ * Navbar Nav Sub
+ *
+ * standard sub mebu styles
+ */
+.footbar-sub {
+    bottom: 100%;
+    top: auto;
+    .margin(0, 0, 73, -31);
+    @media (min-width: @screen-m-min) { .margin(0, 0, 33, -31); } 
+    //@media (min-width: @screen-l-min) { .margin(-423, 0, 0, -@double-spacing-unit); }
+
+    > li {
+        background-color: @footbar-sub-bg;
+        &:first-of-type { .border-top-radius(unit(@base-radius, px)); }
+        color: @footbar-sub-color;
+
+        display: block;
+        .padding(@quarter-spacing-unit, @half-spacing-unit+@eighth-spacing-unit);
+        white-space: nowrap; // prevent links from randomly breaking onto new lines
+
+        &:last-of-type { .border-bottom-radius(unit(@base-radius, px)); }
+    }
+
+    .footbar-sub-header {
+        background-color: @footbar-sub-header-bg;
+        color: @footbar-sub-header-color;
+    }
+}
+
+/**
  * Footbar Copyright Wrap
  *
  * A simple wrapper to set full page color

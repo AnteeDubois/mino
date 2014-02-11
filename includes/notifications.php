@@ -1,4 +1,4 @@
-<ul class="notification-sub list-unstyled">
+<ul class="notification-sub dropdown-menu list-unstyled">
     <li>
         <span class="navbar-nav-sub-arrow octicons octicons-triangle-up"></span>
         <span class="pull-left">Notifications</span>

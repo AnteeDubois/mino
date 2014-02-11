@@ -100,6 +100,14 @@
   color: #ffffff;
 }
 /**
+ * Forum header
+ *
+ * used to positon the left/main section of a forum row
+ */
+.forum-header {
+  margin-top: 6px;
+}
+/**
  * Forum Title
  *
  * This is the physical link to each forum
@@ -130,16 +138,22 @@
 /**
  * Forum icon
  *
- * This is the icon next tot he forum title
+ * This is the icon next to the forum title
  */
 .forum-icon {
+  vertical-align: middle;
   background-color: #f4726d;
-  border: 1px solid #f4726d;
+  border: 2px solid #c05955;
   border-radius: 50%;
   display: inline-block;
-  height: 10px;
-  margin-right: 6px;
-  width: 10px;
+  height: 16px;
+  margin: -2px 6px 0px -15px;
+  margin-top: -2px;
+  position: relative;
+  width: 16px;
+}
+.forum-icon:first-of-type {
+  margin-left: 0;
 }
 /**
  * Forum Desc.

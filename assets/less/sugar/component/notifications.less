@@ -10,9 +10,6 @@
 .notification-sub {
     .font-size(@notification-font-size);
 
-    .box-shadow(0 6px 12px rgba(0,0,0,.175));
-
-    display: none;
     float: left;
     position: absolute;
     .margin(8, 0, 0, @notification-offset);
@@ -46,7 +43,13 @@
             color: @notification-header-color;
             
             a { 
-                color: @notification-header-link-color; 
+                background-color: transparent;
+                color: @notification-header-link-color;
+
+                clear: none;
+                display: inline-block;
+                padding: 0;
+
                 &:hover { color: @notification-header-link-hover-color; }
             }            
         }
@@ -56,8 +59,6 @@
         &:last-of-type { .border-bottom-radius(unit(@base-radius, px)); }
         .cf();
     }
-
-    &.is-active { display: block; }
     
     .details-stats { width: @notification-stats-width; }
     .details-recent { width: @notification-recent-width; }

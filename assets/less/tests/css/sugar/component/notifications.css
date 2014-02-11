@@ -9,9 +9,6 @@
 .notification-sub {
   font-size: 16px;
   font-size: 1em;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  display: none;
   float: left;
   position: absolute;
   margin: 8px 0px 0px -377px;
@@ -45,7 +42,11 @@
 }
 .notification-sub > li:first-of-type a,
 .notification-sub > li:last-of-type a {
+  background-color: transparent;
   color: #f79592;
+  clear: none;
+  display: inline-block;
+  padding: 0;
 }
 .notification-sub > li:first-of-type a:hover,
 .notification-sub > li:last-of-type a:hover {
@@ -66,9 +67,6 @@
 }
 .notification-sub > li:after {
   clear: both;
-}
-.notification-sub.is-active {
-  display: block;
 }
 .notification-sub .details-stats {
   width: 250px;

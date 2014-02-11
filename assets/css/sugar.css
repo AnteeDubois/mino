@@ -2901,79 +2901,103 @@ a .link.label:hover {
     margin: -20px 0px 0px;
   }
 }
+.dropdown {
+  position: relative;
+}
 /**
  * Navbar Nav Sub
  *
  * standard sub mebu styles
  */
-.navbar-nav-sub {
+.dropdown-menu {
   font-size: 16px;
   font-size: 1em;
   background-color: transparent;
+  background-clip: padding-box;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  list-style: none;
   display: none;
   float: left;
+  left: 0;
   position: absolute;
-  margin: 8px 0px 0px 6px;
+  top: 100%;
   z-index: 1020;
+  margin: 8px 0px 0px;
 }
-.navbar-nav-sub.is-active-nav {
+.dropdown-menu.is-active-nav {
   display: block;
 }
-.navbar-nav-sub > li:first-of-type > a {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-}
-.navbar-nav-sub > li > a {
+.dropdown-menu > li > a {
   background-color: #f79592;
   color: #ffffff;
   display: block;
-  padding: 6px 15px 8px;
+  clear: both;
+  padding: 6px 15px;
   white-space: nowrap;
 }
-.navbar-nav-sub > li > a .icon,
-.navbar-nav-sub > li > a .octicons {
+.dropdown-menu > li > a .icon,
+.dropdown-menu > li > a .octicons {
   padding-right: 6px;
 }
-.navbar-nav-sub > li > a:hover {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
   color: #ffffff;
   background-color: #f4726d;
 }
-.navbar-nav-sub > li > a:hover .navbar-nav-sub-arrow {
+.dropdown-menu > li > a:hover .navbar-nav-sub-arrow,
+.dropdown-menu > li > a:focus .navbar-nav-sub-arrow {
   color: #f4726d;
 }
-.navbar-nav-sub > li.navbar-nav-sub-header {
-  background-color: #f4726d;
-  color: #ffffff;
-  display: block;
-  padding: 6px 15px 8px;
-  white-space: nowrap;
-}
-.navbar-nav-sub > li.navbar-nav-sub-header:first-of-type {
+.dropdown-menu > li:first-of-type > a {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
-.navbar-nav-sub > li.navbar-nav-sub-header .navbar-nav-sub-arrow {
-  color: #f4726d;
-}
-.navbar-nav-sub > li:last-of-type > a {
+.dropdown-menu > li:last-of-type > a {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.navbar-nav-sub.actions-sub {
+.dropdown-menu .navbar-nav-sub-header {
+  background-color: #f4726d;
+  color: #ffffff;
+  display: block;
+  padding: 6px 15px;
+  white-space: nowrap;
+}
+.dropdown-menu .navbar-nav-sub-header:first-of-type {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.dropdown-menu .navbar-nav-sub-header .navbar-nav-sub-arrow {
+  color: #f4726d;
+}
+.dropdown-menu.actions-sub {
   margin-left: -137px;
 }
-.navbar-nav-sub.actions-sub > li > a {
+.dropdown-menu.actions-sub > li > a {
   background-color: #ffffff;
   color: #b3b3b3;
 }
-.navbar-nav-sub.actions-sub > li > a:hover {
+.dropdown-menu.actions-sub > li > a:hover {
   background-color: #ffffff;
   color: #f4726d;
 }
-.navbar-nav-sub.actions-sub .navbar-nav-sub-arrow {
-  margin-left: 144px;
+.dropdown-menu.actions-sub > li .navbar-nav-sub-arrow {
+  margin-left: -18px;
+}
+@media only screen and (min-width: 61.5em) {
+  .dropdown-menu.actions-sub > li .navbar-nav-sub-arrow {
+    right: 0;
+    margin-right: 10px;
+  }
+}
+.dropdown-backdrop {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1015;
 }
 /*------------------------------------*\
     $COMPONENT-NOTIFICATIONS
@@ -2986,9 +3010,6 @@ a .link.label:hover {
 .notification-sub {
   font-size: 16px;
   font-size: 1em;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  display: none;
   float: left;
   position: absolute;
   margin: 8px 0px 0px -377px;
@@ -3022,7 +3043,11 @@ a .link.label:hover {
 }
 .notification-sub > li:first-of-type a,
 .notification-sub > li:last-of-type a {
+  background-color: transparent;
   color: #f79592;
+  clear: none;
+  display: inline-block;
+  padding: 0;
 }
 .notification-sub > li:first-of-type a:hover,
 .notification-sub > li:last-of-type a:hover {
@@ -3043,9 +3068,6 @@ a .link.label:hover {
 }
 .notification-sub > li:after {
   clear: both;
-}
-.notification-sub.is-active {
-  display: block;
 }
 .notification-sub .details-stats {
   width: 250px;
@@ -3400,6 +3422,14 @@ body.is-active-sidenav .inner-wrap {
   color: #ffffff;
 }
 /**
+ * Forum header
+ *
+ * used to positon the left/main section of a forum row
+ */
+.forum-header {
+  margin-top: 6px;
+}
+/**
  * Forum Title
  *
  * This is the physical link to each forum
@@ -3430,16 +3460,22 @@ body.is-active-sidenav .inner-wrap {
 /**
  * Forum icon
  *
- * This is the icon next tot he forum title
+ * This is the icon next to the forum title
  */
 .forum-icon {
+  vertical-align: middle;
   background-color: #f4726d;
-  border: 1px solid #f4726d;
+  border: 2px solid #c05955;
   border-radius: 50%;
   display: inline-block;
-  height: 10px;
-  margin-right: 6px;
-  width: 10px;
+  height: 16px;
+  margin: -2px 6px 0px -15px;
+  margin-top: -2px;
+  position: relative;
+  width: 16px;
+}
+.forum-icon:first-of-type {
+  margin-left: 0;
 }
 /**
  * Forum Desc.
@@ -3663,6 +3699,59 @@ body.is-active-sidenav .inner-wrap {
   display: block;
   padding: 4px 0px;
   width: 100%;
+}
+/**
+ * Navbar Nav Sub Arrow
+ *
+ * the arrow for the dropdown menu
+ */
+.footbar-sub-arrow {
+  font-size: 24px;
+  font-size: 1.5em;
+  float: right;
+  position: absolute;
+  z-index: 1020;
+  color: #ffffff;
+  margin: 339px 0px 0px 32px;
+}
+@media (min-width: 61.5em) {
+  .footbar-sub-arrow {
+    margin: 359px 0px 0px 32px;
+  }
+}
+/**
+ * Navbar Nav Sub
+ *
+ * standard sub mebu styles
+ */
+.footbar-sub {
+  bottom: 100%;
+  top: auto;
+  margin: 0px 0px 73px -31px;
+}
+@media (min-width: 48em) {
+  .footbar-sub {
+    margin: 0px 0px 33px -31px;
+  }
+}
+.footbar-sub > li {
+  background-color: #ffffff;
+  color: #808080;
+  display: block;
+  padding: 6px 15px;
+  white-space: nowrap;
+}
+.footbar-sub > li:first-of-type {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.footbar-sub > li:last-of-type {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.footbar-sub .footbar-sub-header {
+  background-color: #262626;
+  color: #ffffff;
 }
 /**
  * Footbar Copyright Wrap
