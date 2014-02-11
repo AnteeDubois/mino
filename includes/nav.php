@@ -20,9 +20,9 @@
                 <ul class="list-inline pull-right">                        
                     <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Advanced Search"><span class="icon icon-cog"></span> <span class="sr-only">Advanced Search</span></a></li>
                     <!-- Settings & Tools -->
-                    <li class="navbar-nav-item">
-                        <a class="navbar-nav-dropdown dropdown settings" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Settings & Tools"><span class="octicons octicons-settings"></span> <span class="sr-only">Settings & Tools</span></a>
-                        <ul class="navbar-nav-sub settings-sub list-unstyled">
+                    <li class="navbar-nav-item dropdown">
+                        <a class="dropdown-toggle" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Settings & Tools"><span class="octicons octicons-settings"></span> <span class="sr-only">Settings & Tools</span></a>
+                        <ul class="dropdown-menu">
                             <li>
                                 <a href="#" title="User Preferences">
                                     <span class="navbar-nav-sub-arrow octicons octicons-triangle-up"></span>
@@ -34,26 +34,26 @@
                         </ul>
                     </li>
                     <!-- Notifications -->                   
-                    <li class="navbar-nav-item">
-                        <a class="navbar-nav-dropdown dropdown notifications" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Notifications"><span class="badge">8</span> <span class="icon icon-bell"></span> <span class="sr-only">Notifications</span></a>
+                    <li class="navbar-nav-item dropdown">
+                        <a class="navbar-nav-dropdown notifications dropdown-toggle" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Notifications"><span class="badge">8</span> <span class="icon icon-bell"></span> <span class="sr-only">Notifications</span></a>
                         <?php include("includes/notifications.php"); ?>
                     </li>
                     <li class="navbar-nav-item"><a href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Private Messages"><span class="badge">2</span> <span class="icon icon-inbox"></span> <span class="sr-only">PMs</span></a></li>
                     <!-- Forum Actions -->
-                    <li class="navbar-nav-item">
-                        <a class="navbar-nav-dropdown dropdown actions" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span class="sr-only">Forum Actions</span></a>
-                        <ul class="navbar-nav-sub actions-sub list-unstyled">                                                                     
+                    <li class="navbar-nav-item dropdown">
+                        <a class="navbar-nav-dropdown actions dropdown-toggle" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" href="#" title="Forum Actions"><span class="icon icon-tasks"></span> <span class="sr-only">Forum Actions</span></a>
+                        <ul class="navbar-nav-sub actions-sub dropdown-menu list-unstyled">                                                                     
                             <li class="navbar-nav-sub-header">
                                 <span class="navbar-nav-sub-arrow octicons octicons-triangle-up"></span>
                                 <span class="octicons octicons-info"></span> <span>Forum Info</span>
                             </li>
                             <li><a href="#" title="Mark Forums Read"><span class="icon icon-check"></span> <span>Mark Forums Read</span></a></li>
                             <li class="navbar-nav-sub-header"><span class="icon icon-comments"></span> <span>Posts</span></li>
-                            <li><a href="#" title="Yours"><span class="icon icon-circle peter-river"></span> <span>Yours</span></a></li>
-                            <li><a href="#" title="Unanswered"><span class="icon icon-circle turquuoise"></span> <span>Unanswered</span></a></li>
-                            <li><a href="#" title="Unread"><span class="icon icon-circle base-link-color"></span> <span>Unread</span></a></li>
-                            <li><a href="#" title="New"><span class="icon icon-circle emerald"></span> <span>New</span></a></li>
-                            <li><a href="#" title="Active"><span class="icon icon-circle orange"></span> <span>Active</span></a></li>
+                            <li><a href="#" title="Yours"><span class="forum-icon mine"></span> <span>Yours</span></a></li>
+                            <li><a href="#" title="Unanswered"><span class="forum-icon unanswered"></span> <span>Unanswered</span></a></li>
+                            <li><a href="#" title="Unread"><span class="forum-icon"></span> <span>Unread</span></a></li>
+                            <li><a href="#" title="New"><span class="forum-icon new"></span> <span>New</span></a></li>
+                            <li><a href="#" title="Active"><span class="forum-icon hot"></span> <span>Active</span></a></li>
                         </ul>
                     </li>
                     <li class="navbar-nav-item"><a class="login-toggle" href="#" data-toogle="tooltip" data-placement="bottom" data-container=".navbar" title="Login"><span class="octicons octicons-log-in"></span> <span class="sr-only">Login</span></a></li>

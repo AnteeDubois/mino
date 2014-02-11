@@ -28,11 +28,11 @@
         <li>
             <a class="sidenav-dropdown-toggle" href="#" title="Posts"><span class="icon icon-comments"></span> <span>Posts</span> <span class="icon icon-chevron-down"></span></a>
             <ul class="sidenav-menu-sub">
-                <li><a href="#" title="Yours"><span class="icon icon-circle peter-river"></span> <span>Yours</span></a></li>
-                <li><a href="#" title="Unanswered"><span class="icon icon-circle turquuoise"></span> <span>Unanswered</span></a></li>
-                <li><a href="#" title="Unread"><span class="icon icon-circle base-link-color"></span> <span>Unread</span></a></li>
-                <li><a href="#" title="New"><span class="icon icon-circle emerald"></span> <span>New</span></a></li>
-                <li><a href="#" title="Active"><span class="icon icon-circle orange"></span> <span>Active</span></a></li>
+                <li><a href="#" title="Yours"><span class="forum-icon mine"></span> <span>Yours</span></a></li>
+                <li><a href="#" title="Unanswered"><span class="forum-icon unanswered"></span> <span>Unanswered</span></a></li>
+                <li><a href="#" title="Unread"><span class="forum-icon"></span> <span>Unread</span></a></li>
+                <li><a href="#" title="New"><span class="forum-icon new"></span> <span>New</span></a></li>
+                <li><a href="#" title="Active"><span class="forum-icon hot"></span> <span>Active</span></a></li>
             </ul>
         </li>
 

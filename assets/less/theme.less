@@ -21,13 +21,61 @@
 .admin                  { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
 .mod                    { .color(mix(@emerald, white, 70%), @white, @nephritis); }
 
-.quoted, 
-.replied                { .color(@peter-river); }
-.approved,
-.pmed,
-.created                { .color(@emerald); }
-.approve                { .color(mix(@emerald, white, 30%)); }
-.rejected, 
-.reported,
-.locked                 { .color(@pomegranate); }
+.mine {
+    background-color: @wet-asphalt;
+    border: 2px solid saturate(darken(@wet-asphalt, 15%), 6%);
+}
+
+.unanswered {
+    background-color: @turquuoise;
+    border: 2px solid saturate(darken(@turquuoise, 15%), 6%);
+}
+
+.new {
+    background-color: @emerald;
+    border: 2px solid saturate(darken(@emerald, 15%), 6%);
+}
+
+.hot {
+    background-color: @apple-orange;
+    border: 2px solid saturate(darken(@apple-orange, 15%), 6%);
+}
+
+.locked {
+    background-color: @alizarin;
+    border: 2px solid saturate(darken(@alizarin, 15%), 6%);
+}
+
+.reported {
+    background-color: @pomegranate;
+    border: 2px solid saturate(darken(@pomegranate, 15%), 6%);
+}
+
+.sticky {
+    background-color: @peter-river;
+    border: 2px solid saturate(darken(@peter-river, 15%), 6%);
+}
+
+.announce {
+    background-color: @amethyst;
+    border: 2px solid saturate(darken(@amethyst, 15%), 6%);
+}
+
+.gannounce {
+    background-color: @concrete;
+    border: 2px solid saturate(darken(@concrete, 15%), 6%);
+}
+
+.label.quoted, 
+.label.replied          { .color(@peter-river); }
+.label.approved,
+.label.pmed,
+.label.created          { .color(@emerald); }
+.label.approve          { .color(mix(@emerald, white, 30%)); }
+.label.rejected, 
+.label.reported,
+.label.locked           { 
+    .color(@pomegranate); 
+    border: 0;
+}
 

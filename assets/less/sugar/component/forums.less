@@ -122,17 +122,26 @@
 /**
  * Forum icon
  *
- * This is the icon next tot he forum title
+ * This is the icon next to the forum title
  */
 .forum-icon {
-    background-color: @forum-title-link-color;
-    border: 1px solid @forum-title-link-color;
+    vertical-align: middle;
+
+    background-color: @base-link-color;
+    border: 2px solid desaturate(darken(@base-link-color, 15%), 40%);//mix(@base-link-color, black, 90%);
     border-radius: 50%;
     
     display: inline-block;
-    height: 10px;
-    margin-right: 6px;
-    width: 10px;
+    height: unit(@base-font-size, px);
+    .margin(-2, @quarter-spacing-unit, 0, -@half-spacing-unit - @eighth-spacing-unit);
+    margin-top: -2px;
+    position: relative;
+    width: unit(@base-font-size, px);
+
+    &:first-of-type { 
+        margin-left: 0;
+        //z-index: 1; 
+    }
 }
 
 /**
