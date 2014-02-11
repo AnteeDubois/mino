@@ -192,39 +192,39 @@ a .mod.label:hover {
 }
 .mine {
   background-color: #34495e;
-  border: 2px solid #17232f;
+  border: 1px solid #17232f;
 }
 .unanswered {
   background-color: #1abc9c;
-  border: 2px solid #0d7d67;
+  border: 1px solid #0d7d67;
 }
 .new {
   background-color: #2ecc71;
-  border: 2px solid #1b934e;
+  border: 1px solid #1b934e;
 }
 .hot {
   background-color: #fdbd43;
-  border: 2px solid #f3a000;
+  border: 1px solid #f3a000;
 }
 .locked {
   background-color: #e74c3c;
-  border: 2px solid #c52211;
+  border: 1px solid #c52211;
 }
 .reported {
   background-color: #c0392b;
-  border: 2px solid #862318;
+  border: 1px solid #862318;
 }
 .sticky {
   background-color: #3498db;
-  border: 2px solid #1770ab;
+  border: 1px solid #1770ab;
 }
 .announce {
   background-color: #9b59b6;
-  border: 2px solid #74368d;
+  border: 1px solid #74368d;
 }
 .gannounce {
   background-color: #95a5a6;
-  border: 2px solid #668789;
+  border: 1px solid #668789;
 }
 .label.quoted,
 .label.replied {

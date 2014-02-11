@@ -128,20 +128,17 @@
     vertical-align: middle;
 
     background-color: @base-link-color;
-    border: 2px solid desaturate(darken(@base-link-color, 15%), 40%);//mix(@base-link-color, black, 90%);
+    border: 1px solid desaturate(darken(@base-link-color, 15%), 40%);//mix(@base-link-color, black, 90%);
     border-radius: 50%;
     
     display: inline-block;
-    height: unit(@base-font-size, px);
+    height: unit(14, px);
     .margin(-2, @quarter-spacing-unit, 0, -@half-spacing-unit - @eighth-spacing-unit);
     margin-top: -2px;
     position: relative;
-    width: unit(@base-font-size, px);
+    width: unit(14, px);
 
-    &:first-of-type { 
-        margin-left: 0;
-        //z-index: 1; 
-    }
+    &:first-of-type { margin-left: 0; }
 }
 
 /**
