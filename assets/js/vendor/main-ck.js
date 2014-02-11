@@ -13,12 +13,16 @@ $(function() {
     $('[data-toogle="tooltip"]').on("click", function() {
         $(this).tooltip("hide");
     });
-    $(".dropdown").click(function(e) {
+    $(".dropdown-toggle").click(function(e) {
         e.stopPropagation();
         $dropdown = $(this).parent();
         $dropdown = $dropdown.find("> ul");
         $dropdown.toggleClass("is-active-nav");
         $dropdown.hasClass("is-active-nav") ? $dropdown.slideDown("fast") : $dropdown.slideUp("fast");
+        $('<div class="dropdown-backdrop"/>').insertAfter($dropdown).click(function() {
+            $dropdown.hasClass("is-active-nav") && $dropdown.removeClass("is-active-nav");
+            $(".dropdown-backdrop").remove();
+        });
     });
     $(".sidenav-dropdown-toggle").click(function(e) {
         e.stopPropagation();
@@ -51,8 +55,6 @@ $(function() {
     });
     $("body").click(function() {
         $(this).hasClass("is-active-sidenav") && $(this).removeClass("is-active-sidenav");
-        $login.hasClass("is-active-login") && $login.removeClass("is-active-login");
-        $dropdown.hasClass("is-active-nav") && $dropdown.removeClass("is-active-nav");
         $breadcrumbs.hasClass("is-active-breadcrumbs") && $breadcrumbs.removeClass("is-active-breadcrumbs");
     });
 });

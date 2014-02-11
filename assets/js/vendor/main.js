@@ -33,7 +33,7 @@ $(function(){
     });
 
     // menu dropdown toggle
-    $(".dropdown").click(function (e) {
+    $(".dropdown-toggle").click(function (e) {
         e.stopPropagation();
         
         $dropdown = $(this).parent();
@@ -46,6 +46,13 @@ $(function(){
         } else {
             $dropdown.slideUp("fast");
         }
+
+        $('<div class="dropdown-backdrop"/>').insertAfter($dropdown).click(function () {
+            if ($dropdown.hasClass("is-active-nav")) {
+                $dropdown.removeClass("is-active-nav");
+            }
+            $('.dropdown-backdrop').remove();
+        });
     });
 
     // sidebar menu dropdown toggle
@@ -116,12 +123,7 @@ $(function(){
         if ($(this).hasClass("is-active-sidenav")) {
             $(this).removeClass("is-active-sidenav");
         }
-        if ($login.hasClass("is-active-login")) {
-            $login.removeClass("is-active-login");
-        }
-        if ($dropdown.hasClass("is-active-nav")) {
-            $dropdown.removeClass("is-active-nav");
-        }
+        
         if ($breadcrumbs.hasClass("is-active-breadcrumbs")) {
             $breadcrumbs.removeClass("is-active-breadcrumbs");
         }
