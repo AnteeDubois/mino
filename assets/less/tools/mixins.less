@@ -185,7 +185,8 @@
 // Backface visibility
 // Prevent browsers from flickering when using CSS 3D transforms.
 // Default value is `visible`, but can be changed to `hidden`
-// See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples
+// See git pull https://github.com/dannykeane/bootstrap.git backface-visibility
+// for examples
 .backface-visibility(@visibility){
     -webkit-backface-visibility: @visibility;
        -moz-backface-visibility: @visibility;
@@ -251,7 +252,9 @@
 
     // Horizontal gradient, from left to right
     //
-    // Creates two color stops, start and end, by specifying a color and position for each color stop.
+    // Creates two color stops, start and end, by specifying a color and
+    // position for each color stop.
+    //
     // Color stops are not available in IE9 and below.
     .horizontal(@start-color: #555; @end-color: #333; @start-percent: 0%; @end-percent: 100%) {
         background-image: -webkit-gradient(linear, @start-percent top, @end-percent top, from(@start-color), to(@end-color)); // Safari 4+, Chrome 2+
@@ -567,8 +570,8 @@
 
         .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
 
-        &:hover, &:focus { 
-            background: @btn-color !important;  
+        &:hover, &:focus {
+            background: @btn-color !important;
             color: @white !important;
         }
         &:active, &.active {
@@ -607,24 +610,24 @@
 .margin-right(@size){ margin-right: unit(@size, px); }
 .margin-bottom(@size){ margin-bottom: unit(@size, px); }
 .margin-left(@size){ margin-left: unit(@size, px); }
-.margin-horizontal(@size){ 
-    margin-left: unit(@size, px); 
-    margin-right: unit(@size, px); 
+.margin-horizontal(@size){
+    margin-left: unit(@size, px);
+    margin-right: unit(@size, px);
 }
 
-.margin-horizontal(@left, @right){ 
-    margin-left: unit(@left, px); 
-    margin-right: unit(@right, px); 
+.margin-horizontal(@left, @right){
+    margin-left: unit(@left, px);
+    margin-right: unit(@right, px);
 }
 
-.margin-vertical(@size){ 
-    margin-top: unit(@size, px); 
-    margin-bottom: unit(@size, px); 
+.margin-vertical(@size){
+    margin-top: unit(@size, px);
+    margin-bottom: unit(@size, px);
 }
 
-.margin-vertical(@top, @bottom){ 
-    margin-top: unit(@top, px); 
-    margin-bottom: unit(@bottom, px); 
+.margin-vertical(@top, @bottom){
+    margin-top: unit(@top, px);
+    margin-bottom: unit(@bottom, px);
 }
 
 .padding(@size){ padding: unit(@size, px); }
@@ -635,23 +638,23 @@
 .padding-right(@size){ padding-right: unit(@size, px); }
 .padding-bottom(@size){ padding-bottom: unit(@size, px); }
 .padding-left(@size){ padding-left: unit(@size, px); }
-.padding-horizontal(@size){ 
-    padding-left: unit(@size, px); 
-    padding-right: unit(@size, px); 
+.padding-horizontal(@size){
+    padding-left: unit(@size, px);
+    padding-right: unit(@size, px);
 }
 
-.padding-horizontal(@left, @right){ 
-    padding-left: unit(@left, px); 
-    padding-right: unit(@right, px); 
+.padding-horizontal(@left, @right){
+    padding-left: unit(@left, px);
+    padding-right: unit(@right, px);
 }
 
-.padding-vertical(@size){ 
-    padding-top: unit(@size, px); 
-    padding-bottom: unit(@size, px); 
+.padding-vertical(@size){
+    padding-top: unit(@size, px);
+    padding-bottom: unit(@size, px);
 }
 
-.padding-vertical(@top, @bottom){ 
-    padding-top: unit(@top, px); 
-    padding-bottom: unit(@bottom, px); 
+.padding-vertical(@top, @bottom){
+    padding-top: unit(@top, px);
+    padding-bottom: unit(@bottom, px);
 }
 
