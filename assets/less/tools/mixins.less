@@ -52,9 +52,9 @@
 
 // Placeholder text
 .placeholder(@color: @base-ui-color) {
-    &:-moz-placeholder            { color: @color; } // Firefox 4-18
-    &::-moz-placeholder           { color: @color; } // Firefox 19+
-    &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+    &:-moz-placeholder            { color: @color; } // Safari and Chrome
+    &::-moz-placeholder           { color: @color; } // Safari and Chrome
+    &:-ms-input-placeholder       { color: @color; } // Safari and Chrome
     &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
 }
 
@@ -432,34 +432,6 @@
     // next iteration
     .grid-build(@cols, @class, @type, @i + 1);
 }
-
-// Rem Grid Mixins
-.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = width) and (@index > 0) {
-    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
-    .grid-@{class}-@{index} { width: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
-}
-
-.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = push) and (@index > 0) {
-    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
-    .grid-@{class}-@{index} { left: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
-}
-
-.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = pull) and (@index > 0) {
-    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
-    .grid-@{class}-@{index} { right: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
-}
-
-.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = offset) and (@index > 0) {
-    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
-    .grid-@{class}-@{index} { margin-left: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
-}
-
-.grid-rem-build(@cols, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width, @i: 1) when (@i <= @cols) {
-    .grid-rem-make(@i, @class, @type, @width, @columns, @gutter);
-    // next iteration
-    .grid-rem-build(@cols, @class, @type, @width, @columns, @gutter, @i + 1);
-}
-
 
 // Form control focus state
 //
