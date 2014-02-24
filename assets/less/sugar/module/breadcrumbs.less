@@ -12,13 +12,15 @@
     color: @breadcrumb-color;
 
     display: block;
-    @media only screen and (min-width: @screen-m-min) { display: inline-block; }
     float: left;
     margin: 0;
     padding: 0;
-    @media only screen and (min-width: @screen-m-min) { .padding-left(@half-spacing-unit); }
     position: relative;
     width: 100%;
+    @media only screen and (min-width: @screen-m-min) {
+        display: inline-block;
+        .padding-left(@half-spacing-unit);
+    }
 
     li {
         padding: 0;
@@ -46,8 +48,10 @@
     border-top: 1px solid @breadcrumb-border-color;
     border-bottom: 1px solid @breadcrumb-border-color;
 
-    @media (max-width: @screen-m-min) { .grid {.padding(0); } } 
-    @media (min-width: @screen-m-min) { .padding-vertical(@eighth-spacing-unit, @quarter-spacing-unit); } 
+    @media (max-width: @screen-m-min) {
+        .grid {.padding(0); }
+        //.padding-vertical(@eighth-spacing-unit, @quarter-spacing-unit);
+    }
 }
 
 /**
@@ -58,10 +62,12 @@
 .breadcrumbs-index {
     display: inline-block;
     float: none;
-    @media only screen and (min-width: @screen-m-min) { float: left; }
     margin: -1px 0 -5px;
-    @media only screen and (min-width: @screen-m-min) { margin: 0 0 -2px; }
-    .pull-left { 
+    @media only screen and (min-width: @screen-m-min) {
+        float: left;
+        margin: 0 0 -2px;
+    }
+    .pull-left {
         border-right: 1px solid @breadcrumb-border-color;
         @media only screen and (min-width: @screen-m-min) { border-right: 0; }
     }
@@ -106,33 +112,41 @@
 
         > li {
             border-top: 1px solid @breadcrumb-border-color;
-            @media only screen and (min-width: @screen-m-min) { border: 0; }
-            
+
             .padding(@half-spacing-unit);
-            @media only screen and (min-width: @screen-m-min) { padding: 0; }
-            
+            @media only screen and (min-width: @screen-m-min) {
+                border: 0;
+
+                padding: 0;
+            }
+
             &:before {
-                @media only screen and (min-width: @screen-m-min) { 
+                content: "";
+
+                padding: 0;
+
+                @media only screen and (min-width: @screen-m-min) {
                     .font-size(18);
                     font-family: 'octicons';
                     vertical-align: middle;
-                }
 
-                content: "";
-                @media only screen and (min-width: @screen-m-min) { content: "\f078"; } // Unicode space added since inline-block means non-collapsing white-space
-                padding: 0;
-                @media only screen and (min-width: @screen-m-min) { .padding(0, 9, 0, 0); }
+                    content: "\f078"; // Unicode space added since inline-block means non-collapsing white-space
+
+                    .padding(0, 9, 0, 0);
+                }
             }
 
             @media only screen and (min-width: @screen-m-min) { &:last-of-type:before { .padding-right(@half-spacing-unit+@eighth-spacing-unit); } }
 
             a {
                 display: block;
-                @media only screen and (min-width: @screen-m-min) { display: inline-block; }
                 padding: 0;
-                @media only screen and (min-width: @screen-m-min) { .padding(9, @half-spacing-unit+@eighth-spacing-unit, @quarter-spacing-unit, @quarter-spacing-unit); }
                 width: 100%;
-                @media only screen and (min-width: @screen-m-min) { width: auto; }
+                @media only screen and (min-width: @screen-m-min) {
+                    display: inline-block;
+                    .padding(9, @half-spacing-unit+@eighth-spacing-unit, @quarter-spacing-unit, @quarter-spacing-unit);
+                    width: auto;
+                }
             }
         }
     }
