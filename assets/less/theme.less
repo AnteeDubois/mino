@@ -2,7 +2,7 @@
     THEME.LESS
 \*------------------------------------*/
 //--------------------------------------------------------------------------//
-//  Contains all styles for the theme of the project outside the sugar3 
+//  Contains all styles for the theme of the project outside the sugar3
 //  framework...
 //--------------------------------------------------------------------------//
 
@@ -10,16 +10,17 @@
 //  $IMPORTS
 //--------------------------------------------------------------------------//
 @import "tools/defaults.less";
-@import "vars.less";
+// @import "vars.less";
+@import "phpbb-theme-vars.less";
 @import "tools/mixins.less";
 
 
 //--------------------------------------------------------------------------//
 //  $USER STYLES
 //--------------------------------------------------------------------------//
-.user                   { .color(@base-link-color, @white, @base-link-hover-color); }
-.admin                  { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
-.mod                    { .color(mix(@emerald, white, 70%), @white, @nephritis); }
+.user           { .color(@base-link-color, @white, @base-link-hover-color); }
+.admin          { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
+.mod            { .color(mix(@emerald, white, 70%), @white, @nephritis); }
 
 .mine {
     background-color: @wet-asphalt;
@@ -66,16 +67,16 @@
     border: 1px solid saturate(darken(@concrete, 15%), 6%);
 }
 
-.label.quoted, 
-.label.replied          { .color(@peter-river); }
+.label.quoted,
+.label.replied  { .color(@peter-river); }
 .label.approved,
 .label.pmed,
-.label.created          { .color(@emerald); }
-.label.approve          { .color(mix(@emerald, white, 30%)); }
-.label.rejected, 
+.label.created  { .color(@emerald); }
+.label.approve  { .color(mix(@emerald, white, 30%)); }
+.label.rejected,
 .label.reported,
-.label.locked           { 
-    .color(@pomegranate); 
+.label.locked {
+    .color(@pomegranate);
     border: 0;
 }
 
