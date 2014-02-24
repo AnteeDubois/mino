@@ -11,8 +11,8 @@
     background-color: @navbar-bg;
     color: @navbar-color;
 
-    a { 
-        color: @navbar-link-color; 
+    a {
+        color: @navbar-link-color;
         &:hover { color: @navbar-link-hover-color; }
     }
     .navbar-nav-item { padding: 0; }
@@ -38,7 +38,7 @@
  */
 .navbar-nav-item {
     position: relative;
-    > a { 
+    > a {
         .font-size(@base-font-size);
 
         display: block;
@@ -74,7 +74,7 @@
             .placeholder(@navbar-form-border-focus);
         }
     }
-} 
+}
 
 /**
  * Navbar Nav Sub Arrow
@@ -102,7 +102,7 @@
  */
 .dropdown-menu {
     .font-size(@base-font-size);
-    
+
     background-color: transparent;
     background-clip: padding-box;
     .box-shadow(0 6px 12px rgba(0,0,0,.175));
@@ -116,7 +116,7 @@
     top: 100%;
     z-index: 1020;
     .margin(8, 0, 0);
-    
+
     > li > a {
         background-color: @navbar-sub-bg;
         color: @navbar-sub-link-color;
@@ -124,8 +124,8 @@
         display: block;
         clear: both;
         .padding(@quarter-spacing-unit, @half-spacing-unit+@eighth-spacing-unit);
-        white-space: nowrap; // prevent links from randomly breaking onto new lines 
-        
+        white-space: nowrap; // prevent links from randomly breaking onto new lines
+
         .icon, .octicons { .padding-right(@quarter-spacing-unit); }
 
         &:hover,
@@ -134,8 +134,8 @@
             background-color: @navbar-sub-bg-hover-color;
             .navbar-nav-sub-arrow { color: @navbar-sub-bg-hover-color; }
         }
-    
-        
+
+
     }
 
     > li:first-of-type > a { .border-top-radius(unit(@base-radius, px)); }
@@ -159,14 +159,14 @@
             > a {
                 background-color: @navbar-actions-sub-bg;
                 color: @navbar-actions-sub-link-color;
-                &:hover { 
+                &:hover {
                     background-color: @navbar-actions-sub-bg;
-                    color: @navbar-actions-sub-link-hover-color; 
+                    color: @navbar-actions-sub-link-hover-color;
                 }
             }
-            .navbar-nav-sub-arrow { 
+            .navbar-nav-sub-arrow {
                 .margin-left(-18);
-                @media only screen and (min-width: @screen-l-min) { 
+                @media only screen and (min-width: @screen-l-min) {
                     right: 0;
                     .margin-right(10); }
 
@@ -179,7 +179,7 @@
     bottom: 0;
     left: 0;
     position: fixed;
-    right: 0;    
+    right: 0;
     top: 0;
     z-index: 1015;
 }

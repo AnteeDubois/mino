@@ -10,7 +10,7 @@
 .breadcrumbs {
     background-color: @breadcrumb-bg;
     color: @breadcrumb-color;
-    
+
     display: block;
     @media only screen and (min-width: @screen-m-min) { display: inline-block; }
     float: left;
@@ -25,11 +25,11 @@
         width: 100%;
         @media only screen and (min-width: @screen-m-min) { width: auto; }
         > span { color: @breadcrumb-color; }
-        a { 
+        a {
             .padding(@quarter-spacing-unit, @half-spacing-unit);
             @media only screen and (min-width: @screen-m-min) { .padding-right(@half-spacing-unit+@eighth-spacing-unit); }
-            color: @breadcrumb-link-color; 
-            &:hover { color: @breadcrumb-link-hover-color; }  
+            color: @breadcrumb-link-color;
+            &:hover { color: @breadcrumb-link-hover-color; }
         }
     }
 
@@ -41,8 +41,8 @@
  *
  * We need a wrapper to span page length and apply a grid
  */
-.breadcrumbs-wrap { 
-    background-color: @breadcrumb-bg; 
+.breadcrumbs-wrap {
+    background-color: @breadcrumb-bg;
     border-top: 1px solid @breadcrumb-border-color;
     border-bottom: 1px solid @breadcrumb-border-color;
 
@@ -63,7 +63,7 @@
     @media only screen and (min-width: @screen-m-min) { margin: 0 0 -2px; }
     .pull-left { 
         border-right: 1px solid @breadcrumb-border-color;
-        @media only screen and (min-width: @screen-m-min) { border-right: 0; } 
+        @media only screen and (min-width: @screen-m-min) { border-right: 0; }
     }
 }
 
@@ -76,9 +76,9 @@
     display: block;
     @media only screen and (min-width: @screen-m-min) { display: none; }
     width: 80%;
-    .icon { 
-        .font-size(@half-spacing-unit); 
-        
+    .icon {
+        .font-size(@half-spacing-unit);
+
         .padding-right(@quarter-spacing-unit);
         position: relative;
         top: unit(@quarter-spacing-unit - 1, px);
@@ -97,7 +97,7 @@
     margin: 0;
     > ul {
         // enables momentum scrolling in iOS overflow elements
-        -webkit-overflow-scrolling: touch; 
+        -webkit-overflow-scrolling: touch;
         // improves performance issues on mobile
         -webkit-backface-visibility: hidden;
         -webkit-perspective: 1000;
@@ -125,8 +125,8 @@
             }
 
             @media only screen and (min-width: @screen-m-min) { &:last-of-type:before { .padding-right(@half-spacing-unit+@eighth-spacing-unit); } }
-            
-            a { 
+
+            a {
                 display: block;
                 @media only screen and (min-width: @screen-m-min) { display: inline-block; }
                 padding: 0;
@@ -145,4 +145,4 @@
  */
 
 
-    
+

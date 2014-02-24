@@ -18,29 +18,29 @@
  */
 .btn {
     /* Text */
-    font-size: 100%;                                                                /* [1] */
-    font-family: inherit;                                                           /* [1] */
-    font-weight: normal;                                                            /* [1] */
-    line-height: normal;                                                            /* [1] */
-    letter-spacing: 1px;                                                            /* [1] */
-    vertical-align: middle;                                                         /* [2] */
-    white-space: nowrap;                                                            /* [3] */
-    -webkit-font-smoothing: subpixel-antialiased;                                   /* [7] */
+    font-size: 100%;                                                        // [1]
+    font-family: inherit;                                                   // [1]
+    font-weight: normal;                                                    // [1]
+    line-height: normal;                                                    // [1]
+    letter-spacing: 1px;                                                    // [1]
+    vertical-align: middle;                                                 // [2]
+    white-space: nowrap;                                                    // [3]
+    -webkit-font-smoothing: subpixel-antialiased;                           // [7]
 
-    /* Decoration */               
-    background-color: @button-default-bg;                                           /* [4] */
-    background-image: none;                                                         /* [5] */ 
-    border: @button-default-border;                                                 /* [4] */
-    border-radius: unit(@button-default-border-radius, px);                         /* [4] */
-    color: @button-default-color;                                                   /* [4] */
-    cursor: pointer;                                                                /* [6] */
+    /* Decoration */
+    background-color: @button-default-bg;                                   // [4]
+    background-image: none;                                                 // [5]
+    border: @button-default-border;                                         // [4]
+    border-radius: unit(@button-default-border-radius, px);                 // [4]
+    color: @button-default-color;                                           // [4]
+    cursor: pointer;                                                        // [6]
     .transition(.25s linear);
-    /* Layout */                
-    display: inline-block;                                                          /* [7] */
-    .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);         /* [8] */
-            
-    &:hover {           
-        text-decoration: none;                                                      /* [9] */
+    /* Layout */
+    display: inline-block;                                                  // [7]
+    .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit); // [8]
+
+    &:hover {
+        text-decoration: none;                                              // [9]
         background-color: darken(@button-default-bg, 8%);
         color: @button-default-color;
     }
@@ -53,31 +53,33 @@
         .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
     }
 
-    /**
-    * Button Clear
-    *
-    * Inverts the button effect where it is outlined instead at first and on hover is filled in as in IOS7
-    */
-    &.clear {
-        background: none;
-        border: @button-clear-border;
-        color: @button-default-bg;
 
-        .padding(@half-spacing-unit - 2, @half-spacing-unit+@quarter-spacing-unit - 2);
-
-        &:hover, &:focus { 
-            background: @button-default-bg;  
-            color: @button-default-color;
-        }
-        &:active, &.active {
-            border-color: mix(@button-default-bg, black, 85%);
-            background: mix(@button-default-bg, black, 85%);
-            color: rgba(255, 255, 255, 0.75);
-            .box-shadow(none);
-        }
-    }
 
     span { .margin-left(@quarter-spacing-unit); }
+}
+/**
+ * Button Clear
+ *
+ * Inverts the button effect where it is outlined instead at first and on hover
+ * is filled in as in IOS7
+ */
+.btn.clear {
+    background: none;
+    border: @button-clear-border;
+    color: @button-default-bg;
+
+    .padding(@half-spacing-unit - 2, @half-spacing-unit+@quarter-spacing-unit - 2);
+
+     &:hover, &:focus {
+        background: @button-default-bg;
+        color: @button-default-color;
+    }
+    &:active, &.active {
+        border-color: mix(@button-default-bg, black, 85%);
+        background: mix(@button-default-bg, black, 85%);
+        color: rgba(255, 255, 255, 0.75);
+        .box-shadow(none);
+    }
 }
 
 /**
@@ -116,9 +118,9 @@
 .btn-reddit {
     color: @black !important;
     background-color: @social-reddit !important;
-    &:hover { 
+    &:hover {
         color: @white !important;
-        background-color: mix(@social-reddit, @black, 70%) !important; 
+        background-color: mix(@social-reddit, @black, 70%) !important;
     }
 }
 

@@ -4,7 +4,7 @@
 
 /**
  * Badge main class
- * 
+ *
  * applying the styles for badges
  */
 .badge {
@@ -22,11 +22,10 @@
     display: inline-block;
     min-width: 20px;
     .padding(2);
-    //    .padding(@eighth-spacing-unit, @quarter-spacing-unit);
 
     // Empty badges collapse automatically (not available in IE8)
     &:empty { display: none; }
-    
+
     [href] & {
         float: left;
         position: absolute;
@@ -41,7 +40,7 @@
             text-decoration: none;
 
             color: @badge-link-hover-color;
-        
+
             cursor: pointer;
         }
     }

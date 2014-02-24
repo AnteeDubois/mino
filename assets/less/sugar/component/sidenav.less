@@ -7,7 +7,7 @@
  *
  * This is main class for establishing the sidenav section.
  */
-.sidenav { 
+.sidenav {
     background-color: @sidenav-bg;
 
     display: inline-block;
@@ -15,10 +15,10 @@
     left: unit(-@sidenav-width, px);
     margin: 0;
     position: absolute;
-    width: 0;    
+    width: 0;
 
     // enables momentum scrolling in iOS overflow elements
-    -webkit-overflow-scrolling: touch; 
+    -webkit-overflow-scrolling: touch;
     // improves performance issues on mobile
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
@@ -31,26 +31,26 @@
  */
 .sidenav-menu {
     .padding(@double-spacing-unit, 0);
-    
+
     margin: 0;
     > li {
         display: block;
         .margin(@base-spacing-unit - @quarter-spacing-unit, 0, 0);
         position: relative;
-        
+
         > a {
             outline: 0;
-    
+
             color: @sidenav-link-color;
-    
+
             display: block;
             .padding(0, 0, @half-spacing-unit);
             .margin(0, @half-spacing-unit+@eighth-spacing-unit);
 
-            &:hover { color: @sidenav-link-hover-color; }    
+            &:hover { color: @sidenav-link-hover-color; }
         }
 
-        span { 
+        span {
             display: inline-block;
             .margin-left(@half-spacing-unit);
             position: relative;
@@ -69,9 +69,9 @@
             }
         }
 
-        .icon.icon-chevron-down { 
+        .icon.icon-chevron-down {
             .font-size(@half-spacing-unit);
-                
+
             top: -4px;
         }
 
@@ -125,24 +125,24 @@
         text-decoration: none;
 
         color: @sidenav-sub-link-color;
-        
+
         display: block;
         .margin-bottom(@quarter-spacing-unit);
 
         &:hover span { text-decoration: underline; }
-        
+
         .is-active-sidenav { font-weight: bold; }
     }
 
 }
 
 /**
- * Outer Wrap
+ * Inner Wrap
  *
- * We need to do a little magic to one of our atoms 
+ * We need to do a little magic to one of our atoms
  * inorder for the menu effect to work.
  */
-.inner-wrap { 
+.inner-wrap {
     @media only screen and (max-width: @screen-m-min) {
         margin: 0;
         position: absolute;
@@ -154,15 +154,15 @@
 /**
  * Sidenav Active State Class
  *
- * Here we set the changes that need to occur to the 
+ * Here we set the changes that need to occur to the
  * various wrapping classes to display the sidenav.
  */
-body.is-active-sidenav { 
+body.is-active-sidenav {
     overflow-x: hidden;
     .sidenav {
         left: 0;
         position: absolute;
-        width: unit(@sidenav-width, px); 
+        width: unit(@sidenav-width, px);
         .transition(.3s all ease );
     }
 

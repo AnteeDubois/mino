@@ -5,7 +5,8 @@
 /**
  * Forums master Class
  *
- * Since we use alot of list elemetns not as intended we need a micro reset for them to make styling things easier
+ * Since we use a lot of list elements not as intended we need a micro reset
+ * for them to make styling things easier
  */
 .forums { margin: 0; }
 
@@ -26,10 +27,10 @@
  *
  * Individual forum class
  */
-.forum { 
-    @media (min-width: @screen-m-min) { 
-        .margin-top(@base-spacing-unit); 
-    } 
+.forum {
+    @media (min-width: @screen-m-min) {
+        .margin-top(@base-spacing-unit);
+    }
 }
 
 /**
@@ -43,7 +44,7 @@
 
     margin: 0;
 
-    > a { 
+    > a {
         .font-size(@base-font-size);
 
         color: @forums-name-link-color;
@@ -70,20 +71,19 @@
 
     .padding(@half-spacing-unit, @quarter-spacing-unit, @half-spacing-unit, @quarter-spacing-unit + @eighth-spacing-unit);
     @media (min-width: @screen-m-min) { .padding(0); }
-    
+
     @media (min-width: @screen-m-min) { &:last-of-type { .border-bottom-radius(unit(@base-radius, px)); } }
     //&:nth-child(even) { background-color: @forum-row-bg-alt; }
 
-    .label { 
+    .label {
         display: inline-block;
         color: @forum-title-label-color;
-        .margin-left(@quarter-spacing-unit); 
+        .margin-left(@quarter-spacing-unit);
         .margin-top(@quarter-spacing-unit);
 
-    }   
 
-    &:hover { 
-        background-color: @forum-row-hover-bg; 
+    &:hover {
+        background-color: @forum-row-hover-bg;
         .label { color: @forum-title-label-hover-color; }
     }
 }
@@ -106,7 +106,7 @@
 
     margin: 0;
 
-    > a { 
+    > a {
         color: @forum-title-link-color;
         &:hover { color: @forum-title-link-hover-color; }
     }
@@ -114,7 +114,7 @@
     .icon {
         .font-size(12);
         vertical-align: middle;
-        
+
         .margin-right(@quarter-spacing-unit);
     }
 }
@@ -130,7 +130,7 @@
     background-color: @base-link-color;
     border: 1px solid desaturate(darken(@base-link-color, 15%), 40%);//mix(@base-link-color, black, 90%);
     border-radius: 50%;
-    
+
     display: inline-block;
     height: unit(14, px);
     .margin(-2, @quarter-spacing-unit, 0, -@half-spacing-unit - @eighth-spacing-unit);
@@ -153,13 +153,13 @@
     @media (min-width: @screen-m-min) { line-height: 1.5; }
     letter-spacing: .06em;
     @media (min-width: @screen-m-min) { .text-overflow(); }
-    
+
     color: @forum-default-color;
 
     display: block;
     .margin-bottom(@quarter-spacing-unit);
     @media (min-width: @screen-m-min) { .margin-bottom(0);  }
-    .padding-top(@quarter-spacing-unit);    
+    .padding-top(@quarter-spacing-unit);
 }
 
 /**
@@ -182,7 +182,7 @@
 
             background-color: transparent;
             border-radius: 0;
-            
+
             clear: both;
             display: block;
             width: 105px;
@@ -190,14 +190,14 @@
             .margin-bottom(@quarter-spacing-unit);
             //&:last-of-type {.margin-bottom(0); }
 
-            > dfn { 
+            > dfn {
                 font-weight: 700;
                 font-style: normal;
 
                 color: @forum-stats-dfn-color;
 
                 float: left;
-                .padding-right(@half-spacing-unit); 
+                .padding-right(@half-spacing-unit);
             }
 
             > b {
@@ -208,7 +208,7 @@
                 .margin-top(-@eighth-spacing-unit);
                 .padding(@eighth-spacing-unit, @quarter-spacing-unit);
             }
-        }  
+        }
     }
 }
 

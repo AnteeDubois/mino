@@ -12,7 +12,7 @@ input[type="file"].form-control {
 	.box-shadow(none);
 	.transition(~"border .25s linear, color .25s linear, background-color .25s linear");
 	-webkit-appearance: none;
-	
+
 	.padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
 	height: unit(@beta, px);
 
@@ -29,15 +29,12 @@ input[type="file"].form-control {
 
 		cursor: default;
 	}
-
+	.placeholder(@form-color);
 	.form-control-focus(@form-border-focus);
-    .placeholder(@form-color);
-
-	// Reset height for `textarea`s
-  	textarea& {
-    	height: auto;
-  	}
 }
+
+// Reset height for `textarea`s
+textarea.form-control { height: auto; }
 
 input[type="file"].form-control { .padding-top(9); }
 
