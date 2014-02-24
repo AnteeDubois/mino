@@ -162,31 +162,31 @@
 @base-bg-color:                             @white;
 
 // Base line height
-@base-line-height-ratio:                    1.25; 
+@base-line-height-ratio:                    1.25;
 @base-line-height:                          floor((@base-font-size * @base-line-height-ratio));
 
 // Base Heading Values
 @giga:                                      110;
 @mega:                                      87;
-@kilo:                                      68; 
-            
-@h1-size:                                   54; 
-@h2-size:                                   42; 
-@h3-size:                                   36; 
-@h4-size:                                   24; 
-@h5-size:                                   21; 
-@h6-size:                                   18; 
-                    
-@milli:                                     12; 
-@micro:                                     10; 
-                    
+@kilo:                                      68;
+
+@h1-size:                                   54;
+@h2-size:                                   42;
+@h3-size:                                   36;
+@h4-size:                                   24;
+@h5-size:                                   21;
+@h6-size:                                   18;
+
+@milli:                                     12;
+@micro:                                     10;
+
 @alpha:                                     @h1-size;
 @beta:                                      @h2-size;
 @gamma:                                     @h3-size;
 @delta:                                     @h4-size;
 @epsilon:                                   @h5-size;
 @zeta:                                      @h6-size;
-    
+
 @base-heading-family:                       @base-font-family;
 @base-heading-weight:                       700;
 @base-heading-color:                        @black;
@@ -241,15 +241,15 @@
 @nonuple-spacing-unit:                      (@base-spacing-unit * 8);       // 192
 @octuple-spacing-unit:                      (@base-spacing-unit * 7);       // 168
 @sextuple-spacing-unit:                     (@base-spacing-unit * 6);       // 144
-@quintuple-spacing-unit:                    (@base-spacing-unit * 5);       // 120 
-@quadruple-spacing-unit:                    (@base-spacing-unit * 4);       // 96 
-@triple-spacing-unit:                       (@base-spacing-unit * 3);       // 72 
+@quintuple-spacing-unit:                    (@base-spacing-unit * 5);       // 120
+@quadruple-spacing-unit:                    (@base-spacing-unit * 4);       // 96
+@triple-spacing-unit:                       (@base-spacing-unit * 3);       // 72
 @double-spacing-unit:                       (@base-spacing-unit * 2);       // 48
 
 // Small units
 @half-spacing-unit:                         (@base-spacing-unit / 2);       // 12
 @quarter-spacing-unit:                      (@base-spacing-unit / 4);       // 6
-@eighth-spacing-unit:                       ceil((@base-spacing-unit / 8)); // 3   
+@eighth-spacing-unit:                       ceil((@base-spacing-unit / 8)); // 3
 
 //--------------------------------------------------------------------------//
 //  $CORE & ATOMS
@@ -260,20 +260,19 @@
 @code-border-radius:                        @base-radius;
 @code-color:                                #c7254e;
 @code-bg:                                   #f9f2f4;
-    
+
 // Pre
 @pre-bg:                                    #f5f5f5;
 @pre-color:                                 @black;
 @pre-border-radius:                         @base-radius;
 @pre-border-size:                           2;
 @pre-border-color:                          @base-ui-color;
-    
 @pre-prettyprint-color:                     @white;
 @pre-prettyprint-bg:                        @black;
 @pre-prettyprint-border-size:               1;
 @pre-prettyprint-border-color:              darken(@white, 15%);
 @pre-prettyprint-border-radius:             @base-radius-medium;
-    
+
 // Table
 @table-heading-bg:                          @white-dark;
 @table-heading-color:                       @black;
@@ -281,7 +280,7 @@
 @table-accent-bg:                           #f9f9f9;
 @table-border-color:                        @white-darkest;
 @table-border-size:                         2;
-    
+
 // Form
 @form-color:                                @base-ui-color;
 @form-bg:                                   @white;
@@ -289,7 +288,7 @@
 @form-border-size:                          2;
 @form-disabled-color:                       @gray-light;
 @form-border-focus:                         #66afe9;
-    
+
 // Image
 @img-bg:                                    @white;
 @img-border-color:                          @white-darkest;
@@ -302,9 +301,9 @@
 //------------------------------------//
 
 @small:                                     480;  // Small screen | Phone
-@medium:                                    768;  // Medium screen | tablet
-@large:                                     984;  // Large screen | desktop
-@wide:                                      1200; // Wide screen | wide desktop
+@medium:                                    720;  // Medium screen | tablet
+@large:                                     980;  // Large screen | desktop
+@wide:                                      1140; // Wide screen | wide desktop
 
 // Different breakpoints for the project.
 @screen-s-min:                              unit((@small/@base-font-size), em);  // Small screen | phone
@@ -323,8 +322,8 @@
 @grid-gutter-width:                         @base-spacing-unit;
 
 // Different Grid sizes for the project.
-@container-s:                               100%;                                                     // Small screen | Phone
-@container-m:                               unit(((720 + @grid-gutter-width)/@base-font-size), em);   // Medium screen | tablet
-@container-l:                               unit(((936 + @grid-gutter-width)/@base-font-size), em);   // Large screen | desktop
-@container-w:                               unit(((1140 + @grid-gutter-width)/@base-font-size), em);  // Wide screen | wide desktop
+@container-s:                               100%;                                // Small screen | Phone
+@container-m:                               unit(((@medium+@grid-gutter-width)/@base-font-size), em); // Medium screen | tablet
+@container-l:                               unit(((@large+@grid-gutter-width)/@base-font-size), em);  // Large screen | desktop
+@container-w:                               unit(((@wide+@grid-gutter-width)/@base-font-size), em);   // Wide screen | wide desktop
 
