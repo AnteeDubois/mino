@@ -14,7 +14,7 @@ body {
   background-color: #222222;
   color: #808080;
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   body {
     font-size: 1em;
     line-height: 1.375;

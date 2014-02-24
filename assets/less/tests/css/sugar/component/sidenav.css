@@ -51,10 +51,10 @@
 .sidenav-menu > li .octicons {
   font-size: 24px;
   font-size: 1.5em;
-  top: 0;
 }
 .sidenav-menu > li .sidenav-menu-sub .icon,
-.sidenav-menu > li .sidenav-menu-sub .octicons {
+.sidenav-menu > li .sidenav-menu-sub .octicons,
+.sidenav-menu > li .sidenav-menu-sub .forum-icon {
   font-size: 16px;
   font-size: 1em;
   text-decoration: none;
@@ -140,12 +140,12 @@
   font-weight: bold;
 }
 /**
- * Outer Wrap
+ * Inner Wrap
  *
- * We need to do a little magic to one of our atoms 
+ * We need to do a little magic to one of our atoms
  * inorder for the menu effect to work.
  */
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 45em) {
   .inner-wrap {
     margin: 0;
     position: absolute;
@@ -157,7 +157,7 @@
 /**
  * Sidenav Active State Class
  *
- * Here we set the changes that need to occur to the 
+ * Here we set the changes that need to occur to the
  * various wrapping classes to display the sidenav.
  */
 body.is-active-sidenav {

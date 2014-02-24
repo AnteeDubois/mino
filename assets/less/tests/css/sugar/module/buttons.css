@@ -18,50 +18,28 @@
 .btn {
   /* Text */
   font-size: 100%;
-  /* [1] */
   font-family: inherit;
-  /* [1] */
   font-weight: normal;
-  /* [1] */
   line-height: normal;
-  /* [1] */
   letter-spacing: 1px;
-  /* [1] */
   vertical-align: middle;
-  /* [2] */
   white-space: nowrap;
-  /* [3] */
   -webkit-font-smoothing: subpixel-antialiased;
-  /* [7] */
   /* Decoration */
   background-color: #f4726d;
-  /* [4] */
   background-image: none;
-  /* [5] */
   border: 0;
-  /* [4] */
   border-radius: 5px;
-  /* [4] */
   color: #ffffff;
-  /* [4] */
   cursor: pointer;
-  /* [6] */
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
   /* Layout */
   display: inline-block;
-  /* [7] */
   padding: 12px 18px;
-  /* [8] */
-  /**
-    * Button Clear
-    *
-    * Inverts the button effect where it is outlined instead at first and on hover is filled in as in IOS7
-    */
 }
 .btn:hover {
   text-decoration: none;
-  /* [9] */
   background-color: #f14d47;
   color: #ffffff;
 }
@@ -74,6 +52,15 @@
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
+.btn span {
+  margin-left: 6px;
+}
+/**
+ * Button Clear
+ *
+ * Inverts the button effect where it is outlined instead at first and on hover
+ * is filled in as in IOS7
+ */
 .btn.clear {
   background: none;
   border: 2px solid #f4726d;
@@ -92,9 +79,6 @@
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-.btn span {
-  margin-left: 6px;
 }
 /**
  * Button font-size modifiers.

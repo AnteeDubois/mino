@@ -28,6 +28,22 @@ fieldset[disabled] input[type="file"].form-control {
   color: #e0e0e0;
   cursor: default;
 }
+.form-control:-moz-placeholder,
+input[type="file"].form-control:-moz-placeholder {
+  color: #b3b3b3;
+}
+.form-control::-moz-placeholder,
+input[type="file"].form-control::-moz-placeholder {
+  color: #b3b3b3;
+}
+.form-control:-ms-input-placeholder,
+input[type="file"].form-control:-ms-input-placeholder {
+  color: #b3b3b3;
+}
+.form-control::-webkit-input-placeholder,
+input[type="file"].form-control::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
 .form-group.focus .form-control,
 .form-group.focus input[type="file"].form-control,
 .form-control:focus,
@@ -61,24 +77,7 @@ input[type="file"].form-control:focus:-ms-input-placeholder {
 input[type="file"].form-control:focus::-webkit-input-placeholder {
   color: #f79592;
 }
-.form-control:-moz-placeholder,
-input[type="file"].form-control:-moz-placeholder {
-  color: #b3b3b3;
-}
-.form-control::-moz-placeholder,
-input[type="file"].form-control::-moz-placeholder {
-  color: #b3b3b3;
-}
-.form-control:-ms-input-placeholder,
-input[type="file"].form-control:-ms-input-placeholder {
-  color: #b3b3b3;
-}
-.form-control::-webkit-input-placeholder,
-input[type="file"].form-control::-webkit-input-placeholder {
-  color: #b3b3b3;
-}
-textarea.form-control,
-textareainput[type="file"].form-control {
+textarea.form-control {
   height: auto;
 }
 input[type="file"].form-control {

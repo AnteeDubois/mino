@@ -15,7 +15,7 @@ h1,
   font-size: 2em;
   line-height: 1.25;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   h1,
   .h1,
   .alpha {
@@ -24,7 +24,7 @@ h1,
     line-height: 1.125;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   h1,
   .h1,
   .alpha {
@@ -40,7 +40,7 @@ h2,
   font-size: 1.625em;
   line-height: 1.15384615;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   h2,
   .h2,
   .beta {
@@ -49,7 +49,7 @@ h2,
     line-height: 1.25;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   h2,
   .h2,
   .beta {
@@ -64,7 +64,7 @@ h3,
   font-size: 1.375em;
   line-height: 1.3636364;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   h3,
   .h3,
   .gamma {
@@ -73,7 +73,7 @@ h3,
     line-height: 1.25;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   h3,
   .h3,
   .gamma {
@@ -88,14 +88,14 @@ h4,
   font-size: 1.125em;
   line-height: 1.111111111;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   h4,
   .h4,
   .delta {
     line-height: 1.222222222;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   h4,
   .h4,
   .delta {

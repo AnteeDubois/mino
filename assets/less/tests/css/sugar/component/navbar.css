@@ -75,12 +75,12 @@
   padding-top: 8px;
   width: 300px;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .navbar-nav-search {
     width: 130px;
   }
 }
-@media only screen and (min-width: 61.5em) {
+@media only screen and (min-width: 61.25em) {
   .navbar-nav-search {
     width: 250px;
   }
@@ -131,7 +131,7 @@
   color: #f79592;
   margin: -18px 0px 0px;
 }
-@media only screen and (min-width: 61.5em) {
+@media only screen and (min-width: 61.25em) {
   .navbar-nav-sub-arrow {
     margin: -20px 0px 0px;
   }
@@ -220,7 +220,7 @@
 .dropdown-menu.actions-sub > li .navbar-nav-sub-arrow {
   margin-left: -18px;
 }
-@media only screen and (min-width: 61.5em) {
+@media only screen and (min-width: 61.25em) {
   .dropdown-menu.actions-sub > li .navbar-nav-sub-arrow {
     right: 0;
     margin-right: 10px;

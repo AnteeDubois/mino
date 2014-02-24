@@ -3,8 +3,8 @@
         <article class="grid">
             <div class="grid-row">
                 <div class="footbar-brand text-center grid-s-12 grid-m-3">
-                    <a class="brand" href="" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo-condensed.png" alt="PHPBB | Creating Communities"> <span class="sr-only">phpBB</span></a>
-                </div>            
+                    <a class="brand" href="" title="PHPBB | Creating Communities"><img class="brand-logo" src="assets/img/logo-condensed-phpbb.png" alt="PHPBB | Creating Communities"> <span class="sr-only">phpBB</span></a>
+                </div>
                 <div class="footbar-nav grid-s-12 grid-m-9">
                     <ul class="list-inline">
                         <li class="dropdown">
@@ -27,7 +27,7 @@
                             </ul>
                         </li>
                         <li><a href="#" title="Faq">Faq</a></li>
-                        <li><a href="#" title="The Team">The Team</a></li>  
+                        <li><a href="#" title="The Team">The Team</a></li>
                         <li><a href="#" title="Delete Cookies">Delete Cookies</a></li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@
             <div class="footbar-copyright grid-row text-center">
                 Powered by <a href="">phpBB®</a> Forum Software © phpBB Group<br />All times are GMT+00:00 | Time : 0.646s | 20 Queries | GZIP : On
             </div>
-        </article>            
-    </section>                        
+        </article>
+    </section>
 </footer>
 

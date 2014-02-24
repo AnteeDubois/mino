@@ -30,7 +30,7 @@
   /* Layout */
   padding: 12px 6px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .grid-paint {
     padding: 12px;
   }

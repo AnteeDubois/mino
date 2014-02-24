@@ -414,10 +414,10 @@ html {
 body {
   font-size: 1em;
   line-height: 1.25;
-  background-color: #222222;
+  background-color: #cadceb;
   color: #808080;
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   body {
     font-size: 1em;
     line-height: 1.375;
@@ -490,7 +490,7 @@ h1,
   font-size: 2em;
   line-height: 1.25;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   h1,
   .h1,
   .alpha {
@@ -499,7 +499,7 @@ h1,
     line-height: 1.125;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   h1,
   .h1,
   .alpha {
@@ -515,7 +515,7 @@ h2,
   font-size: 1.625em;
   line-height: 1.15384615;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   h2,
   .h2,
   .beta {
@@ -524,7 +524,7 @@ h2,
     line-height: 1.25;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   h2,
   .h2,
   .beta {
@@ -539,7 +539,7 @@ h3,
   font-size: 1.375em;
   line-height: 1.3636364;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   h3,
   .h3,
   .gamma {
@@ -548,7 +548,7 @@ h3,
     line-height: 1.25;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   h3,
   .h3,
   .gamma {
@@ -563,14 +563,14 @@ h4,
   font-size: 1.125em;
   line-height: 1.111111111;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   h4,
   .h4,
   .delta {
     line-height: 1.222222222;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   h4,
   .h4,
   .delta {
@@ -746,7 +746,7 @@ dd {
  * 3. Remove outline on focus
  */
 a {
-  color: #f4726d;
+  color: #105289;
   text-decoration: none;
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -754,7 +754,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #f79592;
+  color: #bc2a4d;
 }
 a:focus {
   outline: none;
@@ -1030,7 +1030,7 @@ fieldset[disabled] input {
 select:focus,
 textarea:focus,
 input:focus {
-  border-color: #f4726d;
+  border-color: #105289;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1041,7 +1041,7 @@ input:focus {
 select:focus:-moz-placeholder,
 textarea:focus:-moz-placeholder,
 input:focus:-moz-placeholder {
-  color: #f4726d;
+  color: #105289;
 }
 .form-group.focus select::-moz-placeholder,
 .form-group.focus textarea::-moz-placeholder,
@@ -1049,7 +1049,7 @@ input:focus:-moz-placeholder {
 select:focus::-moz-placeholder,
 textarea:focus::-moz-placeholder,
 input:focus::-moz-placeholder {
-  color: #f4726d;
+  color: #105289;
 }
 .form-group.focus select:-ms-input-placeholder,
 .form-group.focus textarea:-ms-input-placeholder,
@@ -1057,7 +1057,7 @@ input:focus::-moz-placeholder {
 select:focus:-ms-input-placeholder,
 textarea:focus:-ms-input-placeholder,
 input:focus:-ms-input-placeholder {
-  color: #f4726d;
+  color: #105289;
 }
 .form-group.focus select::-webkit-input-placeholder,
 .form-group.focus textarea::-webkit-input-placeholder,
@@ -1065,7 +1065,7 @@ input:focus:-ms-input-placeholder {
 select:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder,
 input:focus::-webkit-input-placeholder {
-  color: #f4726d;
+  color: #105289;
 }
 select:-moz-placeholder,
 textarea:-moz-placeholder,

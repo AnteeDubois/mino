@@ -51,12 +51,12 @@
   padding-left: 6px;
   padding-right: 6px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .list-inline {
     /**
          * Inline Description Lists
-         * Defaults to being stacked without any of the below styles applied, until the
-         * grid breakpoint is reached (default of ~768px).
+         * Defaults to being stacked without any of the below styles applied,
+         * until the grid breakpoint is reached (default of ~768px).
          */
   }
   .list-inline > dt {

@@ -41,7 +41,8 @@
 /**
  * Github Octicon Classes
  *
- * per disscussion Github Octicons are released as is free to use (https://github.com/octokit/octokit.objc/issues/108#issuecomment-24928525)
+ * per disscussion Github Octicons are released as is free to use
+ * (https://github.com/octokit/octokit.objc/issues/108#issuecomment-24928525)
  */
 .octicons-alert:before {
   content: "\f02d";
@@ -607,7 +608,8 @@
 /**
  * Font-Awsome Classes
  *
- * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome) Licensed under MIT.
+ * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome)
+ * Licensed under MIT.
  */
 .icon-IE:before {
   content: "\e76c";
@@ -1787,51 +1789,29 @@
 .btn {
   /* Text */
   font-size: 100%;
-  /* [1] */
   font-family: inherit;
-  /* [1] */
   font-weight: normal;
-  /* [1] */
   line-height: normal;
-  /* [1] */
   letter-spacing: 1px;
-  /* [1] */
   vertical-align: middle;
-  /* [2] */
   white-space: nowrap;
-  /* [3] */
   -webkit-font-smoothing: subpixel-antialiased;
-  /* [7] */
   /* Decoration */
-  background-color: #f4726d;
-  /* [4] */
+  background-color: #105289;
   background-image: none;
-  /* [5] */
   border: 0;
-  /* [4] */
   border-radius: 5px;
-  /* [4] */
   color: #ffffff;
-  /* [4] */
   cursor: pointer;
-  /* [6] */
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
   /* Layout */
   display: inline-block;
-  /* [7] */
   padding: 12px 18px;
-  /* [8] */
-  /**
-    * Button Clear
-    *
-    * Inverts the button effect where it is outlined instead at first and on hover is filled in as in IOS7
-    */
 }
 .btn:hover {
   text-decoration: none;
-  /* [9] */
-  background-color: #f14d47;
+  background-color: #0c3c64;
   color: #ffffff;
 }
 .btn:active,
@@ -1843,27 +1823,33 @@
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
+.btn span {
+  margin-left: 6px;
+}
+/**
+ * Button Clear
+ *
+ * Inverts the button effect where it is outlined instead at first and on hover
+ * is filled in as in IOS7
+ */
 .btn.clear {
   background: none;
-  border: 2px solid #f4726d;
-  color: #f4726d;
+  border: 2px solid #105289;
+  color: #105289;
   padding: 10px 16px;
 }
 .btn.clear:hover,
 .btn.clear:focus {
-  background: #f4726d;
+  background: #105289;
   color: #ffffff;
 }
 .btn.clear:active,
 .btn.clear.active {
-  border-color: #cf615d;
-  background: #cf615d;
+  border-color: #0e4674;
+  background: #0e4674;
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-.btn span {
-  margin-left: 6px;
 }
 /**
  * Button font-size modifiers.
@@ -2191,7 +2177,7 @@
 \*------------------------------------*/
 /**
  * Badge main class
- * 
+ *
  * applying the styles for badges
  */
 .badge {
@@ -2202,7 +2188,7 @@
   vertical-align: middle;
   white-space: nowrap;
   -webkit-font-smoothing: auto;
-  background-color: #b75652;
+  background-color: #bc2a4d;
   border-radius: 10px;
   color: #ffffff;
   display: inline-block;
@@ -2222,7 +2208,7 @@
 .badge [href]:hover,
 .badge [href]:focus {
   text-decoration: none;
-  color: #ffffff;
+  color: #bc2a4d;
   cursor: pointer;
 }
 .btn .badge {
@@ -2242,19 +2228,19 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #808080;
+  background-color: #4c5d77;
   border-radius: 3px;
   color: #ffffff;
   display: inline;
   padding: 3px 6px;
 }
 .label[href] {
-  background-color: #f4726d;
+  background-color: #105289;
 }
 .label[href]:hover,
 .label[href]:focus {
   text-decoration: none;
-  background-color: #f79592;
+  background-color: #bc2a4d;
   color: #ffffff;
   cursor: pointer;
 }
@@ -2269,7 +2255,7 @@
  */
 .label-group > p {
   font-size: 75%;
-  background-color: #808080;
+  background-color: #4c5d77;
   color: #ffffff;
   margin-right: -1px;
   padding: 3px 6px;
@@ -2351,8 +2337,8 @@
  * This is where we style the main class
  */
 .breadcrumbs {
-  background-color: #ffffff;
-  color: #f4726d;
+  background-color: #cadceb;
+  color: #4c5d77;
   display: block;
   float: left;
   margin: 0;
@@ -2360,13 +2346,9 @@
   position: relative;
   width: 100%;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs {
     display: inline-block;
-  }
-}
-@media only screen and (min-width: 48em) {
-  .breadcrumbs {
     padding-left: 12px;
   }
 }
@@ -2374,25 +2356,25 @@
   padding: 0;
   width: 100%;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs li {
     width: auto;
   }
 }
 .breadcrumbs li > span {
-  color: #f4726d;
+  color: #4c5d77;
 }
 .breadcrumbs li a {
   padding: 6px 12px;
-  color: #b3b3b3;
+  color: #105289;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs li a {
     padding-right: 15px;
   }
 }
 .breadcrumbs li a:hover {
-  color: #f4726d;
+  color: #bc2a4d;
 }
 .breadcrumbs .icon {
   font-size: 24px;
@@ -2404,19 +2386,13 @@
  * We need a wrapper to span page length and apply a grid
  */
 .breadcrumbs-wrap {
-  background-color: #ffffff;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  background-color: #cadceb;
+  border-top: 1px solid #b6c6d4;
+  border-bottom: 1px solid #b6c6d4;
 }
-@media (max-width: 48em) {
+@media (max-width: 45em) {
   .breadcrumbs-wrap .grid {
     padding: 0px;
-  }
-}
-@media (min-width: 48em) {
-  .breadcrumbs-wrap {
-    padding-top: 3px;
-    padding-bottom: 6px;
   }
 }
 /**
@@ -2429,20 +2405,16 @@
   float: none;
   margin: -1px 0 -5px;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-index {
     float: left;
-  }
-}
-@media only screen and (min-width: 48em) {
-  .breadcrumbs-index {
     margin: 0 0 -2px;
   }
 }
 .breadcrumbs-index .pull-left {
-  border-right: 1px solid #e6e6e6;
+  border-right: 1px solid #b6c6d4;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-index .pull-left {
     border-right: 0;
   }
@@ -2456,7 +2428,7 @@
   display: block;
   width: 80%;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-toggle {
     display: none;
   }
@@ -2480,7 +2452,7 @@
 .breadcrumbs-crumbs.is-active-breadcrumbs {
   display: inline-block;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-crumbs {
     display: inline-block;
   }
@@ -2491,22 +2463,18 @@
   -webkit-perspective: 1000;
   margin: 0px;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-crumbs > ul {
     margin-top: 3px;
   }
 }
 .breadcrumbs-crumbs > ul > li {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #b6c6d4;
   padding: 12px;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-crumbs > ul > li {
     border: 0;
-  }
-}
-@media only screen and (min-width: 48em) {
-  .breadcrumbs-crumbs > ul > li {
     padding: 0;
   }
 }
@@ -2514,25 +2482,17 @@
   content: "";
   padding: 0;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-crumbs > ul > li:before {
     font-size: 18px;
     font-size: 1.125em;
     font-family: 'octicons';
     vertical-align: middle;
-  }
-}
-@media only screen and (min-width: 48em) {
-  .breadcrumbs-crumbs > ul > li:before {
     content: "\f078";
-  }
-}
-@media only screen and (min-width: 48em) {
-  .breadcrumbs-crumbs > ul > li:before {
     padding: 0px 9px 0px 0px;
   }
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-crumbs > ul > li:last-of-type:before {
     padding-right: 15px;
   }
@@ -2542,18 +2502,10 @@
   padding: 0;
   width: 100%;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .breadcrumbs-crumbs > ul > li a {
     display: inline-block;
-  }
-}
-@media only screen and (min-width: 48em) {
-  .breadcrumbs-crumbs > ul > li a {
     padding: 9px 15px 6px 6px;
-  }
-}
-@media only screen and (min-width: 48em) {
-  .breadcrumbs-crumbs > ul > li a {
     width: auto;
   }
 }
@@ -2693,75 +2645,59 @@
  */
 .login {
   background-color: #ffffff;
-  border-bottom: 1px solid #b3b3b3;
+  border-bottom: 1px solid #105289;
   display: none;
   padding: 12px 0px;
 }
 .login.is-active-login {
   display: block;
 }
-.link {
-  background-color: #b3b3b3;
+.link,
+.link.label,
+.link.label[href],
+a .link.label,
+.link.badge,
+.link.btn {
+  background-color: #105289;
   color: #ffffff;
 }
-.link[href] {
+.link[href],
+.link.icon,
+.link.octicons,
+.link.clear {
   background-color: transparent;
-  color: #b3b3b3;
+  color: #105289;
+}
+.link.clear,
+.link.btn.clear {
+  border: 2px solid #105289;
+}
+.link.btn.clear {
+  color: #105289;
 }
 .link[href]:hover {
   background-color: transparent;
-  color: #f4726d;
-}
-.link.icon,
-.link.octicons {
-  background-color: transparent;
-  color: #b3b3b3;
-}
-.link.label {
-  background-color: #b3b3b3;
-  color: #ffffff;
-}
-.link.label[href],
-a .link.label {
-  background-color: #b3b3b3;
-  color: #ffffff;
+  color: #0076b1;
 }
 .link.label[href]:hover,
-a .link.label:hover {
-  background-color: #f4726d;
+a .link.label:hover,
+.link.btn.clear:hover,
+.link.btn.clear:focus {
+  background-color: #0076b1;
   color: #ffffff;
-}
-.link.badge {
-  background-color: #b3b3b3;
-  color: #ffffff;
-}
-.link.btn {
-  background-color: #b3b3b3;
-  color: #ffffff;
-}
-.link.btn:hover {
-  background-color: #9e9e9e;
-  color: #ffffff;
-}
-.link.btn.clear {
-  border: 2px solid #b3b3b3;
-  color: #b3b3b3;
 }
 .link.btn.clear:hover,
 .link.btn.clear:focus {
-  background: #f4726d;
-  border-color: #f4726d;
+  border-color: #0076b1;
+}
+.link.btn:hover {
+  background-color: #0c3c64;
   color: #ffffff;
 }
 .link.btn.clear:active,
 .link.btn.clear.active {
-  background: #d9d9d9;
+  background-color: #d9d9d9;
   border-color: #d9d9d9;
-}
-.link.clear {
-  background-color: transparent;
-  border: 2px solid #b3b3b3;
-  color: #b3b3b3;
 }
 /*------------------------------------*\
     $COMPONENT-NAVBAR
@@ -2772,11 +2708,11 @@ a .link.label:hover {
  * main navbar class to set some general styles
  */
 .navbar {
-  background-color: #f4726d;
-  color: #f4726d;
+  background-color: #0076b1;
+  color: #ffffff;
 }
 .navbar a {
-  color: #f79592;
+  color: #4098c5;
 }
 .navbar a:hover {
   color: #ffffff;
@@ -2840,47 +2776,47 @@ a .link.label:hover {
   padding-top: 8px;
   width: 300px;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 45em) {
   .navbar-nav-search {
     width: 130px;
   }
 }
-@media only screen and (min-width: 61.5em) {
+@media only screen and (min-width: 61.25em) {
   .navbar-nav-search {
     width: 250px;
   }
 }
 .navbar-nav-search > .search {
-  border-color: #f4726d;
-  color: #f4726d;
+  border-color: #0076b1;
+  color: #0076b1;
 }
 .navbar-nav-search > .search:-moz-placeholder {
-  color: #f4726d;
+  color: #0076b1;
 }
 .navbar-nav-search > .search::-moz-placeholder {
-  color: #f4726d;
+  color: #0076b1;
 }
 .navbar-nav-search > .search:-ms-input-placeholder {
-  color: #f4726d;
+  color: #0076b1;
 }
 .navbar-nav-search > .search::-webkit-input-placeholder {
-  color: #f4726d;
+  color: #0076b1;
 }
 .navbar-nav-search > .search:focus {
-  border-color: #f79592;
-  color: #f79592;
+  border-color: #4098c5;
+  color: #4098c5;
 }
 .navbar-nav-search > .search:focus:-moz-placeholder {
-  color: #f79592;
+  color: #4098c5;
 }
 .navbar-nav-search > .search:focus::-moz-placeholder {
-  color: #f79592;
+  color: #4098c5;
 }
 .navbar-nav-search > .search:focus:-ms-input-placeholder {
-  color: #f79592;
+  color: #4098c5;
 }
 .navbar-nav-search > .search:focus::-webkit-input-placeholder {
-  color: #f79592;
+  color: #4098c5;
 }
 /**
  * Navbar Nav Sub Arrow
@@ -2893,10 +2829,10 @@ a .link.label:hover {
   float: left;
   position: absolute;
   z-index: 1020;
-  color: #f79592;
+  color: #105289;
   margin: -18px 0px 0px;
 }
-@media only screen and (min-width: 61.5em) {
+@media only screen and (min-width: 61.25em) {
   .navbar-nav-sub-arrow {
     margin: -20px 0px 0px;
   }
@@ -2929,7 +2865,7 @@ a .link.label:hover {
   display: block;
 }
 .dropdown-menu > li > a {
-  background-color: #f79592;
+  background-color: #105289;
   color: #ffffff;
   display: block;
   clear: both;
@@ -2943,11 +2879,11 @@ a .link.label:hover {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #ffffff;
-  background-color: #f4726d;
+  background-color: #bc2a4d;
 }
 .dropdown-menu > li > a:hover .navbar-nav-sub-arrow,
 .dropdown-menu > li > a:focus .navbar-nav-sub-arrow {
-  color: #f4726d;
+  color: #bc2a4d;
 }
 .dropdown-menu > li:first-of-type > a {
   border-top-right-radius: 4px;
@@ -2958,7 +2894,7 @@ a .link.label:hover {
   border-bottom-left-radius: 4px;
 }
 .dropdown-menu .navbar-nav-sub-header {
-  background-color: #f4726d;
+  background-color: #0076b1;
   color: #ffffff;
   display: block;
   padding: 6px 15px;
@@ -2969,23 +2905,23 @@ a .link.label:hover {
   border-top-left-radius: 4px;
 }
 .dropdown-menu .navbar-nav-sub-header .navbar-nav-sub-arrow {
-  color: #f4726d;
+  color: #0076b1;
 }
 .dropdown-menu.actions-sub {
   margin-left: -137px;
 }
 .dropdown-menu.actions-sub > li > a {
   background-color: #ffffff;
-  color: #b3b3b3;
+  color: #105289;
 }
 .dropdown-menu.actions-sub > li > a:hover {
   background-color: #ffffff;
-  color: #f4726d;
+  color: #bc2a4d;
 }
 .dropdown-menu.actions-sub > li .navbar-nav-sub-arrow {
   margin-left: -18px;
 }
-@media only screen and (min-width: 61.5em) {
+@media only screen and (min-width: 61.25em) {
   .dropdown-menu.actions-sub > li .navbar-nav-sub-arrow {
     right: 0;
     margin-right: 10px;
@@ -3018,9 +2954,9 @@ a .link.label:hover {
 }
 .notification-sub > li {
   background-color: #ffffff;
-  border-bottom: 1px solid #f2f2f2;
-  border-right: 1px solid #f2f2f2;
-  border-left: 1px solid #f2f2f2;
+  border-bottom: 1px solid #ecf3f7;
+  border-right: 1px solid #ecf3f7;
+  border-left: 1px solid #ecf3f7;
   color: gray;
   padding: 6px 12px;
   display: block;
@@ -3037,14 +2973,14 @@ a .link.label:hover {
 }
 .notification-sub > li:first-of-type,
 .notification-sub > li:last-of-type {
-  background-color: #f4726d;
+  background-color: #0076b1;
   border: 0;
   color: #ffffff;
 }
 .notification-sub > li:first-of-type a,
 .notification-sub > li:last-of-type a {
   background-color: transparent;
-  color: #f79592;
+  color: #4098c5;
   clear: none;
   display: inline-block;
   padding: 0;
@@ -3076,7 +3012,7 @@ a .link.label:hover {
   width: 216px;
 }
 .notification-sub .navbar-nav-sub-arrow {
-  color: #f4726d;
+  color: #0076b1;
   margin-left: 386px;
 }
 /**
@@ -3094,10 +3030,10 @@ a .link.label:hover {
 }
 .notification-topic > a {
   font-weight: 700;
-  color: #f4726d;
+  color: #105289;
 }
 .notification-topic > a:hover {
-  color: #f79592;
+  color: #bc2a4d;
 }
 /**
  * Notification Status
@@ -3134,7 +3070,7 @@ a .link.label:hover {
  * This is main class for establishing the sidenav section.
  */
 .sidenav {
-  background-color: #f4726d;
+  background-color: #0076b1;
   display: inline-block;
   height: 100%;
   left: -260px;
@@ -3161,7 +3097,7 @@ a .link.label:hover {
 }
 .sidenav-menu > li > a {
   outline: 0;
-  color: #f79592;
+  color: #4098c5;
   display: block;
   padding: 0px 0px 12px;
   margin: 0px 15px;
@@ -3178,10 +3114,10 @@ a .link.label:hover {
 .sidenav-menu > li .octicons {
   font-size: 24px;
   font-size: 1.5em;
-  top: 0;
 }
 .sidenav-menu > li .sidenav-menu-sub .icon,
-.sidenav-menu > li .sidenav-menu-sub .octicons {
+.sidenav-menu > li .sidenav-menu-sub .octicons,
+.sidenav-menu > li .sidenav-menu-sub .forum-icon {
   font-size: 16px;
   font-size: 1em;
   text-decoration: none;
@@ -3207,36 +3143,36 @@ a .link.label:hover {
   margin-right: 15px;
 }
 .sidenav-search .search {
-  border-color: #f4726d;
-  color: #f4726d;
+  border-color: #0076b1;
+  color: #0076b1;
 }
 .sidenav-search .search:-moz-placeholder {
-  color: #f4726d;
+  color: #0076b1;
 }
 .sidenav-search .search::-moz-placeholder {
-  color: #f4726d;
+  color: #0076b1;
 }
 .sidenav-search .search:-ms-input-placeholder {
-  color: #f4726d;
+  color: #0076b1;
 }
 .sidenav-search .search::-webkit-input-placeholder {
-  color: #f4726d;
+  color: #0076b1;
 }
 .sidenav-search .search:focus {
-  border-color: #f79592;
-  color: #f79592;
+  border-color: #4098c5;
+  color: #4098c5;
 }
 .sidenav-search .search:focus:-moz-placeholder {
-  color: #f79592;
+  color: #4098c5;
 }
 .sidenav-search .search:focus::-moz-placeholder {
-  color: #f79592;
+  color: #4098c5;
 }
 .sidenav-search .search:focus:-ms-input-placeholder {
-  color: #f79592;
+  color: #4098c5;
 }
 .sidenav-search .search:focus::-webkit-input-placeholder {
-  color: #f79592;
+  color: #4098c5;
 }
 /**
  * Sidenav menu sub
@@ -3267,12 +3203,12 @@ a .link.label:hover {
   font-weight: bold;
 }
 /**
- * Outer Wrap
+ * Inner Wrap
  *
- * We need to do a little magic to one of our atoms 
+ * We need to do a little magic to one of our atoms
  * inorder for the menu effect to work.
  */
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 45em) {
   .inner-wrap {
     margin: 0;
     position: absolute;
@@ -3284,7 +3220,7 @@ a .link.label:hover {
 /**
  * Sidenav Active State Class
  *
- * Here we set the changes that need to occur to the 
+ * Here we set the changes that need to occur to the
  * various wrapping classes to display the sidenav.
  */
 body.is-active-sidenav {
@@ -3326,7 +3262,8 @@ body.is-active-sidenav .inner-wrap {
 /**
  * Forums master Class
  *
- * Since we use alot of list elemetns not as intended we need a micro reset for them to make styling things easier
+ * Since we use a lot of list elements not as intended we need a micro reset
+ * for them to make styling things easier
  */
 .forums {
   margin: 0;
@@ -3342,7 +3279,7 @@ body.is-active-sidenav .inner-wrap {
  *
  * used to assign forum to grid, breaks mobile first on purpose
  */
-@media (max-width: 48em) {
+@media (max-width: 45em) {
   .forums-wrap.grid {
     padding: 0px;
   }
@@ -3352,7 +3289,7 @@ body.is-active-sidenav .inner-wrap {
  *
  * Individual forum class
  */
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum {
     margin-top: 24px;
   }
@@ -3363,10 +3300,10 @@ body.is-active-sidenav .inner-wrap {
  * This is the header for each forum section
  */
 .forum-name {
-  background-color: #f4726d;
+  background-color: #0076b1;
   margin: 0;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-name {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
@@ -3388,22 +3325,22 @@ body.is-active-sidenav .inner-wrap {
  * Here we style the look of each forum row
  */
 .forum-row {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e6e6e6;
+  background-color: #ecf3f7;
+  border-bottom: 1px solid #d4dbde;
   padding: 12px 6px 12px 9px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-row {
-    border-right: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #d4dbde;
+    border-left: 1px solid #d4dbde;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-row {
     padding: 0px;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-row:last-of-type {
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3416,7 +3353,7 @@ body.is-active-sidenav .inner-wrap {
   margin-top: 6px;
 }
 .forum-row:hover {
-  background-color: #e6e6e6;
+  background-color: #f6f4d0;
 }
 .forum-row:hover .label {
   color: #ffffff;
@@ -3439,17 +3376,17 @@ body.is-active-sidenav .inner-wrap {
   font-size: 0.875em;
   margin: 0;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-title {
     font-size: 16px;
     font-size: 1em;
   }
 }
 .forum-title > a {
-  color: #f4726d;
+  color: #105289;
 }
 .forum-title > a:hover {
-  color: #f79592;
+  color: #bc2a4d;
 }
 .forum-title .icon {
   font-size: 12px;
@@ -3464,17 +3401,20 @@ body.is-active-sidenav .inner-wrap {
  */
 .forum-icon {
   vertical-align: middle;
-  background-color: #f4726d;
-  border: 1px solid #c05955;
+  background-color: #105289;
+  border: 1px solid #172835;
   border-radius: 50%;
   display: inline-block;
   height: 14px;
-  margin: -2px 6px 0px -15px;
+  margin: -2px 6px 0px 0px;
   margin-top: -2px;
   position: relative;
   width: 14px;
 }
-.forum-icon:first-of-type {
+.forum-title .forum-icon {
+  margin-left: -15px;
+}
+.forum-title .forum-icon:first-of-type {
   margin-left: 0;
 }
 /**
@@ -3488,17 +3428,17 @@ body.is-active-sidenav .inner-wrap {
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: .06em;
-  color: #666666;
+  color: #4c5d77;
   display: block;
   margin-bottom: 6px;
   padding-top: 6px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-description {
     line-height: 1.5;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-description {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -3506,7 +3446,7 @@ body.is-active-sidenav .inner-wrap {
     word-wrap: break-word;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-description {
     margin-bottom: 0px;
   }
@@ -3519,17 +3459,17 @@ body.is-active-sidenav .inner-wrap {
 .forum-details {
   margin-top: 5px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-details {
     padding-left: 20px;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   .forum-details {
     padding-left: 48px;
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 71.25em) {
   .forum-details {
     padding-left: 40px;
   }
@@ -3537,7 +3477,7 @@ body.is-active-sidenav .inner-wrap {
 .forum-details .forum-stat {
   display: inline-block;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .forum-details .forum-stat {
     text-align: right;
     background-color: transparent;
@@ -3551,12 +3491,12 @@ body.is-active-sidenav .inner-wrap {
   .forum-details .forum-stat > dfn {
     font-weight: 700;
     font-style: normal;
-    color: #808080;
+    color: #4c5d77;
     float: left;
     padding-right: 12px;
   }
   .forum-details .forum-stat > b {
-    background-color: #808080;
+    background-color: #4c5d77;
     border-radius: 3px;
     color: #ffffff;
     margin-top: -3px;
@@ -3586,12 +3526,12 @@ body.is-active-sidenav .inner-wrap {
   margin-right: auto;
   width: 244px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .info-stats {
     width: 627px;
   }
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   .info-stats {
     width: 751px;
   }
@@ -3599,31 +3539,31 @@ body.is-active-sidenav .inner-wrap {
 .info-stats > dd {
   text-align: center;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .info-stats > dd {
     text-align: left;
   }
 }
-@media (min-width: 48em) and (max-width: 61.5em) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .info-stats > dd {
     margin-left: 6px;
   }
 }
 .info-stats > dt {
-  color: #808080;
+  color: #4c5d77;
 }
 .info-stats > dd,
 .info-stats > dt {
   margin-bottom: 6px;
 }
-@media (min-width: 48em) and (max-width: 61.5em) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .info-stats > dd,
   .info-stats > dt {
     font-size: 12px;
     font-size: 0.75em;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .info-stats > dd,
   .info-stats > dt {
     margin-bottom: 0px;
@@ -3638,16 +3578,16 @@ body.is-active-sidenav .inner-wrap {
  * A simple wrapper to set full page color
  */
 .footbar-wrap {
-  background-color: #262626;
-  border-top: 1px solid #222222;
+  background-color: #ecf3f7;
+  border-top: 1px solid #d4dbde;
   color: #ffffff;
   padding: 24px;
 }
 .footbar-wrap a {
-  color: #444444;
+  color: #105289;
 }
 .footbar-wrap a:hover {
-  color: #f4726d;
+  color: #bc2a4d;
 }
 /**
  * Footbar Brand
@@ -3658,7 +3598,7 @@ body.is-active-sidenav .inner-wrap {
   height: 30px;
   margin-bottom: 6px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .footbar-brand .brand .brand-logo {
     margin-bottom: -10px;
   }
@@ -3675,7 +3615,7 @@ body.is-active-sidenav .inner-wrap {
 .footbar-nav > ul {
   margin: 0;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .footbar-nav > ul {
     float: right;
   }
@@ -3685,7 +3625,7 @@ body.is-active-sidenav .inner-wrap {
   margin: 0;
   padding: 0px 12px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .footbar-nav > ul > li {
     display: inline-block;
   }
@@ -3714,7 +3654,7 @@ body.is-active-sidenav .inner-wrap {
   color: #ffffff;
   margin: 339px 0px 0px 32px;
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   .footbar-sub-arrow {
     margin: 359px 0px 0px 32px;
   }
@@ -3729,14 +3669,14 @@ body.is-active-sidenav .inner-wrap {
   top: auto;
   margin: 0px 0px 73px -31px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .footbar-sub {
     margin: 0px 0px 33px -31px;
   }
 }
 .footbar-sub > li {
   background-color: #ffffff;
-  color: #808080;
+  color: #4c5d77;
   display: block;
   padding: 6px 15px;
   white-space: nowrap;
@@ -3750,7 +3690,7 @@ body.is-active-sidenav .inner-wrap {
   border-bottom-left-radius: 4px;
 }
 .footbar-sub .footbar-sub-header {
-  background-color: #262626;
+  background-color: #105289;
   color: #ffffff;
 }
 /**
@@ -3762,16 +3702,16 @@ body.is-active-sidenav .inner-wrap {
   font-size: 12px;
   font-size: 0.75em;
   text-transform: uppercase;
-  background-color: #222222;
-  border-top: 1px solid #1f1f1f;
-  color: #666666;
+  background-color: #cadceb;
+  border-top: 1px solid #b6c6d4;
+  color: #ffffff;
   padding: 24px;
 }
 .footbar-copyright-wrap a {
-  color: #444444;
+  color: #105289;
 }
 .footbar-copyright-wrap a:hover {
-  color: #f4726d;
+  color: #bc2a4d;
 }
 /**
  * Footbar Copyright

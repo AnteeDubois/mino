@@ -27,7 +27,7 @@
   height: 30px;
   margin-bottom: 6px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .footbar-brand .brand .brand-logo {
     margin-bottom: -10px;
   }
@@ -44,7 +44,7 @@
 .footbar-nav > ul {
   margin: 0;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .footbar-nav > ul {
     float: right;
   }
@@ -54,7 +54,7 @@
   margin: 0;
   padding: 0px 12px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .footbar-nav > ul > li {
     display: inline-block;
   }
@@ -83,7 +83,7 @@
   color: #ffffff;
   margin: 339px 0px 0px 32px;
 }
-@media (min-width: 61.5em) {
+@media (min-width: 61.25em) {
   .footbar-sub-arrow {
     margin: 359px 0px 0px 32px;
   }
@@ -98,7 +98,7 @@
   top: auto;
   margin: 0px 0px 73px -31px;
 }
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .footbar-sub {
     margin: 0px 0px 33px -31px;
   }

@@ -459,76 +459,49 @@
 
 // Color Variantes
 .color(@bg-color, @text-color: @white, @bg-hover-color: darken(@bg-color, 8%), @bg-active-color: mix(@bg-color, black, 85%), @bg-hover-color-clear: @bg-color) {
-    background-color: @bg-color;
-    color: @text-color;
-
-    &[href] { 
-        background-color: transparent;
-        color: @bg-color; 
-
-        &:hover {
-            background-color: transparent;
-            color: @bg-hover-color;
-        }
-    }
-
-    &.icon,
-    &.octicons { 
-        background-color: transparent;
-        color: @bg-color;
-    }
-
-    &.label { 
-        background-color: @bg-color;
-        color: @text-color;
-
-        &[href],
-        a & {
-           background-color: @bg-color;
-           color: @text-color;
-
-           &:hover { 
-                background-color: @bg-hover-color;
-                color: @text-color;
-            }
-        }
-    }
-
-    &.badge { 
-        background-color: @bg-color;
-        color: @text-color;
-    } 
-
+    &,
+    &.label,
+    &.label[href],
+    a &.label,
+    &.badge,
     &.btn {
         background-color: @bg-color;
         color: @text-color;
-
-        &:hover { 
-            background-color: darken(@bg-color, 8%);
-            color: @text-color;
-        }
-
-        &.clear {
-            border: 2px solid @bg-color;
-            color: @bg-color;
-
-            &:hover, &:focus {
-                background: @bg-hover-color-clear;
-                border-color: @bg-hover-color-clear;                 
-                color: @text-color;
-            }
-
-            &:active, &.active {
-                background: @bg-active-color;
-                border-color: @bg-active-color;                
-            }
-        }
     }
 
+    &[href],
+    &.icon,
+    &.octicons,
     &.clear {
         background-color: transparent;
-        border: 2px solid @bg-color;
         color: @bg-color;
+    }
+    &.clear, &.btn.clear { border: 2px solid @bg-color; }
+    &.btn.clear { color: @bg-color; }
+
+    &[href]:hover {
+        background-color: transparent;
+        color: @bg-hover-color;
+    }
+
+    &.label[href]:hover,
+    a &.label:hover,
+    &.btn.clear:hover,
+    &.btn.clear:focus {
+        background-color: @bg-hover-color;
+        color: @text-color;
+    }
+    &.btn.clear:hover, &.btn.clear:focus { border-color: @bg-hover-color; }
+
+    &.btn:hover {
+        background-color: darken(@bg-color, 8%);
+        color: @text-color;
+    }
+
+    &.btn.clear:active,
+    &.btn.clear.active {
+        background-color: @bg-active-color;
+        border-color: @bg-active-color;
     }
 }
 

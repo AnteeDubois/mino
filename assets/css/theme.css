@@ -1,194 +1,146 @@
 /*------------------------------------*\
     THEME.LESS
 \*------------------------------------*/
-.user {
-  background-color: #f4726d;
+.user,
+.user.label,
+.user.label[href],
+a .user.label,
+.user.badge,
+.user.btn {
+  background-color: #105289;
   color: #ffffff;
 }
-.user[href] {
+.user[href],
+.user.icon,
+.user.octicons,
+.user.clear {
   background-color: transparent;
-  color: #f4726d;
+  color: #105289;
+}
+.user.clear,
+.user.btn.clear {
+  border: 2px solid #105289;
+}
+.user.btn.clear {
+  color: #105289;
 }
 .user[href]:hover {
   background-color: transparent;
-  color: #f79592;
-}
-.user.icon,
-.user.octicons {
-  background-color: transparent;
-  color: #f4726d;
-}
-.user.label {
-  background-color: #f4726d;
-  color: #ffffff;
-}
-.user.label[href],
-a .user.label {
-  background-color: #f4726d;
-  color: #ffffff;
+  color: #bc2a4d;
 }
 .user.label[href]:hover,
-a .user.label:hover {
-  background-color: #f79592;
+a .user.label:hover,
+.user.btn.clear:hover,
+.user.btn.clear:focus {
+  background-color: #bc2a4d;
   color: #ffffff;
-}
-.user.badge {
-  background-color: #f4726d;
-  color: #ffffff;
-}
-.user.btn {
-  background-color: #f4726d;
-  color: #ffffff;
-}
-.user.btn:hover {
-  background-color: #f14d47;
-  color: #ffffff;
-}
-.user.btn.clear {
-  border: 2px solid #f4726d;
-  color: #f4726d;
 }
 .user.btn.clear:hover,
 .user.btn.clear:focus {
-  background: #f4726d;
-  border-color: #f4726d;
+  border-color: #bc2a4d;
+}
+.user.btn:hover {
+  background-color: #0c3c64;
   color: #ffffff;
 }
 .user.btn.clear:active,
 .user.btn.clear.active {
-  background: #cf615d;
-  border-color: #cf615d;
+  background-color: #0e4674;
+  border-color: #0e4674;
 }
-.user.clear {
-  background-color: transparent;
-  border: 2px solid #f4726d;
-  color: #f4726d;
-}
-.admin {
+.admin,
+.admin.label,
+.admin.label[href],
+a .admin.label,
+.admin.badge,
+.admin.btn {
   background-color: #d3746b;
   color: #ffffff;
 }
-.admin[href] {
+.admin[href],
+.admin.icon,
+.admin.octicons,
+.admin.clear {
   background-color: transparent;
+  color: #d3746b;
+}
+.admin.clear,
+.admin.btn.clear {
+  border: 2px solid #d3746b;
+}
+.admin.btn.clear {
   color: #d3746b;
 }
 .admin[href]:hover {
   background-color: transparent;
   color: #c0392b;
 }
-.admin.icon,
-.admin.octicons {
-  background-color: transparent;
-  color: #d3746b;
-}
-.admin.label {
-  background-color: #d3746b;
-  color: #ffffff;
-}
-.admin.label[href],
-a .admin.label {
-  background-color: #d3746b;
-  color: #ffffff;
-}
 .admin.label[href]:hover,
-a .admin.label:hover {
+a .admin.label:hover,
+.admin.btn.clear:hover,
+.admin.btn.clear:focus {
   background-color: #c0392b;
   color: #ffffff;
 }
-.admin.badge {
-  background-color: #d3746b;
-  color: #ffffff;
-}
-.admin.btn {
-  background-color: #d3746b;
-  color: #ffffff;
+.admin.btn.clear:hover,
+.admin.btn.clear:focus {
+  border-color: #c0392b;
 }
 .admin.btn:hover {
   background-color: #ca574b;
   color: #ffffff;
 }
-.admin.btn.clear {
-  border: 2px solid #d3746b;
-  color: #d3746b;
-}
-.admin.btn.clear:hover,
-.admin.btn.clear:focus {
-  background: #d3746b;
-  border-color: #d3746b;
-  color: #ffffff;
-}
 .admin.btn.clear:active,
 .admin.btn.clear.active {
-  background: #b3635b;
+  background-color: #b3635b;
   border-color: #b3635b;
 }
-.admin.clear {
-  background-color: transparent;
-  border: 2px solid #d3746b;
-  color: #d3746b;
-}
-.mod {
+.mod,
+.mod.label,
+.mod.label[href],
+a .mod.label,
+.mod.badge,
+.mod.btn {
   background-color: #6ddb9c;
   color: #ffffff;
 }
-.mod[href] {
+.mod[href],
+.mod.icon,
+.mod.octicons,
+.mod.clear {
   background-color: transparent;
+  color: #6ddb9c;
+}
+.mod.clear,
+.mod.btn.clear {
+  border: 2px solid #6ddb9c;
+}
+.mod.btn.clear {
   color: #6ddb9c;
 }
 .mod[href]:hover {
   background-color: transparent;
   color: #27ae60;
 }
-.mod.icon,
-.mod.octicons {
-  background-color: transparent;
-  color: #6ddb9c;
-}
-.mod.label {
-  background-color: #6ddb9c;
-  color: #ffffff;
-}
-.mod.label[href],
-a .mod.label {
-  background-color: #6ddb9c;
-  color: #ffffff;
-}
 .mod.label[href]:hover,
-a .mod.label:hover {
+a .mod.label:hover,
+.mod.btn.clear:hover,
+.mod.btn.clear:focus {
   background-color: #27ae60;
   color: #ffffff;
 }
-.mod.badge {
-  background-color: #6ddb9c;
-  color: #ffffff;
-}
-.mod.btn {
-  background-color: #6ddb9c;
-  color: #ffffff;
+.mod.btn.clear:hover,
+.mod.btn.clear:focus {
+  border-color: #27ae60;
 }
 .mod.btn:hover {
   background-color: #4cd385;
   color: #ffffff;
 }
-.mod.btn.clear {
-  border: 2px solid #6ddb9c;
-  color: #6ddb9c;
-}
-.mod.btn.clear:hover,
-.mod.btn.clear:focus {
-  background: #6ddb9c;
-  border-color: #6ddb9c;
-  color: #ffffff;
-}
 .mod.btn.clear:active,
 .mod.btn.clear.active {
-  background: #5cba84;
+  background-color: #5cba84;
   border-color: #5cba84;
-}
-.mod.clear {
-  background-color: transparent;
-  border: 2px solid #6ddb9c;
-  color: #6ddb9c;
 }
 .mine {
   background-color: #34495e;
@@ -227,13 +179,39 @@ a .mod.label:hover {
   border: 1px solid #668789;
 }
 .label.quoted,
-.label.replied {
+.label.replied,
+.label.quoted.label,
+.label.replied.label,
+.label.quoted.label[href],
+.label.replied.label[href],
+a .label.quoted.label,
+a .label.replied.label,
+.label.quoted.badge,
+.label.replied.badge,
+.label.quoted.btn,
+.label.replied.btn {
   background-color: #3498db;
   color: #ffffff;
 }
 .label.quoted[href],
-.label.replied[href] {
+.label.replied[href],
+.label.quoted.icon,
+.label.replied.icon,
+.label.quoted.octicons,
+.label.replied.octicons,
+.label.quoted.clear,
+.label.replied.clear {
   background-color: transparent;
+  color: #3498db;
+}
+.label.quoted.clear,
+.label.replied.clear,
+.label.quoted.btn.clear,
+.label.replied.btn.clear {
+  border: 2px solid #3498db;
+}
+.label.quoted.btn.clear,
+.label.replied.btn.clear {
   color: #3498db;
 }
 .label.quoted[href]:hover,
@@ -241,83 +219,82 @@ a .mod.label:hover {
   background-color: transparent;
   color: #2383c4;
 }
-.label.quoted.icon,
-.label.replied.icon,
-.label.quoted.octicons,
-.label.replied.octicons {
-  background-color: transparent;
-  color: #3498db;
-}
-.label.quoted.label,
-.label.replied.label {
-  background-color: #3498db;
-  color: #ffffff;
-}
-.label.quoted.label[href],
-.label.replied.label[href],
-a .label.quoted.label,
-a .label.replied.label {
-  background-color: #3498db;
-  color: #ffffff;
-}
 .label.quoted.label[href]:hover,
 .label.replied.label[href]:hover,
 a .label.quoted.label:hover,
-a .label.replied.label:hover {
+a .label.replied.label:hover,
+.label.quoted.btn.clear:hover,
+.label.replied.btn.clear:hover,
+.label.quoted.btn.clear:focus,
+.label.replied.btn.clear:focus {
   background-color: #2383c4;
   color: #ffffff;
 }
-.label.quoted.badge,
-.label.replied.badge {
-  background-color: #3498db;
-  color: #ffffff;
-}
-.label.quoted.btn,
-.label.replied.btn {
-  background-color: #3498db;
-  color: #ffffff;
+.label.quoted.btn.clear:hover,
+.label.replied.btn.clear:hover,
+.label.quoted.btn.clear:focus,
+.label.replied.btn.clear:focus {
+  border-color: #2383c4;
 }
 .label.quoted.btn:hover,
 .label.replied.btn:hover {
   background-color: #2383c4;
   color: #ffffff;
 }
-.label.quoted.btn.clear,
-.label.replied.btn.clear {
-  border: 2px solid #3498db;
-  color: #3498db;
-}
-.label.quoted.btn.clear:hover,
-.label.replied.btn.clear:hover,
-.label.quoted.btn.clear:focus,
-.label.replied.btn.clear:focus {
-  background: #3498db;
-  border-color: #3498db;
-  color: #ffffff;
-}
 .label.quoted.btn.clear:active,
 .label.replied.btn.clear:active,
 .label.quoted.btn.clear.active,
 .label.replied.btn.clear.active {
-  background: #2c81ba;
+  background-color: #2c81ba;
   border-color: #2c81ba;
-}
-.label.quoted.clear,
-.label.replied.clear {
-  background-color: transparent;
-  border: 2px solid #3498db;
-  color: #3498db;
 }
 .label.approved,
 .label.pmed,
-.label.created {
+.label.created,
+.label.approved.label,
+.label.pmed.label,
+.label.created.label,
+.label.approved.label[href],
+.label.pmed.label[href],
+.label.created.label[href],
+a .label.approved.label,
+a .label.pmed.label,
+a .label.created.label,
+.label.approved.badge,
+.label.pmed.badge,
+.label.created.badge,
+.label.approved.btn,
+.label.pmed.btn,
+.label.created.btn {
   background-color: #2ecc71;
   color: #ffffff;
 }
 .label.approved[href],
 .label.pmed[href],
-.label.created[href] {
+.label.created[href],
+.label.approved.icon,
+.label.pmed.icon,
+.label.created.icon,
+.label.approved.octicons,
+.label.pmed.octicons,
+.label.created.octicons,
+.label.approved.clear,
+.label.pmed.clear,
+.label.created.clear {
   background-color: transparent;
+  color: #2ecc71;
+}
+.label.approved.clear,
+.label.pmed.clear,
+.label.created.clear,
+.label.approved.btn.clear,
+.label.pmed.btn.clear,
+.label.created.btn.clear {
+  border: 2px solid #2ecc71;
+}
+.label.approved.btn.clear,
+.label.pmed.btn.clear,
+.label.created.btn.clear {
   color: #2ecc71;
 }
 .label.approved[href]:hover,
@@ -326,62 +303,20 @@ a .label.replied.label:hover {
   background-color: transparent;
   color: #26ab5f;
 }
-.label.approved.icon,
-.label.pmed.icon,
-.label.created.icon,
-.label.approved.octicons,
-.label.pmed.octicons,
-.label.created.octicons {
-  background-color: transparent;
-  color: #2ecc71;
-}
-.label.approved.label,
-.label.pmed.label,
-.label.created.label {
-  background-color: #2ecc71;
-  color: #ffffff;
-}
-.label.approved.label[href],
-.label.pmed.label[href],
-.label.created.label[href],
-a .label.approved.label,
-a .label.pmed.label,
-a .label.created.label {
-  background-color: #2ecc71;
-  color: #ffffff;
-}
 .label.approved.label[href]:hover,
 .label.pmed.label[href]:hover,
 .label.created.label[href]:hover,
 a .label.approved.label:hover,
 a .label.pmed.label:hover,
-a .label.created.label:hover {
+a .label.created.label:hover,
+.label.approved.btn.clear:hover,
+.label.pmed.btn.clear:hover,
+.label.created.btn.clear:hover,
+.label.approved.btn.clear:focus,
+.label.pmed.btn.clear:focus,
+.label.created.btn.clear:focus {
   background-color: #26ab5f;
   color: #ffffff;
-}
-.label.approved.badge,
-.label.pmed.badge,
-.label.created.badge {
-  background-color: #2ecc71;
-  color: #ffffff;
-}
-.label.approved.btn,
-.label.pmed.btn,
-.label.created.btn {
-  background-color: #2ecc71;
-  color: #ffffff;
-}
-.label.approved.btn:hover,
-.label.pmed.btn:hover,
-.label.created.btn:hover {
-  background-color: #26ab5f;
-  color: #ffffff;
-}
-.label.approved.btn.clear,
-.label.pmed.btn.clear,
-.label.created.btn.clear {
-  border: 2px solid #2ecc71;
-  color: #2ecc71;
 }
 .label.approved.btn.clear:hover,
 .label.pmed.btn.clear:hover,
@@ -389,8 +324,12 @@ a .label.created.label:hover {
 .label.approved.btn.clear:focus,
 .label.pmed.btn.clear:focus,
 .label.created.btn.clear:focus {
-  background: #2ecc71;
-  border-color: #2ecc71;
+  border-color: #26ab5f;
+}
+.label.approved.btn:hover,
+.label.pmed.btn:hover,
+.label.created.btn:hover {
+  background-color: #26ab5f;
   color: #ffffff;
 }
 .label.approved.btn.clear:active,
@@ -399,90 +338,108 @@ a .label.created.label:hover {
 .label.approved.btn.clear.active,
 .label.pmed.btn.clear.active,
 .label.created.btn.clear.active {
-  background: #27ad60;
+  background-color: #27ad60;
   border-color: #27ad60;
 }
-.label.approved.clear,
-.label.pmed.clear,
-.label.created.clear {
-  background-color: transparent;
-  border: 2px solid #2ecc71;
-  color: #2ecc71;
-}
-.label.approve {
+.label.approve,
+.label.approve.label,
+.label.approve.label[href],
+a .label.approve.label,
+.label.approve.badge,
+.label.approve.btn {
   background-color: #c0f0d4;
   color: #ffffff;
 }
-.label.approve[href] {
+.label.approve[href],
+.label.approve.icon,
+.label.approve.octicons,
+.label.approve.clear {
   background-color: transparent;
+  color: #c0f0d4;
+}
+.label.approve.clear,
+.label.approve.btn.clear {
+  border: 2px solid #c0f0d4;
+}
+.label.approve.btn.clear {
   color: #c0f0d4;
 }
 .label.approve[href]:hover {
   background-color: transparent;
   color: #a0e8be;
 }
-.label.approve.icon,
-.label.approve.octicons {
-  background-color: transparent;
-  color: #c0f0d4;
-}
-.label.approve.label {
-  background-color: #c0f0d4;
-  color: #ffffff;
-}
-.label.approve.label[href],
-a .label.approve.label {
-  background-color: #c0f0d4;
-  color: #ffffff;
-}
 .label.approve.label[href]:hover,
-a .label.approve.label:hover {
+a .label.approve.label:hover,
+.label.approve.btn.clear:hover,
+.label.approve.btn.clear:focus {
   background-color: #a0e8be;
   color: #ffffff;
 }
-.label.approve.badge {
-  background-color: #c0f0d4;
-  color: #ffffff;
-}
-.label.approve.btn {
-  background-color: #c0f0d4;
-  color: #ffffff;
+.label.approve.btn.clear:hover,
+.label.approve.btn.clear:focus {
+  border-color: #a0e8be;
 }
 .label.approve.btn:hover {
   background-color: #a0e8be;
   color: #ffffff;
 }
-.label.approve.btn.clear {
-  border: 2px solid #c0f0d4;
-  color: #c0f0d4;
-}
-.label.approve.btn.clear:hover,
-.label.approve.btn.clear:focus {
-  background: #c0f0d4;
-  border-color: #c0f0d4;
-  color: #ffffff;
-}
 .label.approve.btn.clear:active,
 .label.approve.btn.clear.active {
-  background: #a3ccb5;
+  background-color: #a3ccb5;
   border-color: #a3ccb5;
-}
-.label.approve.clear {
-  background-color: transparent;
-  border: 2px solid #c0f0d4;
-  color: #c0f0d4;
 }
 .label.rejected,
 .label.reported,
 .label.locked {
+  border: 0;
+}
+.label.rejected,
+.label.reported,
+.label.locked,
+.label.rejected.label,
+.label.reported.label,
+.label.locked.label,
+.label.rejected.label[href],
+.label.reported.label[href],
+.label.locked.label[href],
+a .label.rejected.label,
+a .label.reported.label,
+a .label.locked.label,
+.label.rejected.badge,
+.label.reported.badge,
+.label.locked.badge,
+.label.rejected.btn,
+.label.reported.btn,
+.label.locked.btn {
   background-color: #c0392b;
   color: #ffffff;
-  border: 0;
 }
 .label.rejected[href],
 .label.reported[href],
-.label.locked[href] {
+.label.locked[href],
+.label.rejected.icon,
+.label.reported.icon,
+.label.locked.icon,
+.label.rejected.octicons,
+.label.reported.octicons,
+.label.locked.octicons,
+.label.rejected.clear,
+.label.reported.clear,
+.label.locked.clear {
   background-color: transparent;
+  color: #c0392b;
+}
+.label.rejected.clear,
+.label.reported.clear,
+.label.locked.clear,
+.label.rejected.btn.clear,
+.label.reported.btn.clear,
+.label.locked.btn.clear {
+  border: 2px solid #c0392b;
+}
+.label.rejected.btn.clear,
+.label.reported.btn.clear,
+.label.locked.btn.clear {
   color: #c0392b;
 }
 .label.rejected[href]:hover,
@@ -491,62 +448,20 @@ a .label.approve.label:hover {
   background-color: transparent;
   color: #9f2f24;
 }
-.label.rejected.icon,
-.label.reported.icon,
-.label.locked.icon,
-.label.rejected.octicons,
-.label.reported.octicons,
-.label.locked.octicons {
-  background-color: transparent;
-  color: #c0392b;
-}
-.label.rejected.label,
-.label.reported.label,
-.label.locked.label {
-  background-color: #c0392b;
-  color: #ffffff;
-}
-.label.rejected.label[href],
-.label.reported.label[href],
-.label.locked.label[href],
-a .label.rejected.label,
-a .label.reported.label,
-a .label.locked.label {
-  background-color: #c0392b;
-  color: #ffffff;
-}
 .label.rejected.label[href]:hover,
 .label.reported.label[href]:hover,
 .label.locked.label[href]:hover,
 a .label.rejected.label:hover,
 a .label.reported.label:hover,
-a .label.locked.label:hover {
+a .label.locked.label:hover,
+.label.rejected.btn.clear:hover,
+.label.reported.btn.clear:hover,
+.label.locked.btn.clear:hover,
+.label.rejected.btn.clear:focus,
+.label.reported.btn.clear:focus,
+.label.locked.btn.clear:focus {
   background-color: #9f2f24;
   color: #ffffff;
-}
-.label.rejected.badge,
-.label.reported.badge,
-.label.locked.badge {
-  background-color: #c0392b;
-  color: #ffffff;
-}
-.label.rejected.btn,
-.label.reported.btn,
-.label.locked.btn {
-  background-color: #c0392b;
-  color: #ffffff;
-}
-.label.rejected.btn:hover,
-.label.reported.btn:hover,
-.label.locked.btn:hover {
-  background-color: #9f2f24;
-  color: #ffffff;
-}
-.label.rejected.btn.clear,
-.label.reported.btn.clear,
-.label.locked.btn.clear {
-  border: 2px solid #c0392b;
-  color: #c0392b;
 }
 .label.rejected.btn.clear:hover,
 .label.reported.btn.clear:hover,
@@ -554,8 +469,12 @@ a .label.locked.label:hover {
 .label.rejected.btn.clear:focus,
 .label.reported.btn.clear:focus,
 .label.locked.btn.clear:focus {
-  background: #c0392b;
-  border-color: #c0392b;
+  border-color: #9f2f24;
+}
+.label.rejected.btn:hover,
+.label.reported.btn:hover,
+.label.locked.btn:hover {
+  background-color: #9f2f24;
   color: #ffffff;
 }
 .label.rejected.btn.clear:active,
@@ -564,13 +483,6 @@ a .label.locked.label:hover {
 .label.rejected.btn.clear.active,
 .label.reported.btn.clear.active,
 .label.locked.btn.clear.active {
-  background: #a33025;
+  background-color: #a33025;
   border-color: #a33025;
-}
-.label.rejected.clear,
-.label.reported.clear,
-.label.locked.clear {
-  background-color: transparent;
-  border: 2px solid #c0392b;
-  color: #c0392b;
 }
