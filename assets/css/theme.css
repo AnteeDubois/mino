@@ -1,488 +1,357 @@
 /*------------------------------------*\
     THEME.LESS
 \*------------------------------------*/
-.user,
-.user.label,
-.user.label[href],
-a .user.label,
-.user.badge,
-.user.btn {
-  background-color: #105289;
-  color: #ffffff;
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
 }
-.user[href],
-.user.icon,
-.user.octicons,
-.user.clear {
-  background-color: transparent;
-  color: #105289;
-}
-.user.clear,
-.user.btn.clear {
-  border: 2px solid #105289;
-}
-.user.btn.clear {
-  color: #105289;
-}
-.user[href]:hover {
-  background-color: transparent;
-  color: #bc2a4d;
-}
-.user.label[href]:hover,
-a .user.label:hover,
-.user.btn.clear:hover,
-.user.btn.clear:focus {
-  background-color: #bc2a4d;
-  color: #ffffff;
-}
-.user.btn.clear:hover,
-.user.btn.clear:focus {
-  border-color: #bc2a4d;
-}
-.user.btn:hover {
-  background-color: #0c3c64;
-  color: #ffffff;
-}
-.user.btn.clear:active,
-.user.btn.clear.active {
-  background-color: #0e4674;
-  border-color: #0e4674;
-}
-.admin,
-.admin.label,
-.admin.label[href],
-a .admin.label,
-.admin.badge,
-.admin.btn {
-  background-color: #d3746b;
-  color: #ffffff;
-}
-.admin[href],
-.admin.icon,
-.admin.octicons,
-.admin.clear {
-  background-color: transparent;
-  color: #d3746b;
-}
-.admin.clear,
-.admin.btn.clear {
-  border: 2px solid #d3746b;
-}
-.admin.btn.clear {
-  color: #d3746b;
-}
-.admin[href]:hover {
-  background-color: transparent;
-  color: #c0392b;
-}
-.admin.label[href]:hover,
-a .admin.label:hover,
-.admin.btn.clear:hover,
-.admin.btn.clear:focus {
-  background-color: #c0392b;
-  color: #ffffff;
-}
-.admin.btn.clear:hover,
-.admin.btn.clear:focus {
-  border-color: #c0392b;
-}
-.admin.btn:hover {
-  background-color: #ca574b;
-  color: #ffffff;
-}
-.admin.btn.clear:active,
-.admin.btn.clear.active {
-  background-color: #b3635b;
-  border-color: #b3635b;
-}
-.mod,
-.mod.label,
-.mod.label[href],
-a .mod.label,
-.mod.badge,
-.mod.btn {
-  background-color: #6ddb9c;
-  color: #ffffff;
-}
-.mod[href],
-.mod.icon,
-.mod.octicons,
-.mod.clear {
-  background-color: transparent;
-  color: #6ddb9c;
-}
-.mod.clear,
-.mod.btn.clear {
-  border: 2px solid #6ddb9c;
-}
-.mod.btn.clear {
-  color: #6ddb9c;
-}
-.mod[href]:hover {
-  background-color: transparent;
-  color: #27ae60;
-}
-.mod.label[href]:hover,
-a .mod.label:hover,
-.mod.btn.clear:hover,
-.mod.btn.clear:focus {
-  background-color: #27ae60;
-  color: #ffffff;
-}
-.mod.btn.clear:hover,
-.mod.btn.clear:focus {
-  border-color: #27ae60;
-}
-.mod.btn:hover {
-  background-color: #4cd385;
-  color: #ffffff;
-}
-.mod.btn.clear:active,
-.mod.btn.clear.active {
-  background-color: #5cba84;
-  border-color: #5cba84;
-}
-.mine {
-  background-color: #34495e;
-  border: 1px solid #17232f;
-}
-.unanswered {
-  background-color: #1abc9c;
-  border: 1px solid #0d7d67;
-}
-.new {
-  background-color: #2ecc71;
-  border: 1px solid #1b934e;
-}
-.hot {
-  background-color: #fdbd43;
-  border: 1px solid #f3a000;
-}
-.locked {
-  background-color: #e74c3c;
-  border: 1px solid #c52211;
-}
-.reported {
-  background-color: #c0392b;
-  border: 1px solid #862318;
-}
-.sticky {
-  background-color: #3498db;
-  border: 1px solid #1770ab;
-}
-.announce {
-  background-color: #9b59b6;
-  border: 1px solid #74368d;
-}
-.gannounce {
-  background-color: #95a5a6;
-  border: 1px solid #668789;
-}
-.label.quoted,
-.label.replied,
-.label.quoted.label,
-.label.replied.label,
-.label.quoted.label[href],
-.label.replied.label[href],
-a .label.quoted.label,
-a .label.replied.label,
-.label.quoted.badge,
-.label.replied.badge,
-.label.quoted.btn,
-.label.replied.btn {
-  background-color: #3498db;
-  color: #ffffff;
-}
-.label.quoted[href],
-.label.replied[href],
-.label.quoted.icon,
-.label.replied.icon,
-.label.quoted.octicons,
-.label.replied.octicons,
-.label.quoted.clear,
-.label.replied.clear {
-  background-color: transparent;
-  color: #3498db;
-}
-.label.quoted.clear,
-.label.replied.clear,
-.label.quoted.btn.clear,
-.label.replied.btn.clear {
-  border: 2px solid #3498db;
-}
-.label.quoted.btn.clear,
-.label.replied.btn.clear {
-  color: #3498db;
-}
-.label.quoted[href]:hover,
-.label.replied[href]:hover {
-  background-color: transparent;
-  color: #2383c4;
-}
-.label.quoted.label[href]:hover,
-.label.replied.label[href]:hover,
-a .label.quoted.label:hover,
-a .label.replied.label:hover,
-.label.quoted.btn.clear:hover,
-.label.replied.btn.clear:hover,
-.label.quoted.btn.clear:focus,
-.label.replied.btn.clear:focus {
-  background-color: #2383c4;
-  color: #ffffff;
-}
-.label.quoted.btn.clear:hover,
-.label.replied.btn.clear:hover,
-.label.quoted.btn.clear:focus,
-.label.replied.btn.clear:focus {
-  border-color: #2383c4;
-}
-.label.quoted.btn:hover,
-.label.replied.btn:hover {
-  background-color: #2383c4;
-  color: #ffffff;
-}
-.label.quoted.btn.clear:active,
-.label.replied.btn.clear:active,
-.label.quoted.btn.clear.active,
-.label.replied.btn.clear.active {
-  background-color: #2c81ba;
-  border-color: #2c81ba;
-}
-.label.approved,
-.label.pmed,
-.label.created,
-.label.approved.label,
-.label.pmed.label,
-.label.created.label,
-.label.approved.label[href],
-.label.pmed.label[href],
-.label.created.label[href],
-a .label.approved.label,
-a .label.pmed.label,
-a .label.created.label,
-.label.approved.badge,
-.label.pmed.badge,
-.label.created.badge,
-.label.approved.btn,
-.label.pmed.btn,
-.label.created.btn {
-  background-color: #2ecc71;
-  color: #ffffff;
-}
-.label.approved[href],
-.label.pmed[href],
-.label.created[href],
-.label.approved.icon,
-.label.pmed.icon,
-.label.created.icon,
-.label.approved.octicons,
-.label.pmed.octicons,
-.label.created.octicons,
-.label.approved.clear,
-.label.pmed.clear,
-.label.created.clear {
-  background-color: transparent;
-  color: #2ecc71;
-}
-.label.approved.clear,
-.label.pmed.clear,
-.label.created.clear,
-.label.approved.btn.clear,
-.label.pmed.btn.clear,
-.label.created.btn.clear {
-  border: 2px solid #2ecc71;
-}
-.label.approved.btn.clear,
-.label.pmed.btn.clear,
-.label.created.btn.clear {
-  color: #2ecc71;
-}
-.label.approved[href]:hover,
-.label.pmed[href]:hover,
-.label.created[href]:hover {
-  background-color: transparent;
-  color: #26ab5f;
-}
-.label.approved.label[href]:hover,
-.label.pmed.label[href]:hover,
-.label.created.label[href]:hover,
-a .label.approved.label:hover,
-a .label.pmed.label:hover,
-a .label.created.label:hover,
-.label.approved.btn.clear:hover,
-.label.pmed.btn.clear:hover,
-.label.created.btn.clear:hover,
-.label.approved.btn.clear:focus,
-.label.pmed.btn.clear:focus,
-.label.created.btn.clear:focus {
-  background-color: #26ab5f;
-  color: #ffffff;
-}
-.label.approved.btn.clear:hover,
-.label.pmed.btn.clear:hover,
-.label.created.btn.clear:hover,
-.label.approved.btn.clear:focus,
-.label.pmed.btn.clear:focus,
-.label.created.btn.clear:focus {
-  border-color: #26ab5f;
-}
-.label.approved.btn:hover,
-.label.pmed.btn:hover,
-.label.created.btn:hover {
-  background-color: #26ab5f;
-  color: #ffffff;
-}
-.label.approved.btn.clear:active,
-.label.pmed.btn.clear:active,
-.label.created.btn.clear:active,
-.label.approved.btn.clear.active,
-.label.pmed.btn.clear.active,
-.label.created.btn.clear.active {
-  background-color: #27ad60;
-  border-color: #27ad60;
-}
-.label.approve,
-.label.approve.label,
-.label.approve.label[href],
-a .label.approve.label,
-.label.approve.badge,
-.label.approve.btn {
-  background-color: #c0f0d4;
-  color: #ffffff;
-}
-.label.approve[href],
-.label.approve.icon,
-.label.approve.octicons,
-.label.approve.clear {
-  background-color: transparent;
-  color: #c0f0d4;
-}
-.label.approve.clear,
-.label.approve.btn.clear {
-  border: 2px solid #c0f0d4;
-}
-.label.approve.btn.clear {
-  color: #c0f0d4;
-}
-.label.approve[href]:hover {
-  background-color: transparent;
-  color: #a0e8be;
-}
-.label.approve.label[href]:hover,
-a .label.approve.label:hover,
-.label.approve.btn.clear:hover,
-.label.approve.btn.clear:focus {
-  background-color: #a0e8be;
-  color: #ffffff;
-}
-.label.approve.btn.clear:hover,
-.label.approve.btn.clear:focus {
-  border-color: #a0e8be;
-}
-.label.approve.btn:hover {
-  background-color: #a0e8be;
-  color: #ffffff;
-}
-.label.approve.btn.clear:active,
-.label.approve.btn.clear.active {
-  background-color: #a3ccb5;
-  border-color: #a3ccb5;
-}
-.label.rejected,
-.label.reported,
-.label.locked {
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+.forum-search .input-group {
   border: 0;
+  margin: 0;
+  padding: 0;
 }
-.label.rejected,
-.label.reported,
-.label.locked,
-.label.rejected.label,
-.label.reported.label,
-.label.locked.label,
-.label.rejected.label[href],
-.label.reported.label[href],
-.label.locked.label[href],
-a .label.rejected.label,
-a .label.reported.label,
-a .label.locked.label,
-.label.rejected.badge,
-.label.reported.badge,
-.label.locked.badge,
-.label.rejected.btn,
-.label.reported.btn,
-.label.locked.btn {
-  background-color: #c0392b;
+/*
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ *  Override content-box in Normalize (* isn't specific enough)
+ */
+.input-search {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/**
+ *  Placeholder text gets special styles because when browsers invalidate entire lines it doesn't understand a selector
+ */
+select:focus,
+textarea:focus,
+input:focus {
+  border-color: #0a8ed0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+select:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder,
+input:focus:-moz-placeholder {
+  color: #BC2A4D;
+}
+select:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder,
+input:focus::-moz-placeholder {
+  color: #BC2A4D;
+}
+select:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder,
+input:focus:-ms-input-placeholder {
+  color: #BC2A4D;
+}
+select:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+  color: #BC2A4D;
+}
+select:-moz-placeholder,
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+  color: #b3b3b3;
+}
+select::-moz-placeholder,
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: #b3b3b3;
+}
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+  color: #b3b3b3;
+}
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+a {
+  color: #105289;
+  text-decoration: none;
+}
+a:hover {
+  color: #D31141;
+  text-decoration: none;
+}
+a .fa:after {
+  padding-right: 3px;
+}
+.wrapper {
+  margin: 20px;
+}
+.button {
+  /* Text */
+  font-size: 14px;
+  font-family: 'Open Sans', 'Droid Sans', sans-serif, Verdana, Arial, Helvetica;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* Decoration */
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#e9e9e9));
+  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #e9e9e9, 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #e9e9e9 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #e9e9e9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e9e9', GradientType=0);
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+  box-shadow: 0 0 0 1px #ffffff inset;
+  color: #BC2A4D;
+  cursor: pointer;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+  /* Layout */
+  display: inline-block;
+  margin: 0;
+  padding: 5px 8px;
+}
+.button:hover {
+  text-decoration: none;
+  border-color: #0a8ed0;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#e9e9e9), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #e9e9e9, 0%, #ffffff, 100%);
+  background-image: -moz-linear-gradient(top, #e9e9e9 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, #e9e9e9 0%, #ffffff 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#ffffff', GradientType=0);
+  color: #BC2A4D;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, -1px -1px 0 rgba(188, 42, 77, 0.2);
+}
+.button span {
+  font-size: 14px;
+  font-weight: 600;
+  padding-right: 3px;
+}
+.button .fa {
+  color: #C7C3BF;
+  padding: 0;
+}
+.button strong {
+  color: #0a8ed0;
+}
+.button:active,
+.button:focus {
+  outline: none;
+}
+.button:active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.button:hover .fa {
+  color: #0a8ed0;
+}
+@media (max-width: 45em) {
+  .button .text {
+    display: none;
+  }
+  .button .fa {
+    color: #BC2A4D;
+  }
+  .input-group .button .fa {
+    color: #C7C3BF;
+  }
+}
+.input {
+  /* Text */
+  font-size: 14px;
+  font-family: 'Open Sans', 'Droid Sans', Helvetica, Verdana, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.462;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* Decoration */
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-appearance: none;
+  color: #BC2A4D;
+  cursor: pointer;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+  -webkit-appearence: none;
+  /* Layout */
+  display: inline-block;
+  height: 26px;
+  margin: 0;
+  padding: 5px 8px;
+}
+.input-group .button {
+  background-color: #ffffff;
+  background-image: none;
+  border: 0;
+  margin-left: -36px;
+}
+.input-group .button:hover {
+  background-color: #ffffff;
+  background-image: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-width: 0;
+  border-color: #b3b3b3;
+  -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+  box-shadow: 0 0 0 1px #ffffff inset;
+  color: #C7C3BF;
+  text-shadow: none;
+}
+.list-inline,
+.list-inline ul,
+.list-inline ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.forum-search,
+.pagination {
+  display: inline-block;
+}
+.action-left {
+  float: left;
+  width: auto;
+}
+.action-right {
+  text-align: right;
+  vertical-align: middle;
+  float: right;
+  width: auto;
+}
+.pagination li {
+  padding: 0;
+}
+.pagination li a,
+.pagination li.active span {
+  /* Text */
+  font-size: 14px;
+  font-family: 'Open Sans', 'Droid Sans', sans-serif, Verdana, Arial, Helvetica;
+  font-weight: normal;
+  line-height: normal;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* Decoration */
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#e9e9e9));
+  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #e9e9e9, 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #e9e9e9 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #e9e9e9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e9e9', GradientType=0);
+  border: 1px solid #b3b3b3;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+  box-shadow: 0 0 0 1px #ffffff inset;
+  color: #BC2A4D;
+  cursor: pointer;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+  /* Layout */
+  padding: 2px 3px;
+  margin: 0;
+}
+.pagination li a:hover,
+.pagination li.active span {
+  text-decoration: none;
+  background-color: #0a8ed0;
+  background-image: none;
+  border-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: none;
+  box-shadow: none;
   color: #ffffff;
 }
-.label.rejected[href],
-.label.reported[href],
-.label.locked[href],
-.label.rejected.icon,
-.label.reported.icon,
-.label.locked.icon,
-.label.rejected.octicons,
-.label.reported.octicons,
-.label.locked.octicons,
-.label.rejected.clear,
-.label.reported.clear,
-.label.locked.clear {
-  background-color: transparent;
-  color: #c0392b;
+@media (max-width: 45em) {
+  .pagination {
+    display: none;
+  }
+  .pagination-mobile {
+    display: inline-block;
+  }
 }
-.label.rejected.clear,
-.label.reported.clear,
-.label.locked.clear,
-.label.rejected.btn.clear,
-.label.reported.btn.clear,
-.label.locked.btn.clear {
-  border: 2px solid #c0392b;
+@media (min-width: 45em) {
+  .pagination-mobile {
+    display: none;
+  }
 }
-.label.rejected.btn.clear,
-.label.reported.btn.clear,
-.label.locked.btn.clear {
-  color: #c0392b;
+section {
+  padding: 20px 0;
 }
-.label.rejected[href]:hover,
-.label.reported[href]:hover,
-.label.locked[href]:hover {
-  background-color: transparent;
-  color: #9f2f24;
+section:before,
+section:after {
+  content: " ";
+  display: table;
 }
-.label.rejected.label[href]:hover,
-.label.reported.label[href]:hover,
-.label.locked.label[href]:hover,
-a .label.rejected.label:hover,
-a .label.reported.label:hover,
-a .label.locked.label:hover,
-.label.rejected.btn.clear:hover,
-.label.reported.btn.clear:hover,
-.label.locked.btn.clear:hover,
-.label.rejected.btn.clear:focus,
-.label.reported.btn.clear:focus,
-.label.locked.btn.clear:focus {
-  background-color: #9f2f24;
-  color: #ffffff;
+section:after {
+  clear: both;
 }
-.label.rejected.btn.clear:hover,
-.label.reported.btn.clear:hover,
-.label.locked.btn.clear:hover,
-.label.rejected.btn.clear:focus,
-.label.reported.btn.clear:focus,
-.label.locked.btn.clear:focus {
-  border-color: #9f2f24;
+.icon-display {
+  list-style-type: none;
+  font-size: 24px;
 }
-.label.rejected.btn:hover,
-.label.reported.btn:hover,
-.label.locked.btn:hover {
-  background-color: #9f2f24;
-  color: #ffffff;
+.icon-display li {
+  padding: 3px 0;
 }
-.label.rejected.btn.clear:active,
-.label.reported.btn.clear:active,
-.label.locked.btn.clear:active,
-.label.rejected.btn.clear.active,
-.label.reported.btn.clear.active,
-.label.locked.btn.clear.active {
-  background-color: #a33025;
-  border-color: #a33025;
+.fa-hot {
+  color: #f1c40f;
+}
+.fa-locked {
+  color: #e74c3c;
+}
+/**
+ * This is the icon next to the forum title
+ */
+.mine {
+  vertical-align: middle;
+  background-color: #3498db;
+  border: 1px solid #44677e;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  margin-top: -3px;
+  position: relative;
+  width: 8px;
 }

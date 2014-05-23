@@ -18,65 +18,341 @@
 //--------------------------------------------------------------------------//
 //  $USER STYLES
 //--------------------------------------------------------------------------//
-.user           { .color(@base-link-color, @white, @base-link-hover-color); }
-.admin          { .color(mix(@pomegranate, white, 70%), @white, @pomegranate); }
-.mod            { .color(mix(@emerald, white, 70%), @white, @nephritis); }
 
-.mine {
-    background-color: @wet-asphalt;
-    border: 1px solid saturate(darken(@wet-asphalt, 15%), 6%);
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
 }
 
-.unanswered {
-    background-color: @turquuoise;
-    border: 1px solid saturate(darken(@turquuoise, 15%), 6%);
-}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
 
-.new {
-    background-color: @emerald;
-    border: 1px solid saturate(darken(@emerald, 15%), 6%);
-}
+/*
+ * Define consistent border, margin, and padding.
+ */
 
-.hot {
-    background-color: @apple-orange;
-    border: 1px solid saturate(darken(@apple-orange, 15%), 6%);
-}
-
-.locked {
-    background-color: @alizarin;
-    border: 1px solid saturate(darken(@alizarin, 15%), 6%);
-}
-
-.reported {
-    background-color: @pomegranate;
-    border: 1px solid saturate(darken(@pomegranate, 15%), 6%);
-}
-
-.sticky {
-    background-color: @peter-river;
-    border: 1px solid saturate(darken(@peter-river, 15%), 6%);
-}
-
-.announce {
-    background-color: @amethyst;
-    border: 1px solid saturate(darken(@amethyst, 15%), 6%);
-}
-
-.gannounce {
-    background-color: @concrete;
-    border: 1px solid saturate(darken(@concrete, 15%), 6%);
-}
-
-.label.quoted,
-.label.replied  { .color(@peter-river); }
-.label.approved,
-.label.pmed,
-.label.created  { .color(@emerald); }
-.label.approve  { .color(mix(@emerald, white, 30%)); }
-.label.rejected,
-.label.reported,
-.label.locked {
-    .color(@pomegranate);
+.forum-search .input-group {
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
+/*
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ *  Override content-box in Normalize (* isn't specific enough)
+ */
+.input-search { .box-sizing(border-box); }
+
+
+/**
+ *  Placeholder text gets special styles because when browsers invalidate entire lines it doesn't understand a selector
+ */
+select,
+textarea,
+input {
+    &:focus {
+        border-color: #0a8ed0;
+        outline: 0;
+        .box-shadow(none);
+        &:-moz-placeholder            { color: #BC2A4D; } // Safari and Chrome
+        &::-moz-placeholder           { color: #BC2A4D; } // Safari and Chrome
+        &:-ms-input-placeholder       { color: #BC2A4D; } // Safari and Chrome
+        &::-webkit-input-placeholder  { color: #BC2A4D; } // Safari and Chrome
+    }
+
+    &:-moz-placeholder            { color: #b3b3b3; } // Safari and Chrome
+    &::-moz-placeholder           { color: #b3b3b3; } // Safari and Chrome
+    &:-ms-input-placeholder       { color: #b3b3b3; } // Safari and Chrome
+    &::-webkit-input-placeholder  { color: #b3b3b3; } // Safari and Chrome
+}
+
+
+a {
+    color: #105289;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D31141;
+    text-decoration: none;
+}
+
+a .fa:after {
+    padding-right: 3px;
+}
+
+
+.wrapper { margin: 20px; }
+
+.button {
+    /* Text */
+    font-size: 14px;
+    font-family: 'Open Sans', 'Droid Sans', sans-serif, Verdana, Arial, Helvetica;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* Decoration */
+    background-color: #e6e6e6;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#e9e9e9));
+    background-image: -webkit-linear-gradient(top, #ffffff, 0%, #e9e9e9, 100%);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, #e9e9e9 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #e9e9e9 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e9e9', GradientType=0);
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+    box-shadow: 0 0 0 1px #ffffff inset;
+    color: #BC2A4D;
+    cursor: pointer;
+    -webkit-transition: 0.25s linear;
+    transition: 0.25s linear;
+    /* Layout */
+    display: inline-block;
+    margin: 0;
+    padding: 5px 8px;
+}
+
+.button:hover {
+    text-decoration: none;
+    border-color: #0a8ed0;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#e9e9e9), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #e9e9e9, 0%, #ffffff, 100%);
+    background-image: -moz-linear-gradient(top, #e9e9e9 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, #e9e9e9 0%, #ffffff 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#ffffff', GradientType=0);
+    color: #BC2A4D;
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, -1px -1px 0 rgba(188, 42, 77, 0.2);
+}
+
+.button span {
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 3px;
+}
+
+.button .fa {
+    color: #C7C3BF;
+    padding: 0;
+}
+
+.button strong {
+    color: #0a8ed0;
+}
+
+.button:active,
+.button:focus { outline: none; }
+.button:active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.button:hover .fa { color: #0a8ed0; }
+
+@media (max-width: @screen-m-min) {
+    .button .text { display: none; }
+    .button .fa, { color: #BC2A4D; }
+    .input-group .button .fa { color: #C7C3BF; }
+}
+
+.input {
+    /* Text */
+    font-size: 14px;
+    font-family: 'Open Sans', 'Droid Sans', Helvetica, Verdana, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.462;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* Decoration */
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -webkit-appearance: none;
+    color: #BC2A4D;
+    cursor: pointer;
+    -webkit-transition: 0.25s linear;
+    transition: 0.25s linear;
+    -webkit-appearence: none;
+    /* Layout */
+    display: inline-block;
+    height: 26px;
+    margin: 0;
+    padding: 5px 8px;
+}
+
+.input-group .button {
+    background-color: #ffffff;
+    background-image: none;
+    border: 0;
+    margin-left: -36px;
+}
+
+.input-group .button:hover {
+    background-color: #ffffff;
+    background-image: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+    border-color: #b3b3b3;
+    -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+    box-shadow: 0 0 0 1px #ffffff inset;
+    color: #C7C3BF;
+    text-shadow: none;
+}
+
+.list-inline,
+.list-inline ul,
+.list-inline ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.forum-search, .pagination { display: inline-block; }
+
+.action-left {
+    float: left;
+    width: auto;
+}
+
+.action-right {
+    text-align: right;
+    vertical-align: middle;
+    float: right;
+    width: auto;
+}
+
+.pagination {
+
+    li {
+        padding: 0;
+    }
+    li a, li.active span {
+        /* Text */
+        font-size: 14px;
+        font-family: 'Open Sans', 'Droid Sans', sans-serif, Verdana, Arial, Helvetica;
+        font-weight: normal;
+        line-height: normal;
+        vertical-align: middle;
+        white-space: nowrap;
+        -webkit-font-smoothing: subpixel-antialiased;
+        /* Decoration */
+        background-color: #e6e6e6;
+        background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#e9e9e9));
+        background-image: -webkit-linear-gradient(top, #ffffff, 0%, #e9e9e9, 100%);
+        background-image: -moz-linear-gradient(top, #ffffff 0%, #e9e9e9 100%);
+        background-image: linear-gradient(to bottom, #ffffff 0%, #e9e9e9 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e9e9', GradientType=0);
+        border: 1px solid #b3b3b3;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+        box-shadow: 0 0 0 1px #ffffff inset;
+        color: #BC2A4D;
+        cursor: pointer;
+        -webkit-transition: 0.25s linear;
+        transition: 0.25s linear;
+        /* Layout */
+        padding: 2px 3px;
+        margin: 0;
+    }
+}
+
+.pagination li a:hover, .pagination li.active span {
+    text-decoration: none;
+    background-color: #0a8ed0;
+    background-image: none;
+    border-color: rgba(0,0,0,0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+@media (max-width: @screen-m-min) {
+    .pagination { display: none; }
+    .pagination-mobile { display: inline-block; }
+}
+
+@media (min-width: @screen-m-min) {
+    .pagination-mobile { display: none; }
+}
+
+//#0a8ed0 blue
+//#BC2A4D red
+
+
+section {
+    .cf();
+    padding: 20px 0;
+}
+
+
+.icon-display {
+    list-style-type: none;
+    font-size: 24px;
+}
+
+.icon-display li {
+    padding: 3px 0;
+}
+
+.fa-hot { color: @sun-flower; }
+.fa-locked { color: @alizarin; }
+
+/**
+ * This is the icon next to the forum title
+ */
+.mine {
+    vertical-align: middle;
+
+    background-color: @peter-river;
+    border: 1px solid desaturate(darken(@peter-river, 15%), 40%);//mix(@base-link-color, black, 90%);
+    border-radius: 50%;
+
+    display: inline-block;
+    height: 8px;
+    margin-top: -3px;
+    position: relative;
+    width: 8px;
+}

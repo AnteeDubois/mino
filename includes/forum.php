@@ -7,7 +7,7 @@
             $label = ' ';
             $desc = 'General discussion of development ideas and the approaches taken in the 3.x branch of phpBB. The next feature release of phpBB 3 will be 3.1/Ascreaus followed by 3.2/Arsia.';
             $topics = '623';
-            $posts = '6439';            
+            $posts = '6439';
             $avatar = 'http://www.gravatar.com/avatar/' . md5(strtolower(trim("midaym@gmail.com")));
             $usertype = 'admin';
             $user = 'hanakin';

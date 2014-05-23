@@ -65,6 +65,19 @@
   clear: both;
 }
 /**
+ * Navbar User
+ *
+ * the user link
+ */
+/**
+ * Navbar Avatar
+ *
+ * the avatar
+ */
+.navbar-avatar {
+  margin: -10px 10px 0px 0px;
+}
+/**
  * Navbar Nav search
  *
  * This is one link item of the sub nav
